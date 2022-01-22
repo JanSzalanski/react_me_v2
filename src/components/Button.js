@@ -1,13 +1,4 @@
-import styled from 'styled-components';
-
-const button = styled.button`
-  color: black;
-  padding: 10px;
-  background-color: #ffd82b;
-  width: 100px;
-  height: 25px;
-  border-radius: 25px;
-`;
+import React from 'react';
 
 const Button = (props) => {
   return (
