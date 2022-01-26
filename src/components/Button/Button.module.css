@@ -1,0 +1,2 @@
+.button,.secondary{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:black;padding:0;background-color:yellow;width:220px;height:47px;border:none;border-radius:50px;font-family:'Montserrat';font-weight:600;font-size:16px;text-transform:uppercase;cursor:pointer;text-decoration:none}.secondary{height:30px;width:140px;background-color:lightskyblue}
+/*# sourceMappingURL=Button.module.css.map */

@@ -18,5 +18,9 @@
 }
 
 .secondary {
+  @extend .button;
+  width: 105px;
+  height: 30px;
+  font-size: 10px;
   background-color: lightskyblue;
 }
