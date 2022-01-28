@@ -1,3 +1,5 @@
+@import '../../scss/variables';
+
 .button {
   display: flex;
   justify-content: center;
@@ -9,7 +11,7 @@
   height: 47px;
   border: none;
   border-radius: 50px;
-  font-family: 'Montserrat';
+  // font-family: $font-main;
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
@@ -22,5 +24,5 @@
   width: 105px;
   height: 30px;
   font-size: 10px;
-  background-color: lightskyblue;
+  background-color: var(--color-light-grey);
 }
