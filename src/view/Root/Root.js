@@ -6,7 +6,7 @@ function Root() {
   return (
     <div className="wrapper">
       <h1>react_me v2</h1>
-      <Button className="secondary">My Button</Button>
+      <Button>My Button</Button>
     </div>
   );
 }
