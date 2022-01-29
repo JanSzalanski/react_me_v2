@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../scss/main.css';
-import Button from '../../components/Button/Button';
+import Button from '../../components/atoms/Button/Button';
 
 function Root() {
   return (
