@@ -31,11 +31,11 @@
 .search {
   @extend .input;
   padding: 10px 20px 10px 40px;
-  background-color: var(--colorNews);
-  //   background-image: url(${magIcon});
-  //   background-size: 15px;
-  //   background-position: 15px 50%;
-  //   background-repeat: no-repeat;
+  background-color: var(--white);
+  background-image: url(../../../assets/icons/magnifier.svg);
+  background-size: 15px;
+  background-position: 15px 50%;
+  background-repeat: no-repeat;
   ::placeholder {
     letter-spacing: 0px;
   }
