@@ -6,6 +6,7 @@ const Input = (props) => {
     <input
       className={classes[props.className] || classes.input}
       placeholder={props.placeholder || 'login'}
+      type="text"
       //   onClick={props.onClick}
     />
   );
