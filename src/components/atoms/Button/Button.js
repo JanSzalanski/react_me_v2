@@ -14,4 +14,3 @@ const Button = (props) => {
 };
 
 export default Button;
-//const klasy = classes.button + props.className;

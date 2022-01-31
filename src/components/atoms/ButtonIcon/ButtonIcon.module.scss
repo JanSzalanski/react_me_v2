@@ -1,0 +1,21 @@
+@import '../../../scss/variables';
+
+.buttonicon {
+  width: 67px;
+  height: 67px;
+  border-radius: 20px;
+  background-color: var(--colorArticles);
+  background-image: url('../../../assets/icons/book.svg');
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 40%;
+  //   border: none;
+}
+
+.logout {
+  @extend .buttonicon;
+  background-image: url('../../../assets/icons/pen.svg');
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 40%;
+}

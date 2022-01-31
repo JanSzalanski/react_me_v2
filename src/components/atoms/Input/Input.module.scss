@@ -10,7 +10,7 @@
   border-radius: 15px;
   appearance: none;
   outline: none;
-  border: 2px solid var(--colorPeople);
+  border: 2px solid var(--colorGrey400);
   background-color: var(--colorGrey100);
   letter-spacing: 1px;
 
@@ -21,12 +21,12 @@
     font-size: var(--fontSizeXS);
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--colorGrey400);
+    color: var(--colorMainGrey);
   }
 
   &:focus {
     background-color: var(--white);
-    border: 2px solid var(--colorNews);
+    border: 2px solid var(--colorArticles);
   }
 }
 
