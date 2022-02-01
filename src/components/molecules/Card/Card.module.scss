@@ -1,0 +1,14 @@
+.wrapper {
+  padding: 17px 30px 10px;
+}
+
+.wrapperColor {
+  @extend .wrapper;
+  background-color: var(--colorArticles);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

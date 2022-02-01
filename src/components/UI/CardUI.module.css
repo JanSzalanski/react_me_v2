@@ -1,2 +1,2 @@
-.cardui{border-radius:12px;-webkit-box-shadow:0 2px 8px rgba(0,0,0,0.25);box-shadow:0 2px 8px rgba(0,0,0,0.25)}
+.cardui{min-height:380px;border-radius:12px;-webkit-box-shadow:0 10px 30px -10px rgba(0,0,0,0.1);box-shadow:0 10px 30px -10px rgba(0,0,0,0.1);overflow:hidden;position:relative}
 /*# sourceMappingURL=CardUI.module.css.map */

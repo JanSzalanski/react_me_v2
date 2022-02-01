@@ -13,7 +13,7 @@
   border-radius: 50px;
   // font-family: $font-main;
   font-weight: 600;
-  font-size: var(--fontSizeL);
+  font-size: var(--fontSizeS);
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
@@ -24,6 +24,6 @@
   @extend .button;
   width: var(--buttonWidthSec);
   height: var(--buttonHeightSec);
-  font-size: var(--fontSizeM);
+  font-size: var(--fontSizeXS);
   background-color: var(--color-light-grey);
 }
