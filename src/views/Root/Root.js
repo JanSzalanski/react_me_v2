@@ -3,7 +3,8 @@ import '../../scss/main.css';
 import Button from '../../components/atoms/Button/Button';
 import Input from '../../components/atoms/Input/Input';
 import ButtonIcon from '../../components/atoms/ButtonIcon/ButtonIcon';
-import Pargraph from '../../components/atoms/Heading/Paragraph';
+import Pargraph from '../../components/atoms/Paragraph/Paragraph';
+import Heading from '../../components/atoms/Heading/Heading';
 
 function Root() {
   return (
@@ -12,6 +13,8 @@ function Root() {
       <Button>My Button</Button>
       <Input className="search" placeholder="search" />
       <ButtonIcon />
+      <Heading>Nagłówek 1</Heading>
+
       <Pargraph>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non explicabo deleniti
         exercitationem culpa amet alias asperiores enim. Deserunt quae minima et, aperiam labore

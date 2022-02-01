@@ -1,6 +1,7 @@
 @import '../../../scss/variables';
 .paragraph {
   font-size: var(--fontSizeS);
-
   color: var(--white);
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
