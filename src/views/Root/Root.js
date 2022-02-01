@@ -5,6 +5,7 @@ import Input from '../../components/atoms/Input/Input';
 import ButtonIcon from '../../components/atoms/ButtonIcon/ButtonIcon';
 import Pargraph from '../../components/atoms/Paragraph/Paragraph';
 import Heading from '../../components/atoms/Heading/Heading';
+import Card from '../../components/molecules/Card/Card';
 
 function Root() {
   return (
@@ -20,6 +21,7 @@ function Root() {
         exercitationem culpa amet alias asperiores enim. Deserunt quae minima et, aperiam labore
         quaerat optio ipsa dignissimos molestias unde libero!
       </Pargraph>
+      <Card />
     </div>
   );
 }

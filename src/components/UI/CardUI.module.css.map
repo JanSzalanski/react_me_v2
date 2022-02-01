@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,AAAC,CACN,aAAa,CAAE,IAAI,CACnB,UAAU,CAAE,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,gBAAmB,CAC1C",
+    "sources": [
+        "CardUI.module.scss"
+    ],
+    "names": [],
+    "file": "CardUI.module.css"
+}
