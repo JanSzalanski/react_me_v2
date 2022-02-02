@@ -8,7 +8,7 @@ import Button from '../../atoms/Button/Button';
 const Card = (props) => {
   const widthFlex = classes.wrapper + ' flex';
   return (
-    <CardUI className={classes[props.className] || classes.card}>
+    <CardUI className="bck">
       <div className={classes.wrapperColor}>
         <Heading>Karta AAA</Heading>
         <Paragraph className="paragraphB">3 days</Paragraph>
