@@ -4,12 +4,15 @@
   width: 420px;
   min-height: 380px;
   clip-path: polygon(90% 0%, 100% 10%, 100% 100%, 10% 100%, 0% 90%, 0 0);
-  box-shadow: 0px 0px 0px 2px rgb(21, 21, 22);
   overflow: hidden;
   position: relative;
   border: 2px solid rgba(20, 20, 0, 0.8);
 }
 
 .bck {
-  background-color: powderblue;
+  width: 600px;
+}
+
+.wrapper {
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }

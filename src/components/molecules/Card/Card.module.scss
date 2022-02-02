@@ -12,3 +12,45 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.cardShape {
+  // margin-left: 10px;
+  width: 420px;
+  min-height: 380px;
+  clip-path: polygon(92% 0%, 100% 8%, 100% 100%, 8% 100%, 0% 92%, 0 0);
+  // overflow: hidden;
+  position: relative;
+  background-color: var(--colorMainGrey);
+  // border: 2px red solid;
+}
+
+.cardShapeA {
+  @extend .cardShape;
+  margin-left: 0px;
+  min-height: 382px;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  // background-color: green;
+  border: 20px solid rgb(0, 255, 221);
+}
+
+.cardShapeB {
+  @extend .cardShapeA;
+  width: 424px;
+  margin-left: 0px;
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  // background-color: red;
+  // border: 20px solid yellow;
+}
+
+.card {
+  margin: 25px;
+  width: 420px;
+  min-height: 380px;
+  // clip-path: polygon(90% 0%, 100% 10%, 100% 100%, 10% 100%, 0% 90%, 0 0);
+  filter: drop-shadow(-5px 10px 10px rgba(0, 255, 221, 0.13));
+  position: relative;
+}

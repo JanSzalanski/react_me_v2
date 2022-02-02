@@ -1,15 +1,20 @@
 import React from 'react';
 import classes from './Card.module.css';
-import CardUI from '../../UI/CardUI';
-import Heading from '../../atoms/Heading/Heading';
-import Paragraph from '../../atoms/Paragraph/Paragraph';
-import Button from '../../atoms/Button/Button';
+// import CardUI from '../../UI/CardUI';
+// import Heading from '../../atoms/Heading/Heading';
+// import Paragraph from '../../atoms/Paragraph/Paragraph';
+// import Button from '../../atoms/Button/Button';
 
 const Card = (props) => {
-  const widthFlex = classes.wrapper + ' flex';
+  // const widthFlex = classes.wrapper + ' flex';
+
   return (
-    <CardUI className="bck">
-      <div className={classes.wrapperColor}>
+    <div className={classes.card}>
+      <div className={classes.cardShapeB} />
+      <div className={classes.cardShapeA} />
+      <div className={classes.cardShape} />
+
+      {/* <div className={classes.wrapperColor}>
         <Heading>Karta AAA</Heading>
         <Paragraph className="paragraphB">3 days</Paragraph>
       </div>
@@ -20,8 +25,8 @@ const Card = (props) => {
           consectetur accusantium ex neque ipsam?{' '}
         </Paragraph>
         <Button className="secondary">Button</Button>
-      </div>
-    </CardUI>
+      </div> */}
+    </div>
   );
 };
 
