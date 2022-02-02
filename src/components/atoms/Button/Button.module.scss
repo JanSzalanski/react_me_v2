@@ -9,10 +9,11 @@
   background-color: var(--colorArticles);
   width: var(--buttonWidth);
   height: var(--buttonHeight);
+  clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
   border: none;
-  border-radius: 50px;
-  // font-family: $font-main;
-  font-weight: 600;
+
+  font-family: var(--font-headers);
+  // font-weight: 600;
   font-size: var(--fontSizeS);
   text-transform: uppercase;
   cursor: pointer;
@@ -21,9 +22,14 @@
 }
 
 .secondary {
+  margin-left: 5px;
+  padding-left: 10px;
   @extend .button;
   width: var(--buttonWidthSec);
   height: var(--buttonHeightSec);
-  font-size: var(--fontSizeXS);
+  font-size: 1.5rem;
+  color: var(--colorArticles);
   background-color: var(--color-light-grey);
+  border-left: 1px solid var(--colorArticles);
+  border-top: 1px solid var(--colorArticles);
 }

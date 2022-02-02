@@ -1,2 +1,2 @@
-.heading{display:block;font-size:var(--fontSizeL);font-weight:var(--bold);color:var(--black);margin-bottom:5px}
+.heading,.card{padding:10px;display:block;font-size:var(--fontSizeL);font-weight:var(--bold);color:var(--black);margin-bottom:5px;font-family:var(--font-headers);text-transform:uppercase}.card{margin-bottom:0;padding-bottom:0}
 /*# sourceMappingURL=Heading.module.css.map */

@@ -2,12 +2,27 @@
 .paragraph {
   font-size: var(--fontSizeS);
   color: var(--white);
-  padding-bottom: 20px;
+  padding: 15px;
 }
 
-.paragraphB {
+.card {
   @extend .paragraph;
-  font-size: var(--fontSizeXS);
-  font-weight: var(--bold);
-  color: var(--black);
+  border-top: 3px double var(--colorArticles);
+  background-color: rgba(24, 24, 24, 0.26);
+  border-bottom: 1px solid var(--colorArticles);
+}
+
+.cardDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 5px;
+  align-items: center;
+  @extend .paragraph;
+  padding: 0px;
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  font-family: var(--font-headers);
+  color: var(--colorMainGrey);
 }

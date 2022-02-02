@@ -9,20 +9,18 @@ import Card from '../../components/molecules/Card/Card';
 
 function Root() {
   return (
-    <div className="wrapper">
-      <h1>react_me v2</h1>
-      <Button>My Button</Button>
-      <Input className="search" placeholder="search" />
-      <ButtonIcon />
-      <Heading>Nagłówek 1</Heading>
-
-      <Pargraph>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non explicabo deleniti
-        exercitationem culpa amet alias asperiores enim. Deserunt quae minima et, aperiam labore
-        quaerat optio ipsa dignissimos molestias unde libero!
-      </Pargraph>
+    <>
+      <Button>Button</Button>
+      <Input className="search"></Input>
+      <ButtonIcon></ButtonIcon>
       <Card />
-    </div>
+      <Heading>Header 01 ello</Heading>
+      <Pargraph>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias
+        earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit
+        voluptatibus minus totam eos accusamus dolores adipisci!
+      </Pargraph>
+    </>
   );
 }
 
