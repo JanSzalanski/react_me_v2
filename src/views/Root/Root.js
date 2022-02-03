@@ -14,6 +14,7 @@ function Root() {
       <Input className="search"></Input>
       <ButtonIcon></ButtonIcon>
       <Card />
+      <Card cardType="normal" />
       <Heading>Header 01 ello</Heading>
       <Pargraph>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias

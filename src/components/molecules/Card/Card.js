@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './Card.module.css';
-
+import PropTypes from 'prop-types';
 import Heading from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
 
-const Card = (props) => {
+const Card = ({ cardType }) => {
   const widthFlex = classes.wrapper + ' flex';
 
   return (
@@ -24,19 +24,27 @@ const Card = (props) => {
         </div>
         <div className={widthFlex}>
           <Paragraph className="card">
-            <div className={classes.decorA} />
-            <div className={classes.decorB} />
-            <div className={classes.decorC} />
-            <div className={classes.decorData}>01\02\2022</div>
+            {cardType === 'news' && <div className={classes.decorA} />}
+            {cardType === 'news' && <div className={classes.decorB} />}
+            {cardType === 'news' && <div className={classes.decorC} />}
+            {cardType === 'news' && <div className={classes.decorData}>01\02\2022</div>}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci dolorem
             magni distinctio inventore qui odio aut illum corrupti, id expedita unde, error odit
             eaque consectetur accusantium ex neque ipsam?
           </Paragraph>
-          <Button className="secondary">Button</Button>
+          {cardType === 'news' && <Button className="secondary">Button</Button>}
         </div>
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  cardType: PropTypes.oneOf(['news', 'normal']),
+};
+
+Card.defaultProps = {
+  cardType: 'news',
 };
 
 export default Card;
