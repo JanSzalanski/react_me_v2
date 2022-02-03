@@ -19,14 +19,18 @@ const Card = (props) => {
         <div className={classes.wrapperColor}>
           <Heading className="card">Aktualne Rekordy</Heading>
           <Paragraph className="cardDate">
-            01\02 2022<span className={classes.code}>01\02 2022</span>
+            <div className={classes.code}></div>
           </Paragraph>
         </div>
         <div className={widthFlex}>
           <Paragraph className="card">
+            <div className={classes.decorA} />
+            <div className={classes.decorB} />
+            <div className={classes.decorC} />
+            <div className={classes.decorData}>01\02\2022</div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci dolorem
             magni distinctio inventore qui odio aut illum corrupti, id expedita unde, error odit
-            eaque consectetur accusantium ex neque ipsam?{' '}
+            eaque consectetur accusantium ex neque ipsam?
           </Paragraph>
           <Button className="secondary">Button</Button>
         </div>

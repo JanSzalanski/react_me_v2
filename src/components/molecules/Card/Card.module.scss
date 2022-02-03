@@ -28,6 +28,7 @@ $colorMainA: rgba(yellow, 0.15);
   background-color: var(--colorArticles);
   box-shadow: none;
   height: 70px;
+  border-bottom: 1px dashed var(--black);
 }
 
 .cardShape {
@@ -76,11 +77,51 @@ $colorMainA: rgba(yellow, 0.15);
 }
 
 .code {
-  height: 22px;
-  color: var(--colorMainGrey);
+  height: 100%;
   width: 100px;
-  display: block;
-  font-weight: 300;
-  font-size: 3rem;
-  font-family: var(--font-code);
+  background-image: url('../../../assets/icons/barcode1.svg');
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+}
+
+.decorA {
+  width: 200px;
+  height: 20px;
+  background-color: #2f2f2f;
+  position: absolute;
+  bottom: -19px;
+  right: 0;
+  border-bottom: 1px solid var(--colorArticles);
+  border-left: 2px solid var(--colorArticles);
+  transform: skew(45deg);
+}
+
+.decorB {
+  width: 20px;
+  height: 20px;
+  background-color: #2f2f2f;
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+  border: 5px solid var(--colorArticles);
+}
+
+.decorC {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  bottom: -18px;
+  right: 0px;
+  border-top: 20px solid #2f2f2f;
+  border-right: 21px solid transparent;
+}
+
+.decorData {
+  position: absolute;
+  bottom: -40px;
+  right: 0px;
+  font-family: var(--font-headers);
+  color: var(--colorArticles);
+  font-weight: 100;
+  font-size: 1.4rem;
 }
