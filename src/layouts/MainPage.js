@@ -1,13 +1,13 @@
 import React from 'react';
-import '../../scss/main.css';
-import Button from '../../components/atoms/Button/Button';
-import Input from '../../components/atoms/Input/Input';
-import ButtonIcon from '../../components/atoms/ButtonIcon/ButtonIcon';
-import Pargraph from '../../components/atoms/Paragraph/Paragraph';
-import Heading from '../../components/atoms/Heading/Heading';
-import Card from '../../components/molecules/Card/Card';
+// import classes from './MainPage.module.css';
+import Button from '../components/atoms/Button/Button';
+import Input from '../components/atoms/Input/Input';
+import ButtonIcon from '../components/atoms/ButtonIcon/ButtonIcon';
+import Pargraph from '../components/atoms/Paragraph/Paragraph';
+import Heading from '../components/atoms/Heading/Heading';
+import Card from '../components/molecules/Card/Card';
 
-function Root() {
+const MainTemplates = (props) => {
   return (
     <>
       <Button>Button</Button>
@@ -23,6 +23,6 @@ function Root() {
       </Pargraph>
     </>
   );
-}
+};
 
-export default Root;
+export default MainTemplates;

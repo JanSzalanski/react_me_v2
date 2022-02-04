@@ -17,7 +17,9 @@ const Card = ({ cardType }) => {
       </div>
       <div className={classes.wrapperInner}>
         <div className={classes.wrapperColor}>
-          <Heading className="card">Aktualne Rekordy</Heading>
+          <Heading className="card">{`${
+            cardType === 'news' ? 'Aktualne Rekordy ' : 'Rekord'
+          }`}</Heading>
           <Paragraph className="cardDate">
             <div className={classes.code}></div>
           </Paragraph>
