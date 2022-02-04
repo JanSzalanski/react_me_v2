@@ -1,13 +1,13 @@
 import React from 'react';
-// import classes from './MainPage.module.css';
-import Button from '../components/atoms/Button/Button';
-import Input from '../components/atoms/Input/Input';
-import ButtonIcon from '../components/atoms/ButtonIcon/ButtonIcon';
-import Pargraph from '../components/atoms/Paragraph/Paragraph';
-import Heading from '../components/atoms/Heading/Heading';
-import Card from '../components/molecules/Card/Card';
+// import classes from './News.module.css';
+import Button from '../../components/atoms/Button/Button';
+import Input from '../../components/atoms/Input/Input';
+import ButtonIcon from '../../components/atoms/ButtonIcon/ButtonIcon';
+import Pargraph from '../../components/atoms/Paragraph/Paragraph';
+import Heading from '../../components/atoms/Heading/Heading';
+import Card from '../../components/molecules/Card/Card';
 
-const MainTemplates = (props) => {
+const NewsPage = () => {
   return (
     <>
       <Button>Button</Button>
@@ -25,4 +25,4 @@ const MainTemplates = (props) => {
   );
 };
 
-export default MainTemplates;
+export default NewsPage;
