@@ -15,3 +15,20 @@ h1 {
 h2 {
   font-size: 2.8rem;
 }
+
+.centered {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centeredB {
+  margin: 3rem auto;
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

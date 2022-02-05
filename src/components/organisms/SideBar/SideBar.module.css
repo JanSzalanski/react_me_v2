@@ -1,2 +1,2 @@
-.sidebar{color:black}
+.sidebar{background-color:var(--colorGrey400);border-right:3px double var(--colorArticles);width:170px;position:fixed;height:100vh;left:0;top:0}
 /*# sourceMappingURL=SideBar.module.css.map */

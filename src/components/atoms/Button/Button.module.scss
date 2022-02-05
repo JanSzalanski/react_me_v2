@@ -5,19 +5,29 @@
   align-items: center;
   color: black;
   padding: 0;
-  background-color: var(--colorArticles);
+  background-color: var(--colorArticlesC);
   width: var(--buttonWidth);
   height: var(--buttonHeight);
   clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
+  border: 2px solid white;
   border: none;
-
   font-family: var(--font-headers);
-  // font-weight: 600;
   font-size: var(--fontSizeS);
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
   margin-bottom: 20px;
+  transition: color 0.15s ease-out, transform 0.2s ease-out;
+  border-left: 2px solid var(--colorArticles);
+  border-right: 2px solid var(--colorArticles);
+  border-bottom: 1px solid var(--colorArticles);
+  border-top: 2px solid var(--colorArticles);
+  backdrop-filter: blur(3px);
+
+  &:hover {
+    transform: translate(-2px, 3px);
+    color: var(--colorArticles);
+  }
 }
 
 .secondary {
@@ -32,3 +42,11 @@
   border-left: 1px solid var(--colorArticles);
   border-top: 1px solid var(--colorArticles);
 }
+
+// .shadow {
+//   filter: drop-shadow(-10px 8px 4px var(--colorArticlesA));
+//   transition: all 0.2s ease-out;
+//   &:hover {
+//     filter: drop-shadow(-4px 4px 2px var(--colorArticlesB));
+//   }
+// }

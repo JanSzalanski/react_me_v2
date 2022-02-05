@@ -1,4 +1,5 @@
 .paragraph {
+  text-align: left;
   font-size: var(--fontSizeS);
   color: var(--white);
   padding: 15px;
@@ -13,6 +14,8 @@
 }
 
 .cardDate {
+  text-align: left;
+  @extend .paragraph;
   height: 22px;
   display: flex;
   flex-direction: row;
@@ -21,7 +24,6 @@
   align-content: center;
   gap: 5px;
   align-items: center;
-  @extend .paragraph;
   padding: 0px;
   padding-left: 10px;
   font-weight: 300;
