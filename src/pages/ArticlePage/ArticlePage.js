@@ -1,10 +1,11 @@
 import React from 'react';
+import Heading from '../../components/atoms/Heading/Heading';
 // import classes from './ArticlePage.module.css';
 
 const ArticlePage = (props) => {
   return (
     <>
-      <h1>Strona z artykułami</h1>
+      <Heading>Strona z artykułami</Heading>
     </>
   );
 };

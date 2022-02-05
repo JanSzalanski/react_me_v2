@@ -1,10 +1,11 @@
 import React from 'react';
 // import classes from './ArticlePage.module.css';
+import Heading from '../../components/atoms/Heading/Heading';
 
 const NftPage = (props) => {
   return (
     <>
-      <h1>Strona z NFT</h1>
+      <Heading>Strona z NFT</Heading>
     </>
   );
 };
