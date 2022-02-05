@@ -16,6 +16,6 @@
   color: var(--black);
   transition: color 0.15s ease-out, transform 0.2s ease-out;
   &:hover {
-    color: aliceblue;
+    color: var(--colorArticles);
   }
 }
