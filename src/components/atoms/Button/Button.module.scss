@@ -1,18 +1,16 @@
 .button {
   margin: 10px;
+  padding-right: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   color: black;
-  padding: 0;
-  background-color: var(--colorArticlesC);
+  background-color: var(--colorArticlesB);
   width: var(--buttonWidth);
   height: var(--buttonHeight);
   clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
-  border: 2px solid white;
-  border: none;
   font-family: var(--font-headers);
-  font-size: var(--fontSizeS);
+  font-size: 1.4rem;
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
@@ -23,17 +21,15 @@
   border-bottom: 1px solid var(--colorArticles);
   border-top: 2px solid var(--colorArticles);
   backdrop-filter: blur(3px);
+  z-index: 1;
 
   &:hover {
     transform: translate(-2px, 3px);
     color: var(--colorArticles);
   }
 }
-.button:hover ~ .glow {
-  background-color: var(--colorArticlesC);
-  transform: translate(2px, -3px);
-  color: var(--colorArticles);
-  filter: blur(2px);
+.button:hover + .glow {
+  filter: drop-shadow(-3px 3px 2px var(--colorArticles));
 }
 
 .secondary {
@@ -56,14 +52,10 @@
 }
 
 .copy {
-  position: absolute;
-  left: 6px;
-  top: 3px;
   width: var(--buttonWidth);
   height: var(--buttonHeight);
-  // clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
+  clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
   background-color: var(--colorArticlesB);
-  filter: blur(5px);
   transition: all 0.2s ease-out;
 
   // &:hover {
@@ -75,7 +67,12 @@
 }
 
 .glow {
-  // filter: drop-shadow(-10px 8px 4px var(--colorArticlesA));
+  z-index: -1;
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  filter: drop-shadow(-8px 6px 4px var(--colorArticlesC));
+  transition: all 0.2s ease-out;
 }
 
 // .shadow {
