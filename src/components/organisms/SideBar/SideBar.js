@@ -4,7 +4,9 @@ import Menu from '../../molecules/Menu/Menu';
 
 const SideBar = (props) => {
   return (
-    <div className={classes.sidebar}>
+    <div className={classes.wrapper}>
+      <div className={classes.background}></div>
+      <div className={classes.sidebar}></div>
       <Menu />
     </div>
   );
