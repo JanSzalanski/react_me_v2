@@ -1,10 +1,12 @@
+@import '../../../scss/animations';
 .button {
   margin: 10px;
   padding-right: 10px;
   display: flex;
   justify-content: right;
   align-items: center;
-  color: black;
+  color: var(--colorArticles);
+  text-shadow: -3px 4px 3px rgba(43, 41, 35, 0.521);
   background-color: var(--colorArticlesB);
   width: var(--buttonWidth);
   height: var(--buttonHeight);
@@ -19,13 +21,15 @@
   border-left: 2px solid var(--colorArticles);
   border-right: 2px solid var(--colorArticles);
   border-bottom: 1px solid var(--colorArticles);
-  border-top: 2px solid var(--colorArticles);
+  border-top: 1px solid var(--colorArticles);
   backdrop-filter: blur(3px);
   z-index: 1;
 
   &:hover {
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-name: btnBlink;
     transform: translate(-2px, 3px);
-    color: var(--colorArticles);
   }
 }
 .button:hover + .glow {
@@ -57,13 +61,6 @@
   clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
   background-color: var(--colorArticlesB);
   transition: all 0.2s ease-out;
-
-  // &:hover {
-  //   background-color: var(--colorArticlesC);
-  //   transform: translate(2px, -3px);
-  //   color: var(--colorArticles);
-  //   filter: blur(2px);
-  // }
 }
 
 .glow {
@@ -75,10 +72,40 @@
   transition: all 0.2s ease-out;
 }
 
-// .shadow {
-//   filter: drop-shadow(-10px 8px 4px var(--colorArticlesA));
-//   transition: all 0.2s ease-out;
-//   &:hover {
-//     filter: drop-shadow(-4px 4px 2px var(--colorArticlesB));
+// @keyframes btnBlink {
+//   0% {
+//     color: var(--colorArticles);
+//   }
+
+//   15% {
+//     color: var(--white);
+//   }
+
+//   25% {
+//     color: var(--white);
+//   }
+
+//   35% {
+//     color: var(--colorArticles);
+//   }
+
+//   45% {
+//     color: var(--colorArticles);
+//   }
+
+//   55% {
+//     color: var(--white);
+//   }
+
+//   65% {
+//     color: var(--white);
+//   }
+
+//   75% {
+//     color: var(--colorArticles);
+//   }
+
+//   100% {
+//     color: var(--colorArticles);
 //   }
 // }

@@ -1,0 +1,52 @@
+@keyframes btnBlink {
+  0% {
+    color: var(--colorArticles);
+    border-right: 2px solid var(--colorArticles);
+  }
+  10% {
+    border-right: 2px solid var(--white);
+  }
+
+  15% {
+    color: var(--white);
+  }
+
+  25% {
+    color: var(--white);
+  }
+  30% {
+    border-right: 2px solid var(--white);
+  }
+
+  35% {
+    color: var(--colorArticles);
+    border-right: 2px solid var(--colorArticles);
+    border-bottom: 2px solid var(--colorArticles);
+    // border-bottom: 1px solid var(--white);
+  }
+
+  45% {
+    border-bottom: 2px solid var(--white);
+    color: var(--colorArticles);
+  }
+
+  55% {
+    color: var(--white);
+  }
+
+  65% {
+    border-bottom: 2px solid var(--white);
+    color: var(--white);
+  }
+
+  75% {
+    border-bottom: 2px solid var(--colorArticles);
+    color: var(--colorArticles);
+  }
+  95% {
+  }
+
+  100% {
+    color: var(--colorArticles);
+  }
+}
