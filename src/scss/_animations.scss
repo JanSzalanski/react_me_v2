@@ -3,47 +3,64 @@
     color: var(--colorArticles);
     border-right: 2px solid var(--colorArticles);
   }
-  10% {
+  5% {
     border-right: 2px solid var(--white);
   }
-
   15% {
     color: var(--white);
   }
 
   25% {
+    border-right: 2px solid var(--white);
     color: var(--white);
   }
   30% {
-    border-right: 2px solid var(--white);
+    border-right: 2px solid var(--colorArticles);
   }
 
   35% {
     color: var(--colorArticles);
-    border-right: 2px solid var(--colorArticles);
     border-bottom: 2px solid var(--colorArticles);
-    // border-bottom: 1px solid var(--white);
+  }
+  40% {
+    border-bottom: 2px solid var(--white);
   }
 
   45% {
-    border-bottom: 2px solid var(--white);
     color: var(--colorArticles);
   }
 
   55% {
     color: var(--white);
   }
+  60% {
+    border-bottom: 2px solid var(--colorArticles);
+  }
 
   65% {
-    border-bottom: 2px solid var(--white);
+    border-left: 2px solid var(--colorArticles);
     color: var(--white);
+  }
+  70% {
+    border-left: 2px solid var(--white);
   }
 
   75% {
-    border-bottom: 2px solid var(--colorArticles);
     color: var(--colorArticles);
   }
-  95% {
+  80% {
+    border-top: 1px solid var(--colorArticles);
+  }
+  85% {
+    border-top: 1px solid var(--white);
+    border-left: 2px solid var(--white);
+  }
+  90% {
+    border-top: 1px solid var(--white);
+    border-left: 2px solid var(--colorArticles);
+  }
+  99% {
+    border-top: 1px solid var(--colorArticles);
   }
 
   100% {

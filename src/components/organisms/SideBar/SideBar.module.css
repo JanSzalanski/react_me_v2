@@ -1,2 +1,2 @@
-.sidebar{background-color:var(--colorGrey400);border-right:3px double var(--colorArticles);width:170px;position:fixed;height:100vh;left:0;top:0}
+.sidebar{background-image:url("../../../assets/icons/palster.svg");background-repeat:repeat;background-position:35%, 40%;background-size:33.2%;background-color:var(--colorGrey400);border-right:2px solid #272727;width:170px;position:fixed;height:100vh;left:0;top:0}
 /*# sourceMappingURL=SideBar.module.css.map */

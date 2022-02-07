@@ -1,9 +1,19 @@
 .sidebar {
+  background-image: url('../../../assets/icons/palster.svg');
+  // background: blue linear-gradient(red, blue);
+  background-repeat: repeat;
+  background-position: 35%, 40%;
+  background-size: 33.2%;
   background-color: var(--colorGrey400);
-  border-right: 3px double var(--colorArticles);
+  border-right: 2px solid #272727;
   width: 170px;
   position: fixed;
   height: 100vh;
   left: 0;
   top: 0;
+  // mask: url('../../../assets/icons/maska.svg');
+  // -webkit-mask-position: center;
+  // -webkit-mask-repeat: repeat;
+  // -webkit-mask-size: 33.2%;
+  // -webkit-mask-mode: alpha;
 }

@@ -5,7 +5,7 @@ const Input = (props) => {
   return (
     <input
       className={classes[props.className] || classes.input}
-      placeholder={props.placeholder || 'login'}
+      placeholder={props.placeholder || 'search'}
       type="text"
       //   onClick={props.onClick}
     />
