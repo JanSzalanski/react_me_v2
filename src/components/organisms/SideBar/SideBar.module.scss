@@ -1,3 +1,5 @@
+@import '../../../scss/animations';
+
 .sidebar {
   position: fixed;
   width: 170px;
@@ -5,13 +7,10 @@
   left: 0;
   top: 0;
   z-index: -1;
-
-  // border-right: 2px solid #272727;
   background-image: url('../../../assets/icons/palster.svg');
   background-repeat: repeat;
   background-position: 32.2%, 32.2%;
   background-size: 32.2%;
-
   mask-image: url('../../../assets/icons/maska.svg');
   mask-repeat: repeat;
   mask-position: 32.2%, 32.2%;
@@ -47,8 +46,12 @@
   width: 185px;
   background: radial-gradient(
     closest-side,
-    rgb(255, 250, 205),
+    rgb(255, 244, 214),
     var(--colorArticles),
     var(--colorMainGrey)
   );
+
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-name: glowMovment;
 }
