@@ -5,7 +5,7 @@ import SideBar from '../../components/organisms/SideBar/SideBar';
 const MainLayout = (props) => {
   return (
     <>
-      <SideBar></SideBar>
+      <SideBar />
       <main>{props.children}</main>
     </>
   );
