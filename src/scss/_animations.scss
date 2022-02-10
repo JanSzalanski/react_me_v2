@@ -68,6 +68,76 @@
   }
 }
 
+@keyframes btnBlinkB {
+  0% {
+    color: var(--colorArticles);
+    border-right: 1px solid var(--colorArticles);
+  }
+  5% {
+    border-right: 1px solid var(--white);
+  }
+  15% {
+    color: var(--white);
+  }
+
+  25% {
+    border-right: 1px solid var(--white);
+    color: var(--white);
+  }
+  30% {
+    border-right: 1px solid var(--colorArticles);
+  }
+
+  35% {
+    color: var(--colorArticles);
+    border-bottom: 1px solid var(--colorArticles);
+  }
+  40% {
+    border-bottom: 1px solid var(--white);
+  }
+
+  45% {
+    color: var(--colorArticles);
+  }
+
+  55% {
+    color: var(--white);
+  }
+  60% {
+    border-bottom: 1px solid var(--colorArticles);
+  }
+
+  65% {
+    border-left: 1px solid var(--colorArticles);
+    color: var(--white);
+  }
+  70% {
+    border-left: 1px solid var(--white);
+  }
+
+  75% {
+    color: var(--colorArticles);
+  }
+  80% {
+    border-top: 1px solid var(--colorArticles);
+  }
+  85% {
+    border-top: 1px solid var(--white);
+    border-left: 1px solid var(--white);
+  }
+  90% {
+    border-top: 1px solid var(--white);
+    border-left: 1px solid var(--colorArticles);
+  }
+  99% {
+    border-top: 1px solid var(--colorArticles);
+  }
+
+  100% {
+    color: var(--colorArticles);
+  }
+}
+
 @keyframes glowMovment {
   0% {
     transform: translate(0px, 0px);

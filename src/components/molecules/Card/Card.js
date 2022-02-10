@@ -32,7 +32,7 @@ const Card = ({ cardType, date, title, content }) => {
             <Paragraph className="card">{content}</Paragraph>
             {/*pamiętaj ta klasa "card" jest w klasach dla Paragraph!*/}
           </div>
-          {cardType === 'news' && <Button className="secondary">Button</Button>}
+          {cardType === 'news' && <Button type="secondary">Button</Button>}
         </div>
       </div>
     </div>

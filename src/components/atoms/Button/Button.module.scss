@@ -47,8 +47,14 @@
   background-color: var(--color-light-grey);
   border-left: 1px solid var(--colorArticles);
   border-right: 1px solid var(--colorArticles);
-  border-top: 1px solid var(--colorArticles);
   backdrop-filter: none;
+
+  &:hover {
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-name: btnBlinkB;
+    transform: translate(0px, 0px);
+  }
 }
 
 .buttonWrapper {
