@@ -22,11 +22,20 @@ $colorMainA: rgba(yellow, 0.15);
 .wrapperColor {
   @extend .wrapper;
   display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+
+  align-content: flex-start;
+  // gap: 5px;
+  align-items: flex-start;
   margin-bottom: 10px;
   background-color: var(--colorArticles);
   box-shadow: none;
   height: 70px;
   border-bottom: 1px dashed var(--black);
+  border-top: 1px dashed var(--black);
 }
 
 .cardShape {
@@ -74,9 +83,24 @@ $colorMainA: rgba(yellow, 0.15);
   position: relative;
 }
 
+.paragraphWrapper {
+  position: relative;
+  background-color: rgba(24, 24, 24, 0.26);
+  border-top: 3px double var(--colorArticles);
+  border-bottom: 1px solid var(--colorArticles);
+}
+
+.title {
+  text-align: left;
+  color: var(--white);
+  font-size: 2rem;
+  padding: 15px;
+  padding-bottom: 0;
+}
+
 .code {
-  height: 100%;
-  width: 100px;
+  height: 45%;
+  width: 25%;
   background-image: url('../../../assets/icons/barcode1.svg');
   background-repeat: no-repeat;
   background-position: 50%, 50%;
@@ -108,7 +132,7 @@ $colorMainA: rgba(yellow, 0.15);
   width: 0px;
   height: 0px;
   position: absolute;
-  bottom: -18px;
+  bottom: -17px;
   right: 0px;
   border-top: 20px solid #2f2f2f;
   border-right: 21px solid transparent;

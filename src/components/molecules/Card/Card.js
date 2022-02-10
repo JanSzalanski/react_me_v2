@@ -20,17 +20,18 @@ const Card = ({ cardType, date, title, content }) => {
           <Heading className="card">{`${
             cardType === 'news' ? 'Aktualne Rekordy ' : 'Rekord'
           }`}</Heading>
-          <Paragraph className="cardDate">
-            <div className={classes.code}></div>
-          </Paragraph>
+          <div className={classes.code}></div>
         </div>
         <div className={widthFlex}>
-          <h2 className={classes.title}>{title}</h2>
-          {cardType === 'news' && <div className={classes.decorA} />}
-          {cardType === 'news' && <div className={classes.decorB} />}
-          {cardType === 'news' && <div className={classes.decorC} />}
-          {cardType === 'news' && <div className={classes.decorData}>{date}</div>}
-          <Paragraph className="card">{content}</Paragraph>
+          <div className={classes.paragraphWrapper}>
+            <h2 className={classes.title}>{title}</h2>
+            {cardType === 'news' && <div className={classes.decorA} />}
+            {cardType === 'news' && <div className={classes.decorB} />}
+            {cardType === 'news' && <div className={classes.decorC} />}
+            {cardType === 'news' && <div className={classes.decorData}>{date}</div>}
+            <Paragraph className="card">{content}</Paragraph>
+            {/*pamiętaj ta klasa "card" jest w klasach dla Paragraph!*/}
+          </div>
           {cardType === 'news' && <Button className="secondary">Button</Button>}
         </div>
       </div>
@@ -41,7 +42,7 @@ const Card = ({ cardType, date, title, content }) => {
 Card.propTypes = {
   cardType: PropTypes.oneOf(['news', 'normal']),
   title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
+  date: PropTypes.string,
   content: PropTypes.string.isRequired,
 };
 
