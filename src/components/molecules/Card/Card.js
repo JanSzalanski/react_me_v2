@@ -5,7 +5,7 @@ import Heading from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
 
-const Card = ({ cardType }) => {
+const Card = ({ cardType, date, title, content }) => {
   const widthFlex = classes.wrapper + ' flex';
 
   return (
@@ -25,15 +25,12 @@ const Card = ({ cardType }) => {
           </Paragraph>
         </div>
         <div className={widthFlex}>
-          <Paragraph className="card">
-            {cardType === 'news' && <div className={classes.decorA} />}
-            {cardType === 'news' && <div className={classes.decorB} />}
-            {cardType === 'news' && <div className={classes.decorC} />}
-            {cardType === 'news' && <div className={classes.decorData}>01\02\2022</div>}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci dolorem
-            magni distinctio inventore qui odio aut illum corrupti, id expedita unde, error odit
-            eaque consectetur accusantium ex neque ipsam?
-          </Paragraph>
+          <h2 className={classes.title}>{title}</h2>
+          {cardType === 'news' && <div className={classes.decorA} />}
+          {cardType === 'news' && <div className={classes.decorB} />}
+          {cardType === 'news' && <div className={classes.decorC} />}
+          {cardType === 'news' && <div className={classes.decorData}>{date}</div>}
+          <Paragraph className="card">{content}</Paragraph>
           {cardType === 'news' && <Button className="secondary">Button</Button>}
         </div>
       </div>
@@ -43,6 +40,9 @@ const Card = ({ cardType }) => {
 
 Card.propTypes = {
   cardType: PropTypes.oneOf(['news', 'normal']),
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 Card.defaultProps = {
