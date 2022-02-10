@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "DetailsLayout.module.scss"
+    ],
+    "names": [],
+    "file": "DetailsLayout.module.css"
+}

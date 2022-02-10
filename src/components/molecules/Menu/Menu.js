@@ -19,7 +19,7 @@ const Menu = () => {
         </li>
         <li className={classes.li}>
           <NavLink activeClassName={classes.active} className={classes.navLink} to="/people">
-            <Button>ludzie</Button>
+            <Button>Ludzie</Button>
           </NavLink>
         </li>
         <li className={classes.li}>
