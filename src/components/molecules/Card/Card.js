@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 import Heading from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
+import { Link } from 'react-router-dom';
 
-const Card = ({ cardType, date, title, content }) => {
+const Card = ({ cardType, date, title, content, path }) => {
   const widthFlex = classes.wrapper + ' flex';
 
   return (
@@ -32,7 +33,11 @@ const Card = ({ cardType, date, title, content }) => {
             <Paragraph className="card">{content}</Paragraph>
             {/*pamiętaj ta klasa "card" jest w klasach dla Paragraph!*/}
           </div>
-          {cardType === 'news' && <Button type="secondary">Button</Button>}
+          {cardType === 'news' && (
+            <Link className="routeLink" to={`/news/${path}`}>
+              <Button type="secondary">Button</Button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
@@ -42,8 +47,9 @@ const Card = ({ cardType, date, title, content }) => {
 Card.propTypes = {
   cardType: PropTypes.oneOf(['news', 'normal']),
   title: PropTypes.string.isRequired,
-  date: PropTypes.string,
   content: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
+  date: PropTypes.string,
 };
 
 Card.defaultProps = {
