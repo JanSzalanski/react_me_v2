@@ -7,6 +7,7 @@ import ArticlePage from './pages/ArticlePage/ArticlePage';
 import PeoplePage from './pages/PeoplePage/PeoplePage';
 import NftPage from './pages/NftPage/NftPage';
 import NotFound from './pages/404/NotFound';
+import DetailsPage from './pages/DetailsPage/DetailsPage';
 
 function App() {
   return (
@@ -15,10 +16,12 @@ function App() {
         <Route exact path="/">
           <Redirect to="/news"></Redirect>
         </Route>
+        <Route path="/news/:newsId" component={DetailsPage} />
         <Route path="/news" component={NewsPage} />
         <Route path="/articles" component={ArticlePage} />
         <Route path="/people" component={PeoplePage} />
         <Route path="/nft" component={NftPage} />
+
         <Route path="*" component={NotFound} />
       </Switch>
     </MainLayout>
