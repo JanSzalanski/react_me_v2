@@ -35,7 +35,7 @@ const Card = ({ cardType, date, title, content, path }) => {
           </div>
           {cardType === 'news' && (
             <Link className="routeLink" to={`/news/${path}`}>
-              <Button type="secondary">Button</Button>
+              <Button type="secondary">Detale</Button>
             </Link>
           )}
         </div>

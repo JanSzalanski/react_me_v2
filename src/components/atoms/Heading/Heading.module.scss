@@ -22,3 +22,9 @@
   font-size: 2rem;
   height: 45%;
 }
+
+.detailPage {
+  @extend .heading;
+  letter-spacing: 1px;
+  color: white;
+}

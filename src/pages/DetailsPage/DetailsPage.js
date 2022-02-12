@@ -11,7 +11,7 @@ const DetailsPage = (props) => {
   return (
     <>
       <div className={classes[props.type] || classes.news}>
-        <Heading>News</Heading>
+        <Heading className="detailPage">News</Heading>
 
         <Pargraph>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores maxime eius itaque.
