@@ -1,20 +1,44 @@
+.wrapperAll {
+  position: relative;
+  width: calc(var(--inputWidth) + 24px);
+  height: calc(var(--inputHeight) + 4px);
+
+  // border: 1px solid whitesmoke;
+}
+
+.backWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: calc(var(--inputHeight) + 2px);
+  width: calc(var(--inputWidth) + 22px);
+  background-color: var(--colorArticles);
+  clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+}
+
 .input {
-  margin-left: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: var(--inputHeight);
+  min-width: var(--inputWidth);
+  width: calc(var(--inputWidth) + 20px);
   padding: 15px 30px;
   font-size: var(--fontSizeM);
-  // font-weight: var(--bold);
-  min-width: 200px;
-  width: 220px;
+  clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
   border: none;
-  border-radius: 15px;
   appearance: none;
   outline: none;
-  border: 2px solid var(--black);
   background-color: var(--colorGrey100);
   letter-spacing: 1px;
-  margin-bottom: 20px;
-
-  // transition: transform 0.35s ease-in-out;
 
   &::placeholder {
     font-weight: var(--bold);
@@ -26,7 +50,6 @@
 
   &:focus {
     background-color: var(--white);
-    border: 2px solid var(--colorArticles);
   }
 }
 
