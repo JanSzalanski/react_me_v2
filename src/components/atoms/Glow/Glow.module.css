@@ -1,0 +1,2 @@
+.glow,.glowA,.glowB,.glowC{position:absolute;top:100px;left:-15px;z-index:-1;height:70px;width:185px;background:radial-gradient(closest-side, #fff4d6, var(--colorArticles), var(--colorMainGrey));-webkit-transition:all 1s ease-out;transition:all 1s ease-out}.glowA{top:170px}.glowB{top:180px}.glowC{top:270px}
+/*# sourceMappingURL=Glow.module.css.map */
