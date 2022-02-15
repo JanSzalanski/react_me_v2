@@ -9,9 +9,9 @@ const SideBar = ({ pageType }) => {
     <div className={classes.wrapper}>
       <div className={classes.background}></div>
       {pageType === 'news' && <Glow />}
-      {pageType === 'article' && <Glow style={{ top: '170px' }} />}
-      {pageType === 'people' && <Glow />}
-      {pageType === 'nft' && <Glow />}
+      {pageType === 'article' && <Glow type="glowA" />}
+      {pageType === 'people' && <Glow type="glowB" />}
+      {pageType === 'nft' && <Glow type="glowC" />}
       <div className={classes.sidebar}></div>
       <Menu />
     </div>
