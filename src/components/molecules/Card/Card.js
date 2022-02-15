@@ -48,7 +48,7 @@ Card.propTypes = {
   cardType: PropTypes.oneOf(['news', 'normal']),
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  path: PropTypes.string.isRequired,
+  path: PropTypes.string,
   date: PropTypes.string,
 };
 

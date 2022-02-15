@@ -50,10 +50,10 @@
     var(--colorArticles),
     var(--colorMainGrey)
   );
-  transform: top 0.5s ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-name: glowMovment;
+  transition: all 1s ease-out;
+  // animation-iteration-count: infinite;
+  // animation-duration: 6s;
+  // animation-name: glowMovment;
 }
 
 .glowA {

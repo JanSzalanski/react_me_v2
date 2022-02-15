@@ -11,20 +11,37 @@ import DetailsPage from './pages/DetailsPage/DetailsPage';
 
 function App() {
   return (
-    <MainLayout>
-      <Switch>
-        <Route exact path="/">
-          <Redirect to="/news"></Redirect>
-        </Route>
-        <Route path="/news/:newsId" component={DetailsPage} />
-        <Route path="/news" component={NewsPage} />
-        <Route path="/articles" component={ArticlePage} />
-        <Route path="/people" component={PeoplePage} />
-        <Route path="/nft" component={NftPage} />
-
-        <Route path="*" component={NotFound} />
-      </Switch>
-    </MainLayout>
+    <Switch>
+      <Route exact path="/">
+        <Redirect to="/news"></Redirect>
+      </Route>
+      <Route path="/news/:newsId" component>
+        <MainLayout pageType="news">
+          <DetailsPage />
+        </MainLayout>
+      </Route>
+      <Route path="/news">
+        <MainLayout pageType="news">
+          <NewsPage />
+        </MainLayout>
+      </Route>
+      <Route path="/articles">
+        <MainLayout pageType="article">
+          <ArticlePage />
+        </MainLayout>
+      </Route>
+      <Route path="/people">
+        <MainLayout pageType="people">
+          <PeoplePage />
+        </MainLayout>
+      </Route>
+      <Route path="/nft">
+        <MainLayout pageType="nft">
+          <NftPage />
+        </MainLayout>
+      </Route>
+      <Route path="*" component={NotFound} />
+    </Switch>
   );
 }
 
