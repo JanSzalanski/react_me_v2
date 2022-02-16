@@ -1,8 +1,9 @@
 import React from 'react';
-import classes from './Glow.module.css';
+import './Glow.css';
 
 const Glow = (props) => {
-  return <div className={classes[props.type] || classes.glow}></div>;
+  const cssClasses = ['glow', props.class];
+  return <div className={cssClasses.join(' ')}></div>;
 };
 
 export default Glow;
