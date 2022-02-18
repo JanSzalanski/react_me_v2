@@ -43,7 +43,9 @@ const SideBar = (props) => {
   return (
     <div className="wrapper">
       <div className="background"></div>
-      <div className={classesGlow.join(' ')} />
+      <div className="glowWrapper">
+        <div className={classesGlow.join(' ')} />
+      </div>
       <div className="sidebar"></div>
       <Menu
         newsPointer={newsHandler}

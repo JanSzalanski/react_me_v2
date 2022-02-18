@@ -150,18 +150,9 @@
   }
 
   75% {
-    transform: translate(10px, 4px);
+    transform: translate(5px, 4px);
   }
   100% {
     transform: translate(0px, 0px);
-  }
-}
-
-@keyframes moveGlow {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(50px);
   }
 }
