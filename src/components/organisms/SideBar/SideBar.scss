@@ -6,7 +6,7 @@
   height: 100vh;
   left: 0;
   top: 0;
-  z-index: -1;
+  // z-index: 1;
   background-image: url('../../../assets/icons/palster.svg');
   background-repeat: repeat;
   background-position: 32.2%, 32.2%;
@@ -23,7 +23,7 @@
   height: 100vh;
   left: 0;
   top: 0;
-  z-index: -1;
+  // z-index: -1;
 
   // background: rgb(0, 0, 0);
   background: var(--colorMainGrey);
@@ -41,7 +41,6 @@
   position: absolute;
   top: 100px;
   left: -15px;
-  z-index: -1;
   height: 70px;
   width: 185px;
   background: radial-gradient(
@@ -50,23 +49,23 @@
     var(--colorArticles),
     var(--colorMainGrey)
   );
-  transition: all 1s ease-out;
-  // animation-iteration-count: infinite;
-  // animation-duration: 6s;
-  // animation-name: glowMovment;
+  transition: all 0.4s ease-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-name: glowMovment;
 }
 
-.glowA {
-  @extend .glow;
-  top: 170px;
+.animeA {
+  top: 100px;
+}
+.animeB {
+  top: 155px;
 }
 
-.glowB {
-  @extend .glow;
-  top: 220px;
+.animeC {
+  top: 215px;
 }
 
-.glowC {
-  @extend .glow;
-  top: 290px;
+.animeD {
+  top: 280px;
 }

@@ -1,29 +1,58 @@
-import React from 'react';
-import classes from './SideBar.module.css';
+import React, { useState } from 'react';
+import './SideBar.css';
 import Menu from '../../molecules/Menu/Menu';
-import Glow from '../../atoms/Glow/Glow';
-import PropTypes from 'prop-types';
 
-const SideBar = ({ pageType }) => {
+const SideBar = (props) => {
+  const [animeA, setAnimeA] = useState(false);
+  const [animeB, setAnimeB] = useState(false);
+  const [animeC, setAnimeC] = useState(false);
+  const [animeD, setAnimeD] = useState(false);
+
+  const classesGlow = [
+    'glow',
+    animeA ? 'animeA' : null,
+    animeB ? 'animeB' : null,
+    animeC ? 'animeC' : null,
+    animeD ? 'animeD' : null,
+  ];
+
+  const newsHandler = () => {
+    setAnimeA(true);
+    setAnimeB(false);
+    setAnimeC(false);
+    setAnimeD(false);
+  };
+  const articleHandler = () => {
+    setAnimeA(false);
+    setAnimeB(true);
+    setAnimeC(false);
+    setAnimeD(false);
+  };
+  const peopleHandler = () => {
+    setAnimeA(false);
+    setAnimeB(false);
+    setAnimeC(true);
+    setAnimeD(false);
+  };
+  const nftHandler = () => {
+    setAnimeA(false);
+    setAnimeB(false);
+    setAnimeC(false);
+    setAnimeD(true);
+  };
   return (
-    <div className={classes.wrapper}>
-      <div className={classes.background}></div>
-      {pageType === 'news' && <Glow />}
-      {pageType === 'article' && <Glow class="glowA" />}
-      {pageType === 'people' && <Glow class="glowB" />}
-      {pageType === 'nft' && <Glow class="glowC" />}
-      <div className={classes.sidebar}></div>
-      <Menu />
+    <div className="wrapper">
+      <div className="background"></div>
+      <div className={classesGlow.join(' ')} />
+      <div className="sidebar"></div>
+      <Menu
+        newsPointer={newsHandler}
+        articlePointer={articleHandler}
+        peoplePointer={peopleHandler}
+        nftPointer={nftHandler}
+      />
     </div>
   );
-};
-
-SideBar.propTypes = {
-  pageType: PropTypes.oneOf(['news', 'article', 'people', 'nft']),
-};
-
-SideBar.defaultProps = {
-  pageType: 'news',
 };
 
 export default SideBar;
