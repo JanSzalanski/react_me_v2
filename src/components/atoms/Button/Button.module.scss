@@ -33,7 +33,7 @@
   }
 }
 .button:hover + .glow {
-  filter: drop-shadow(-3px 3px 2px var(--colorArticles));
+  filter: drop-shadow(-3px 3px 2px var(--white));
 }
 
 .secondary {
@@ -75,7 +75,7 @@
   position: absolute;
   left: 6px;
   top: 3px;
-  filter: drop-shadow(-8px 6px 4px var(--colorArticlesC));
+  filter: drop-shadow(-6px 6px 2px rgb(255, 246, 126));
   transition: all 0.25s ease-out;
 }
 

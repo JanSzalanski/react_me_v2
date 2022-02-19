@@ -29,6 +29,17 @@
   background: var(--colorMainGrey);
 }
 
+.borderMenu {
+  position: absolute;
+  top: 100px;
+  left: 5px;
+  width: 250px;
+  height: 270px;
+  border: 2px solid var(--colorArticles);
+  clip-path: polygon(0% 0%, 95% 0, 100% 5%, 100% 95%, 95% 100%, 45% 100%, 40% 95%, 5% 95%, 0 90%);
+  background-color: var(--colorArticlesB);
+}
+
 .wrapper {
   position: fixed;
   width: 170px;

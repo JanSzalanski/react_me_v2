@@ -10,14 +10,11 @@
 }
 
 .navLink {
+  // coś zmienia tylko dlaczego ?
+
   text-decoration: none;
 }
 
 .active {
-  text-decoration: underline;
-  color: var(--colorArticles);
-  transition: color 0.15s ease-out, transform 0.2s ease-out;
-  &:hover {
-    color: var(--colorArticles);
-  }
+  text-decoration: none;
 }
