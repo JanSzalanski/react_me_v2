@@ -42,13 +42,19 @@ const SideBar = (props) => {
   };
   return (
     <div className="wrapper">
-      <div className="background"></div>
+      {/* <div className="background"></div> */}
       <div className="glowWrapper">
         <div className={classesGlow.join(' ')} />
       </div>
       <div className="sidebar"></div>
       <div className="borderMenuWrapper">
-        <div className="backgroundMenu"></div>
+        <div className="topLine" />
+        <div className="rightLine" />
+        <div className="underLine" />
+        <div className="backgroundMenu">
+          <div className="scanline" />
+        </div>
+
         <div className="cornerTopRight" />
         <div className="cornerBottomRight" />
         <div className="cornerMiddle" />

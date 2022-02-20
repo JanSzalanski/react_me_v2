@@ -16,24 +16,24 @@ function App() {
         <Redirect to="/news"></Redirect>
       </Route>
       <Route path="/news/:newsId">
-        <SideBar />
         <DetailsPage />
+        <SideBar />
       </Route>
       <Route path="/news">
-        <SideBar />
         <NewsPage />
+        <SideBar />
       </Route>
       <Route path="/articles">
-        <SideBar />
         <ArticlePage />
+        <SideBar />
       </Route>
       <Route path="/people">
-        <SideBar />
         <PeoplePage />
+        <SideBar />
       </Route>
       <Route path="/nft">
-        <SideBar />
         <NftPage />
+        <SideBar />
       </Route>
       <Route path="*" component={NotFound} />
     </Switch>
