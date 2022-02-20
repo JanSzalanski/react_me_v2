@@ -97,8 +97,42 @@
   // outline: 2px solid var(--colorArticles);
   // outline-offset: 2px;
 }
+.backgroundMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 280px;
+  clip-path: polygon(0% 0%, 92% 0, 100% 5%, 100% 95%, 92% 100%, 48% 100%, 40% 95%, 8% 95%, 0 90%);
+  overflow: hidden;
+}
 
-.borderMenuCorners {
+.backgroundMenu::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(24, 0, 0, 0) 50%, var(--colorArticlesB) 50%);
+  background-size: 100% 4px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.titleMenu {
+  display: box;
+  position: absolute;
+  right: 18px;
+  bottom: 2px;
+  font-size: 1.2rem;
+  // text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-pixel);
+  color: var(--colorArticles);
 }
 
 .wrapper {

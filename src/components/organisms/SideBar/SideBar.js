@@ -48,12 +48,14 @@ const SideBar = (props) => {
       </div>
       <div className="sidebar"></div>
       <div className="borderMenuWrapper">
+        <div className="backgroundMenu"></div>
         <div className="cornerTopRight" />
         <div className="cornerBottomRight" />
         <div className="cornerMiddle" />
         <div className="cornerBottomLeft" />
         <div className="bottomLine" />
         <div className="borderMenu">
+          <h3 className="titleMenu">Menu_Vers</h3>
           <Menu
             newsPointer={newsHandler}
             articlePointer={articleHandler}
