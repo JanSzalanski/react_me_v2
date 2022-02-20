@@ -28,16 +28,77 @@
   // background: rgb(0, 0, 0);
   background: var(--colorMainGrey);
 }
+.borderMenuWrapper {
+  position: relative;
+  top: 100px;
+  left: 10px;
+  width: 250px;
+  height: 280px;
+  // outline: 2px solid var(--colorArticles);
+}
+.cornerTopRight {
+  position: absolute;
+  top: 1px;
+  right: -2px;
+  width: 21px;
+  outline: 1px solid var(--colorArticles);
+  transform-origin: top left;
+  transform: rotate(35deg);
+}
+
+.cornerBottomRight {
+  position: absolute;
+  bottom: 1px;
+  right: -2px;
+  width: 21px;
+  outline: 1px solid var(--colorArticles);
+  transform-origin: top left;
+  transform: rotate(-35deg);
+}
+
+.cornerMiddle {
+  position: absolute;
+  bottom: 1px;
+  right: 44.6%;
+  width: 21px;
+  outline: 1px solid var(--colorArticles);
+  transform-origin: bottom left;
+  transform: rotate(215deg);
+}
+
+.cornerBottomLeft {
+  position: absolute;
+  bottom: 27px;
+  left: 1px;
+  width: 21px;
+  outline: 1px solid var(--colorArticles);
+  transform-origin: bottom left;
+  transform: rotate(35deg);
+}
+
+.bottomLine {
+  position: absolute;
+  width: 31.5%;
+  bottom: 14px;
+  left: 20px;
+  outline: 1px solid var(--colorArticles);
+}
 
 .borderMenu {
   position: absolute;
-  top: 100px;
-  left: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 250px;
-  height: 270px;
+  height: 280px;
   border: 2px solid var(--colorArticles);
-  clip-path: polygon(0% 0%, 95% 0, 100% 5%, 100% 95%, 95% 100%, 45% 100%, 40% 95%, 5% 95%, 0 90%);
+  clip-path: polygon(0% 0%, 92% 0, 100% 5%, 100% 95%, 92% 100%, 48% 100%, 40% 95%, 8% 95%, 0 90%);
   background-color: var(--colorArticlesB);
+  // outline: 2px solid var(--colorArticles);
+  // outline-offset: 2px;
+}
+
+.borderMenuCorners {
 }
 
 .wrapper {
@@ -50,10 +111,10 @@
 
 .glowWrapper {
   position: absolute;
-  top: 110px;
+  top: 100px;
   left: 0;
   width: 170px;
-  height: 240px;
+  height: 250px;
   // border: 1px solid black;
   // z-index: 1;
 }

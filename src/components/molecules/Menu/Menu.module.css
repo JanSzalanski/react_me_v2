@@ -1,2 +1,2 @@
-.menu{z-index:1;position:absolute;left:10px;top:100px}.ulist{list-style:none}.navLink{text-decoration:none}.active{text-decoration:none}
+.menu{z-index:1;position:absolute;left:50%;top:50%;-webkit-transform:translate(-47%, -53%);transform:translate(-47%, -53%)}.ulist{list-style:none}.navLink{text-decoration:none}.active{text-decoration:none}
 /*# sourceMappingURL=Menu.module.css.map */

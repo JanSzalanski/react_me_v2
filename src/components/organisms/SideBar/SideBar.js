@@ -47,13 +47,21 @@ const SideBar = (props) => {
         <div className={classesGlow.join(' ')} />
       </div>
       <div className="sidebar"></div>
-      <div className="borderMenu"></div>
-      <Menu
-        newsPointer={newsHandler}
-        articlePointer={articleHandler}
-        peoplePointer={peopleHandler}
-        nftPointer={nftHandler}
-      />
+      <div className="borderMenuWrapper">
+        <div className="cornerTopRight" />
+        <div className="cornerBottomRight" />
+        <div className="cornerMiddle" />
+        <div className="cornerBottomLeft" />
+        <div className="bottomLine" />
+        <div className="borderMenu">
+          <Menu
+            newsPointer={newsHandler}
+            articlePointer={articleHandler}
+            peoplePointer={peopleHandler}
+            nftPointer={nftHandler}
+          />
+        </div>
+      </div>
     </div>
   );
 };

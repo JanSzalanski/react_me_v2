@@ -1,8 +1,9 @@
 .menu {
   z-index: 1;
   position: absolute;
-  left: 10px;
-  top: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-47%, -53%);
 }
 
 .ulist {
