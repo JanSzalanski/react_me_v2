@@ -46,8 +46,10 @@
   color: var(--colorArticles);
   background-color: var(--color-light-grey);
   text-shadow: none;
-  border-left: 2px solid var(--colorArticles);
-  border-right: 2px solid var(--colorArticles);
+  border-left: 1px solid var(--colorArticles);
+  border-right: 1px solid var(--colorArticles);
+  border-bottom: 1px solid var(--colorArticles);
+  border-top: 1px solid var(--colorArticles);
   backdrop-filter: none;
 
   &:hover {

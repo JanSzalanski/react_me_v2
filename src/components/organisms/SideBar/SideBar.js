@@ -49,8 +49,13 @@ const SideBar = (props) => {
       <div className="sidebar"></div>
       <div className="borderMenuWrapper">
         <div className="topLine" />
+        <div className="topLineCorner" />
+        <div className="rightLineCornerA" />
+        <div className="rightLineCornerB" />
         <div className="rightLine" />
         <div className="underLine" />
+        <div className="underLineCornerB" />
+        <div className="underLineCornerA" />
         <div className="backgroundMenu">
           <div className="scanline" />
         </div>

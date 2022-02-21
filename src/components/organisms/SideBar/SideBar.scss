@@ -89,7 +89,16 @@
   width: 90%;
   top: -8px;
   left: 0;
-  border-top: 1px solid var(--colorArticlesC);
+  border-top: 1px solid var(--colorArticlesB);
+}
+
+.topLineCorner {
+  position: absolute;
+  width: 13px;
+  top: -13px;
+  left: 89.3%;
+  border-top: 1px solid var(--colorArticlesB);
+  transform: rotate(-45deg);
 }
 
 .rightLine {
@@ -97,7 +106,25 @@
   top: 5%;
   bottom: 5%;
   right: -8px;
-  border-right: 1px solid var(--colorArticlesC);
+  border-right: 1px solid var(--colorArticlesB);
+}
+
+.rightLineCornerA {
+  position: absolute;
+  top: 3px;
+  height: 13px;
+  right: -13px;
+  border-right: 1px solid var(--colorArticlesB);
+  transform: rotate(45deg);
+}
+
+.rightLineCornerB {
+  position: absolute;
+  height: 13px;
+  right: -13px;
+  border-right: 1px solid var(--colorArticlesB);
+  transform: rotate(-45deg);
+  top: 94.3%;
 }
 
 .underLine {
@@ -105,7 +132,25 @@
   width: 45%;
   bottom: -8px;
   right: 20px;
-  border-bottom: 1px solid var(--colorArticlesC);
+  border-bottom: 1px solid var(--colorArticlesB);
+}
+
+.underLineCornerB {
+  position: absolute;
+  width: 5%;
+  bottom: -13px;
+  right: 10px;
+  border-bottom: 1px solid var(--colorArticlesB);
+  transform: rotate(45deg);
+}
+
+.underLineCornerA {
+  position: absolute;
+  width: 5%;
+  bottom: -13px;
+  right: calc(18px + 45%);
+  border-bottom: 1px solid var(--colorArticlesB);
+  transform: rotate(-45deg);
 }
 
 .borderMenu {
