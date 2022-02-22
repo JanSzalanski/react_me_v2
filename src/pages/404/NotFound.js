@@ -1,7 +1,11 @@
+import React from 'react';
+
+import Header from '../../components/molecules/Header/Header';
+
 const NotFound = () => {
   return (
-    <div className="centered">
-      <h1>Something goes wrong ? :O</h1>
+    <div>
+      <Header>Something goes wrong ? :O</Header>
     </div>
   );
 };

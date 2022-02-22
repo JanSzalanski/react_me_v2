@@ -1,11 +1,13 @@
 import React from 'react';
+import Footer from '../../components/molecules/Footer/Footer';
 // import classes from './ArticlePage.module.css';
-import Heading from '../../components/atoms/Heading/Heading';
+import Header from '../../components/molecules/Header/Header';
 
 const NftPage = (props) => {
   return (
     <>
-      <Heading>Strona z NFT</Heading>
+      <Header>Strona z NFT i o NFT...</Header>
+      <Footer>Stopka</Footer>
     </>
   );
 };

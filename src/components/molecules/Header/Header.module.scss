@@ -1,0 +1,11 @@
+.wrapperHeader {
+  margin: 10px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  transform: translate(-50%, 0%);
+  border: 1px solid black;
+  overflow: hidden;
+}

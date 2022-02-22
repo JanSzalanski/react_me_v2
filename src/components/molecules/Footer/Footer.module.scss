@@ -1,0 +1,23 @@
+.wrapperFooter {
+  margin: 10px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  transform: translate(-50%, 0%);
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.footerTitle {
+  text-align: right;
+  padding: 10px;
+  display: block;
+  font-size: var(--fontSizeS);
+  font-weight: var(--bold);
+  color: var(--black);
+  margin-bottom: 5px;
+  font-family: var(--font-headers);
+  text-transform: uppercase;
+}
