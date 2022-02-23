@@ -2,7 +2,25 @@ body {
   padding-left: 170px;
   font-family: $font-main;
   font-size: 1.6rem;
-  background-color: var(--colorMainGrey);
+  // background-color: var(--colorMainGrey);
+  // position: absolute;
+  // z-index: -1;
+  // height: 100vh;
+  width: 100%;
+  background: #3b3a34;
+  background: radial-gradient(
+    circle farthest-side at center center,
+    #3b3a34 3%,
+    #202020 15%,
+    #202020 69%,
+    #25261e 70%,
+    #25261e 74%,
+    #202020 75%,
+    #191919 93%,
+    #4e4f4c 94%,
+    #4e4f4c 94%,
+    #171717 95%
+  );
 }
 
 strong {
@@ -38,3 +56,24 @@ h2 {
   // display: block;
   text-decoration: none;
 }
+
+// .backgroundPage {
+//   left: ;
+//   position: absolute;
+//   z-index: -1;
+//   background: #4a4a4a;
+//   height: 100vh;
+//   width: 100vw;
+//   background: radial-gradient(
+//     circle farthest-corner at center center,
+//     #4a4a4a 3%,
+//     #292929 65%,
+//     #2f3026 68%,
+//     #2f3026 72%,
+//     #292929 74%,
+//     #292929 88%,
+//     #444542 90%,
+//     #4e4f4c 92%,
+//     #292929 94%
+//   );
+// }

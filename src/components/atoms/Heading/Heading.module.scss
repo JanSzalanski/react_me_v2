@@ -1,5 +1,6 @@
 .heading {
   // padding-left: 25px;
+  display: block;
   text-align: left;
   padding: 10px;
   display: block;
@@ -9,7 +10,6 @@
   margin-bottom: 5px;
   font-family: var(--font-headers);
   text-transform: uppercase;
-  // width: 100%;
 }
 
 .card {

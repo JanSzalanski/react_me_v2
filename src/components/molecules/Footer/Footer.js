@@ -3,7 +3,7 @@ import classes from './Footer.module.css';
 
 const Footer = (props) => {
   return (
-    <footer class={classes[props.className] || classes.wrapperFooter}>
+    <footer className={classes[props.className] || classes.wrapperFooter}>
       <h2 className={classes.footerTitle}>{props.children}</h2>
       <div className={classes.line1}></div>
       <div className={classes.line2}></div>

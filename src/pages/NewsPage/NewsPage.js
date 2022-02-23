@@ -12,6 +12,7 @@ import Footer from '../../components/molecules/Footer/Footer';
 const NewsPage = () => {
   return (
     <>
+      {/* <div className="backgroundPage"></div> */}
       <Header>Aktułalności</Header>
       {/* <Input className="search"></Input> */}
       <div className="centeredB">
@@ -19,14 +20,6 @@ const NewsPage = () => {
           path="a1"
           date="01/02/2022"
           title="Pierwszy news"
-          content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias
-        earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit
-        voluptatibus minus totam eos accusamus dolores adipisci!"
-        />
-
-        <Card
-          cardType="normal"
-          title="Pierwszy artykuł"
           content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias
         earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit
         voluptatibus minus totam eos accusamus dolores adipisci!"
