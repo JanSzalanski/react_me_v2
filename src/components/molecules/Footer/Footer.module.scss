@@ -1,13 +1,16 @@
 .wrapperFooter {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
   margin: 10px;
   position: relative;
   top: 0;
   left: 50%;
   width: 50%;
-  height: 100%;
+  height: 84px;
   transform: translate(-50%, 0%);
-  border: 1px solid black;
-  overflow: hidden;
+  // border: 1px solid black;
+  // overflow: hidden;
 }
 
 .footerTitle {
@@ -20,4 +23,95 @@
   margin-bottom: 5px;
   font-family: var(--font-headers);
   text-transform: uppercase;
+}
+
+.line1 {
+  position: absolute;
+  top: 82px;
+  left: 1px;
+  width: 100%;
+  border-top: 2px solid black;
+}
+
+.line2 {
+  position: absolute;
+  top: 01px;
+  right: 49.2%;
+  width: 20px;
+  border-bottom: 2px solid black;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+}
+
+.line3 {
+  position: absolute;
+  top: -14px;
+  right: -1px;
+  width: 50%;
+  border-bottom: 2px solid black;
+}
+
+.line4 {
+  position: absolute;
+  top: 0;
+  right: -14px;
+  width: 20px;
+  border-bottom: 2px solid black;
+  transform: rotate(45deg);
+  transform-origin: top right;
+}
+
+.line5 {
+  position: absolute;
+  top: 1px;
+  height: 70px;
+  border-left: 2px solid black;
+  right: -14px;
+}
+
+.line6 {
+  position: absolute;
+  top: 69px;
+  right: -12px;
+  width: 20px;
+  border-bottom: 2px solid black;
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+
+.line7 {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 48.5%;
+  border-bottom: 2px solid black;
+}
+
+.line8 {
+  position: absolute;
+  top: 68px;
+  left: -13px;
+  width: 20px;
+  border-bottom: 2px solid black;
+  transform: rotate(45deg);
+  transform-origin: bottom left;
+}
+
+.line9 {
+  position: absolute;
+  top: 14px;
+  left: -14px;
+  height: 56px;
+  border-left: 2px solid black;
+  //   transform-origin: top left;
+}
+
+.line10 {
+  position: absolute;
+  top: 14px;
+  left: -12px;
+  width: 20px;
+  border-bottom: 2px solid black;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
 }
