@@ -10,15 +10,13 @@ body {
   background: #3b3a34;
   background: radial-gradient(
     circle farthest-side at center center,
-    #3b3a34 3%,
-    #202020 15%,
     #202020 69%,
     #25261e 70%,
     #25261e 74%,
     #202020 75%,
     #191919 93%,
-    #4e4f4c 94%,
-    #4e4f4c 94%,
+    #31312f 94%,
+    #31312f 94%,
     #171717 95%
   );
 }
@@ -55,6 +53,13 @@ h2 {
 .routeLink {
   // display: block;
   text-decoration: none;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  padding-left: 100px;
 }
 
 // .backgroundPage {

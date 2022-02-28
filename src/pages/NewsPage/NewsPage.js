@@ -1,5 +1,5 @@
 import React from 'react';
-// import classes from './News.module.css';
+import classes from './NewsPage.module.css';
 // import Button from '../../components/atoms/Button/Button';
 // import Input from '../../components/atoms/Input/Input';
 // import ButtonIcon from '../../components/atoms/ButtonIcon/ButtonIcon';
@@ -9,9 +9,9 @@ import Card from '../../components/molecules/Card/Card';
 import Footer from '../../components/molecules/Footer/Footer';
 // import { Link } from 'react-router-dom';
 
-const NewsPage = () => {
+const NewsPage = (props) => {
   return (
-    <>
+    <div className={classes[props.type] || 'page'}>
       {/* <div className="backgroundPage"></div> */}
       <Header>Aktułalności</Header>
       {/* <Input className="search"></Input> */}
@@ -26,7 +26,7 @@ const NewsPage = () => {
         />
       </div>
       <Footer>Stopka</Footer>
-    </>
+    </div>
   );
 };
 

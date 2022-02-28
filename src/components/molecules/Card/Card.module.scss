@@ -3,8 +3,11 @@ $colorMain: var(--colorArticles);
 $colorMainA: rgba(yellow, 0.15);
 
 .wrapperAll {
-  margin: 25px;
-  position: relative;
+  // margin: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: calc(var(--cardWidth) + 5px);
   height: calc(var(--cardHeight) + 3px);
 
