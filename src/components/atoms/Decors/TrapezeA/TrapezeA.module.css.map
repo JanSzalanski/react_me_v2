@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,AAAC,CACR,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,CAAC,CACV,IAAI,CAAE,GAAG,CACT,KAAK,CAAE,GAAG,CACV,SAAS,CAAE,kDAAkD,CAC7D,gBAAgB,CAAE,YAAY,CAC9B,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,GAAG,CACb",
+    "sources": [
+        "TrapezeA.module.scss"
+    ],
+    "names": [],
+    "file": "TrapezeA.module.css"
+}

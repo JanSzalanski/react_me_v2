@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,AAAC,CACZ,WAAW,CAAE,IAAI,CACjB,QAAQ,CAAE,QAAQ,CAClB,IAAI,CAAE,GAAG,CACT,GAAG,CAAE,GAAG,CACR,SAAS,CAAE,qBAAqB,CAChC,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,MAAM,CAAE,GAAG,CAAC,KAAK,CAAC,qBAAwB,CAC3C",
+    "sources": [
+        "PerspectiveA.module.scss"
+    ],
+    "names": [],
+    "file": "PerspectiveA.module.css"
+}
