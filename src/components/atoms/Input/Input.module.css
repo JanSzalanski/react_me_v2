@@ -1,2 +1,91 @@
-.wrapperAll{position:relative;width:calc(var(--inputWidth) + 24px);height:calc(var(--inputHeight) + 4px)}.backWrapper{position:relative;height:100%;width:100%}.background{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);height:calc(var(--inputHeight) + 2px);width:calc(var(--inputWidth) + 22px);background-color:var(--colorArticles);-webkit-clip-path:polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);clip-path:polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%)}.input,.search{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);height:var(--inputHeight);min-width:var(--inputWidth);width:calc(var(--inputWidth) + 20px);padding:15px 30px;font-size:var(--fontSizeM);-webkit-clip-path:polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);clip-path:polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);border:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none;background-color:var(--colorGrey100);letter-spacing:1px}.input::-webkit-input-placeholder,.search::-webkit-input-placeholder{font-weight:var(--bold);font-size:var(--fontSizeXS);text-transform:uppercase;letter-spacing:1px;color:var(--colorMainGrey)}.input:-ms-input-placeholder,.search:-ms-input-placeholder{font-weight:var(--bold);font-size:var(--fontSizeXS);text-transform:uppercase;letter-spacing:1px;color:var(--colorMainGrey)}.input::-ms-input-placeholder,.search::-ms-input-placeholder{font-weight:var(--bold);font-size:var(--fontSizeXS);text-transform:uppercase;letter-spacing:1px;color:var(--colorMainGrey)}.input::placeholder,.search::placeholder{font-weight:var(--bold);font-size:var(--fontSizeXS);text-transform:uppercase;letter-spacing:1px;color:var(--colorMainGrey)}.input:focus,.search:focus{background-color:var(--white)}.search{padding:10px 20px 10px 40px;background-image:url(../../../assets/icons/magnifier.svg);background-size:15px;background-position:15px 50%;background-repeat:no-repeat}
+.wrapperAll {
+  position: relative;
+  width: calc(var(--inputWidth) + 24px);
+  height: calc(var(--inputHeight) + 4px);
+}
+
+.backWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: calc(var(--inputHeight) + 2px);
+  width: calc(var(--inputWidth) + 22px);
+  background-color: var(--colorArticles);
+  -webkit-clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+          clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+}
+
+.input, .search {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: var(--inputHeight);
+  min-width: var(--inputWidth);
+  width: calc(var(--inputWidth) + 20px);
+  padding: 15px 30px;
+  font-size: var(--fontSizeM);
+  -webkit-clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+          clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  background-color: var(--colorGrey100);
+  letter-spacing: 1px;
+}
+
+.input::-webkit-input-placeholder, .search::-webkit-input-placeholder {
+  font-weight: var(--bold);
+  font-size: var(--fontSizeXS);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--colorMainGrey);
+}
+
+.input:-ms-input-placeholder, .search:-ms-input-placeholder {
+  font-weight: var(--bold);
+  font-size: var(--fontSizeXS);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--colorMainGrey);
+}
+
+.input::-ms-input-placeholder, .search::-ms-input-placeholder {
+  font-weight: var(--bold);
+  font-size: var(--fontSizeXS);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--colorMainGrey);
+}
+
+.input::placeholder, .search::placeholder {
+  font-weight: var(--bold);
+  font-size: var(--fontSizeXS);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--colorMainGrey);
+}
+
+.input:focus, .search:focus {
+  background-color: var(--white);
+}
+
+.search {
+  padding: 10px 20px 10px 40px;
+  background-image: url(../../../assets/icons/magnifier.svg);
+  background-size: 15px;
+  background-position: 15px 50%;
+  background-repeat: no-repeat;
+}
 /*# sourceMappingURL=Input.module.css.map */

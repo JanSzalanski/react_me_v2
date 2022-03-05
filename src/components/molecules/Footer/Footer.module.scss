@@ -5,7 +5,7 @@
   margin: 10px;
   margin-top: 40px;
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   left: 50%;
   width: 50%;
   height: 84px;
@@ -34,14 +34,6 @@
   border-top: 2px solid black;
 }
 
-.line1A {
-  position: absolute;
-  bottom: -10px;
-  left: 1px;
-  width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.4);
-}
-
 .line2 {
   position: absolute;
   top: 01px;
@@ -52,12 +44,30 @@
   transform-origin: top left;
 }
 
+.line2A {
+  position: absolute;
+  top: -37px;
+  right: 49.4%;
+  width: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
 .line3 {
   position: absolute;
   top: -14px;
   right: -1px;
   width: 50%;
   border-bottom: 2px solid black;
+}
+
+.line3A {
+  position: absolute;
+  top: -24px;
+  right: -1px;
+  width: 50%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .line4 {
@@ -77,6 +87,16 @@
   width: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   transform: rotate(135deg);
+  transform-origin: top right;
+}
+
+.line4B {
+  position: absolute;
+  top: -37px;
+  right: -14px;
+  width: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  transform: rotate(-45deg);
   transform-origin: top right;
 }
 
@@ -116,16 +136,6 @@
   transform-origin: bottom right;
 }
 
-.line6B {
-  position: absolute;
-  bottom: -24px;
-  right: -14px;
-  width: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  transform: rotate(45deg);
-  transform-origin: bottom right;
-}
-
 .line7 {
   position: absolute;
   top: 0;
@@ -141,16 +151,6 @@
   width: 20px;
   border-bottom: 2px solid black;
   transform: rotate(45deg);
-  transform-origin: bottom left;
-}
-
-.line8A {
-  position: absolute;
-  bottom: -24px;
-  left: -14px;
-  width: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  transform: rotate(-45deg);
   transform-origin: bottom left;
 }
 

@@ -1,2 +1,49 @@
-.buttonicon,.logout,.pen,.people,.plus,.twitter{margin-left:10px;width:67px;height:67px;-webkit-clip-path:polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);clip-path:polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);background-color:var(--colorArticles);background-image:url("../../../assets/icons/book.svg");background-repeat:no-repeat;background-position:50%, 50%;background-size:40%;margin-bottom:20px}.logout{background-image:url("../../../assets/icons/logout.svg");background-repeat:no-repeat;background-position:50%, 50%;background-size:40%}.pen{background-image:url("../../../assets/icons/pen.svg");background-repeat:no-repeat;background-position:50%, 50%;background-size:40%}.people{background-image:url("../../../assets/icons/people.svg");background-repeat:no-repeat;background-position:50%, 50%;background-size:60%}.plus{background-image:url("../../../assets/icons/plus.svg");background-repeat:no-repeat;background-position:50%, 50%;background-size:40%}.twitter{background-image:url("../../../assets/icons/twitter.svg");background-repeat:no-repeat;background-position:50%, 50%;background-size:45%}
+.buttonicon, .logout, .pen, .people, .plus, .twitter {
+  margin-left: 10px;
+  width: 67px;
+  height: 67px;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: var(--colorArticles);
+  background-image: url("../../../assets/icons/book.svg");
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 40%;
+  margin-bottom: 20px;
+}
+
+.logout {
+  background-image: url("../../../assets/icons/logout.svg");
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 40%;
+}
+
+.pen {
+  background-image: url("../../../assets/icons/pen.svg");
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 40%;
+}
+
+.people {
+  background-image: url("../../../assets/icons/people.svg");
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 60%;
+}
+
+.plus {
+  background-image: url("../../../assets/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 40%;
+}
+
+.twitter {
+  background-image: url("../../../assets/icons/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 45%;
+}
 /*# sourceMappingURL=ButtonIcon.module.css.map */

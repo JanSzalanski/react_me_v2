@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,AAAC,CACJ,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,KAAK,CACd",
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;CACd",
     "sources": [
         "DetailsLayout.module.scss"
     ],
