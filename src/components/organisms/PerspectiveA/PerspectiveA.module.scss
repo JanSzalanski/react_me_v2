@@ -7,4 +7,32 @@
   width: 80%;
   height: 70%;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  perspective: 600px;
+}
+
+.pointer {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.582);
+  border-radius: 50%;
+}
+
+.groupA {
+  position: fixed;
+  left: 50%;
+  top: 6%;
+  transform: translate(-50%, -50%);
+  // border: 1px solid white;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: rotateY(101deg) rotateZ(85deg);
+  // align-content: space-between;
 }

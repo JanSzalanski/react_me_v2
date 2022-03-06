@@ -5,6 +5,7 @@ import TrapezeA from '../../atoms/Decors/TrapezeA/TrapezeA';
 const PerspectiveA = (props) => {
   return (
     <div className={classes[props.className] || classes.perspectiveA}>
+      <div className={classes.pointer}></div>
       <div className={classes.groupA}>
         <TrapezeA />
         <TrapezeA />
