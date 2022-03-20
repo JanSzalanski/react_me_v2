@@ -46,6 +46,8 @@
           align-items: center;
   -webkit-transform: rotateY(0deg) rotateZ(90deg);
           transform: rotateY(0deg) rotateZ(90deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   -ms-flex-line-pack: justify;
       align-content: space-between;
 }
