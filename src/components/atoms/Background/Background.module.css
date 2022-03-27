@@ -1,0 +1,11 @@
+.bgWrapper {
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 75%;
+  height: 70%;
+  border: 1px solid white;
+}
+/*# sourceMappingURL=Background.module.css.map */

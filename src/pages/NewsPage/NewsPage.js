@@ -8,7 +8,8 @@ import Header from '../../components/molecules/Header/Header';
 // import Card from '../../components/molecules/Card/Card';
 import Footer from '../../components/molecules/Footer/Footer';
 // import { Link } from 'react-router-dom';
-import PerspectiveA from '../../components/organisms/PerspectiveA/PerspectiveA';
+// import PerspectiveA from '../../components/organisms/PerspectiveA/PerspectiveA';
+import Background from '../../components/atoms/Background/Background';
 
 const NewsPage = (props) => {
   return (
@@ -16,7 +17,6 @@ const NewsPage = (props) => {
       {/* <div className="backgroundPage"></div> */}
       <Header>Aktułalności</Header>
       {/* <Input className="search"></Input> */}
-      <PerspectiveA />
       <div className="centeredB">
         {/* <Card
           path="a1"
@@ -27,6 +27,7 @@ const NewsPage = (props) => {
         voluptatibus minus totam eos accusamus dolores adipisci!"
         /> */}
       </div>
+      <Background />
       <Footer>Stopka</Footer>
     </div>
   );
