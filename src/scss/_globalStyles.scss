@@ -8,16 +8,15 @@ body {
   // height: 100vh;
   width: 100%;
   background: #3b3a34;
-  background: radial-gradient(
-    circle farthest-side at center center,
-    #202020 69%,
-    #25261e 70%,
-    #25261e 74%,
-    #191919 75%,
-    #191919 93%,
-    #31312f 94%,
-    #31312f 94%,
-    #171717 95%
+  background: linear-gradient(
+    90deg,
+    rgba(19, 19, 18, 1) 0%,
+    rgba(50, 50, 45, 1) 8%,
+    rgba(98, 97, 89, 1) 11%,
+    rgba(59, 58, 52, 1) 20%,
+    rgba(59, 58, 52, 1) 89%,
+    rgba(98, 97, 89, 1) 98%,
+    rgba(50, 50, 45, 1) 100%
   );
 }
 

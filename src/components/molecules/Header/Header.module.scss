@@ -7,7 +7,7 @@
   width: 50%;
   height: 84px;
   transform: translate(-50%, 0%);
-  // border: 1px solid black;
+  // border: 1px solid var(--black);
   //   overflow: hidden;
 }
 
@@ -16,7 +16,7 @@
   top: 0;
   left: 1px;
   width: 100%;
-  border-top: 2px solid black;
+  border-top: 2px solid var(--black);
 }
 
 .line2 {
@@ -24,7 +24,7 @@
   top: 0;
   right: -21px;
   width: 20px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--black);
   transform: rotate(45deg);
   transform-origin: top left;
 }
@@ -34,7 +34,7 @@
   top: 15px;
   right: -25px;
   width: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid var(--blackA);
   transform: rotate(135deg);
   transform-origin: top right;
 }
@@ -44,7 +44,7 @@
   top: 15px;
   right: -16px;
   height: 40px;
-  border-left: 2px solid black;
+  border-left: 2px solid var(--black);
   transform-origin: top left;
 }
 
@@ -53,7 +53,7 @@
   top: 15px;
   right: -26px;
   height: 40px;
-  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-left: 1px solid var(--blackA);
   transform-origin: top left;
 }
 
@@ -62,7 +62,7 @@
   top: 54px;
   right: -14px;
   width: 20px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--black);
   transform: rotate(-45deg);
   transform-origin: top right;
 }
@@ -72,7 +72,7 @@
   top: 54px;
   right: -45px;
   width: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid var(--blackA);
   transform: rotate(45deg);
   transform-origin: top left;
 }
@@ -82,7 +82,7 @@
   top: 68px;
   right: -2px;
   width: 50%;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--black);
 }
 
 .line5A {
@@ -90,7 +90,7 @@
   bottom: -23px;
   left: -13px;
   width: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid var(--blackA);
   transform: rotate(-45deg);
   transform-origin: bottom left;
 }
@@ -100,7 +100,7 @@
   top: 68px;
   right: 49.8%;
   width: 20px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--black);
   transform: rotate(-45deg);
   transform-origin: top right;
 }
@@ -110,7 +110,7 @@
   bottom: -10px;
   left: 48.6%;
   width: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid var(--blackA);
   transform: rotate(45deg);
   transform-origin: top left;
 }
@@ -120,7 +120,7 @@
   top: 82px;
   left: 1px;
   width: calc(50% - 12px);
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--black);
 }
 
 .line7A {
@@ -128,7 +128,7 @@
   bottom: -10px;
   left: 1px;
   width: 48.5%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid var(--blackA);
 }
 
 .line8 {
@@ -136,7 +136,7 @@
   top: 68px;
   left: -13px;
   width: 20px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--black);
   transform: rotate(45deg);
   transform-origin: bottom left;
 }
@@ -146,7 +146,7 @@
   top: 83px;
   left: -38px;
   width: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid var(--blackA);
   transform: rotate(-45deg);
   transform-origin: bottom left;
 }
@@ -156,7 +156,7 @@
   top: 14px;
   left: -14px;
   height: 56px;
-  border-left: 2px solid black;
+  border-left: 2px solid var(--black);
   //   transform-origin: top left;
 }
 
@@ -165,7 +165,7 @@
   top: 14px;
   left: -24px;
   height: 56px;
-  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-left: 1px solid var(--blackA);
   //   transform-origin: top left;
 }
 
@@ -174,7 +174,7 @@
   top: 14px;
   left: -12px;
   width: 20px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--black);
   transform: rotate(-45deg);
   transform-origin: bottom left;
 }
@@ -184,7 +184,7 @@
   top: 0px;
   left: -38px;
   width: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid var(--blackA);
   transform: rotate(45deg);
   transform-origin: bottom left;
 }

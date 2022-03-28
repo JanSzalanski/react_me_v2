@@ -45,7 +45,8 @@ textarea:focus {
   --colorGrey200: hsl(0, 0%, 60%);
   --colorGrey300: hsl(0, 0%, 50%);
   --colorGrey400: hsl(0, 0%, 30%);
-  --black: hsl(0, 0%, 0%);
+  --black: rgb(19, 19, 19);
+  --blackA: rgba(19, 19, 19, 0.4);
   --white: hsl(255, 100%, 100%);
   --fontSizeXXS: 1rem;
   --fontSizeXS: 1.2rem;
@@ -70,7 +71,8 @@ body {
   font-size: 1.6rem;
   width: 100%;
   background: #3b3a34;
-  background: radial-gradient(circle farthest-side at center center, #202020 69%, #25261e 70%, #25261e 74%, #191919 75%, #191919 93%, #31312f 94%, #31312f 94%, #171717 95%);
+  background: -webkit-gradient(linear, left top, right top, from(#131312), color-stop(8%, #32322d), color-stop(11%, #626159), color-stop(20%, #3b3a34), color-stop(89%, #3b3a34), color-stop(98%, #626159), to(#32322d));
+  background: linear-gradient(90deg, #131312 0%, #32322d 8%, #626159 11%, #3b3a34 20%, #3b3a34 89%, #626159 98%, #32322d 100%);
 }
 
 strong {
