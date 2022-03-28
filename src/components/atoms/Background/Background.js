@@ -4,6 +4,10 @@ import classes from './Background.module.css';
 const Background = (props) => {
   return (
     <div className={classes.bgWrapper}>
+      <div className={classes.grid}>
+        <div className={classes.miarkaL}></div>
+        <div className={classes.miarkaR}></div>
+      </div>
       <div className={classes.lineL}></div>
       <div className={classes.line1}></div>
       <div className={classes.line2}></div>

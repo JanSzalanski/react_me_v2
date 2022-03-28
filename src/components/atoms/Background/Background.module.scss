@@ -8,6 +8,38 @@
   // border: 1px solid var(--black);
 }
 
+.grid {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 40px;
+  bottom: 40px;
+  border: 1px solid black;
+  background-image: url(../../../assets/siatkaC.webp);
+  opacity: 0.15;
+  background-position: 20px 31px;
+}
+
+.miarkaL {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  background-image: url(../../../assets/miarka.webp);
+  background-position: 0px 30px;
+}
+
+.miarkaR {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  background-image: url(../../../assets/miarka.webp);
+  background-position: -10px 30px;
+}
+
 .lineL {
   position: absolute;
   left: 20px;
