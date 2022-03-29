@@ -1,0 +1,14 @@
+.wrapperHeader {
+  margin: 10px;
+  margin-bottom: 40px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 54%;
+  height: 107px;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  border: 2px solid var(--white);
+  opacity: 0.15;
+}
+/*# sourceMappingURL=HeaderB.module.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACb,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,IAAI;EACnB,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,GAAG;EACT,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,KAAK;EACb,SAAS,EAAE,mBAAmB;EAC9B,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,YAAY;EAC9B,OAAO,EAAE,IAAI;CAEd",
+    "sources": [
+        "HeaderB.module.scss"
+    ],
+    "names": [],
+    "file": "HeaderB.module.css"
+}

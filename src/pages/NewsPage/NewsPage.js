@@ -10,12 +10,14 @@ import Footer from '../../components/molecules/Footer/Footer';
 // import { Link } from 'react-router-dom';
 // import PerspectiveA from '../../components/organisms/PerspectiveA/PerspectiveA';
 import Background from '../../components/atoms/Background/Background';
+import HeaderB from '../../components/molecules/HeaderB/HeaderB';
 
 const NewsPage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
       {/* <div className="backgroundPage"></div> */}
       <Header>Aktułalności</Header>
+      <HeaderB></HeaderB>
       {/* <Input className="search"></Input> */}
       <div className="centeredB">
         {/* <Card
