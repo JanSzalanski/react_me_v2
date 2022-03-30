@@ -28,19 +28,73 @@
   top: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 66.8%;
+  width: 66.9%;
   border-top: 2px solid orangered;
 }
 
 .line2 {
   position: absolute;
   top: 0;
-  left: 66.8%;
+  left: 83.5%;
   width: 20px;
   border-bottom: 2px solid orangered;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transform-origin: top left;
           transform-origin: top left;
+}
+
+.line3 {
+  position: absolute;
+  top: 15px;
+  left: 84.35%;
+  height: 39px;
+  border-left: 2px solid orangered;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.line4 {
+  position: absolute;
+  top: 54px;
+  left: 84.5%;
+  width: 20px;
+  border-bottom: 2px solid orangered;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.line5 {
+  position: absolute;
+  top: 67px;
+  left: calc(50% + 2px);
+  width: 33.35%;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  border-bottom: 2px solid orangered;
+}
+
+.line6 {
+  position: absolute;
+  top: 67px;
+  right: calc(50% - 2px);
+  width: 20px;
+  border-bottom: 2px solid orangered;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.line7 {
+  position: absolute;
+  top: 81px;
+  right: calc(50% + 11px);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  width: 25%;
+  border-bottom: 2px solid orangered;
 }
 /*# sourceMappingURL=HeaderB.module.css.map */
