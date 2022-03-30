@@ -5,6 +5,7 @@ import Heading from '../../atoms/Heading/Heading';
 const HeaderB = (props) => {
   return (
     <header className={classes[props.className] || classes.wrapperHeader}>
+      {/* <div className={classes.helper}></div> */}
       <div className={classes.line1}></div>
       <div className={classes.line2}></div>
       <div className={classes.line2A}></div>

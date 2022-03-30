@@ -1,14 +1,46 @@
 .wrapperHeader {
-  margin: 10px;
+  margin-top: 10px;
   margin-bottom: 40px;
   position: absolute;
   top: 0;
-  left: 50%;
-  width: 54%;
+  left: 55%;
+  width: 75%;
   height: 107px;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  border: 2px solid var(--white);
-  opacity: 0.15;
+  border: 1px solid var(--white);
+  opacity: 0.55;
+}
+
+.helper {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 960px;
+  height: 84px;
+}
+
+.line1 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 66.8%;
+  border-top: 2px solid orangered;
+}
+
+.line2 {
+  position: absolute;
+  top: 0;
+  left: 66.8%;
+  width: 20px;
+  border-bottom: 2px solid orangered;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
 }
 /*# sourceMappingURL=HeaderB.module.css.map */

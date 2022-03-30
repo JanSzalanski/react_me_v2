@@ -1,13 +1,41 @@
 .wrapperHeader {
-  margin: 10px;
+  margin-top: 10px;
   margin-bottom: 40px;
   position: absolute;
   top: 0;
-  left: 50%;
-  width: 54%;
+  left: 55%;
+  width: 75%;
   height: 107px;
   transform: translate(-50%, 0%);
-  border: 2px solid var(--white);
-  opacity: 0.15;
+  border: 1px solid var(--white);
+  opacity: 0.55;
   //   overflow: hidden;
+}
+.helper {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 960px;
+  height: 84px;
+  // border: 2px solid red;
+}
+
+.line1 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 66.8%;
+  border-top: 2px solid orangered;
+}
+
+.line2 {
+  position: absolute;
+  top: 0;
+  left: 66.8%;
+  width: 20px;
+  border-bottom: 2px solid orangered;
+  transform: rotate(45deg);
+  transform-origin: top left;
 }
