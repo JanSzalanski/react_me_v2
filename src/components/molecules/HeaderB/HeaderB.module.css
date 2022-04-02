@@ -29,7 +29,7 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 66.9%;
-  border-top: 2px solid orangered;
+  border-top: 2px solid greenyellow;
 }
 
 .line2 {
@@ -47,11 +47,11 @@
 .line3 {
   position: absolute;
   top: 15px;
-  left: 84.35%;
+  right: 15%;
   height: 39px;
-  border-left: 2px solid orangered;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
+  border-right: 2px solid orangered;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
 }
 
 .line4 {
@@ -59,7 +59,7 @@
   top: 54px;
   left: 84.5%;
   width: 20px;
-  border-bottom: 2px solid orangered;
+  border-top: 2px solid orangered;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
   -webkit-transform-origin: top left;
@@ -71,8 +71,8 @@
   top: 67px;
   left: calc(50% + 2px);
   width: 33.35%;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
   border-bottom: 2px solid orangered;
 }
 
