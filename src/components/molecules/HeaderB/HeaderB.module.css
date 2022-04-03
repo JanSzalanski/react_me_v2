@@ -35,7 +35,7 @@
 .line2 {
   position: absolute;
   top: 0;
-  left: 83.5%;
+  left: calc(83.5% + 1px);
   width: 20px;
   border-bottom: 2px solid orangered;
   -webkit-transform: rotate(45deg);
@@ -46,10 +46,10 @@
 
 .line3 {
   position: absolute;
-  top: 15px;
-  right: 15%;
-  height: 39px;
-  border-right: 2px solid orangered;
+  top: 14px;
+  left: calc(86.6% + 1px);
+  height: 41px;
+  border-right: 2px solid greenyellow;
   -webkit-transform-origin: top center;
           transform-origin: top center;
 }
@@ -57,13 +57,13 @@
 .line4 {
   position: absolute;
   top: 54px;
-  left: 84.5%;
+  right: 15.45%;
   width: 20px;
   border-top: 2px solid orangered;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
 }
 
 .line5 {
