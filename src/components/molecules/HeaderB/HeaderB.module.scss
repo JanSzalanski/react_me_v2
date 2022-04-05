@@ -43,20 +43,22 @@
 .line3 {
   position: absolute;
   top: 14px;
-  left: calc(84.3% + 1px);
+  left: 85.1%;
   height: 41px;
-  border-right: 2px solid greenyellow;
+
+  // background-color: rgba(0, 204, 255, 0.13);
+  border-right: 2px solid rgb(0, 204, 255);
   transform-origin: top center;
 }
 
 .line4 {
   position: absolute;
-  top: 54px;
-  right: 15.7%;
+  top: 67px;
+  right: 15.15%;
   width: 20px;
-  border-top: 2px solid orangered;
-  transform: rotate(-45deg);
-  transform-origin: top right;
+  border-top: 2px solid greenyellow;
+  // transform: rotate(-45deg);
+  transform-origin: top left;
 }
 
 .line5 {
@@ -74,7 +76,7 @@
   right: calc(50% - 2px);
   width: 20px;
   border-bottom: 2px solid orangered;
-  transform: rotate(-45deg);
+  // transform: rotate(-45deg);
   transform-origin: top right;
 }
 
@@ -93,7 +95,7 @@
   left: 15.7%;
   width: 20px;
   border-bottom: 2px solid orangered;
-  transform: rotate(45deg);
+  // transform: rotate(45deg);
   transform-origin: bottom left;
 }
 
@@ -111,6 +113,6 @@
   left: 15.7%;
   width: 20px;
   border-bottom: 2px solid orangered;
-  transform: rotate(-45deg);
+  // transform: rotate(-45deg);
   transform-origin: bottom left;
 }
