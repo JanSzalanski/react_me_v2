@@ -35,7 +35,7 @@
 .line2 {
   position: absolute;
   top: 0;
-  left: calc(83.5% + 1px);
+  left: 83.5%;
   width: 20px;
   border-bottom: 2px solid orangered;
   -webkit-transform: rotate(45deg);
@@ -46,79 +46,23 @@
 
 .line3 {
   position: absolute;
-  top: 14px;
-  left: 85.1%;
-  height: 41px;
-  border-right: 2px solid #00ccff;
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
-}
-
-.line4 {
-  position: absolute;
-  top: 67px;
-  right: 15.15%;
-  width: 20px;
-  border-top: 2px solid greenyellow;
+  top: 15px;
+  left: calc(83.5% + 12px);
+  height: 38px;
+  border-left: 2px solid #00b7ff;
   -webkit-transform-origin: top left;
           transform-origin: top left;
 }
 
-.line5 {
+.line4 {
   position: absolute;
-  top: 67px;
-  left: calc(50% + 2px);
-  width: 33.35%;
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
-  border-bottom: 2px solid orangered;
-}
-
-.line6 {
-  position: absolute;
-  top: 67px;
-  right: calc(50% - 2px);
-  width: 20px;
-  border-bottom: 2px solid orangered;
+  top: 54px;
+  left: calc(83.5% + 12px);
+  height: 20px;
+  border-left: 2px solid #eeff00;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   -webkit-transform-origin: top right;
           transform-origin: top right;
-}
-
-.line7 {
-  position: absolute;
-  top: 81px;
-  right: calc(50% + 11px);
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-  width: 32.5%;
-  border-bottom: 2px solid orangered;
-}
-
-.line8 {
-  position: absolute;
-  top: 67px;
-  left: 15.7%;
-  width: 20px;
-  border-bottom: 2px solid orangered;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-}
-
-.line9 {
-  position: absolute;
-  top: 14px;
-  left: 15.65%;
-  height: 55px;
-  border-left: 2px solid orangered;
-}
-
-.line10 {
-  position: absolute;
-  top: 14px;
-  left: 15.7%;
-  width: 20px;
-  border-bottom: 2px solid orangered;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
 }
 /*# sourceMappingURL=HeaderB.module.css.map */
