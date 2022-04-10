@@ -7,10 +7,21 @@
   width: 75%;
   height: 107px;
   transform: translate(-50%, 0%);
-  border: 1px solid var(--white);
+  // border: 1px solid var(--white);
   opacity: 0.55;
   //   overflow: hidden;
 }
+
+.innerWrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: calc(66.9% + 80px);
+  height: 100%;
+  border: 1px solid white;
+}
+
 .helper {
   position: absolute;
   left: 50%;
@@ -26,45 +37,45 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  width: 66.9%;
+  width: calc(100% - 80px);
   border-top: 2px solid greenyellow;
 }
 
 .line2 {
   position: absolute;
-  top: 0;
-  left: 83.5%;
+  top: -1px;
+  right: 19px;
   width: 20px;
-  border-bottom: 2px solid orangered;
+  border-top: 2px solid orangered;
   transform: rotate(45deg);
   transform-origin: top left;
 }
 
 .line3 {
   position: absolute;
-  top: 15px;
-  left: calc(83.5% + 12px);
-  height: 38px;
-  border-left: 2px solid rgb(0, 183, 255);
+  top: 14px;
+  right: 25px;
+  height: 39px;
+  border-right: 2px solid rgb(0, 183, 255);
   // transform: rotate(90deg);
-  transform-origin: top left;
+  transform-origin: top right;
 }
 
 .line4 {
   position: absolute;
-  top: 54px;
-  left: calc(83.5% + 12px);
-  height: 20px;
-  border-left: 2px solid rgb(238, 255, 0);
-  transform: rotate(45deg);
+  top: 53px;
+  right: 26px;
+  width: 20px;
+  border-top: 2px solid rgb(238, 255, 0);
+  transform: rotate(-45deg);
   transform-origin: top right;
 }
 
 .line5 {
   position: absolute;
   top: 67px;
-  left: 50%;
-  width: 33.5%;
+  right: 39px;
+  width: calc(50% - 40px);
   border-bottom: 2px solid rgb(0, 238, 255);
 }
 
@@ -87,6 +98,7 @@
   width: 32.5%;
   border-bottom: 2px solid orangered;
 }
+
 .line8 {
   position: absolute;
   top: 67px;
@@ -96,6 +108,7 @@
   transform: rotate(45deg);
   transform-origin: bottom left;
 }
+
 .line9 {
   position: absolute;
   top: 14px;
