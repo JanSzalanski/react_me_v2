@@ -8,7 +8,6 @@
   height: 107px;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  opacity: 0.55;
 }
 
 .innerWrapper {
@@ -19,7 +18,6 @@
           transform: translate(-50%, 0%);
   width: calc(66.9% + 80px);
   height: 100%;
-  border: 1px solid white;
 }
 
 .helper {
@@ -39,7 +37,7 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: calc(100% - 80px);
-  border-top: 2px solid greenyellow;
+  border-top: 2px solid var(--black);
 }
 
 .line2 {
@@ -47,7 +45,7 @@
   top: -1px;
   right: 19px;
   width: 20px;
-  border-top: 2px solid orangered;
+  border-top: 2px solid var(--black);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transform-origin: top left;
@@ -59,7 +57,7 @@
   top: 14px;
   right: 25px;
   height: 39px;
-  border-right: 2px solid #00b7ff;
+  border-right: 2px solid var(--black);
   -webkit-transform-origin: top right;
           transform-origin: top right;
 }
@@ -69,7 +67,7 @@
   top: 53px;
   right: 26px;
   width: 20px;
-  border-top: 2px solid #eeff00;
+  border-top: 2px solid var(--black);
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transform-origin: top right;
@@ -81,7 +79,7 @@
   top: 67px;
   right: 39px;
   width: calc(50% - 40px);
-  border-bottom: 2px solid #00eeff;
+  border-bottom: 2px solid var(--black);
 }
 
 .line6 {
@@ -89,7 +87,7 @@
   top: 67px;
   left: calc(50% - 19px);
   width: 20px;
-  border-bottom: 2px solid #1eff00;
+  border-bottom: 2px solid var(--black);
   -webkit-transform-origin: top right;
           transform-origin: top right;
   -webkit-transform: rotate(-45deg);
@@ -99,21 +97,19 @@
 .line7 {
   position: absolute;
   top: 81px;
-  left: 33%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 41px;
+  width: calc(50% - 52px);
   -webkit-transform-origin: top right;
           transform-origin: top right;
-  width: 32.5%;
-  border-bottom: 2px solid orangered;
+  border-bottom: 2px solid var(--black);
 }
 
 .line8 {
   position: absolute;
   top: 67px;
-  left: 15.7%;
+  left: 27px;
   width: 20px;
-  border-bottom: 2px solid orangered;
+  border-bottom: 2px solid var(--black);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transform-origin: bottom left;
@@ -123,17 +119,17 @@
 .line9 {
   position: absolute;
   top: 14px;
-  left: 15.65%;
+  left: 27px;
   height: 55px;
-  border-left: 2px solid orangered;
+  border-left: 2px solid var(--black);
 }
 
 .line10 {
   position: absolute;
   top: 14px;
-  left: 15.7%;
+  left: 28px;
   width: 20px;
-  border-bottom: 2px solid orangered;
+  border-bottom: 2px solid var(--black);
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transform-origin: bottom left;

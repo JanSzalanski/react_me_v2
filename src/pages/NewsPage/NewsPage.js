@@ -4,7 +4,6 @@ import classes from './NewsPage.module.css';
 // import Input from '../../components/atoms/Input/Input';
 // import ButtonIcon from '../../components/atoms/ButtonIcon/ButtonIcon';
 // import Pargraph from '../../components/atoms/Paragraph/Paragraph';
-import Header from '../../components/molecules/Header/Header';
 // import Card from '../../components/molecules/Card/Card';
 import Footer from '../../components/molecules/Footer/Footer';
 // import { Link } from 'react-router-dom';
@@ -16,7 +15,6 @@ const NewsPage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
       {/* <div className="backgroundPage"></div> */}
-      <Header>Aktułalności</Header>
       <HeaderB></HeaderB>
       {/* <Input className="search"></Input> */}
       <div className="centeredB">

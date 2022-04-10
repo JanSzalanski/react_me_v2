@@ -13,11 +13,10 @@ const HeaderB = (props) => {
         <div className={classes.line5}></div>
         <div className={classes.line6}></div>
         <div className={classes.line7}></div>
+        <div className={classes.line8}></div>
+        <div className={classes.line9}></div>
+        <div className={classes.line10}></div>
       </div>
-
-      {/* <div className={classes.line8}></div>
-      <div className={classes.line9}></div>
-      <div className={classes.line10}></div> */}
     </header>
   );
 };
