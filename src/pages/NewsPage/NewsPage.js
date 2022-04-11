@@ -15,7 +15,7 @@ const NewsPage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
       {/* <div className="backgroundPage"></div> */}
-      <HeaderB></HeaderB>
+      <HeaderB>Aktułalności</HeaderB>
       {/* <Input className="search"></Input> */}
       <div className="centeredB">
         {/* <Card
