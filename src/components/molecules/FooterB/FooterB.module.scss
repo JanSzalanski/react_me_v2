@@ -1,13 +1,13 @@
-.wrapperHeader {
+.wrapperFooter {
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-top: 40px;
   position: absolute;
-  top: 0;
+  bottom: 0px;
   left: 55%;
   width: 75%;
   height: 107px;
   transform: translate(-50%, 0%);
-  // border: 1px solid var(--white);
+  border: 1px solid var(--white);
   //
   //   overflow: hidden;
 }
@@ -19,7 +19,7 @@
   // transform: translate(-50%, 0%);
   width: 80%;
   height: 100%;
-  // border: 1px solid white;
+  border: 1px solid white;
 }
 
 .line1 {
@@ -28,7 +28,7 @@
   top: 0;
   transform: translateX(-50%);
   width: calc(100% - 80px);
-  border-top: 2px solid var(--black);
+  border-top: 2px solid red;
 }
 
 .line2 {
@@ -36,7 +36,7 @@
   top: 0px;
   right: 19px;
   width: 20px;
-  border-top: 2px solid var(--black);
+  border-top: 2px solid red;
   transform: rotate(45deg);
   transform-origin: top left;
 }
@@ -56,7 +56,7 @@
   top: 14px;
   right: 25px;
   height: 40px;
-  border-right: 2px solid var(--black);
+  border-right: 2px solid red;
   transform-origin: top right;
 }
 
@@ -74,7 +74,7 @@
   top: 53px;
   right: 26px;
   width: 20px;
-  border-top: 2px solid var(--black);
+  border-top: 2px solid red;
   transform: rotate(-45deg);
   transform-origin: top right;
 }
@@ -94,7 +94,7 @@
   top: 67px;
   left: calc(53px + 31% * 1.25);
   width: calc(100% - 92px - 31% * 1.25);
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid red;
 }
 
 .line6 {
@@ -102,7 +102,7 @@
   top: 67px;
   left: calc(34px + 31% * 1.25);
   width: 20px;
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid red;
   transform-origin: top right;
   transform: rotate(-45deg);
 }
@@ -123,7 +123,7 @@
   left: 41px;
   width: calc(31% * 1.25);
   transform-origin: top right;
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid red;
 }
 
 .line7A {
@@ -140,7 +140,7 @@
   top: 67px;
   left: 27px;
   width: 20px;
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid red;
   transform: rotate(45deg);
   transform-origin: bottom left;
 }
@@ -170,7 +170,7 @@
   top: 14px;
   left: 27px;
   height: 55px;
-  border-left: 2px solid var(--black);
+  border-left: 2px solid red;
 }
 
 .line9A {
@@ -186,7 +186,7 @@
   top: 14px;
   left: 28px;
   width: 20px;
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid red;
   transform: rotate(-45deg);
   transform-origin: bottom left;
 }
