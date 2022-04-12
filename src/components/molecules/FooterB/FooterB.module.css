@@ -1,5 +1,5 @@
 .wrapperFooter {
-  margin-top: 10px;
+  margin-bottom: 10px;
   margin-top: 40px;
   position: absolute;
   bottom: 0px;
@@ -8,14 +8,13 @@
   height: 107px;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-  border: 1px solid var(--white);
 }
 
 .innerWrapper {
   position: absolute;
   top: 0;
-  left: calc(10% - 21px);
-  width: 80%;
+  right: calc(21% - 14px);
+  width: 72%;
   height: 100%;
   border: 1px solid white;
 }
