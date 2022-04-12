@@ -28,7 +28,7 @@
 
 .line1 {
   position: absolute;
-  top: 0;
+  top: 15px;
   left: 1px;
   width: calc(50% - 12px);
   border-bottom: 2px solid var(--black);
@@ -36,7 +36,7 @@
 
 .line2 {
   position: absolute;
-  top: 1px;
+  top: 15px;
   left: calc(50% - 12px);
   width: 20px;
   border-bottom: 2px solid var(--black);
@@ -46,8 +46,8 @@
 
 .line2A {
   position: absolute;
-  top: -37px;
-  right: 49.4%;
+  top: -28px;
+  right: 49.3%;
   width: 20px;
   border-bottom: 1px solid var(--blackA);
   transform: rotate(45deg);
@@ -56,15 +56,15 @@
 
 .line3 {
   position: absolute;
-  top: -14px;
-  right: -1px;
-  width: calc(50% - 1px);
+  top: 0px;
+  right: 0px;
+  width: calc(50% - 2px);
   border-bottom: 2px solid var(--black);
 }
 
 .line3A {
   position: absolute;
-  top: -24px;
+  top: -14px;
   right: -1px;
   width: 50%;
   border-bottom: 1px solid var(--blackA);
@@ -72,7 +72,7 @@
 
 .line4 {
   position: absolute;
-  top: 0;
+  top: 15px;
   right: -14px;
   width: 20px;
   border-bottom: 2px solid var(--black);
@@ -82,7 +82,7 @@
 
 .line4A {
   position: absolute;
-  top: 1px;
+  top: 15px;
   right: -24px;
   width: 20px;
   border-bottom: 1px solid var(--blackA);
@@ -92,7 +92,7 @@
 
 .line4B {
   position: absolute;
-  top: -37px;
+  top: -27px;
   right: -14px;
   width: 20px;
   border-bottom: 1px solid var(--blackA);
@@ -102,7 +102,7 @@
 
 .line5 {
   position: absolute;
-  top: 1px;
+  top: 15px;
   height: 55px;
   border-left: 2px solid var(--black);
   right: -14px;
@@ -110,8 +110,8 @@
 
 .line5A {
   position: absolute;
-  top: 1px;
-  height: 70px;
+  top: 15px;
+  height: 55px;
   right: -24px;
   border-left: 1px solid var(--blackA);
 }
@@ -166,7 +166,7 @@
 
 .line9 {
   position: absolute;
-  top: 14px;
+  top: 30px;
   left: -14px;
   height: 40px;
   border-left: 2px solid var(--black);
@@ -175,16 +175,16 @@
 
 .line9A {
   position: absolute;
-  top: 14px;
+  top: 29px;
   left: -24px;
-  height: 56px;
+  height: 42px;
   border-left: 1px solid var(--blackA);
   //   transform-origin: top left;
 }
 
 .line10 {
   position: absolute;
-  top: 14px;
+  top: 29px;
   left: -12px;
   width: 20px;
   border-bottom: 2px solid var(--black);
@@ -194,7 +194,7 @@
 
 .line10A {
   position: absolute;
-  top: 14px;
+  top: 29px;
   left: -24px;
   width: 20px;
   border-bottom: 1px solid var(--blackA);
