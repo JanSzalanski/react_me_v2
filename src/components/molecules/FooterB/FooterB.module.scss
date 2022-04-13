@@ -4,9 +4,10 @@
   position: absolute;
   bottom: 0px;
   left: 55%;
-  width: 75%;
+  width: 80%;
   height: 107px;
   transform: translate(-50%, 0%);
+  opacity: 0.4;
   // border: 1px solid var(--white);
   //
   //   overflow: hidden;
@@ -19,25 +20,25 @@
   // transform: translate(-50%, 0%);
   width: 72%;
   height: 100%;
-  border: 1px solid white;
+  // border: 1px solid white;
 }
 
 .line1 {
   position: absolute;
   left: 50%;
-  top: 0;
+  bottom: 0;
   transform: translateX(-50%);
-  width: calc(100% - 80px);
+  width: calc(100% - 74px);
   border-top: 2px solid red;
 }
 
 .line2 {
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   right: 19px;
   width: 20px;
   border-top: 2px solid red;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   transform-origin: top left;
 }
 

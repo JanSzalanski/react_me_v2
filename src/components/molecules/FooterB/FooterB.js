@@ -9,8 +9,8 @@ const FooterB = (props) => {
       <div className={classes.innerWrapper}>
         {/* <DecorOne className="decorHeader"></DecorOne> */}
         <div className={classes.line1}></div>
-        {/* <div className={classes.line2}></div>
-        <div className={classes.line2A}></div>
+        <div className={classes.line2}></div>
+        {/* <div className={classes.line2A}></div>
         <div className={classes.line3}></div>
         <div className={classes.line3A}></div>
         <div className={classes.line4}></div>
