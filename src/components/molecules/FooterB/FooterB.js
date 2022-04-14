@@ -22,12 +22,12 @@ const FooterB = (props) => {
         <div className={classes.line6A}></div>
         <div className={classes.line7}></div>
         <div className={classes.line8}></div>
-        {/* <div className={classes.line8A}></div>
-        <div className={classes.line8B}></div>
+        <div className={classes.line8A}></div>
+
         <div className={classes.line9}></div>
         <div className={classes.line9A}></div>
         <div className={classes.line10}></div>
-        <div className={classes.line10A}></div> */}
+        <div className={classes.line10A}></div>
         {/* <Heading className={classes.position}>{props.children}</Heading> */}
       </div>
     </footer>
