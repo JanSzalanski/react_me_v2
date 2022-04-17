@@ -7,29 +7,42 @@
   width: 75%;
   height: 107px;
   transform: translate(-50%, 0%);
-  opacity: 0.4;
+  // opacity: 0.4;
   // border: 1px solid var(--white);
-  //
   //   overflow: hidden;
 }
 
 .innerWrapper {
   position: absolute;
   top: 0;
-  right: calc(21% - 14px);
-  // transform: translate(-50%, 0%);
-  width: 72%;
+  right: calc(10% - 16px);
+  width: 80%;
   height: 100%;
+  // transform: translate(-50%, 0%);
   // border: 1px solid white;
+}
+
+.footerTitle {
+  position: absolute;
+  text-align: right;
+  right: 47px;
+  bottom: 10px;
+  display: block;
+  font-size: var(--fontSizeS);
+  font-weight: var(--bold);
+  color: var(--black);
+  margin-bottom: 5px;
+  font-family: var(--font-headers);
+  text-transform: uppercase;
 }
 
 .line1 {
   position: absolute;
-  left: calc(50% + 2px);
+  left: calc(50% + 1px);
   bottom: 0px;
   transform: translateX(-50%);
   width: calc(100% - 77px);
-  border-top: 2px solid red;
+  border-top: 2px solid var(--black);
 }
 
 .line2 {
@@ -37,7 +50,7 @@
   bottom: 0px;
   right: 19px;
   width: 20px;
-  border-top: 2px solid red;
+  border-top: 2px solid var(--black);
   transform: rotate(-45deg);
   transform-origin: top left;
 }
@@ -47,7 +60,7 @@
   bottom: 14px;
   right: -5px;
   width: 20px;
-  border-top: 1px solid red;
+  border-top: 1px solid var(--blackA);
   transform: rotate(45deg);
   transform-origin: top left;
 }
@@ -57,7 +70,7 @@
   bottom: 15px;
   right: 24px;
   height: 54px;
-  border-right: 2px solid red;
+  border-right: 2px solid var(--black);
   transform-origin: top right;
 }
 
@@ -66,7 +79,7 @@
   bottom: 15px;
   right: 14px;
   height: 54px;
-  border-right: 1px solid red;
+  border-right: 1px solid var(--blackA);
   transform-origin: top right;
 }
 
@@ -75,7 +88,7 @@
   top: 38px;
   right: 24px;
   width: 20px;
-  border-top: 2px solid red;
+  border-top: 2px solid var(--black);
   transform: rotate(45deg);
   transform-origin: top right;
 }
@@ -85,7 +98,7 @@
   top: 24px;
   right: 1px;
   width: 20px;
-  border-top: 1px solid red;
+  border-top: 1px solid var(--blackA);
   transform: rotate(-45deg);
   transform-origin: top right;
 }
@@ -95,7 +108,7 @@
   top: -1px;
   right: 24px;
   width: 20px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--blackA);
   transform-origin: top right;
   transform: rotate(-45deg);
 }
@@ -104,24 +117,24 @@
   position: absolute;
   top: 23px;
   right: 39px;
-  width: calc(33% * 1.39);
-  border-bottom: 2px solid red;
+  width: calc(31% * 1.25);
+  border-bottom: 2px solid var(--black);
 }
 
 .line5A {
   position: absolute;
   top: 13px;
   right: 38px;
-  width: calc(33% * 1.39);
-  border-bottom: 1px solid red;
+  width: calc(31% * 1.25);
+  border-bottom: 1px solid var(--blackA);
 }
 
 .line6 {
   position: absolute;
   top: 23px;
-  right: calc(39px + 33% * 1.39);
+  right: calc(39px + 31% * 1.25);
   width: 20px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--black);
   transform-origin: top right;
   transform: rotate(-45deg);
 }
@@ -129,9 +142,9 @@
 .line6A {
   position: absolute;
   top: 14px;
-  right: calc(38px + 33% * 1.39);
+  right: calc(38px + 31% * 1.25);
   width: 20px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--blackA);
   transform-origin: top right;
   transform: rotate(45deg);
 }
@@ -139,10 +152,10 @@
 .line7 {
   position: absolute;
   top: 38px;
-  right: calc(52px + 33% * 1.39);
-  width: calc(100% - 93px - 33% * 1.39);
+  right: calc(52px + 31% * 1.25);
+  width: calc(100% - 93px - 31% * 1.25);
   transform-origin: top right;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--black);
 }
 
 .line8 {
@@ -150,7 +163,7 @@
   top: 51px;
   left: 28px;
   width: 20px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--black);
   transform: rotate(-45deg);
   transform-origin: bottom left;
 }
@@ -160,7 +173,7 @@
   top: 38px;
   left: 1px;
   width: 20px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--blackA);
   transform: rotate(45deg);
   transform-origin: bottom left;
 }
@@ -170,7 +183,7 @@
   bottom: 16px;
   left: 25px;
   height: 39px;
-  border-left: 2px solid red;
+  border-left: 2px solid var(--black);
 }
 
 .line9A {
@@ -178,7 +191,7 @@
   bottom: 16px;
   left: 15px;
   height: 40px;
-  border-left: 1px solid red;
+  border-left: 1px solid var(--blackA);
 }
 
 .line10 {
@@ -186,7 +199,7 @@
   bottom: 15px;
   left: 25px;
   width: 20px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--black);
   transform: rotate(45deg);
   transform-origin: bottom left;
 }
@@ -196,7 +209,7 @@
   bottom: 1px;
   left: 2px;
   width: 20px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--blackA);
   transform: rotate(-45deg);
   transform-origin: bottom left;
 }

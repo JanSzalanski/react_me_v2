@@ -8,6 +8,7 @@ const FooterB = (props) => {
     <footer className={classes[props.className] || classes.wrapperFooter}>
       <div className={classes.innerWrapper}>
         {/* <DecorOne className="decorHeader"></DecorOne> */}
+        <h2 className={classes.footerTitle}>{props.children}</h2>
         <div className={classes.line1}></div>
         <div className={classes.line2}></div>
         <div className={classes.line2A}></div>
@@ -23,12 +24,10 @@ const FooterB = (props) => {
         <div className={classes.line7}></div>
         <div className={classes.line8}></div>
         <div className={classes.line8A}></div>
-
         <div className={classes.line9}></div>
         <div className={classes.line9A}></div>
         <div className={classes.line10}></div>
         <div className={classes.line10A}></div>
-        {/* <Heading className={classes.position}>{props.children}</Heading> */}
       </div>
     </footer>
   );

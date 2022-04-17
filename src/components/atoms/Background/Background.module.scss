@@ -177,17 +177,14 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  border-right-color: 0;
-  width: 21%;
+  width: 10%;
   border-bottom: 2px solid var(--black);
-  transform-origin: center left;
 }
 
 .line14 {
   position: absolute;
   bottom: 0;
-  right: 21%;
-  border-right-color: 0;
+  right: 10%;
   width: 20px;
   transform: skewY(45deg);
   border-bottom: 2px solid var(--black);
@@ -196,7 +193,7 @@
 
 .line15 {
   position: absolute;
-  right: calc(21% + 20px);
+  right: calc(10% + 20px);
   bottom: 20px;
   width: 33%;
   border-bottom: 2px solid var(--black);
@@ -205,7 +202,7 @@
 
 .line16 {
   position: absolute;
-  right: calc(54% + 19px);
+  right: calc(43% + 19px);
   bottom: 20px;
   width: 20px;
   transform: skewY(135deg);
@@ -215,9 +212,9 @@
 
 .line17 {
   position: absolute;
-  right: calc(54% + 39px);
+  right: calc(43% + 39px);
   bottom: 0;
-  width: calc(46% - 60px);
+  width: calc(57% - 60px);
   border-bottom: 2px solid var(--black);
   transform-origin: center right;
 }

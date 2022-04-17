@@ -3,7 +3,7 @@
   left: 55%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 75%;
   height: 70%;
 }
@@ -45,7 +45,7 @@
   left: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   height: 50%;
   border-left: 2px solid var(--black);
 }
@@ -55,11 +55,11 @@
   left: 20px;
   top: calc(25% - 20px);
   -webkit-transform: skew(45deg);
-          transform: skew(45deg);
+  transform: skew(45deg);
   height: 20px;
   border-left: 2px solid var(--black);
   -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
+  transform-origin: bottom center;
 }
 
 .line2 {
@@ -69,7 +69,7 @@
   height: calc(25% - 19px);
   border-left: 2px solid var(--black);
   -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
+  transform-origin: bottom center;
 }
 
 .line3 {
@@ -79,7 +79,7 @@
   width: 10%;
   border-top: 2px solid var(--black);
   -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
 
 .line4 {
@@ -88,10 +88,10 @@
   top: 0;
   width: 20px;
   -webkit-transform: skewY(45deg);
-          transform: skewY(45deg);
+  transform: skewY(45deg);
   border-top: 2px solid var(--black);
   -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
 
 .line5 {
@@ -101,7 +101,7 @@
   width: 31%;
   border-top: 2px solid var(--black);
   -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
 
 .line6 {
@@ -111,9 +111,9 @@
   width: 20px;
   border-top: 2px solid var(--black);
   -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
   -webkit-transform: skewY(-45deg);
-          transform: skewY(-45deg);
+  transform: skewY(-45deg);
 }
 
 .line7 {
@@ -123,7 +123,7 @@
   width: calc(59% - 60px);
   border-top: 2px solid var(--black);
   -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
 
 .line8 {
@@ -132,10 +132,10 @@
   top: 0px;
   width: 20px;
   -webkit-transform: skewY(45deg);
-          transform: skewY(45deg);
+  transform: skewY(45deg);
   border-top: 2px solid var(--black);
   -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
 
 .line9 {
@@ -146,7 +146,7 @@
   height: calc(25% - 39px);
   border-right: 2px solid var(--black);
   -webkit-transform-origin: center right;
-          transform-origin: center right;
+  transform-origin: center right;
 }
 
 .line10 {
@@ -154,11 +154,11 @@
   right: 0;
   top: calc(25% - 20px);
   -webkit-transform: skew(135deg);
-          transform: skew(135deg);
+  transform: skew(135deg);
   height: 20px;
   border-left: 2px solid var(--black);
   -webkit-transform-origin: top right;
-          transform-origin: top right;
+  transform-origin: top right;
 }
 
 .lineR {
@@ -166,7 +166,7 @@
   right: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   height: 50%;
   border-left: 2px solid var(--black);
 }
@@ -177,10 +177,10 @@
   bottom: calc(25% - 19px);
   height: 20px;
   -webkit-transform: skew(45deg);
-          transform: skew(45deg);
+  transform: skew(45deg);
   border-right: 2px solid var(--black);
   -webkit-transform-origin: top right;
-          transform-origin: top right;
+  transform-origin: top right;
 }
 
 .line12 {
@@ -190,63 +190,59 @@
   height: calc(25% - 19px);
   border-right: 2px solid var(--black);
   -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
+  transform-origin: bottom center;
 }
 
 .line13 {
   position: absolute;
   bottom: 0;
   right: 0;
-  border-right-color: 0;
-  width: 21%;
+  width: 10%;
   border-bottom: 2px solid var(--black);
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
 }
 
 .line14 {
   position: absolute;
   bottom: 0;
-  right: 21%;
-  border-right-color: 0;
+  right: 10%;
   width: 20px;
   -webkit-transform: skewY(45deg);
-          transform: skewY(45deg);
+  transform: skewY(45deg);
   border-bottom: 2px solid var(--black);
   -webkit-transform-origin: center right;
-          transform-origin: center right;
+  transform-origin: center right;
 }
 
 .line15 {
   position: absolute;
-  right: calc(21% + 20px);
+  right: calc(10% + 20px);
   bottom: 20px;
-  width: 33%;
+  width: 31%;
   border-bottom: 2px solid var(--black);
   -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
 
 .line16 {
   position: absolute;
-  right: calc(54% + 19px);
+  right: calc(41% + 19px);
   bottom: 20px;
   width: 20px;
   -webkit-transform: skewY(135deg);
-          transform: skewY(135deg);
+  transform: skewY(135deg);
   border-bottom: 2px solid var(--black);
   -webkit-transform-origin: center right;
-          transform-origin: center right;
+  transform-origin: center right;
 }
 
 .line17 {
   position: absolute;
-  right: calc(54% + 39px);
+  right: calc(41% + 39px);
   bottom: 0;
-  width: calc(46% - 60px);
+  width: calc(59% - 60px);
   border-bottom: 2px solid var(--black);
   -webkit-transform-origin: center right;
-          transform-origin: center right;
+  transform-origin: center right;
 }
 
 .line18 {
@@ -255,10 +251,10 @@
   bottom: 20px;
   width: 20px;
   -webkit-transform: skewY(45deg);
-          transform: skewY(45deg);
+  transform: skewY(45deg);
   border-bottom: 2px solid var(--black);
   -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
 
 .line19 {
@@ -268,7 +264,7 @@
   height: calc(25% - 39px);
   border-left: 2px solid var(--black);
   -webkit-transform-origin: center bottom;
-          transform-origin: center bottom;
+  transform-origin: center bottom;
 }
 
 .line20 {
@@ -277,9 +273,9 @@
   bottom: calc(25% - 19px);
   height: 20px;
   -webkit-transform: skew(-45deg);
-          transform: skew(-45deg);
+  transform: skew(-45deg);
   border-left: 2px solid var(--black);
   -webkit-transform-origin: center bottom;
-          transform-origin: center bottom;
+  transform-origin: center bottom;
 }
 /*# sourceMappingURL=Background.module.css.map */

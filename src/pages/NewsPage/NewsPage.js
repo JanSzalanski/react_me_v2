@@ -5,7 +5,7 @@ import classes from './NewsPage.module.css';
 // import ButtonIcon from '../../components/atoms/ButtonIcon/ButtonIcon';
 // import Pargraph from '../../components/atoms/Paragraph/Paragraph';
 // import Card from '../../components/molecules/Card/Card';
-import Footer from '../../components/molecules/Footer/Footer';
+// import Footer from '../../components/molecules/Footer/Footer';
 import FooterB from '../../components/molecules/FooterB/FooterB';
 // import { Link } from 'react-router-dom';
 // import PerspectiveA from '../../components/organisms/PerspectiveA/PerspectiveA';
@@ -29,8 +29,6 @@ const NewsPage = (props) => {
         /> */}
       </div>
       <Background />
-
-      <Footer>Stopka</Footer>
       <FooterB>Stopka</FooterB>
     </div>
   );
