@@ -1,11 +1,16 @@
 import React from 'react';
+import FooterB from '../../components/molecules/FooterB/FooterB';
 
-import Header from '../../components/molecules/Header/Header';
+import Background from '../../components/atoms/Background/Background';
+
+import HeaderB from '../../components/molecules/HeaderB/HeaderB';
 
 const NotFound = () => {
   return (
     <div className="page">
-      <Header>Something goes wrong ? :O</Header>
+      <HeaderB>Something goes wrong ? :O</HeaderB>
+      <Background />
+      <FooterB>Stopka</FooterB>
     </div>
   );
 };

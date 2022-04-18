@@ -1,15 +1,15 @@
 import React from 'react';
-import Footer from '../../components/molecules/Footer/Footer';
+import FooterB from '../../components/molecules/FooterB/FooterB';
 import classes from './NftPage.module.css';
-import Header from '../../components/molecules/Header/Header';
+import HeaderB from '../../components/molecules/HeaderB/HeaderB';
 import Background from '../../components/atoms/Background/Background';
 
 const NftPage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
-      <Header>Strona z NFT i o NFT...</Header>
+      <HeaderB>Strona z NFT i o NFT...</HeaderB>
       <Background />
-      <Footer>Stopka</Footer>
+      <FooterB>Stopka</FooterB>
     </div>
   );
 };
