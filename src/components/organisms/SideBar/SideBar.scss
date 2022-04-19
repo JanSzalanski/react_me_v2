@@ -3,11 +3,11 @@
 .sidebar {
   position: fixed;
   width: 170px;
-  height: 100vh;
-  left: 0;
-  top: 0;
+  height: calc(100vh - 12px);
+  left: 6px;
+  top: 6px;
   // z-index: 1;
-  background-image: url('../../../assets/icons/palster.svg');
+  background-image: url('../../../assets/icons/palsterB.svg');
   background-repeat: repeat;
   background-position: 32.2%, 32.2%;
   background-size: 32.2%;
@@ -15,6 +15,7 @@
   mask-repeat: repeat;
   mask-position: 32.2%, 32.2%;
   mask-size: 32.2%;
+  clip-path: polygon(0 1.6%, 10% 0, 100% 0, 100% 100%, 10% 100%, 0 98.4%);
 }
 
 .background {
@@ -30,7 +31,8 @@
 }
 .borderMenuWrapper {
   position: relative;
-  top: 100px;
+  top: 50%;
+  transform: translate(0, -50%);
   left: 10px;
   width: 250px;
   height: 280px;
@@ -232,11 +234,12 @@
 
 .glowWrapper {
   position: absolute;
-  top: 100px;
+  top: 49%;
+  transform: translate(0, -50%);
   left: 0;
   width: 170px;
   height: 250px;
-  // border: 1px solid black;
+  border: 1px solid black;
   // z-index: 1;
 }
 

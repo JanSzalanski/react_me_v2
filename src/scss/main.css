@@ -71,8 +71,8 @@ body {
   font-size: 1.6rem;
   width: 100%;
   background: #3b3a34;
-  background: -webkit-gradient(linear, left top, right top, from(#131312), color-stop(8%, #32322d), color-stop(11%, #626159), color-stop(20%, #3b3a34), color-stop(89%, #3b3a34), color-stop(98%, #626159), to(#32322d));
-  background: linear-gradient(90deg, #131312 0%, #32322d 8%, #626159 11%, #3b3a34 20%, #3b3a34 89%, #626159 98%, #32322d 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(11%, #626159), color-stop(20%, #3b3a34), color-stop(89%, #3b3a34), color-stop(98%, #626159), to(#32322d));
+  background: linear-gradient(90deg, #626159 11%, #3b3a34 20%, #3b3a34 89%, #626159 98%, #32322d 100%);
 }
 
 strong {
