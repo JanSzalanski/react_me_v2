@@ -582,7 +582,6 @@
   left: 0;
   width: 170px;
   height: 250px;
-  border: 1px solid black;
 }
 
 .glow {
@@ -590,10 +589,10 @@
   top: 0%;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  left: -15px;
+  left: 5px;
   height: 70px;
-  width: 185px;
-  background: radial-gradient(closest-side, #fff4d6, var(--colorArticles), var(--colorMainGrey));
+  width: 180px;
+  background: radial-gradient(closest-side, #fff4d6, var(--colorArticles), var(--colorBgkL));
   -webkit-transition: top 0.4s ease-in-out;
   transition: top 0.4s ease-in-out;
   -webkit-animation-iteration-count: infinite;

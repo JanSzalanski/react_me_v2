@@ -16,6 +16,7 @@
   mask-position: 32.2%, 32.2%;
   mask-size: 32.2%;
   clip-path: polygon(0 1.6%, 10% 0, 100% 0, 100% 100%, 10% 100%, 0 98.4%);
+  // border: 1px solid red;
 }
 
 .background {
@@ -239,7 +240,7 @@
   left: 0;
   width: 170px;
   height: 250px;
-  border: 1px solid black;
+  // border: 1px solid black;
   // z-index: 1;
 }
 
@@ -247,14 +248,14 @@
   position: absolute;
   top: 0%;
   transform: translateY(0);
-  left: -15px;
+  left: 5px;
   height: 70px;
-  width: 185px;
+  width: 180px;
   background: radial-gradient(
     closest-side,
     rgb(255, 244, 214),
     var(--colorArticles),
-    var(--colorMainGrey)
+    var(--colorBgkL)
   );
   transition: top 0.4s ease-in-out;
   animation-iteration-count: infinite;

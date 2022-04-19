@@ -10,10 +10,10 @@ body {
   background: #3b3a34;
   background: linear-gradient(
     90deg,
-    rgba(98, 97, 89, 1) 11%,
-    rgba(59, 58, 52, 1) 20%,
-    rgba(59, 58, 52, 1) 89%,
-    rgba(98, 97, 89, 1) 98%,
+    var(--colorBgkL) 11%,
+    var(--colorBgkD) 20%,
+    var(--colorBgkD) 89%,
+    var(--colorBgkL) 98%,
     rgba(50, 50, 45, 1) 100%
   );
 }
