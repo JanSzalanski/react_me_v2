@@ -1,9 +1,9 @@
 .bgWrapper {
-  position: absolute;
-  left: 55%;
+  position: relative;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 75%;
+  width: 90%;
   height: 70%;
   // border: 1px solid var(--black);
 }
@@ -72,14 +72,14 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 10%;
+  width: calc(10% + 24px);
   border-top: 2px solid var(--black);
   transform-origin: center left;
 }
 
 .line4 {
   position: absolute;
-  left: 10%;
+  left: calc(10% + 24px);
   top: 0;
   width: 20px;
   transform: skewY(45deg);
@@ -89,7 +89,7 @@
 
 .line5 {
   position: absolute;
-  left: calc(10% + 20px);
+  left: calc(10% + 44px);
   top: 19px;
   width: 31%;
   border-top: 2px solid var(--black);
@@ -98,7 +98,7 @@
 
 .line6 {
   position: absolute;
-  left: calc(41% + 20px);
+  left: calc(41% + 43px);
   top: 20px;
   width: 20px;
   border-top: 2px solid var(--black);
@@ -108,9 +108,9 @@
 
 .line7 {
   position: absolute;
-  left: calc(41% + 39px);
+  left: calc(41% + 62px);
   top: 0px;
-  width: calc(59% - 60px);
+  width: calc(59% - 83px);
   border-top: 2px solid var(--black);
   transform-origin: center left;
 }

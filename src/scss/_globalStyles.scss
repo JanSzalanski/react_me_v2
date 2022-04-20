@@ -1,5 +1,5 @@
 body {
-  padding-left: 170px;
+  padding-left: 176px;
   font-family: $font-main;
   font-size: 1.6rem;
   // background-color: var(--colorMainGrey);
@@ -53,10 +53,12 @@ h2 {
 }
 
 .page {
-  width: 100%;
+  position: relative;
+  width: calc(100vw - 176px);
   height: 100vh;
-  padding: 50px;
-  padding-left: 100px;
+  // padding: 50px;
+  // padding-left: 100px;
+  // border: 1px solid greenyellow;
 }
 
 // .backgroundPage {

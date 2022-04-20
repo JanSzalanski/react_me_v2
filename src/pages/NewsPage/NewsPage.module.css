@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=NewsPage.module.css.map */
+.overflowWrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(90% - 80px);
+  height: calc(70% - 80px);
+  overflow: hidden;
+}
+/*# sourceMappingURL=NewsPage.module.css.map */

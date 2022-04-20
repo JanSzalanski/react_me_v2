@@ -3,8 +3,8 @@
   margin-bottom: 40px;
   position: absolute;
   top: 0;
-  left: 55%;
-  width: 75%;
+  left: 50%;
+  width: 90%;
   height: 107px;
   transform: translate(-50%, 0%);
   // border: 1px solid var(--white);
@@ -15,8 +15,8 @@
 .innerWrapper {
   position: absolute;
   top: 0;
-  left: calc(10% - 21px);
-  // transform: translate(-50%, 0%);
+  left: 50%;
+  transform: translate(-50%, 0%);
   width: 80%;
   height: 100%;
   // border: 1px solid white;
