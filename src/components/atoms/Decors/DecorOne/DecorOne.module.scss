@@ -6,8 +6,9 @@
   height: 70px;
   //   border: 1px solid black;
   right: 20px;
-  overflow: hidden;
+  // overflow: hidden;
   top: 0;
+  border: 1px solid yellow;
 }
 
 .decorHeader {
@@ -44,25 +45,29 @@
 
 .wrapperB {
   position: absolute;
-  left: 55%;
+  left: 50%;
   top: 0;
   transform: translate(-50%, 0);
-  width: 120%;
+  width: 130%;
   height: 100%;
-  display: flex;
-  //   border: 1px solid yellow;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  // align-content: center;
 }
 
 .rectangle {
-  width: 20px;
-  height: 70px;
+  float: left;
   position: relative;
-  left: -20px;
-  margin-right: 7px;
+  width: 12px;
+  height: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
   background-color: var(--black);
   opacity: 0.3;
   transform: skew(45deg);
+}
+
+.clear {
+  clear: both;
 }

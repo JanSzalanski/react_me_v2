@@ -51,6 +51,19 @@ const DecorOne = (props) => {
         <div className={classes.rectangle}></div>
         <div className={classes.rectangle}></div>
         <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.rectangle}></div>
+        <div className={classes.clear}></div>
       </div>
     </div>
   );
