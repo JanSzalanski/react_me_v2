@@ -13,7 +13,9 @@
 .innerWrapper {
   position: absolute;
   top: 0;
-  right: calc(10% - 16px);
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
   width: 80%;
   height: 100%;
 }
@@ -125,7 +127,7 @@
 .line5 {
   position: absolute;
   top: 23px;
-  right: 39px;
+  right: 38px;
   width: calc(31% * 1.25);
   border-bottom: 2px solid var(--black);
 }
@@ -140,7 +142,7 @@
 
 .line6 {
   position: absolute;
-  top: 23px;
+  top: 24px;
   right: calc(39px + 31% * 1.25);
   width: 20px;
   border-bottom: 2px solid var(--black);
@@ -165,8 +167,8 @@
 .line7 {
   position: absolute;
   top: 38px;
-  right: calc(52px + 31% * 1.25);
-  width: calc(100% - 93px - 31% * 1.25);
+  right: calc(51px + 31% * 1.25);
+  width: calc(100% - 92px - 31% * 1.25);
   -webkit-transform-origin: top right;
           transform-origin: top right;
   border-bottom: 2px solid var(--black);
@@ -199,7 +201,7 @@
 .line9 {
   position: absolute;
   bottom: 16px;
-  left: 25px;
+  left: 26px;
   height: 39px;
   border-left: 2px solid var(--black);
 }

@@ -17,7 +17,6 @@ const NewsPage = (props) => {
     <div className={classes[props.type] || 'page'}>
       <HeaderB>Aktułalności</HeaderB>
       {/* <Input className="search"></Input> */}
-
       <Background />
       <div className={classes.overflowWrapper}>
         <Card

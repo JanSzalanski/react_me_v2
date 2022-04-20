@@ -17,7 +17,7 @@
   border: 1px solid black;
   background-image: url(../../../assets/siatkaC.webp);
   opacity: 0.12;
-  background-position: 20px 31px;
+  background-position: 40px 31px;
 }
 
 .miarkaL {
@@ -197,14 +197,14 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 10%;
+  width: calc(10% + 24px);
   border-bottom: 2px solid var(--black);
 }
 
 .line14 {
   position: absolute;
   bottom: 0;
-  right: 10%;
+  right: calc(10% + 24px);
   width: 20px;
   -webkit-transform: skewY(45deg);
           transform: skewY(45deg);
@@ -215,9 +215,9 @@
 
 .line15 {
   position: absolute;
-  right: calc(10% + 20px);
+  right: calc(10% + 44px);
   bottom: 20px;
-  width: 33%;
+  width: 31%;
   border-bottom: 2px solid var(--black);
   -webkit-transform-origin: center left;
           transform-origin: center left;
@@ -225,7 +225,7 @@
 
 .line16 {
   position: absolute;
-  right: calc(43% + 19px);
+  right: calc(41% + 43px);
   bottom: 20px;
   width: 20px;
   -webkit-transform: skewY(135deg);
@@ -237,9 +237,9 @@
 
 .line17 {
   position: absolute;
-  right: calc(43% + 39px);
+  right: calc(41% + 63px);
   bottom: 0;
-  width: calc(57% - 60px);
+  width: calc(59% - 83px);
   border-bottom: 2px solid var(--black);
   -webkit-transform-origin: center right;
           transform-origin: center right;
