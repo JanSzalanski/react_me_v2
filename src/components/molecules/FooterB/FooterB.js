@@ -2,12 +2,16 @@ import React from 'react';
 import classes from './FooterB.module.css';
 // import Heading from '../../atoms/Heading/Heading';
 import DecorOne from '../../atoms/Decors/DecorOne/DecorOne';
+import ButtonIcon from '../../atoms/ButtonIcon/ButtonIcon';
 
 const FooterB = (props) => {
   return (
     <footer className={classes[props.className] || classes.wrapperFooter}>
       <div className={classes.innerWrapper}>
-        <DecorOne className="decorFooter"></DecorOne>
+        <DecorOne className="decorFooter">
+          <ButtonIcon className="twitter"></ButtonIcon>
+        </DecorOne>
+
         <h2 className={classes.footerTitle}>{props.children}</h2>
         <div className={classes.line1}></div>
         <div className={classes.line2}></div>

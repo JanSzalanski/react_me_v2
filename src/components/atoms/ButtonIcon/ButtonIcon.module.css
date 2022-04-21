@@ -41,9 +41,18 @@
 }
 
 .twitter {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 0;
+  width: 50px;
+  height: 50px;
   background-image: url("../../../assets/icons/twitter.svg");
   background-repeat: no-repeat;
   background-position: 50%, 50%;
-  background-size: 45%;
+  background-size: 65%;
+  -webkit-clip-path: polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%);
+          clip-path: polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%);
+  background-color: var(--colorArticles);
 }
 /*# sourceMappingURL=ButtonIcon.module.css.map */

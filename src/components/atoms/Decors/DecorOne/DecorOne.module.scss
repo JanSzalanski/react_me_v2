@@ -1,13 +1,13 @@
 .wrapper {
   margin-top: 10px;
-  position: absolute;
+  position: relative;
   width: 400px;
   height: 70px;
-  right: 20px;
-  top: 0;
+  border: 1px solid green;
 }
 
 .decorHeader {
+  border: 1px solid green;
   position: absolute;
   width: calc(100% - 88px - 31% * 1.25);
   height: 55px;
