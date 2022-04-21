@@ -3,11 +3,11 @@
   position: relative;
   width: 400px;
   height: 70px;
-  border: 1px solid green;
+  // border: 1px solid green;
 }
 
 .decorHeader {
-  border: 1px solid green;
+  // border: 1px solid green;
   position: absolute;
   width: calc(100% - 88px - 31% * 1.25);
   height: 55px;
@@ -54,8 +54,8 @@
   height: 70px;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: var(--black);
-  opacity: 0.3;
+  background-color: var(--colorBgkVD);
+  // opacity: 0.3;
   transform: skew(45deg);
 }
 

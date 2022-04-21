@@ -46,16 +46,55 @@
 
 .twitter {
   @extend .buttonicon;
-  position: relative;
-  left: 0;
-  top: 0;
-  margin: 0;
-  width: 50px;
-  height: 50px;
+  // position: absolute;
+  width: 45px;
+  height: 45px;
   background-image: url('../../../assets/icons/twitter.svg');
   background-repeat: no-repeat;
   background-position: 50%, 50%;
-  background-size: 65%;
-  clip-path: polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%);
-  background-color: var(--colorArticles);
+  background-size: 60%;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 15%, 100% 85%, 90% 100%, 10% 100%, 0% 85%, 0% 15%);
+  background-color: var(--colorBgkVD);
+  margin: 0;
+}
+
+.linkedin {
+  @extend .twitter;
+  // position: absolute;
+  width: 90px;
+  height: 45px;
+  background-image: url('../../../assets/icons/Linkedin.svg');
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 80%;
+}
+
+.git {
+  @extend .twitter;
+  width: 90px;
+  height: 45px;
+  background-image: url('../../../assets/icons/GitHub.svg');
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 75%;
+}
+
+.you {
+  @extend .twitter;
+  width: 90px;
+  height: 45px;
+  background-image: url('../../../assets/icons/YouTube.svg');
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 80%;
+}
+
+.vimeo {
+  @extend .twitter;
+  width: 90px;
+  height: 45px;
+  background-image: url('../../../assets/icons/vimeo.svg');
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 100%;
 }

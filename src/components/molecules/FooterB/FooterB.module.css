@@ -20,6 +20,28 @@
   height: 100%;
 }
 
+.socialWrapper {
+  position: absolute;
+  width: calc(100% - 88px - 31% * 1.25);
+  padding-right: 200px;
+  height: 55px;
+  left: 35px;
+  bottom: 7px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footerTitle {
   position: absolute;
   text-align: right;

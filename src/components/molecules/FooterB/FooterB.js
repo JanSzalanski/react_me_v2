@@ -8,9 +8,15 @@ const FooterB = (props) => {
   return (
     <footer className={classes[props.className] || classes.wrapperFooter}>
       <div className={classes.innerWrapper}>
-        <DecorOne className="decorFooter">
+        <DecorOne className="decorFooter"></DecorOne>
+
+        <div className={classes.socialWrapper}>
           <ButtonIcon className="twitter"></ButtonIcon>
-        </DecorOne>
+          <ButtonIcon className="linkedin"></ButtonIcon>
+          <ButtonIcon className="git"></ButtonIcon>
+          <ButtonIcon className="you"></ButtonIcon>
+          <ButtonIcon className="vimeo"></ButtonIcon>
+        </div>
 
         <h2 className={classes.footerTitle}>{props.children}</h2>
         <div className={classes.line1}></div>

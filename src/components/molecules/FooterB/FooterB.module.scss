@@ -23,6 +23,21 @@
   // border: 1px solid white;
 }
 
+.socialWrapper {
+  position: absolute;
+  width: calc(100% - 88px - 31% * 1.25);
+  padding-right: 200px;
+  height: 55px;
+  left: 35px;
+  bottom: 7px;
+  flex-direction: row;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // border: 1px solid red;
+}
+
 .footerTitle {
   position: absolute;
   text-align: right;
