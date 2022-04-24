@@ -1,4 +1,8 @@
 .buttonicon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
   width: 67px;
   height: 67px;
@@ -9,7 +13,16 @@
   background-position: 50%, 50%;
   background-size: 40%;
   margin-bottom: 20px;
-  //   border: none;
+  transition: 0.2s ease-in;
+}
+
+.buttonicon:hover {
+  background-color: var(--colorArticles);
+  fill: black;
+}
+
+.buttonicon:hover path {
+  fill: black;
 }
 
 .logout {
@@ -73,10 +86,7 @@
   @extend .twitter;
   width: 90px;
   height: 45px;
-  background-image: url('../../../assets/icons/GitHub.svg');
-  background-repeat: no-repeat;
-  background-position: 50%, 50%;
-  background-size: 75%;
+  background-image: none;
 }
 
 .you {

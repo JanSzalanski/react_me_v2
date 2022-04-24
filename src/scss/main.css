@@ -51,6 +51,7 @@ textarea:focus {
   --black: rgb(19, 19, 19);
   --blackA: rgba(19, 19, 19, 0.4);
   --white: hsl(255, 100%, 100%);
+  --colorSocial: rgb(5, 5, 5);
   --fontSizeXXS: 1rem;
   --fontSizeXS: 1.2rem;
   --fontSizeS: 1.6rem;
@@ -62,6 +63,12 @@ textarea:focus {
   --font-headers: 'Audiowide', cursive;
   --font-code: 'Libre Barcode 39', cursive;
   --font-pixel: 'Press Start 2P', cursive;
+}
+
+.logo1 {
+  fill: var(--white);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 html {

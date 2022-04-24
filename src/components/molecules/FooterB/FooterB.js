@@ -3,6 +3,7 @@ import classes from './FooterB.module.css';
 // import Heading from '../../atoms/Heading/Heading';
 import DecorOne from '../../atoms/Decors/DecorOne/DecorOne';
 import ButtonIcon from '../../atoms/ButtonIcon/ButtonIcon';
+import Github from '../../atoms/Socials/Github';
 
 const FooterB = (props) => {
   return (
@@ -13,7 +14,12 @@ const FooterB = (props) => {
         <div className={classes.socialWrapper}>
           <ButtonIcon className="twitter"></ButtonIcon>
           <ButtonIcon className="linkedin"></ButtonIcon>
-          <ButtonIcon className="git"></ButtonIcon>
+          <a href="https://github.com/JanSzalanski">
+            <ButtonIcon className="git">
+              <Github />
+            </ButtonIcon>
+          </a>
+
           <ButtonIcon className="you"></ButtonIcon>
           <ButtonIcon className="vimeo"></ButtonIcon>
         </div>

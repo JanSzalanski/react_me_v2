@@ -1,4 +1,17 @@
 .buttonicon, .logout, .pen, .people, .plus, .twitter, .linkedin, .git, .you, .vimeo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 10px;
   width: 67px;
   height: 67px;
@@ -10,6 +23,17 @@
   background-position: 50%, 50%;
   background-size: 40%;
   margin-bottom: 20px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.buttonicon:hover, .logout:hover, .pen:hover, .people:hover, .plus:hover, .twitter:hover, .linkedin:hover, .git:hover, .you:hover, .vimeo:hover {
+  background-color: var(--colorArticles);
+  fill: black;
+}
+
+.buttonicon:hover path, .logout:hover path, .pen:hover path, .people:hover path, .plus:hover path, .twitter:hover path, .linkedin:hover path, .git:hover path, .you:hover path, .vimeo:hover path {
+  fill: black;
 }
 
 .logout {
@@ -65,10 +89,7 @@
 .git {
   width: 90px;
   height: 45px;
-  background-image: url("../../../assets/icons/GitHub.svg");
-  background-repeat: no-repeat;
-  background-position: 50%, 50%;
-  background-size: 75%;
+  background-image: none;
 }
 
 .you {
