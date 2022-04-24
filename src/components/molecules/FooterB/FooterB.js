@@ -4,6 +4,8 @@ import classes from './FooterB.module.css';
 import DecorOne from '../../atoms/Decors/DecorOne/DecorOne';
 import ButtonIcon from '../../atoms/ButtonIcon/ButtonIcon';
 import Github from '../../atoms/Socials/Github';
+import Linkedin from '../../atoms/Socials/Linkedin';
+import Vimeo from '../../atoms/Socials/Vimeo';
 
 const FooterB = (props) => {
   return (
@@ -12,16 +14,34 @@ const FooterB = (props) => {
         <DecorOne className="decorFooter"></DecorOne>
 
         <div className={classes.socialWrapper}>
-          <ButtonIcon className="twitter"></ButtonIcon>
-          <ButtonIcon className="linkedin"></ButtonIcon>
+          <a
+            href="https://twitter.com/_Jan_Ko_?ref_src=twsrc%5Etfw"
+            class="twitter-follow-button"
+            data-show-count="false"
+          >
+            <ButtonIcon className="twitter">Follow</ButtonIcon>
+          </a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          <a href="https://www.linkedin.com/in/jan-szalanski/">
+            <ButtonIcon className="linkedin">
+              <Linkedin />
+            </ButtonIcon>
+          </a>
+
           <a href="https://github.com/JanSzalanski">
             <ButtonIcon className="git">
               <Github />
             </ButtonIcon>
           </a>
 
+          <a href="https://vimeo.com/szalanski">
+            <ButtonIcon className="vimeo">
+              <Vimeo />
+            </ButtonIcon>
+          </a>
+
           <ButtonIcon className="you"></ButtonIcon>
-          <ButtonIcon className="vimeo"></ButtonIcon>
         </div>
 
         <h2 className={classes.footerTitle}>{props.children}</h2>

@@ -138,4 +138,16 @@ h2 {
   width: calc(100vw - 176px);
   height: 100vh;
 }
+
+.twitter-follow-button {
+  font-family: var(--font-headers);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.twitter-follow-button:hover {
+  color: var(--black);
+}
 /*# sourceMappingURL=main.css.map */
