@@ -1,4 +1,5 @@
 import React from 'react';
+import video from '../../assets/earth.mp4';
 import classes from './NewsPage.module.css';
 // import Button from '../../components/atoms/Button/Button';
 import Input from '../../components/atoms/Input/Input';
@@ -15,8 +16,11 @@ import HeaderB from '../../components/molecules/HeaderB/HeaderB';
 const NewsPage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
-      <div className={classes.background}></div>
-      <video src="../../assets/earth.mp4" muted autoplay loop />
+      <video className="video" autoPlay loop muted>
+        <source src={video} type="video/mp4" />
+      </video>
+
+      <div className="overlay"></div>
       <HeaderB>Aktułalności</HeaderB>
       <Input className="search"></Input>
 

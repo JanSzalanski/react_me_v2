@@ -21,15 +21,4 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
-.background {
-  position: absolute;
-  width: calc(100vw - 176px);
-  height: 100vh;
-  background-image: url(../../assets/earth.jpg);
-  background-repeat: no-repeat;
-  background-position: 50%, 50%;
-  -webkit-filter: sepia(0.7);
-          filter: sepia(0.7);
-}
 /*# sourceMappingURL=NewsPage.module.css.map */
