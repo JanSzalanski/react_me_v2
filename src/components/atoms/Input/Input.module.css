@@ -1,5 +1,7 @@
 .wrapperAll {
-  position: relative;
+  position: absolute;
+  left: 24%;
+  top: 11.7%;
   width: calc(var(--inputWidth) + 24px);
   height: calc(var(--inputHeight) + 4px);
 }

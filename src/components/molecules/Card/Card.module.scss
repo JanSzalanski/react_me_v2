@@ -4,10 +4,10 @@ $colorMainA: rgba(yellow, 0.15);
 
 .wrapperAll {
   // margin: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   width: calc(var(--cardWidth) + 5px);
   height: calc(var(--cardHeight) + 3px);
 
@@ -20,6 +20,7 @@ $colorMainA: rgba(yellow, 0.15);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid green;
 }
 
 .wrapperInner {
@@ -55,6 +56,11 @@ $colorMainA: rgba(yellow, 0.15);
   min-height: var(--cardHeight);
   filter: drop-shadow(-5px 10px 10px var(--colorArticlesA));
   position: relative;
+}
+
+.hidden {
+  @extend .card;
+  transform: scale(0.6);
 }
 
 .cardShape {

@@ -1,9 +1,5 @@
 .wrapperAll {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  position: relative;
   width: calc(var(--cardWidth) + 5px);
   height: calc(var(--cardHeight) + 3px);
 }
@@ -21,6 +17,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border: 1px solid green;
 }
 
 .wrapperInner {
@@ -62,12 +59,17 @@
   border-top: 1px dashed var(--black);
 }
 
-.card {
+.card, .hidden {
   width: var(--cardWidth);
   min-height: var(--cardHeight);
   -webkit-filter: drop-shadow(-5px 10px 10px var(--colorArticlesA));
           filter: drop-shadow(-5px 10px 10px var(--colorArticlesA));
   position: relative;
+}
+
+.hidden {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
 
 .cardShape, .cardShapeA, .cardShapeB {

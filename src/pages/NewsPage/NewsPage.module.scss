@@ -7,4 +7,22 @@
   height: calc(70% - 80px);
   //   border: 1px solid red;
   overflow: hidden;
+  flex-direction: row;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.background {
+  position: absolute;
+  width: calc(100vw - 176px);
+  height: 100vh;
+  background-image: url(../../assets/earth.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  filter: sepia(0.7);
+  // padding: 50px;
+  // padding-left: 100px;
+  // border: 1px solid greenyellow;
 }

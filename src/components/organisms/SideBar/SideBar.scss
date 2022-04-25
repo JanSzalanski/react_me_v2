@@ -21,14 +21,13 @@
 
 .background {
   position: fixed;
-  width: 170px;
+  width: 176px;
   height: 100vh;
   left: 0;
   top: 0;
   // z-index: -1;
-
   // background: rgb(0, 0, 0);
-  background: var(--colorMainGrey);
+  background: black;
 }
 .borderMenuWrapper {
   position: relative;
@@ -251,12 +250,7 @@
   left: 5px;
   height: 70px;
   width: 180px;
-  background: radial-gradient(
-    closest-side,
-    rgb(255, 244, 214),
-    var(--colorArticles),
-    var(--colorBgkL)
-  );
+  background: radial-gradient(closest-side, rgb(255, 244, 214), var(--colorArticles), black);
   transition: top 0.4s ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 5s;

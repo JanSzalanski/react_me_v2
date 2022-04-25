@@ -350,11 +350,11 @@
 
 .background {
   position: fixed;
-  width: 170px;
+  width: 176px;
   height: 100vh;
   left: 0;
   top: 0;
-  background: var(--colorMainGrey);
+  background: black;
 }
 
 .borderMenuWrapper {
@@ -592,7 +592,7 @@
   left: 5px;
   height: 70px;
   width: 180px;
-  background: radial-gradient(closest-side, #fff4d6, var(--colorArticles), var(--colorBgkL));
+  background: radial-gradient(closest-side, #fff4d6, var(--colorArticles), black);
   -webkit-transition: top 0.4s ease-in-out;
   transition: top 0.4s ease-in-out;
   -webkit-animation-iteration-count: infinite;

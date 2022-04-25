@@ -6,8 +6,8 @@ import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
 import { Link } from 'react-router-dom';
 
-const Card = ({ cardType, date, title, content, path }) => {
-  const widthFlex = classes.wrapper + ' flex';
+const Card = ({ className, cardType, date, title, content, path }) => {
+  const withFlex = classes.wrapper + ' flex';
 
   return (
     <div className={classes.wrapperAll}>
@@ -23,7 +23,7 @@ const Card = ({ cardType, date, title, content, path }) => {
           }`}</Heading>
           <div className={classes.code}></div>
         </div>
-        <div className={widthFlex}>
+        <div className={withFlex}>
           <div className={classes.paragraphWrapper}>
             <h2 className={classes.title}>{title}</h2>
             {cardType === 'news' && <div className={classes.decorA} />}

@@ -42,7 +42,7 @@ const SideBar = (props) => {
   };
   return (
     <div className="wrapper">
-      {/* <div className="background"></div> */}
+      <div className="background"></div>
       <div className="glowWrapper">
         <div className={classesGlow.join(' ')} />
       </div>
