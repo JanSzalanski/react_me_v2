@@ -6,6 +6,18 @@
   // border: 1px solid green;
 }
 
+.rectangle {
+  float: left;
+  position: relative;
+  width: 12px;
+  height: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: var(--colorBgkVD);
+  // opacity: 0.3;
+  transform: skew(-45deg);
+}
+
 .decorHeader {
   // border: 1px solid green;
   position: absolute;
@@ -25,6 +37,10 @@
   overflow: hidden;
   bottom: 7px;
   clip-path: polygon(0 20%, 2% 0, 100% 0%, 100% 100%, 2% 100%, 0 80%);
+
+  & .rectangle {
+    transform: skew(45deg);
+  }
 }
 
 .second {
@@ -45,18 +61,6 @@
   transform: translate(-50%, 0);
   width: 130%;
   height: 100%;
-}
-
-.rectangle {
-  float: left;
-  position: relative;
-  width: 12px;
-  height: 70px;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: var(--colorBgkVD);
-  // opacity: 0.3;
-  transform: skew(45deg);
 }
 
 .clear {

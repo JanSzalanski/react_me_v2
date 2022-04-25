@@ -2,20 +2,23 @@ body {
   padding-left: 176px;
   font-family: $font-main;
   font-size: 1.6rem;
-  // background-color: var(--colorMainGrey);
+  background-image: url(../assets/earth.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 100%;
   // position: absolute;
   // z-index: -1;
   // height: 100vh;
   width: 100%;
-  background: #3b3a34;
-  background: linear-gradient(
-    90deg,
-    var(--colorBgkL) 11%,
-    var(--colorBgkD) 20%,
-    var(--colorBgkD) 89%,
-    var(--colorBgkL) 98%,
-    rgba(50, 50, 45, 1) 100%
-  );
+  // background: #3b3a34;
+  // background: linear-gradient(
+  //   90deg,
+  //   var(--colorBgkL) 11%,
+  //   var(--colorBgkD) 20%,
+  //   var(--colorBgkD) 89%,
+  //   var(--colorBgkL) 98%,
+  //   rgba(50, 50, 45, 1) 100%
+  // );
 }
 
 strong {
