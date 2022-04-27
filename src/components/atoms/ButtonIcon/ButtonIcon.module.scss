@@ -1,6 +1,6 @@
 .buttonicon {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-left: 10px;
@@ -65,21 +65,38 @@
 }
 
 .git,
-.linkedin,
-.vimeo,
-.twitter {
+.vimeo {
   @extend .social;
+  padding: 6px;
+  width: 90px;
+  height: 45px;
+  background-image: none;
+}
+
+.linkedin {
+  @extend .social;
+  padding: 4px;
+  padding-top: 7px;
+  padding-left: 5px;
   width: 90px;
   height: 45px;
   background-image: none;
 }
 
 .you {
-  @extend .twitter;
+  @extend .social;
+  padding: 4px;
+  padding-top: 8px;
+  padding-left: 5px;
   width: 90px;
   height: 45px;
-  background-image: url('../../../assets/icons/YouTube.svg');
-  background-repeat: no-repeat;
-  background-position: 50%, 50%;
-  background-size: 80%;
+  background-image: none;
+}
+
+.twitter {
+  @extend .social;
+  padding: 6px;
+  width: 90px;
+  height: 45px;
+  background-image: none;
 }

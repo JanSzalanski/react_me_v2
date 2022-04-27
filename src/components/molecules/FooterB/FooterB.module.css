@@ -261,4 +261,10 @@
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
 }
+
+.wrapperTwit {
+  padding-top: 3px;
+  height: 28px;
+  width: 28px;
+}
 /*# sourceMappingURL=FooterB.module.css.map */

@@ -6,6 +6,8 @@ import ButtonIcon from '../../atoms/ButtonIcon/ButtonIcon';
 import Github from '../../atoms/Socials/Github';
 import Linkedin from '../../atoms/Socials/Linkedin';
 import Vimeo from '../../atoms/Socials/Vimeo';
+import Youtube from '../../atoms/Socials/Youtube';
+import Twitter from '../../atoms/Socials/Twitter';
 
 const FooterB = (props) => {
   return (
@@ -19,7 +21,12 @@ const FooterB = (props) => {
             class="twitter-follow-button"
             data-show-count="false"
           >
-            <ButtonIcon className="twitter">Follow</ButtonIcon>
+            <ButtonIcon className="twitter">
+              <div className={classes.wrapperTwit}>
+                <Twitter />
+              </div>
+              Follow
+            </ButtonIcon>
           </a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -41,7 +48,11 @@ const FooterB = (props) => {
             </ButtonIcon>
           </a>
 
-          <ButtonIcon className="you"></ButtonIcon>
+          <a href="https://www.youtube.com/channel/UCY59lj5rPEpNdXwBlK7uMnQ">
+            <ButtonIcon className="you">
+              <Youtube />
+            </ButtonIcon>
+          </a>
         </div>
 
         <h2 className={classes.footerTitle}>{props.children}</h2>
