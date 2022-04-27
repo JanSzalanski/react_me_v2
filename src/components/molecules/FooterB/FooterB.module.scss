@@ -36,7 +36,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // border: 1px solid red;
+  border-right: 5px solid var(--colorArticles);
 }
 
 .footerTitle {
@@ -235,4 +235,20 @@
   padding-top: 3px;
   height: 28px;
   width: 28px;
+}
+
+.tittle1 {
+  display: block;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 75px;
+  height: 50px;
+  transform: translate(0, -50%);
+  color: var(--colorArticles);
+  font-family: var(--font-headers);
+  font-size: 1.5rem;
+  border: 1px solid white;
+  margin: auto;
 }

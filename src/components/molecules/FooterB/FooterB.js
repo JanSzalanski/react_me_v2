@@ -16,6 +16,9 @@ const FooterB = (props) => {
         <DecorOne className="decorFooter"></DecorOne>
 
         <div className={classes.socialWrapper}>
+          <h3 className={classes.tittle1}>
+            moje <b /> socjale
+          </h3>
           <a
             href="https://twitter.com/_Jan_Ko_?ref_src=twsrc%5Etfw"
             class="twitter-follow-button"
