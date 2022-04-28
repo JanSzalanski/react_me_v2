@@ -238,7 +238,11 @@
 }
 
 .tittle1 {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
   text-align: right;
   position: absolute;
   top: 50%;
@@ -249,6 +253,6 @@
   color: var(--colorArticles);
   font-family: var(--font-headers);
   font-size: 1.5rem;
-  border: 1px solid white;
+  // border: 1px solid white;
   margin: auto;
 }

@@ -102,8 +102,12 @@
 
 .twitter {
   padding: 6px;
-  width: 90px;
+  padding-left: 12px;
+  width: 110px;
   height: 45px;
   background-image: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=ButtonIcon.module.css.map */
