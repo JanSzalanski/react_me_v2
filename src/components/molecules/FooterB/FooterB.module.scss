@@ -45,7 +45,7 @@
   right: 47px;
   bottom: 10px;
   display: block;
-  font-size: var(--fontSizeS);
+  font-size: var(--fontSizeXS);
   font-weight: var(--bold);
   color: var(--black);
   margin-bottom: 5px;
@@ -255,4 +255,52 @@
   font-size: 1.5rem;
   // border: 1px solid white;
   margin: auto;
+}
+
+.tittleWrapper {
+  position: absolute;
+  width: calc(40.2% - 2px);
+  height: 70px;
+  left: calc(100% - 45px - 31% * 1.25);
+  bottom: 7px;
+  flex-direction: row;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.lineA {
+  position: absolute;
+  width: calc(100% - 14px);
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid var(--colorArticles);
+}
+
+.lineB {
+  position: absolute;
+  width: 20px;
+  left: calc(100% - 18px);
+  bottom: 7px;
+  border-bottom: 2px solid var(--colorArticles);
+  transform: rotate(-45deg);
+}
+
+.lineC {
+  position: absolute;
+  height: 42px;
+  right: 0px;
+  bottom: 14px;
+  border-right: 2px solid var(--colorArticles);
+}
+
+.lineD {
+  position: absolute;
+  width: 20px;
+  right: -2px;
+  top: 5px;
+  border-bottom: 2px solid var(--colorArticles);
+  transform: rotate(45deg);
 }

@@ -58,7 +58,15 @@ const FooterB = (props) => {
           </a>
         </div>
 
-        <h2 className={classes.footerTitle}>{props.children}</h2>
+        <div className={classes.tittleWrapper}>
+          <div className={classes.lineA}></div>
+          <div className={classes.lineB}></div>
+          <div className={classes.lineC}></div>
+          <div className={classes.lineD}></div>
+          <div className={classes.lineF}></div>
+          <h2 className={classes.footerTitle}>{props.children}</h2>
+        </div>
+
         <div className={classes.line1}></div>
         <div className={classes.line2}></div>
         <div className={classes.line2A}></div>

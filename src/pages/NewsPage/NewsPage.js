@@ -53,7 +53,11 @@ const NewsPage = (props) => {
         earum accusamus iste! Corrupti ut ea sint modi magnam !"
         />
       </div>
-      <FooterB>Stopka</FooterB>
+      <FooterB>
+        Jan Szałański <br />
+        Polityka prywatności
+        <br /> © 2022 Wszystkie prawa zastrzeżone
+      </FooterB>
     </div>
   );
 };
