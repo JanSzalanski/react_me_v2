@@ -59,7 +59,7 @@
   bottom: 0px;
   transform: translateX(-50%);
   width: calc(100% - 77px);
-  border-top: 2px solid var(--black);
+  border-top: 2px solid red;
 }
 
 .line2 {
@@ -135,7 +135,7 @@
   top: 23px;
   right: 38px;
   width: calc(31% * 1.25);
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid red;
 }
 
 .line5A {
@@ -259,7 +259,7 @@
 
 .tittleWrapper {
   position: absolute;
-  width: calc(40.2% - 2px);
+  width: 40.1%;
   height: 70px;
   left: calc(100% - 45px - 31% * 1.25);
   bottom: 7px;
@@ -273,34 +273,59 @@
 
 .lineA {
   position: absolute;
-  width: calc(100% - 14px);
+  width: 97.6%;
   left: 0;
   bottom: 0;
-  border-bottom: 2px solid var(--colorArticles);
+  border-bottom: 2px solid blueviolet;
 }
 
 .lineB {
   position: absolute;
-  width: 20px;
-  left: calc(100% - 18px);
-  bottom: 7px;
-  border-bottom: 2px solid var(--colorArticles);
+  width: 15px;
+  left: 97.1%;
+  bottom: 5px;
+  border-bottom: 2px solid DeepPink;
   transform: rotate(-45deg);
 }
 
 .lineC {
   position: absolute;
-  height: 42px;
-  right: 0px;
-  bottom: 14px;
-  border-right: 2px solid var(--colorArticles);
+  height: 48px;
+  right: 1px;
+  bottom: 11px;
+  border-right: 2px solid darkturquoise;
 }
 
 .lineD {
   position: absolute;
-  width: 20px;
-  right: -2px;
+  width: 15px;
+  right: 2px;
+  top: 5px;
+  border-bottom: 2px solid ForestGreen;
+  transform: rotate(45deg);
+}
+
+.lineE {
+  position: absolute;
+  width: calc(100% - 26px);
+  right: 14px;
+  top: 0px;
+  border-bottom: 2px solid var(--colorArticles);
+}
+
+.lineF {
+  position: absolute;
+  width: 15px;
+  left: -1px;
   top: 5px;
   border-bottom: 2px solid var(--colorArticles);
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
+}
+
+.lineG {
+  position: absolute;
+  height: 57px;
+  left: 0px;
+  bottom: 2px;
+  border-right: 2px solid var(--colorArticles);
 }
