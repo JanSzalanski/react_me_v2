@@ -21,7 +21,7 @@ const FooterB = (props) => {
           </h3>
           <a
             href="https://twitter.com/_Jan_Ko_?ref_src=twsrc%5Etfw"
-            class="twitter-follow-button"
+            className="twitter-follow-button"
             data-show-count="false"
           >
             <ButtonIcon className="twitter">
@@ -31,7 +31,7 @@ const FooterB = (props) => {
               Follow
             </ButtonIcon>
           </a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 
           <a href="https://www.linkedin.com/in/jan-szalanski/">
             <ButtonIcon className="linkedin">
@@ -58,16 +58,20 @@ const FooterB = (props) => {
           </a>
         </div>
 
-        <div className={classes.tittleWrapper}>
-          <div className={classes.lineA}></div>
-          <div className={classes.lineB}></div>
-          <div className={classes.lineC}></div>
-          <div className={classes.lineD}></div>
-          <div className={classes.lineE}></div>
-          <div className={classes.lineF}></div>
-          <div className={classes.lineG}></div>
-          <h2 className={classes.footerTitle}>{props.children}</h2>
+        <div className={classes.bgkWrap}>
+          <div className={classes.background}></div>
+          <div className={classes.lines}></div>
+          <div className={classes.scanline}></div>
         </div>
+
+        <div className={classes.lineA}></div>
+        <div className={classes.lineB}></div>
+        <div className={classes.lineC}></div>
+        <div className={classes.lineD}></div>
+        <div className={classes.lineE}></div>
+        <div className={classes.lineF}></div>
+        <div className={classes.lineG}></div>
+        <h2 className={classes.footerTitle}>{props.children}</h2>
 
         <div className={classes.line1}></div>
         <div className={classes.line2}></div>

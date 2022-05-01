@@ -7,7 +7,7 @@ import Background from '../../components/atoms/Background/Background';
 
 const ArticlePage = (props) => {
   return (
-    <div div className={classes[props.type] || 'page'}>
+    <div className={classes[props.type] || 'page'}>
       <video className="video" autoPlay loop muted>
         <source src={video} type="video/mp4" />
       </video>
