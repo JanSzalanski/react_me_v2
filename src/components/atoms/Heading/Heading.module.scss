@@ -1,8 +1,8 @@
 .heading {
   display: block;
   text-align: left;
-  padding: 10px;
-  padding-left: 45px;
+  padding: 15px;
+  padding-left: 50px;
   display: block;
   font-size: var(--fontSizeL);
   font-weight: var(--bold);
@@ -28,4 +28,11 @@
   @extend .heading;
   letter-spacing: 1px;
   color: white;
+}
+
+.position {
+  @extend .heading;
+  letter-spacing: 1px;
+  color: var(--colorArticles);
+  text-shadow: -4px 4px 2px rgb(0, 0, 0);
 }
