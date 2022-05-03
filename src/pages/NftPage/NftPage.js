@@ -14,7 +14,11 @@ const NftPage = (props) => {
       <div className="overlay"></div>
       <HeaderB>Strona z NFT i o NFT...</HeaderB>
       <Background />
-      <FooterB>Stopka</FooterB>
+      <FooterB>
+        Jan Szałański <br />
+        Polityka prywatności
+        <br /> © 2022 Wszystkie prawa zastrzeżone
+      </FooterB>
     </div>
   );
 };

@@ -14,7 +14,11 @@ const ArticlePage = (props) => {
       <div className="overlay"></div>
       <HeaderB>Strona z artykułami</HeaderB>
       <Background />
-      <FooterB>Stopka</FooterB>
+      <FooterB>
+        Jan Szałański <br />
+        Polityka prywatności
+        <br /> © 2022 Wszystkie prawa zastrzeżone
+      </FooterB>
     </div>
   );
 };
