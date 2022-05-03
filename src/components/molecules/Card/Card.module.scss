@@ -10,7 +10,6 @@ $colorMainA: rgba(yellow, 0.15);
   // transform: translate(-50%, -50%);
   width: calc(var(--cardWidth) + 5px);
   height: calc(var(--cardHeight) + 3px);
-
   // border: 1px solid whitesmoke;
 }
 
@@ -58,8 +57,10 @@ $colorMainA: rgba(yellow, 0.15);
 }
 
 .hidden {
-  @extend .card;
+  @extend .wrapperAll;
   transform: scale(0.6);
+  filter: blur(5px);
+  opacity: 0.8;
 }
 
 .cardShape {

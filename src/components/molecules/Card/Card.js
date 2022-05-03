@@ -10,7 +10,7 @@ const Card = ({ className, cardType, date, title, content, path }) => {
   const withFlex = classes.wrapper + ' flex';
 
   return (
-    <div className={classes.wrapperAll}>
+    <div className={classes[className] || classes.wrapperAll}>
       <div className={classes.card}>
         <div className={classes.cardShapeB} />
         <div className={classes.cardShapeA} />

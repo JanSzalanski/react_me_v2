@@ -1,4 +1,4 @@
-.wrapperAll {
+.wrapperAll, .hidden {
   position: relative;
   width: calc(var(--cardWidth) + 5px);
   height: calc(var(--cardHeight) + 3px);
@@ -58,7 +58,7 @@
   border-top: 1px dashed var(--black);
 }
 
-.card, .hidden {
+.card {
   width: var(--cardWidth);
   min-height: var(--cardHeight);
   -webkit-filter: drop-shadow(-5px 10px 10px var(--colorArticlesA));
@@ -69,6 +69,9 @@
 .hidden {
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  opacity: 0.8;
 }
 
 .cardShape, .cardShapeA, .cardShapeB {
