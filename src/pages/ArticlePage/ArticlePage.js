@@ -9,7 +9,7 @@ import Background from '../../components/atoms/Background/Background';
 const ArticlePage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
-      <video className="video" autoPlay loop muted>
+      <video className="video" loop muted>
         <source src={video} type="video/mp4" />
       </video>
       <div className="overlay"></div>

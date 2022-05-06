@@ -16,7 +16,7 @@ import HeaderB from '../../components/molecules/HeaderB/HeaderB';
 const NewsPage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
-      <video className="video" autoPlay loop muted>
+      <video className="video" loop muted>
         <source src={video} type="video/mp4" />
       </video>
 
