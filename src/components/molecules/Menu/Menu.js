@@ -7,28 +7,27 @@ import Button from '../../atoms/Button/Button';
 const Menu = (props) => {
   return (
     <>
-      <div className="borderMenuWrapper">
-        <div className="topLine" />
-        <div className="topLineCorner" />
-        <div className="rightLineCornerA" />
-        <div className="rightLineCornerB" />
-        <div className="rightLine" />
-        <div className="underLine" />
-        <div className="underLineCornerB" />
-        <div className="underLineCornerA" />
-        
-        <div className="backgroundMenu">
-          <div className="scanline" />
+      <div className={classes.borderMenuWrapper}>
+        <div className={classes.topLine} />
+        <div className={classes.topLineCorner} />
+        <div className={classes.rightLineCornerA} />
+        <div className={classes.rightLineCornerB} />
+        <div className={classes.rightLine} />
+        <div className={classes.underLine} />
+        <div className={classes.underLineCornerB} />
+        <div className={classes.underLineCornerA} />
+
+        <div className={classes.backgroundMenu}>
+          <div className={classes.scanline} />
         </div>
 
-        <div className="cornerTopRight" />
-        <div className="cornerBottomRight" />
-        <div className="cornerMiddle" />
-        <div className="cornerBottomLeft" />
-        <div className="bottomLine" />
-        <div className="borderMenu">
-
-          <h3 className="titleMenu">Menu_Vers</h3>
+        <div className={classes.cornerTopRight} />
+        <div className={classes.cornerBottomRight} />
+        <div className={classes.cornerMiddle} />
+        <div className={classes.cornerBottomLeft} />
+        <div className={classes.bottomLine} />
+        <div className={classes.borderMenu}>
+          <h3 className={classes.titleMenu}>Menu_Vers</h3>
 
           <nav className={classes.menu}>
             <ul className={classes.ulist}>
