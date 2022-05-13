@@ -1,0 +1,26 @@
+.contactWrapper {
+  height: 100vh;
+  width: 400px;
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+  // transform: translate(0, -50%);
+  right: 0px;
+}
+
+.lineRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: 2px solid var(--colorArticles);
+  height: 100%;
+}
+
+.lineLeft {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: calc(0.7 * 50%);
+  border-right: 2px solid var(--colorArticles);
+}
