@@ -1,9 +1,23 @@
 .contactWrapper {
-  height: 100vh;
+  height: 100%;
   width: 385px;
   position: absolute;
   top: 0;
   right: 0px;
+}
+
+.background {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(24, 0, 0, 0)), color-stop(50%, var(--colorArticlesB)));
+  background: linear-gradient(to bottom, rgba(24, 0, 0, 0) 50%, var(--colorArticlesB) 50%);
+  background-size: 100% 4px;
+  -webkit-clip-path: polygon(0 17.5%, 5.5% 15%, 25.5% 15%, 31.5% 12.5%, 31.5% 2%, 37% 0, 100% 0, 100% 100%, 37% 100%, 31.5% 98%, 31.5% 87%, 26.5% 85%, 5.5% 85%, 0 82.5%);
+          clip-path: polygon(0 17.5%, 5.5% 15%, 25.5% 15%, 31.5% 12.5%, 31.5% 2%, 37% 0, 100% 0, 100% 100%, 37% 100%, 31.5% 98%, 31.5% 87%, 26.5% 85%, 5.5% 85%, 0 82.5%);
 }
 
 .lineRight {
@@ -146,5 +160,13 @@
   border-top: 2px solid var(--colorArticles);
   -webkit-transform-origin: top right;
           transform-origin: top right;
+}
+
+.btnWrapper {
+  position: absolute;
+  top: 50%;
+  left: -130px;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
 }
 /*# sourceMappingURL=ContactBar.module.css.map */

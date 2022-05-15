@@ -79,6 +79,7 @@ body {
   padding-left: 176px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
+  overflow: hidden;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(11%, var(--colorBgkL)), color-stop(20%, var(--colorBgkD)), color-stop(89%, var(--colorBgkD)), color-stop(98%, var(--colorBgkL)), to(#32322d));
   background: linear-gradient(90deg, var(--colorBgkL) 11%, var(--colorBgkD) 20%, var(--colorBgkD) 89%, var(--colorBgkL) 98%, #32322d 100%);

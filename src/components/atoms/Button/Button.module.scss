@@ -37,9 +37,9 @@
 }
 
 .secondary {
+  @extend .button;
   margin-left: 5px;
   padding-left: 10px;
-  @extend .button;
   width: var(--buttonWidthSec);
   height: var(--buttonHeightSec);
   font-size: 1.5rem;
@@ -58,6 +58,14 @@
     animation-name: btnBlinkB;
     transform: translate(0px, 0px);
   }
+}
+
+.kontakt {
+  @extend .button;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 0;
+  // transform: rotate(90deg);
 }
 
 .buttonWrapper {
@@ -80,41 +88,3 @@
   filter: drop-shadow(-6px 6px 2px rgba(255, 245, 112, 0.932));
   transition: all 0.25s ease-out;
 }
-
-// @keyframes btnBlink {
-//   0% {
-//     color: var(--colorArticles);
-//   }
-
-//   15% {
-//     color: var(--white);
-//   }
-
-//   25% {
-//     color: var(--white);
-//   }
-
-//   35% {
-//     color: var(--colorArticles);
-//   }
-
-//   45% {
-//     color: var(--colorArticles);
-//   }
-
-//   55% {
-//     color: var(--white);
-//   }
-
-//   65% {
-//     color: var(--white);
-//   }
-
-//   75% {
-//     color: var(--colorArticles);
-//   }
-
-//   100% {
-//     color: var(--colorArticles);
-//   }
-// }
