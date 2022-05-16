@@ -165,8 +165,8 @@
 .btnWrapper {
   position: absolute;
   top: 50%;
-  left: -130px;
-  -webkit-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
+  left: -50px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 /*# sourceMappingURL=ContactBar.module.css.map */

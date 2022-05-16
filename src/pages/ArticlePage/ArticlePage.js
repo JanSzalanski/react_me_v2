@@ -1,3 +1,4 @@
+// import React, { useState } from 'react';
 import React from 'react';
 import video from '../../assets/earth.mp4';
 import Input from '../../components/atoms/Input/Input';
@@ -8,6 +9,12 @@ import Background from '../../components/atoms/Background/Background';
 import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 
 const ArticlePage = (props) => {
+  // const [animeKont, setAnimeKont] = useState(false);
+
+  // const kontkHandler = () => {
+  //   setAnimeKont(true);
+  // };
+
   return (
     <div className={classes[props.type] || 'page'}>
       <video className="video" autoPlay loop muted>
@@ -22,7 +29,8 @@ const ArticlePage = (props) => {
         Polityka prywatności
         <br /> © 2022 Wszystkie prawa zastrzeżone
       </FooterB>
-      <ContactBar></ContactBar>
+      {/* <ContactBar kontaktPointer={kontkHandler} /> */}
+      <ContactBar />
     </div>
   );
 };

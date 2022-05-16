@@ -25,7 +25,9 @@ const ContactBar = (props) => {
       <div className={classes.line9} />
       <div className={classes.line10} />
       <div className={classes.btnWrapper}>
-        <Button type="kontakt">Kontakt</Button>
+        <Button type="kontakt" onClick={props.kontaktPointer}>
+          Kontakt
+        </Button>
       </div>
     </div>
   );
