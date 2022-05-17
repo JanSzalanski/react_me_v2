@@ -1,5 +1,5 @@
-// import React, { useState } from 'react';
-import React from 'react';
+import React, { useState } from 'react';
+// import React from 'react';
 import video from '../../assets/earth.mp4';
 import Input from '../../components/atoms/Input/Input';
 import HeaderB from '../../components/molecules/HeaderB/HeaderB';
@@ -9,11 +9,17 @@ import Background from '../../components/atoms/Background/Background';
 import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 
 const ArticlePage = (props) => {
-  // const [animeKont, setAnimeKont] = useState(false);
+  const [animeKont, setAnimeKont] = useState(null);
 
-  // const kontkHandler = () => {
-  //   setAnimeKont(true);
-  // };
+  const kontaktHandler = () => {
+    if (animeKont === null || animeKont === 'contactHide') {
+      setAnimeKont('contactSlide');
+    } else if (animeKont === 'contactSlide') {
+      setAnimeKont('contactHide');
+    } else {
+      setAnimeKont(null);
+    }
+  };
 
   return (
     <div className={classes[props.type] || 'page'}>
@@ -29,8 +35,7 @@ const ArticlePage = (props) => {
         Polityka prywatności
         <br /> © 2022 Wszystkie prawa zastrzeżone
       </FooterB>
-      {/* <ContactBar kontaktPointer={kontkHandler} /> */}
-      <ContactBar />
+      <ContactBar className={animeKont} kontaktPointer={kontaktHandler} />
     </div>
   );
 };

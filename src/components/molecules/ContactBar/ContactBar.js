@@ -3,8 +3,9 @@ import classes from './ContactBar.module.css';
 import Button from '../../atoms/Button/Button';
 
 const ContactBar = (props) => {
+  const cssClasses = [classes.contactWrapper, props.className];
   return (
-    <div className={classes[props.className] || classes.contactWrapper}>
+    <div className={cssClasses.join(' ')}>
       <div className={classes.background}>
         <div className={classes.scanline} />
       </div>

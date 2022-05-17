@@ -1,9 +1,381 @@
+@-webkit-keyframes btnBlink {
+  0% {
+    color: var(--colorArticles);
+    border-right: 2px solid var(--colorArticles);
+  }
+  5% {
+    border-right: 2px solid var(--white);
+  }
+  15% {
+    color: var(--white);
+  }
+  25% {
+    border-right: 2px solid var(--white);
+    color: var(--white);
+  }
+  30% {
+    border-right: 2px solid var(--colorArticles);
+  }
+  35% {
+    color: var(--colorArticles);
+    border-bottom: 2px solid var(--colorArticles);
+  }
+  40% {
+    border-bottom: 2px solid var(--white);
+  }
+  45% {
+    color: var(--colorArticles);
+  }
+  55% {
+    color: var(--white);
+  }
+  60% {
+    border-bottom: 2px solid var(--colorArticles);
+  }
+  65% {
+    border-left: 2px solid var(--colorArticles);
+    color: var(--white);
+  }
+  70% {
+    border-left: 2px solid var(--white);
+  }
+  75% {
+    color: var(--colorArticles);
+  }
+  80% {
+    border-top: 1px solid var(--colorArticles);
+  }
+  85% {
+    border-top: 1px solid var(--white);
+    border-left: 2px solid var(--white);
+  }
+  90% {
+    border-top: 1px solid var(--white);
+    border-left: 2px solid var(--colorArticles);
+  }
+  99% {
+    border-top: 1px solid var(--colorArticles);
+  }
+  100% {
+    color: var(--colorArticles);
+  }
+}
+
+@keyframes btnBlink {
+  0% {
+    color: var(--colorArticles);
+    border-right: 2px solid var(--colorArticles);
+  }
+  5% {
+    border-right: 2px solid var(--white);
+  }
+  15% {
+    color: var(--white);
+  }
+  25% {
+    border-right: 2px solid var(--white);
+    color: var(--white);
+  }
+  30% {
+    border-right: 2px solid var(--colorArticles);
+  }
+  35% {
+    color: var(--colorArticles);
+    border-bottom: 2px solid var(--colorArticles);
+  }
+  40% {
+    border-bottom: 2px solid var(--white);
+  }
+  45% {
+    color: var(--colorArticles);
+  }
+  55% {
+    color: var(--white);
+  }
+  60% {
+    border-bottom: 2px solid var(--colorArticles);
+  }
+  65% {
+    border-left: 2px solid var(--colorArticles);
+    color: var(--white);
+  }
+  70% {
+    border-left: 2px solid var(--white);
+  }
+  75% {
+    color: var(--colorArticles);
+  }
+  80% {
+    border-top: 1px solid var(--colorArticles);
+  }
+  85% {
+    border-top: 1px solid var(--white);
+    border-left: 2px solid var(--white);
+  }
+  90% {
+    border-top: 1px solid var(--white);
+    border-left: 2px solid var(--colorArticles);
+  }
+  99% {
+    border-top: 1px solid var(--colorArticles);
+  }
+  100% {
+    color: var(--colorArticles);
+  }
+}
+
+@-webkit-keyframes btnBlinkB {
+  0% {
+    color: var(--colorArticles);
+    border-right: 1px solid var(--colorArticles);
+  }
+  5% {
+    border-right: 1px solid var(--white);
+  }
+  15% {
+    color: var(--white);
+  }
+  25% {
+    border-right: 1px solid var(--white);
+    color: var(--white);
+  }
+  30% {
+    border-right: 1px solid var(--colorArticles);
+  }
+  35% {
+    color: var(--colorArticles);
+    border-bottom: 1px solid var(--colorArticles);
+  }
+  40% {
+    border-bottom: 1px solid var(--white);
+  }
+  45% {
+    color: var(--colorArticles);
+  }
+  55% {
+    color: var(--white);
+  }
+  60% {
+    border-bottom: 1px solid var(--colorArticles);
+  }
+  65% {
+    border-left: 1px solid var(--colorArticles);
+    color: var(--white);
+  }
+  70% {
+    border-left: 1px solid var(--white);
+  }
+  75% {
+    color: var(--colorArticles);
+  }
+  80% {
+    border-top: 1px solid var(--colorArticles);
+  }
+  85% {
+    border-top: 1px solid var(--white);
+    border-left: 1px solid var(--white);
+  }
+  90% {
+    border-top: 1px solid var(--white);
+    border-left: 1px solid var(--colorArticles);
+  }
+  99% {
+    border-top: 1px solid var(--colorArticles);
+  }
+  100% {
+    color: var(--colorArticles);
+  }
+}
+
+@keyframes btnBlinkB {
+  0% {
+    color: var(--colorArticles);
+    border-right: 1px solid var(--colorArticles);
+  }
+  5% {
+    border-right: 1px solid var(--white);
+  }
+  15% {
+    color: var(--white);
+  }
+  25% {
+    border-right: 1px solid var(--white);
+    color: var(--white);
+  }
+  30% {
+    border-right: 1px solid var(--colorArticles);
+  }
+  35% {
+    color: var(--colorArticles);
+    border-bottom: 1px solid var(--colorArticles);
+  }
+  40% {
+    border-bottom: 1px solid var(--white);
+  }
+  45% {
+    color: var(--colorArticles);
+  }
+  55% {
+    color: var(--white);
+  }
+  60% {
+    border-bottom: 1px solid var(--colorArticles);
+  }
+  65% {
+    border-left: 1px solid var(--colorArticles);
+    color: var(--white);
+  }
+  70% {
+    border-left: 1px solid var(--white);
+  }
+  75% {
+    color: var(--colorArticles);
+  }
+  80% {
+    border-top: 1px solid var(--colorArticles);
+  }
+  85% {
+    border-top: 1px solid var(--white);
+    border-left: 1px solid var(--white);
+  }
+  90% {
+    border-top: 1px solid var(--white);
+    border-left: 1px solid var(--colorArticles);
+  }
+  99% {
+    border-top: 1px solid var(--colorArticles);
+  }
+  100% {
+    color: var(--colorArticles);
+  }
+}
+
+@-webkit-keyframes glowMovment {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  25% {
+    -webkit-transform: translate(-10px, 4px);
+            transform: translate(-10px, 4px);
+  }
+  50% {
+    -webkit-transform: translate(0px, 8px);
+            transform: translate(0px, 8px);
+  }
+  75% {
+    -webkit-transform: translate(5px, 4px);
+            transform: translate(5px, 4px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes glowMovment {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  25% {
+    -webkit-transform: translate(-10px, 4px);
+            transform: translate(-10px, 4px);
+  }
+  50% {
+    -webkit-transform: translate(0px, 8px);
+            transform: translate(0px, 8px);
+  }
+  75% {
+    -webkit-transform: translate(5px, 4px);
+            transform: translate(5px, 4px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes scanline {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+}
+
+@-webkit-keyframes slideKont {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-365px);
+            transform: translateX(-365px);
+  }
+}
+
+@keyframes slideKont {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-365px);
+            transform: translateX(-365px);
+  }
+}
+
+@-webkit-keyframes hideKont {
+  0% {
+    -webkit-transform: translateX(-365px);
+            transform: translateX(-365px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes hideKont {
+  0% {
+    -webkit-transform: translateX(-365px);
+            transform: translateX(-365px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
 .contactWrapper {
   height: 100%;
   width: 385px;
   position: absolute;
   top: 0;
-  right: 0px;
+  right: -365px;
 }
 
 .background {

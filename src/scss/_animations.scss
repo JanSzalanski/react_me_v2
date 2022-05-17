@@ -170,3 +170,23 @@
     transform: translateY(500%);
   }
 }
+
+@keyframes slideKont {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-365px);
+  }
+}
+
+@keyframes hideKont {
+  0% {
+    transform: translateX(-365px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
