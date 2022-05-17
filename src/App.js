@@ -35,7 +35,10 @@ function App() {
         <NftPage />
         <SideBar />
       </Route>
-      <Route path="*" component={NotFound} />
+      <Route path="*">
+        <NotFound />
+        <SideBar />
+      </Route>
     </Switch>
   );
 }

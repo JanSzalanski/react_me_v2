@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './ContactBar.module.css';
 import Button from '../../atoms/Button/Button';
 
 const ContactBar = (props) => {
-  const cssClasses = [classes.contactWrapper, props.className];
+  const [animeKont, setAnimeKont] = useState(null);
+
+  const kontaktHandler = () => {
+    if (animeKont === null || animeKont === 'contactHide') {
+      setAnimeKont('contactSlide');
+    } else if (animeKont === 'contactSlide') {
+      setAnimeKont('contactHide');
+    } else {
+      setAnimeKont(null);
+    }
+  };
+
+  const cssClasses = [classes.contactWrapper, animeKont];
   return (
     <div className={cssClasses.join(' ')}>
       <div className={classes.background}>
@@ -26,7 +38,7 @@ const ContactBar = (props) => {
       <div className={classes.line9} />
       <div className={classes.line10} />
       <div className={classes.btnWrapper}>
-        <Button type="kontakt" onClick={props.kontaktPointer}>
+        <Button type="kontakt" onClick={kontaktHandler}>
           Kontakt
         </Button>
       </div>

@@ -5,6 +5,7 @@ import classes from './NftPage.module.css';
 import HeaderB from '../../components/molecules/HeaderB/HeaderB';
 import Input from '../../components/atoms/Input/Input';
 import Background from '../../components/atoms/Background/Background';
+import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 
 const NftPage = (props) => {
   return (
@@ -21,6 +22,7 @@ const NftPage = (props) => {
         Polityka prywatności
         <br /> © 2022 Wszystkie prawa zastrzeżone
       </FooterB>
+      <ContactBar />
     </div>
   );
 };

@@ -17,7 +17,7 @@ import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 const NewsPage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
-      <video className="video" loop muted>
+      <video className="video" autoPlay loop muted>
         <source src={video} type="video/mp4" />
       </video>
 
