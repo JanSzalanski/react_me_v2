@@ -12,7 +12,6 @@ const DetailsPage = (props) => {
     <>
       <div className={classes[props.type] || classes.news}>
         <Heading className="detailPage">News</Heading>
-
         <Pargraph>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores maxime eius itaque.
           Doloribus dignissimos sunt distinctio eveniet unde molestiae enim suscipit obcaecati velit
