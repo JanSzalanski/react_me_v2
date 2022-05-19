@@ -10,7 +10,7 @@ const Button = (props) => {
         type={props.type || 'button'}
         onClick={props.onClick}
       >
-        {props.children}
+        <p>{props.children}</p>
       </button>
 
       {props.type === 'button' && (

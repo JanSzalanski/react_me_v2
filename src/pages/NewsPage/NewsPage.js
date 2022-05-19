@@ -11,7 +11,7 @@ import FooterB from '../../components/molecules/FooterB/FooterB';
 // import PerspectiveA from '../../components/organisms/PerspectiveA/PerspectiveA';
 import Background from '../../components/atoms/Background/Background';
 import HeaderB from '../../components/molecules/HeaderB/HeaderB';
-import ContactBar from '../../components/molecules/ContactBar/ContactBar';
+// import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 
 const NewsPage = (props) => {
   return (
@@ -54,7 +54,6 @@ const NewsPage = (props) => {
         Polityka prywatności
         <br /> © 2022 Wszystkie prawa zastrzeżone
       </FooterB>
-      <ContactBar></ContactBar>
     </div>
   );
 };

@@ -9,6 +9,7 @@ import NotFound from './pages/404/NotFound';
 import DetailsPage from './pages/DetailsPage/DetailsPage';
 import SideBar from './components/organisms/SideBar/SideBar';
 import Video from './components/atoms/Videos/Video';
+import ContactBar from './components/molecules/ContactBar/ContactBar';
 
 function App() {
   return (
@@ -24,26 +25,31 @@ function App() {
         <Video></Video>
         <NewsPage />
         <SideBar />
+        <ContactBar />
       </Route>
       <Route path="/articles">
         <Video></Video>
         <ArticlePage />
         <SideBar />
+        <ContactBar />
       </Route>
       <Route path="/people">
         <Video></Video>
         <PeoplePage />
         <SideBar />
+        <ContactBar />
       </Route>
       <Route path="/nft">
         <Video></Video>
         <NftPage />
         <SideBar />
+        <ContactBar />
       </Route>
       <Route path="*">
         <Video></Video>
         <NotFound />
         <SideBar />
+        <ContactBar />
       </Route>
     </Switch>
   );

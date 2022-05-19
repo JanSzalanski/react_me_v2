@@ -8,15 +8,11 @@ const HeaderB = (props) => {
     <header className={classes[props.className] || classes.wrapperHeader}>
       <div className={classes.innerWrapper}>
         <DecorOne className="decorHeader"></DecorOne>
-
-        <Heading className="position">{props.children}</Heading>
-
         <div className={classes.bgkWrap}>
           <div className={classes.background}></div>
           <div className={classes.lines}></div>
           <div className={classes.scanline}></div>
         </div>
-
         <div className={classes.lineA}></div>
         <div className={classes.lineB}></div>
         <div className={classes.lineC}></div>
@@ -24,7 +20,6 @@ const HeaderB = (props) => {
         <div className={classes.lineE}></div>
         <div className={classes.lineF}></div>
         <div className={classes.lineG}></div>
-
         <div className={classes.line1}></div>
         <div className={classes.line2}></div>
         <div className={classes.line2A}></div>
@@ -44,6 +39,7 @@ const HeaderB = (props) => {
         <div className={classes.line9A}></div>
         <div className={classes.line10}></div>
         <div className={classes.line10A}></div>
+        <Heading className="position">{props.children}</Heading>
       </div>
     </header>
   );

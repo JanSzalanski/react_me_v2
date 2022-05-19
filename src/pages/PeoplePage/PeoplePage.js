@@ -4,7 +4,7 @@ import Input from '../../components/atoms/Input/Input';
 import FooterB from '../../components/molecules/FooterB/FooterB';
 import classes from './PeoplePage.module.css';
 import Background from '../../components/atoms/Background/Background';
-import ContactBar from '../../components/molecules/ContactBar/ContactBar';
+// import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 
 const PeoplePage = (props) => {
   return (
@@ -18,7 +18,6 @@ const PeoplePage = (props) => {
         Polityka prywatności
         <br /> © 2022 Wszystkie prawa zastrzeżone
       </FooterB>
-      <ContactBar />
     </div>
   );
 };

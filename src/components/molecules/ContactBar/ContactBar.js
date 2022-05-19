@@ -18,7 +18,12 @@ const ContactBar = (props) => {
   const cssClasses = [classes.contactWrapper, animeKont];
   return (
     <div className={cssClasses.join(' ')}>
-      <div className={classes.background}>
+      <div className={classes.Top}>
+        <h2>Kontakt</h2>
+      </div>
+      <div className={classes.bgkWrap}>
+        <div className={classes.background} />
+        <div className={classes.lines} />
         <div className={classes.scanline} />
       </div>
 

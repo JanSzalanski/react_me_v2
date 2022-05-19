@@ -5,7 +5,7 @@ import HeaderB from '../../components/molecules/HeaderB/HeaderB';
 import FooterB from '../../components/molecules/FooterB/FooterB';
 import classes from './ArticlePage.module.css';
 import Background from '../../components/atoms/Background/Background';
-import ContactBar from '../../components/molecules/ContactBar/ContactBar';
+// import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 
 const ArticlePage = (props) => {
   return (
@@ -19,7 +19,6 @@ const ArticlePage = (props) => {
         Polityka prywatności
         <br /> © 2022 Wszystkie prawa zastrzeżone
       </FooterB>
-      <ContactBar />
     </div>
   );
 };

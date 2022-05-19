@@ -378,18 +378,43 @@
   right: -365px;
 }
 
-.background {
-  display: block;
+.bgkWrap {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(24, 0, 0, 0)), color-stop(50%, var(--colorArticlesB)));
-  background: linear-gradient(to bottom, rgba(24, 0, 0, 0) 50%, var(--colorArticlesB) 50%);
-  background-size: 100% 4px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--colorArticlesB);
   -webkit-clip-path: polygon(0 17.5%, 5.5% 15%, 25.5% 15%, 31.5% 12.5%, 31.5% 2%, 37% 0, 100% 0, 100% 100%, 37% 100%, 31.5% 98%, 31.5% 87%, 26.5% 85%, 5.5% 85%, 0 82.5%);
           clip-path: polygon(0 17.5%, 5.5% 15%, 25.5% 15%, 31.5% 12.5%, 31.5% 2%, 37% 0, 100% 0, 100% 100%, 37% 100%, 31.5% 98%, 31.5% 87%, 26.5% 85%, 5.5% 85%, 0 82.5%);
+}
+
+.Top {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: 0;
+  width: 263px;
+  height: 10%;
+}
+
+.Top h2 {
+  display: block;
+  text-align: left;
+  display: block;
+  font-size: var(--fontSizeL);
+  font-weight: var(--bold);
+  font-family: var(--font-headers);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--colorArticles);
+  text-shadow: -4px 4px 2px black;
 }
 
 .lineRight {
@@ -532,6 +557,31 @@
   border-top: 2px solid var(--colorArticles);
   -webkit-transform-origin: top right;
           transform-origin: top right;
+}
+
+.lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(24, 0, 0, 0)), color-stop(50%, var(--colorArticlesB)));
+  background: linear-gradient(to bottom, rgba(24, 0, 0, 0) 50%, var(--colorArticlesB) 50%);
+  background-size: 100% 4px;
+  opacity: 0.4;
+}
+
+.scanline {
+  width: 100%;
+  height: 35%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(10%, var(--colorArticlesA)), to(rgba(49, 0, 0, 0.1)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, var(--colorArticlesA) 10%, rgba(49, 0, 0, 0.1) 100%);
+  opacity: 0.55;
+  position: absolute;
+  bottom: 100%;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  will-change: transform;
+  -webkit-animation: scanline 12s linear infinite;
+          animation: scanline 12s linear infinite;
 }
 
 .btnWrapper {

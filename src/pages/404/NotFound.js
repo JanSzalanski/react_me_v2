@@ -2,7 +2,6 @@ import React from 'react';
 import FooterB from '../../components/molecules/FooterB/FooterB';
 import Background from '../../components/atoms/Background/Background';
 import HeaderB from '../../components/molecules/HeaderB/HeaderB';
-import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 
 const NotFound = () => {
   return (
@@ -15,7 +14,6 @@ const NotFound = () => {
         Polityka prywatności
         <br /> © 2022 Wszystkie prawa zastrzeżone
       </FooterB>
-      <ContactBar />
     </div>
   );
 };

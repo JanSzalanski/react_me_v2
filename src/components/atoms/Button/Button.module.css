@@ -460,10 +460,6 @@
 .kontakt {
   width: var(--buttonHeight);
   height: var(--buttonWidth);
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  text-orientation: upright;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -472,6 +468,13 @@
   letter-spacing: -2px;
   -webkit-clip-path: polygon(35% 100%, 0 92%, 0 8%, 35% 0, 100% 0, 100% 100%);
           clip-path: polygon(35% 100%, 0 92%, 0 8%, 35% 0, 100% 0, 100% 100%);
+}
+
+.kontakt p {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
 .kontakt:hover {

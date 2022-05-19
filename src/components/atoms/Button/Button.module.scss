@@ -70,14 +70,17 @@
   @extend .button;
   width: var(--buttonHeight);
   height: var(--buttonWidth);
-  writing-mode: vertical-rl;
-  text-orientation: upright;
   justify-content: center;
   padding-right: 0;
   margin: 0;
   letter-spacing: -2px;
   clip-path: polygon(35% 100%, 0 92%, 0 8%, 35% 0, 100% 0, 100% 100%);
   // transform: rotate(90deg);
+
+  & p {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
 
   &:hover {
     transform: translate(3px, 4px);
