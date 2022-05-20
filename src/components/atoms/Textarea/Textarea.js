@@ -1,20 +1,21 @@
 import React from 'react';
-import classes from './Input.module.css';
+import classes from './Textarea.module.css';
 
-const Input = (props) => {
+const Textarea = (props) => {
   return (
     <div className={classes[props.class] || classes.wrapperAll}>
       <div className={classes.backWrapper}>
         <div className={classes[props.bgk] || classes.background}></div>
       </div>
-      <input
-        className={classes[props.className] || classes.input}
-        placeholder={props.placeholder || 'input'}
-        type={classes[props.type] || 'text'}
+      <textarea
+        className={classes[props.className] || classes.textarea}
+        placeholder={props.placeholder || 'textarea'}
+        rows="5"
+        cols="33"
         //   onClick={props.onClick}
       />
     </div>
   );
 };
 
-export default Input;
+export default Textarea;

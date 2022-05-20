@@ -1,4 +1,4 @@
-.wrapperAll {
+.wrapperAll, .contactWrap {
   position: absolute;
   left: 24%;
   top: 11.7%;
@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-.background {
+.background, .contactBgk {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -25,7 +25,7 @@
           clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
 }
 
-.input, .search {
+.input, .search, .contact {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -47,39 +47,43 @@
   letter-spacing: 1px;
 }
 
-.input::-webkit-input-placeholder, .search::-webkit-input-placeholder {
+.input::-webkit-input-placeholder, .search::-webkit-input-placeholder, .contact::-webkit-input-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--colorMainGrey);
+  line-height: var(--inputHeight);
 }
 
-.input:-ms-input-placeholder, .search:-ms-input-placeholder {
+.input:-ms-input-placeholder, .search:-ms-input-placeholder, .contact:-ms-input-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--colorMainGrey);
+  line-height: var(--inputHeight);
 }
 
-.input::-ms-input-placeholder, .search::-ms-input-placeholder {
+.input::-ms-input-placeholder, .search::-ms-input-placeholder, .contact::-ms-input-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--colorMainGrey);
+  line-height: var(--inputHeight);
 }
 
-.input::placeholder, .search::placeholder {
+.input::placeholder, .search::placeholder, .contact::placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--colorMainGrey);
+  line-height: var(--inputHeight);
 }
 
-.input:focus, .search:focus {
+.input:focus, .search:focus, .contact:focus {
   background-color: var(--white);
 }
 
@@ -89,5 +93,24 @@
   background-size: 15px;
   background-position: 15px 50%;
   background-repeat: no-repeat;
+}
+
+.contact {
+  -webkit-clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+          clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+  width: calc(var(--inputWidth) + 60px);
+}
+
+.contactWrap {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: calc(var(--inputWidth) + 64px);
+}
+
+.contactBgk {
+  -webkit-clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+          clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+  width: calc(var(--inputWidth) + 62px);
 }
 /*# sourceMappingURL=Input.module.css.map */

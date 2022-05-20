@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import classes from './ContactBar.module.css';
 import Button from '../../atoms/Button/Button';
+import Input from '../../atoms/Input/Input';
 
 const ContactBar = (props) => {
   const [animeKont, setAnimeKont] = useState(null);
@@ -25,6 +26,18 @@ const ContactBar = (props) => {
         <div className={classes.background} />
         <div className={classes.lines} />
         <div className={classes.scanline} />
+      </div>
+      <div className={classes.Middle}>
+        <Input bgk="contactBgk" class="contactWrap" className="contact" placeholder="Imię *" />
+        <Input bgk="contactBgk" class="contactWrap" className="contact" placeholder="E-mail *" />
+        <Input bgk="contactBgk" class="contactWrap" className="contact" placeholder="Temat *" />
+        <Input
+          type="textarea"
+          bgk="contactBgk"
+          class="contactWrap"
+          className="contact"
+          placeholder="Treść wiadomości *"
+        />
       </div>
 
       <div className={classes.lineRight} />

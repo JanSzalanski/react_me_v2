@@ -48,6 +48,10 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--colorMainGrey);
+    line-height: var(--inputHeight);
+    // width: 100%;
+    // height: 100%;
+    // border: 1px solid black;
   }
 
   &:focus {
@@ -62,4 +66,24 @@
   background-size: 15px;
   background-position: 15px 50%;
   background-repeat: no-repeat;
+}
+
+.contact {
+  @extend .input;
+  clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+  width: calc(var(--inputWidth) + 60px);
+}
+
+.contactWrap {
+  @extend .wrapperAll;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: calc(var(--inputWidth) + 64px);
+}
+
+.contactBgk {
+  @extend .background;
+  clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+  width: calc(var(--inputWidth) + 62px);
 }
