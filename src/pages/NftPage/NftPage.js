@@ -10,7 +10,7 @@ const NftPage = (props) => {
     <div className={classes[props.type] || 'page'}>
       <div className="overlay"></div>
       <HeaderB>Strona z NFT i o NFT...</HeaderB>
-      <Input className="search"></Input>
+      <Input className="search" placeholder="szukaj"></Input>
       <Background />
       <FooterB>
         Jan Szałański <br />

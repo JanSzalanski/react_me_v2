@@ -403,7 +403,6 @@
   right: 0;
   width: 263px;
   height: 10%;
-  border: 1px solid white;
 }
 
 .Top h2 {
@@ -439,7 +438,6 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border: 1px solid white;
 }
 
 .background {
