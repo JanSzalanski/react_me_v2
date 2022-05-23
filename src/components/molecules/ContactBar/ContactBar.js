@@ -27,8 +27,18 @@ const ContactBar = (props) => {
         <div className={classes.lines} />
         <div className={classes.scanline} />
       </div>
-      <div className={classes.Middle}>
-        <Input bgk="contactBgk" class="contactWrap" className="contact" placeholder="Imię *" />
+      <form method="post" action="kontakt.php" className={classes.Middle}>
+        <Input
+          type="text"
+          name="imie"
+          bgk="contactBgk"
+          maxlength="30"
+          autocomplete="off"
+          tabindex="1"
+          class="contactWrap"
+          className="contact"
+          placeholder="Imię *"
+        />
         <Input bgk="contactBgk" class="contactWrap" className="contact" placeholder="E-mail *" />
         <Input bgk="contactBgk" class="contactWrap" className="contact" placeholder="Temat *" />
         <Input
@@ -38,7 +48,7 @@ const ContactBar = (props) => {
           className="contact"
           placeholder="Treść wiadomości *"
         />
-      </div>
+      </form>
 
       <div className={classes.lineRight} />
       <div className={classes.lineLeft} />
@@ -49,7 +59,6 @@ const ContactBar = (props) => {
       <div className={classes.line3} />
       <div className={classes.line4} />
       <div className={classes.line5} />
-      {/*  */}
       <div className={classes.line6} />
       <div className={classes.line7} />
       <div className={classes.line8} />

@@ -8,6 +8,10 @@ const Input = (props) => {
         <div className={classes[props.bgk] || classes.background}></div>
       </div>
       <input
+        name={props.name}
+        maxLength={props.maxlength}
+        autoComplete={props.autocomplete}
+        tabIndex={props.tabindex}
         className={classes[props.className] || classes.input}
         placeholder={props.placeholder || 'input'}
         type={classes[props.type] || 'text'}
