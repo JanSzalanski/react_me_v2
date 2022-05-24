@@ -423,7 +423,7 @@
   top: calc(15% + 20px);
   right: 0;
   width: 385px;
-  height: calc(100% - (60% + 40px));
+  height: calc(100% - (40% + 40px));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

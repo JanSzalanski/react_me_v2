@@ -3,7 +3,7 @@
   left: 24%;
   top: 11.7%;
   width: calc(var(--inputWidth) + 24px);
-  height: calc(var(--inputHeight) + 4px);
+  height: calc(5.5 * var(--inputHeight) + 4px);
 
   // border: 1px solid whitesmoke;
 }
@@ -19,7 +19,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: calc(var(--inputHeight) + 2px);
+  height: calc(5.5 * var(--inputHeight) + 2px);
   width: calc(var(--inputWidth) + 22px);
   background-color: var(--colorArticles);
   clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
@@ -30,7 +30,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: var(--inputHeight);
+  height: calc(var(--inputHeight) * 5.5);
   min-width: var(--inputWidth);
   width: calc(var(--inputWidth) + 20px);
   padding: 15px 30px;
@@ -61,7 +61,7 @@
 
 .contact {
   @extend .textarea;
-  clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+  clip-path: polygon(0% 13%, 7% 0%, 100% 0%, 100% 87%, 93% 100%, 0 100%);
   width: calc(var(--inputWidth) + 60px);
 }
 
@@ -75,6 +75,6 @@
 
 .contactBgk {
   @extend .background;
-  clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+  clip-path: polygon(0% 13%, 7% 0%, 100% 0%, 100% 87%, 93% 100%, 0 100%);
   width: calc(var(--inputWidth) + 62px);
 }
