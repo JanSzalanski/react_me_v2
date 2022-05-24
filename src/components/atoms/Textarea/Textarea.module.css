@@ -1,0 +1,108 @@
+.wrapperAll, .contactWrap {
+  position: absolute;
+  left: 24%;
+  top: 11.7%;
+  width: calc(var(--inputWidth) + 24px);
+  height: calc(var(--inputHeight) + 4px);
+}
+
+.backWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.background, .contactBgk {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: calc(var(--inputHeight) + 2px);
+  width: calc(var(--inputWidth) + 22px);
+  background-color: var(--colorArticles);
+  -webkit-clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+          clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+}
+
+.textarea, .contact {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: var(--inputHeight);
+  min-width: var(--inputWidth);
+  width: calc(var(--inputWidth) + 20px);
+  padding: 15px 30px;
+  font-size: var(--fontSizeM);
+  -webkit-clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+          clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  background-color: var(--colorGrey100);
+  letter-spacing: 1px;
+}
+
+.textarea::-webkit-input-placeholder, .contact::-webkit-input-placeholder {
+  font-weight: var(--bold);
+  font-size: var(--fontSizeXS);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--colorMainGrey);
+  line-height: var(--inputHeight);
+}
+
+.textarea:-ms-input-placeholder, .contact:-ms-input-placeholder {
+  font-weight: var(--bold);
+  font-size: var(--fontSizeXS);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--colorMainGrey);
+  line-height: var(--inputHeight);
+}
+
+.textarea::-ms-input-placeholder, .contact::-ms-input-placeholder {
+  font-weight: var(--bold);
+  font-size: var(--fontSizeXS);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--colorMainGrey);
+  line-height: var(--inputHeight);
+}
+
+.textarea::placeholder, .contact::placeholder {
+  font-weight: var(--bold);
+  font-size: var(--fontSizeXS);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--colorMainGrey);
+  line-height: var(--inputHeight);
+}
+
+.textarea:focus, .contact:focus {
+  background-color: var(--white);
+}
+
+.contact {
+  -webkit-clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+          clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+  width: calc(var(--inputWidth) + 60px);
+}
+
+.contactWrap {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: calc(var(--inputWidth) + 64px);
+}
+
+.contactBgk {
+  -webkit-clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+          clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+  width: calc(var(--inputWidth) + 62px);
+}
+/*# sourceMappingURL=Textarea.module.css.map */

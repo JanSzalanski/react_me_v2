@@ -10,8 +10,12 @@ const Textarea = (props) => {
       <textarea
         className={classes[props.className] || classes.textarea}
         placeholder={props.placeholder || 'textarea'}
-        rows="5"
-        cols="33"
+        rows={props.rows}
+        cols={props.cols}
+        name={props.name}
+        autoComplete={props.autocomplete}
+        tabIndex={props.tabindex}
+        maxLength={props.maxlength}
         //   onClick={props.onClick}
       />
     </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import classes from './ContactBar.module.css';
 import Button from '../../atoms/Button/Button';
 import Input from '../../atoms/Input/Input';
+import Textarea from '../../atoms/Textarea/Textarea';
 
 const ContactBar = (props) => {
   const [animeKont, setAnimeKont] = useState(null);
@@ -31,18 +32,43 @@ const ContactBar = (props) => {
         <Input
           type="text"
           name="imie"
-          bgk="contactBgk"
           maxlength="30"
-          autocomplete="off"
           tabindex="1"
+          autocomplete="off"
+          bgk="contactBgk"
           class="contactWrap"
           className="contact"
           placeholder="Imię *"
         />
-        <Input bgk="contactBgk" class="contactWrap" className="contact" placeholder="E-mail *" />
-        <Input bgk="contactBgk" class="contactWrap" className="contact" placeholder="Temat *" />
         <Input
+          type="email"
+          name="email"
+          maxlength="40"
+          tabindex="2"
+          autocomplete="off"
+          bgk="contactBgk"
+          class="contactWrap"
+          className="contact"
+          placeholder="E-mail *"
+        />
+        <Input
+          type="topic"
+          name="temat"
+          maxlength="30"
+          autocomplete="off"
+          tabindex="3"
+          bgk="contactBgk"
+          class="contactWrap"
+          className="contact"
+          placeholder="Temat *"
+        />
+        <Textarea
           type="textarea"
+          name="message"
+          maxlength="600"
+          tabindex="4"
+          cols="80"
+          rows="5"
           bgk="contactBgk"
           class="contactWrap"
           className="contact"
