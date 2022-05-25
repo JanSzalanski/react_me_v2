@@ -88,8 +88,8 @@
 }
 
 .contact {
-  -webkit-clip-path: polygon(0% 13%, 7% 0%, 100% 0%, 100% 87%, 93% 100%, 0 100%);
-          clip-path: polygon(0% 13%, 7% 0%, 100% 0%, 100% 87%, 93% 100%, 0 100%);
+  -webkit-clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
+          clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
   width: calc(var(--inputWidth) + 60px);
 }
 
@@ -101,8 +101,8 @@
 }
 
 .contactBgk {
-  -webkit-clip-path: polygon(0% 13%, 7% 0%, 100% 0%, 100% 87%, 93% 100%, 0 100%);
-          clip-path: polygon(0% 13%, 7% 0%, 100% 0%, 100% 87%, 93% 100%, 0 100%);
+  -webkit-clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
+          clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
   width: calc(var(--inputWidth) + 62px);
 }
 /*# sourceMappingURL=Textarea.module.css.map */
