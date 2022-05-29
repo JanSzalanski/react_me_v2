@@ -1,10 +1,11 @@
 import React from 'react';
+import Label from '../../components/atoms/Label/Label';
 import classes from './NewsPage.module.css';
 // import Button from '../../components/atoms/Button/Button';
 import Input from '../../components/atoms/Input/Input';
 // import ButtonIcon from '../../components/atoms/ButtonIcon/ButtonIcon';
 // import Pargraph from '../../components/atoms/Paragraph/Paragraph';
-import Card from '../../components/molecules/Card/Card';
+// import Card from '../../components/molecules/Card/Card';
 // import Footer from '../../components/molecules/Footer/Footer';
 import FooterB from '../../components/molecules/FooterB/FooterB';
 // import { Link } from 'react-router-dom';
@@ -22,7 +23,17 @@ const NewsPage = (props) => {
 
       <Background />
       <div className={classes.overflowWrapper}>
-        <Card
+        <div className={classes.slider}>
+          <input type="radio" name="slider" id="s1" checked />
+          <input type="radio" name="slider" id="s2" />
+          <input type="radio" name="slider" id="s3" />
+          <input type="radio" name="slider" id="s4" />
+          <input type="radio" name="slider" id="s5" />
+          <Label for="s1" id="slide1">
+            1
+          </Label>
+        </div>
+        {/* <Card
           className="hidden"
           path="a1"
           date="01/02/2022"
@@ -47,7 +58,7 @@ const NewsPage = (props) => {
           title="Trzeci news"
           content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias
         earum accusamus iste! Corrupti ut ea sint modi magnam !"
-        />
+        /> */}
       </div>
       <FooterB>
         Jan Szałański <br />

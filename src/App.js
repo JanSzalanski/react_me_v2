@@ -28,7 +28,7 @@ function App() {
         <ContactBar />
       </Route>
       <Route path="/articles">
-        <Video></Video>
+        <Video autoP="autoPlay"></Video>
         <ArticlePage />
         <SideBar />
         <ContactBar />
