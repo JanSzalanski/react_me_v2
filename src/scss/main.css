@@ -191,4 +191,38 @@ h2 {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
+
+input[type='radio'] {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid var(--colorArticles);
+  border-radius: 50%;
+  margin: 10px 10px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.5;
+}
+
+input[type='radio']:checked {
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-box-shadow: inset 1em 1em var(--colorArticles);
+          box-shadow: inset 1em 1em var(--colorArticles);
+  border: 2px solid var(--colorArticles);
+  opacity: 1;
+}
 /*# sourceMappingURL=main.css.map */

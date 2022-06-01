@@ -30,7 +30,19 @@ const NewsPage = (props) => {
           <input type="radio" name="slider" id="s4" />
           <input type="radio" name="slider" id="s5" />
           <Label for="s1" id="slide1">
-            1
+            Card 1
+          </Label>
+          <Label for="s2" id="slide2">
+            Card 2
+          </Label>
+          <Label for="s3" id="slide3">
+            Card 3
+          </Label>
+          <Label for="s4" id="slide4">
+            Card 4
+          </Label>
+          <Label for="s5" id="slide5">
+            Card 5
           </Label>
         </div>
         {/* <Card
