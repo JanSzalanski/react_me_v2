@@ -28,7 +28,7 @@ const ContactBar = (props) => {
         <div className={classes.lines} />
         <div className={classes.scanline} />
       </div>
-      <form method="post" action="kontakt.php" className={classes.Middle}>
+      <form method="post" action="" className={classes.Middle}>
         <Input
           type="text"
           name="imie"

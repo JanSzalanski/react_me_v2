@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 
 const Label = (props) => {
   return (
-    <label for={props.for} id={props.id} className={classes.customLabel}>
+    <label htmlFor={props.htmlFor} id={props.id} className={classes.customLabel}>
       {props.children}
       <Button type="secondary">Detale</Button>
     </label>

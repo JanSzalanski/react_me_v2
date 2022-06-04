@@ -29,6 +29,7 @@ textarea:focus {
   --buttonHeightSec: 30px;
   --inputHeight: 40px;
   --inputWidth: 240px;
+  --colorRadio: rebeccapurple;
   --colorNews: #2bd8ff;
   --colorNewsDark: #0060df;
   --colorPeople: #ff2bd8;
@@ -205,6 +206,10 @@ input[type='radio'] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -212,14 +217,17 @@ input[type='radio'] {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 0.5;
+  -webkit-transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms transform ease-in-out;
+  transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
+  cursor: pointer;
 }
 
 input[type='radio']:checked {
   width: 0.75em;
   height: 0.75em;
   border-radius: 50%;
-  -webkit-transform: scale(0);
-          transform: scale(0);
   -webkit-box-shadow: inset 1em 1em var(--colorArticles);
           box-shadow: inset 1em 1em var(--colorArticles);
   border: 2px solid var(--colorArticles);

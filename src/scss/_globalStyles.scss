@@ -142,10 +142,12 @@ input[type='radio'] {
   border-radius: 50%;
   margin: 10px 10px 10px 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0.5;
   transition: 120ms transform ease-in-out;
+  cursor: pointer;
 }
 
 input[type='radio']:checked {

@@ -24,24 +24,24 @@ const NewsPage = (props) => {
       <Background />
       <div className={classes.overflowWrapper}>
         <div className={classes.slider}>
-          <input type="radio" name="slider" id="s1" checked />
+          <input type="radio" name="slider" id="s1" defaultChecked />
           <input type="radio" name="slider" id="s2" />
           <input type="radio" name="slider" id="s3" />
           <input type="radio" name="slider" id="s4" />
           <input type="radio" name="slider" id="s5" />
-          <Label for="s1" id="slide1">
+          <Label htmlFor="s1" id="slide1">
             Card 1
           </Label>
-          <Label for="s2" id="slide2">
+          <Label htmlFor="s2" id="slide2">
             Card 2
           </Label>
-          <Label for="s3" id="slide3">
+          <Label htmlFor="s3" id="slide3">
             Card 3
           </Label>
-          <Label for="s4" id="slide4">
+          <Label htmlFor="s4" id="slide4">
             Card 4
           </Label>
-          <Label for="s5" id="slide5">
+          <Label htmlFor="s5" id="slide5">
             Card 5
           </Label>
         </div>
