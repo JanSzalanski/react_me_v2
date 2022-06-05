@@ -23,12 +23,7 @@ const NewsPage = (props) => {
 
       <Background />
       <div className={classes.overflowWrapper}>
-        <div className={classes.slider}>
-          <input type="radio" name="slider" id="s1" defaultChecked />
-          <input type="radio" name="slider" id="s2" />
-          <input type="radio" name="slider" id="s3" />
-          <input type="radio" name="slider" id="s4" />
-          <input type="radio" name="slider" id="s5" />
+        <section className={classes.slider}>
           <Label htmlFor="s1" id="slide1">
             Card 1
           </Label>
@@ -44,7 +39,12 @@ const NewsPage = (props) => {
           <Label htmlFor="s5" id="slide5">
             Card 5
           </Label>
-        </div>
+          <input type="radio" name="slider" id="s1" defaultChecked />
+          <input type="radio" name="slider" id="s2" />
+          <input type="radio" name="slider" id="s3" />
+          <input type="radio" name="slider" id="s4" />
+          <input type="radio" name="slider" id="s5" />
+        </section>
         {/* <Card
           className="hidden"
           path="a1"

@@ -20,4 +20,6 @@
   height: 100%;
   border: 1px solid var(--colorArticles);
   border-radius: 7px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
 }

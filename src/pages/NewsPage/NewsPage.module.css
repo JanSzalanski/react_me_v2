@@ -28,5 +28,9 @@
   height: 100%;
   border: 1px solid var(--colorArticles);
   border-radius: 7px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 /*# sourceMappingURL=NewsPage.module.css.map */
