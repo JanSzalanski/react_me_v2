@@ -236,12 +236,22 @@ input[type='radio']:checked {
 }
 
 #s1:checked ~ #slide2 {
-  -webkit-transform: translate3d(15%, 0, -100px);
-          transform: translate3d(15%, 0, -100px);
+  -webkit-transform: translate3d(30%, 0, -200px);
+          transform: translate3d(30%, 0, -200px);
 }
 
 #s1:checked ~ #slide3 {
-  -webkit-transform: translate3d(30%, 0, -250px);
-          transform: translate3d(30%, 0, -250px);
+  -webkit-transform: translate3d(60%, 0, -600px);
+          transform: translate3d(60%, 0, -600px);
+}
+
+#s1:checked ~ #slide4 {
+  -webkit-transform: translate3d(-60%, 0, -600px);
+          transform: translate3d(-60%, 0, -600px);
+}
+
+#s1:checked ~ #slide5 {
+  -webkit-transform: translate3d(-30%, 0, -200px);
+          transform: translate3d(-30%, 0, -200px);
 }
 /*# sourceMappingURL=main.css.map */

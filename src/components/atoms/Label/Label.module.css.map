@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,qBAAqB;EAChC,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,4BAA4B;EACnC,MAAM,EAAE,6BAA6B;EACrC,SAAS,EAAE,yDAAyD;EACpE,gBAAgB,EAAE,oBAAoB;EACtC,KAAK,EAAE,mBAAmB;EAC1B,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,SAAS;EACzB,WAAW,EAAE,GAAG;CACjB",
-    "sources": [
-        "Label.module.scss"
-    ],
-    "names": [],
-    "file": "Label.module.css"
-}

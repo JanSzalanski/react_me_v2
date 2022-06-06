@@ -1,9 +1,7 @@
 .customLabel {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: calc(50% - calc(var(--cardHeight) / 2));
+  left: calc(50% - calc(var(--cardHeight) / 2));
   display: block;
   width: calc(var(--cardWidth) + 5px);
   height: calc(var(--cardHeight) + 3px);
@@ -15,4 +13,4 @@
   text-transform: uppercase;
   font-weight: 700;
 }
-/*# sourceMappingURL=Label.module.css.map */
+/*# sourceMappingURL=Label.css.map */
