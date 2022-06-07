@@ -181,22 +181,43 @@ input[type='radio']:checked {
   background: dodgerblue;
 }
 
-#s1:checked ~ #slide1 {
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 100px 300px var(--colorArticles), 0 50px 100px var(--colorArticles);
   transform: translate3d(0%, 0, 0px);
 }
 
-#s1:checked ~ #slide2 {
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
   transform: translate3d(30%, 0, -200px);
 }
 
-#s1:checked ~ #slide3 {
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
   transform: translate3d(60%, 0, -600px);
 }
 
-#s1:checked ~ #slide4 {
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
   transform: translate3d(-60%, 0, -600px);
 }
 
-#s1:checked ~ #slide5 {
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
   transform: translate3d(-30%, 0, -200px);
 }

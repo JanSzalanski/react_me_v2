@@ -12,5 +12,7 @@
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
+  -webkit-transition: 400ms ease-in-out;
+  transition: 400ms ease-in-out;
 }
 /*# sourceMappingURL=Label.css.map */
