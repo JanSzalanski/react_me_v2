@@ -32,5 +32,6 @@
           perspective: 1700px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  pointer-events: none;
 }
 /*# sourceMappingURL=NewsPage.module.css.map */

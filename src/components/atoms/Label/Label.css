@@ -14,5 +14,7 @@
   font-weight: 700;
   -webkit-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out;
+  cursor: pointer;
+  pointer-events: auto;
 }
 /*# sourceMappingURL=Label.css.map */
