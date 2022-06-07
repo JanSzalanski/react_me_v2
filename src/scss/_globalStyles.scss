@@ -148,6 +148,7 @@ input[type='radio'] {
   opacity: 0.5;
   transition: 120ms transform ease-in-out;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 input[type='radio']:checked {
