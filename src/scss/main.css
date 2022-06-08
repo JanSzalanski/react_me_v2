@@ -211,33 +211,11 @@ input[type='radio']:checked {
   opacity: 1;
 }
 
-#slide1 {
-  background: tomato;
-}
-
-#slide2 {
-  background: slateblue;
-}
-
-#slide3 {
-  background: yellowgreen;
-}
-
-#slide4 {
-  background: grey;
-}
-
-#slide5 {
-  background: dodgerblue;
-}
-
 #s1:checked ~ #slide1,
 #s2:checked ~ #slide2,
 #s3:checked ~ #slide3,
 #s4:checked ~ #slide4,
 #s5:checked ~ #slide5 {
-  -webkit-box-shadow: 0 100px 300px var(--colorArticles), 0 50px 100px var(--colorArticles);
-          box-shadow: 0 100px 300px var(--colorArticles), 0 50px 100px var(--colorArticles);
   -webkit-transform: translate3d(0%, 0, 0px);
           transform: translate3d(0%, 0, 0px);
 }

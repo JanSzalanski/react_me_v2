@@ -3,15 +3,6 @@
   top: calc(50% - calc(var(--cardHeight) / 2));
   left: calc(50% - calc(var(--cardHeight) / 2));
   display: block;
-  width: calc(var(--cardWidth) + 5px);
-  height: calc(var(--cardHeight) + 3px);
-  -webkit-clip-path: polygon(92% 0%, 100% 8%, 100% 100%, 8% 100%, 0% 92%, 0 0);
-          clip-path: polygon(92% 0%, 100% 8%, 100% 100%, 8% 100%, 0% 92%, 0 0);
-  background-color: var(--colorArticles);
-  color: var(--colorGrey300);
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 700;
   -webkit-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out;
   cursor: pointer;
