@@ -227,6 +227,9 @@ input[type='radio']:checked {
 #s5:checked ~ #slide1 {
   -webkit-transform: translate3d(30%, 0, -200px);
           transform: translate3d(30%, 0, -200px);
+  opacity: 0.8;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
 }
 
 #s1:checked ~ #slide3,
@@ -236,6 +239,9 @@ input[type='radio']:checked {
 #s5:checked ~ #slide2 {
   -webkit-transform: translate3d(60%, 0, -600px);
           transform: translate3d(60%, 0, -600px);
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  opacity: 0.6;
 }
 
 #s1:checked ~ #slide4,
@@ -245,6 +251,9 @@ input[type='radio']:checked {
 #s5:checked ~ #slide3 {
   -webkit-transform: translate3d(-60%, 0, -600px);
           transform: translate3d(-60%, 0, -600px);
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  opacity: 0.6;
 }
 
 #s1:checked ~ #slide5,
@@ -254,5 +263,8 @@ input[type='radio']:checked {
 #s5:checked ~ #slide4 {
   -webkit-transform: translate3d(-30%, 0, -200px);
           transform: translate3d(-30%, 0, -200px);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  opacity: 0.8;
 }
 /*# sourceMappingURL=main.css.map */
