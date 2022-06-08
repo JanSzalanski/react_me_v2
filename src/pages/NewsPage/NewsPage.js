@@ -29,6 +29,8 @@ const NewsPage = (props) => {
           <input type="radio" name="slider" id="s3" />
           <input type="radio" name="slider" id="s4" />
           <input type="radio" name="slider" id="s5" />
+          <input type="radio" name="slider" id="s6" />
+          <input type="radio" name="slider" id="s7" />
 
           <Label htmlFor="s1" id="slide1" name="slide1">
             <Card
@@ -40,7 +42,6 @@ const NewsPage = (props) => {
               voluptatibus minus totam eos accusamus dolores adipisci!"
             />
           </Label>
-
           <Label htmlFor="s2" id="slide2" name="slide2">
             <Card
               path="a2"
@@ -73,6 +74,22 @@ const NewsPage = (props) => {
               date="01/06/2022"
               title="Piąty news"
               content="To jest troche więcej treści po polsku... Tak aby było wiadomo co gdzie i jak."
+            />
+          </Label>
+          <Label htmlFor="s6" id="slide6" name="slide6">
+            <Card
+              path="a6"
+              date="03/06/2022"
+              title="Szósty news"
+              content="szósty zmysł - Psycholog dziecięcy próbuje pomóc ośmioletniemu chłopcu widzącemu zmarłych poradzić sobie z tym niezwykłym darem."
+            />
+          </Label>
+          <Label htmlFor="s7" id="slide7" name="slide7">
+            <Card
+              path="a7"
+              date="03/06/2022"
+              title="Siódmy news"
+              content="siedem - Dwóch policjantów stara się złapać seryjnego mordercę wybierającego swoje ofiary według specjalnego klucza - siedmiu grzechów głównych."
             />
           </Label>
         </section>
