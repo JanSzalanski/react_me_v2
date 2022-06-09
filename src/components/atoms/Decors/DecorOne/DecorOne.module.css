@@ -35,6 +35,20 @@
           transform: skew(-45deg) translateX(0px);
 }
 
+@media (min-width: 1921px) {
+  .decorHeader {
+    -webkit-clip-path: polygon(0 0, 98.7% 0, 100% 20%, 100% 80%, 98.9% 100%, 0 100%);
+            clip-path: polygon(0 0, 98.7% 0, 100% 20%, 100% 80%, 98.9% 100%, 0 100%);
+  }
+}
+
+@media (min-width: 1921px) and (max-height: 1153px) {
+  .decorHeader {
+    -webkit-clip-path: polygon(0 0, 98.3% 0, 100% 20%, 100% 80%, 98.6% 100%, 0 100%);
+            clip-path: polygon(0 0, 98.3% 0, 100% 20%, 100% 80%, 98.6% 100%, 0 100%);
+  }
+}
+
 .decorFooter {
   position: absolute;
   width: calc(100% - 88px - 31% * 1.25);
@@ -50,6 +64,20 @@
 .decorFooter .rectangle {
   -webkit-transform: skew(45deg);
           transform: skew(45deg);
+}
+
+@media (min-width: 1921px) {
+  .decorFooter {
+    -webkit-clip-path: polygon(0 20%, 1% 0, 100% 0%, 100% 100%, 1% 100%, 0 80%);
+            clip-path: polygon(0 20%, 1% 0, 100% 0%, 100% 100%, 1% 100%, 0 80%);
+  }
+}
+
+@media (min-width: 1921px) and (max-height: 1153px) {
+  .decorFooter {
+    -webkit-clip-path: polygon(0 20%, 1.5% 0, 100% 0%, 100% 100%, 1.5% 100%, 0 80%);
+            clip-path: polygon(0 20%, 1.5% 0, 100% 0%, 100% 100%, 1.5% 100%, 0 80%);
+  }
 }
 
 .second {

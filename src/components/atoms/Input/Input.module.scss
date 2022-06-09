@@ -5,6 +5,12 @@
   width: calc(var(--inputWidth) + 24px);
   height: calc(var(--inputHeight) + 4px);
 
+  @media (min-width: 1921px) {
+    @media (min-height: 1153px) {
+      top: 10.5%;
+    }
+  }
+
   // border: 1px solid whitesmoke;
 }
 
@@ -23,6 +29,10 @@
   width: calc(var(--inputWidth) + 22px);
   background-color: var(--colorArticles);
   clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+
+  @media (min-width: 1921px) {
+    clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+  }
 }
 
 .input {
@@ -56,6 +66,10 @@
 
   &:focus {
     background-color: var(--white);
+  }
+
+  @media (min-width: 1921px) {
+    clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
   }
 }
 

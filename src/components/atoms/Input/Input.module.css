@@ -6,6 +6,12 @@
   height: calc(var(--inputHeight) + 4px);
 }
 
+@media (min-width: 1921px) and (min-height: 1153px) {
+  .wrapperAll, .contactWrap {
+    top: 10.5%;
+  }
+}
+
 .backWrapper {
   position: relative;
   height: 100%;
@@ -23,6 +29,13 @@
   background-color: var(--colorArticles);
   -webkit-clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
           clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+}
+
+@media (min-width: 1921px) {
+  .background, .contactBgk {
+    -webkit-clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+            clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+  }
 }
 
 .input, .search, .contact {
@@ -85,6 +98,13 @@
 
 .input:focus, .search:focus, .contact:focus {
   background-color: var(--white);
+}
+
+@media (min-width: 1921px) {
+  .input, .search, .contact {
+    -webkit-clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+            clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
+  }
 }
 
 .search {

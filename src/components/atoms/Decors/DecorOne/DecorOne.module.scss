@@ -32,6 +32,14 @@
   & .rectangle {
     transform: skew(-45deg) translateX(0px);
   }
+
+  @media (min-width: 1921px) {
+    clip-path: polygon(0 0, 98.7% 0, 100% 20%, 100% 80%, 98.9% 100%, 0 100%);
+
+    @media (max-height: 1153px) {
+      clip-path: polygon(0 0, 98.3% 0, 100% 20%, 100% 80%, 98.6% 100%, 0 100%);
+    }
+  }
 }
 
 .decorFooter {
@@ -46,6 +54,14 @@
 
   & .rectangle {
     transform: skew(45deg);
+  }
+
+  @media (min-width: 1921px) {
+    clip-path: polygon(0 20%, 1% 0, 100% 0%, 100% 100%, 1% 100%, 0 80%);
+
+    @media (max-height: 1153px) {
+      clip-path: polygon(0 20%, 1.5% 0, 100% 0%, 100% 100%, 1.5% 100%, 0 80%);
+    }
   }
 }
 

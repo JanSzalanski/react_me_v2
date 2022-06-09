@@ -273,6 +273,10 @@
   top: 6px;
   clip-path: polygon(0 20%, 3% 0, 100% 0, 100% 80%, 97% 100%, 2% 100%, 0 80%);
   overflow: hidden;
+
+  @media (min-width: 1921px) {
+    clip-path: polygon(0 20%, 2% 0, 100% 0, 100% 80%, 98% 100%, 2% 100%, 0 80%);
+  }
 }
 
 .scanline {
