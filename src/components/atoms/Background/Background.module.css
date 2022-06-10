@@ -14,11 +14,20 @@
   right: 40px;
   top: 40px;
   bottom: 40px;
-  border: 1px solid white;
   background-image: url(../../../assets/siatkaWhite.webp);
   opacity: 0.12;
   background-position: 40px 31px;
   background-color: rgba(255, 255, 255, 0.35);
+}
+
+.border {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 40px;
+  bottom: 40px;
+  border: 1px solid var(--colorArticles);
+  border-radius: 7px;
 }
 
 .miarkaL {
