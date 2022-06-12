@@ -89,7 +89,7 @@ const NewsPage = (props) => {
               path="a7"
               date="03/06/2022"
               title="Siódmy news"
-              content="siedem - Dwóch policjantów stara się złapać seryjnego mordercę wybierającego swoje ofiary według specjalnego klucza - siedmiu grzechów głównych."
+              content="siedem - Dwóch policjantów stara się złapać seryjnego mordercę wybierającego swoje ofiary według specjalnego klucza - siedmiu grzechów głównych.Github jest git ;)"
             />
           </Label>
         </section>
