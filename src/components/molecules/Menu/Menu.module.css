@@ -29,6 +29,13 @@
   height: 280px;
 }
 
+@media (max-width: 1600px) {
+  .borderMenuWrapper {
+    -webkit-transform: scale(0.9) translate(0, -50%);
+            transform: scale(0.9) translate(0, -50%);
+  }
+}
+
 .topLine {
   position: absolute;
   width: 90%;

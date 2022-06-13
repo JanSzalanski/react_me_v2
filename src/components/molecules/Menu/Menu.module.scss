@@ -29,6 +29,10 @@
   width: 250px;
   height: 280px;
   // outline: 2px solid var(--colorArticles);
+
+  @media (max-width: 1600px) {
+    transform: scale(0.9) translate(0, -50%);
+  }
 }
 
 .topLine {

@@ -419,6 +419,13 @@
   height: 250px;
 }
 
+@media (max-width: 1600px) {
+  .glowWrapper {
+    height: 225px;
+    top: 51%;
+  }
+}
+
 .glow {
   position: absolute;
   top: 0%;
@@ -438,6 +445,12 @@
           animation-timing-function: linear;
   -webkit-animation-name: glowMovment;
           animation-name: glowMovment;
+}
+
+@media (max-width: 1600px) {
+  .glow {
+    height: 63px;
+  }
 }
 
 .animeA {

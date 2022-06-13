@@ -47,6 +47,12 @@
   height: 250px;
   // border: 1px solid black;
   // z-index: 1;
+  // border: 1px solid red;
+
+  @media (max-width: 1600px) {
+    height: 225px;
+    top: 51%;
+  }
 }
 
 .glow {
@@ -62,6 +68,11 @@
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-name: glowMovment;
+  // border: 1px solid red;
+
+  @media (max-width: 1600px) {
+    height: 63px;
+  }
 }
 
 .animeA {
