@@ -63,6 +63,11 @@
     animation-name: btnBlinkB;
     transform: translate(0px, 0px);
   }
+
+  @media (max-width: 1600px) {
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
 }
 
 .kontakt {

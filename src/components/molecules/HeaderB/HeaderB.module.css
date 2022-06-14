@@ -384,8 +384,7 @@
 
 @media (max-width: 1600px) {
   .wrapperHeader {
-    -webkit-transform: scaleY(0.9) translate(-50%, 0%);
-            transform: scaleY(0.9) translate(-50%, 0%);
+    width: 82%;
   }
 }
 

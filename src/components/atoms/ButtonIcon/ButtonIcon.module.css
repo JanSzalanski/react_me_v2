@@ -93,12 +93,27 @@
   height: 45px;
 }
 
+@media (max-width: 1600px) {
+  .git,
+  .vimeo {
+    width: 75px;
+    height: 40px;
+  }
+}
+
 .linkedin {
   padding: 4px;
   padding-top: 7px;
   padding-left: 5px;
   width: 90px;
   height: 45px;
+}
+
+@media (max-width: 1600px) {
+  .linkedin {
+    width: 75px;
+    height: 40px;
+  }
 }
 
 .you {
@@ -109,6 +124,13 @@
   height: 45px;
 }
 
+@media (max-width: 1600px) {
+  .you {
+    width: 75px;
+    height: 40px;
+  }
+}
+
 .twitter {
   padding: 6px;
   padding-left: 12px;
@@ -117,5 +139,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1600px) {
+  .twitter {
+    width: 85px;
+    height: 40px;
+  }
 }
 /*# sourceMappingURL=ButtonIcon.module.css.map */

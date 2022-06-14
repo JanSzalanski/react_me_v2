@@ -12,13 +12,6 @@
           transform: translateY(0);
 }
 
-@media (max-width: 1600px) {
-  .glow {
-    height: 250px;
-    width: 170px;
-  }
-}
-
 .moveA {
   -webkit-transform: translateY(50px);
           transform: translateY(50px);

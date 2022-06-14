@@ -47,6 +47,17 @@
   --font-headers: 'Audiowide', cursive;
   --font-code: 'Libre Barcode 39', cursive;
   --font-pixel: 'Press Start 2P', cursive;
+
+  @media (max-width: 1600px) {
+    --cardWidth: 380px;
+    --cardHeight: 308px;
+    --inputHeight: 28px;
+    --inputWidth: 210px;
+    --buttonWidth: 180px;
+    --buttonWidthSec: 95px;
+    --buttonHeight: 30px;
+    --buttonHeightSec: 25px;
+  }
 }
 
 .logo1 {

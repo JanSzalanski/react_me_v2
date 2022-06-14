@@ -382,6 +382,12 @@
           transform: translate(-50%, 0%);
 }
 
+@media (max-width: 1600px) {
+  .wrapperFooter {
+    width: 82%;
+  }
+}
+
 .innerWrapper {
   position: absolute;
   top: 0;
@@ -415,6 +421,10 @@
       -ms-flex-align: center;
           align-items: center;
   border-right: 5px solid var(--colorArticles);
+}
+
+.socialWrapper a {
+  display: block;
 }
 
 .footerTitle {
@@ -669,6 +679,14 @@
   font-family: var(--font-headers);
   font-size: 1.5rem;
   margin: auto;
+}
+
+@media (max-width: 1600px) {
+  .tittle1 {
+    font-size: 1.3rem;
+    width: 55px;
+    font-weight: 300;
+  }
 }
 
 .bgkWrap {

@@ -66,6 +66,19 @@ textarea:focus {
   --font-pixel: 'Press Start 2P', cursive;
 }
 
+@media (max-width: 1600px) {
+  :root {
+    --cardWidth: 380px;
+    --cardHeight: 308px;
+    --inputHeight: 28px;
+    --inputWidth: 210px;
+    --buttonWidth: 180px;
+    --buttonWidthSec: 95px;
+    --buttonHeight: 30px;
+    --buttonHeightSec: 25px;
+  }
+}
+
 .logo1 {
   fill: var(--white);
   -webkit-transition: 0.2s ease-in;

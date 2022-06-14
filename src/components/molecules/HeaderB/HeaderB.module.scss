@@ -8,12 +8,9 @@
   width: 90%;
   height: 107px;
   transform: translate(-50%, 0%);
-  // border: 1px solid var(--white);
-  //
-  //   overflow: hidden;
+
   @media (max-width: 1600px) {
-    transform: scaleY(0.9) translate(-50%, 0%);
-    // left: 43%;
+    width: 82%;
   }
 }
 
