@@ -388,6 +388,12 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .wrapperFooter {
+    left: 48%;
+  }
+}
+
 .innerWrapper {
   position: absolute;
   top: 0;
@@ -441,6 +447,14 @@
   text-transform: uppercase;
   text-shadow: -1px 2px 1px rgba(22, 22, 22, 0.4);
   letter-spacing: 1px;
+}
+
+@media (max-width: 1440px) {
+  .footerTitle {
+    right: 45px;
+    bottom: 14px;
+    font-size: 1.1rem;
+  }
 }
 
 .line1 {

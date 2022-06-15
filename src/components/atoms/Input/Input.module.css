@@ -19,6 +19,12 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .wrapperAll, .contactWrap {
+    left: 60%;
+  }
+}
+
 .backWrapper {
   position: relative;
   height: 100%;

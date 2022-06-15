@@ -16,6 +16,10 @@
   @media (max-width: 1600px) {
     width: 82%;
   }
+
+  @media (max-width: 1440px) {
+    left: 48%;
+  }
 }
 
 .innerWrapper {
@@ -64,6 +68,12 @@
   text-transform: uppercase;
   text-shadow: -1px 2px 1px rgba(22, 22, 22, 0.4);
   letter-spacing: 1px;
+
+  @media (max-width: 1440px) {
+    right: 45px;
+    bottom: 14px;
+    font-size: 1.1rem;
+  }
 }
 
 .line1 {

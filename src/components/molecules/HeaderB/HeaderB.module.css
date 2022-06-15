@@ -388,6 +388,12 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .wrapperHeader {
+    left: 48%;
+  }
+}
+
 .innerWrapper {
   position: absolute;
   top: 0;
