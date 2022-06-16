@@ -1,4 +1,7 @@
 @import '../../../scss/animations';
+
+$btnWidth: 210px;
+$btnHeight: 40px;
 .button {
   margin: 10px;
   padding-right: 10px;
@@ -40,7 +43,11 @@
 .kontakt:hover + .glowKont {
   filter: drop-shadow(-3px 3px 2px var(--white));
 }
-
+.menu {
+  @extend .button;
+  width: $btnWidth;
+  height: $btnHeight;
+}
 .secondary {
   @extend .button;
   margin-left: 5px;

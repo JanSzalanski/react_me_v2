@@ -370,7 +370,7 @@
   }
 }
 
-.button, .secondary, .kontakt {
+.button, .menu, .secondary, .kontakt {
   margin: 10px;
   padding-right: 10px;
   display: -webkit-box;
@@ -408,7 +408,7 @@
           backdrop-filter: blur(2px);
 }
 
-.button:hover, .secondary:hover, .kontakt:hover {
+.button:hover, .menu:hover, .secondary:hover, .kontakt:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -419,7 +419,7 @@
           transform: translate(-3px, 4px);
 }
 
-.button:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow {
+.button:hover + .glow, .menu:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--white));
           filter: drop-shadow(-3px 3px 2px var(--white));
 }
@@ -427,6 +427,11 @@
 .kontakt:hover + .glowKont {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--white));
           filter: drop-shadow(-3px 3px 2px var(--white));
+}
+
+.menu {
+  width: 210px;
+  height: 40px;
 }
 
 .secondary {
