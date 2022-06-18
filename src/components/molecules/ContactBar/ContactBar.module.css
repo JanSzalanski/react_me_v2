@@ -439,6 +439,12 @@
   text-shadow: -4px 4px 2px black;
 }
 
+@media (max-width: 1440px) {
+  .Top h2 {
+    font-size: 2rem;
+  }
+}
+
 .Middle {
   position: absolute;
   top: calc(15% + 20px);

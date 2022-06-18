@@ -12,6 +12,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 1440px) {
+  .heading, .card, .detailPage, .position {
+    font-size: 2rem;
+  }
+}
+
 .card {
   margin-bottom: 0;
   padding: 0;

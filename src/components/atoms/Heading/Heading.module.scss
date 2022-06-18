@@ -10,6 +10,10 @@
   margin-bottom: 5px;
   font-family: var(--font-headers);
   text-transform: uppercase;
+
+  @media (max-width: 1440px) {
+    font-size: 2rem;
+  }
 }
 
 .card {
