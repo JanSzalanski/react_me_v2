@@ -370,7 +370,7 @@
   }
 }
 
-.button, .menu, .secondary, .kontakt {
+.button, .secondary, .kontakt, .menu {
   margin: 10px;
   padding-right: 10px;
   display: -webkit-box;
@@ -408,7 +408,7 @@
           backdrop-filter: blur(2px);
 }
 
-.button:hover, .menu:hover, .secondary:hover, .kontakt:hover {
+.button:hover, .secondary:hover, .kontakt:hover, .menu:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -419,7 +419,7 @@
           transform: translate(-3px, 4px);
 }
 
-.button:hover + .glow, .menu:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow {
+.button:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow, .menu:hover + .glow {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--white));
           filter: drop-shadow(-3px 3px 2px var(--white));
 }
@@ -427,11 +427,6 @@
 .kontakt:hover + .glowKont {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--white));
           filter: drop-shadow(-3px 3px 2px var(--white));
-}
-
-.menu {
-  width: 210px;
-  height: 40px;
 }
 
 .secondary {
@@ -498,7 +493,7 @@
   position: relative;
 }
 
-.copy {
+.copy, .copyMe {
   width: var(--buttonWidth);
   height: var(--buttonHeight);
   -webkit-clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
@@ -538,5 +533,15 @@
           filter: drop-shadow(6px 6px 2px rgba(255, 245, 112, 0.932));
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+}
+
+.menu {
+  width: 210px;
+  height: 40px;
+}
+
+.copyMe {
+  width: 210px;
+  height: 40px;
 }
 /*# sourceMappingURL=Button.module.css.map */

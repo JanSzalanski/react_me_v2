@@ -33,24 +33,30 @@ const Menu = (props) => {
             <ul className={classes.ulist}>
               <li className={classes.li}>
                 <NavLink activeClassName={classes.active} className="routeLink" to="/news">
-                  <Button className="menu" onClick={props.newsPointer}>
+                  <Button type="menu" onClick={props.newsPointer}>
                     News
                   </Button>
                 </NavLink>
               </li>
               <li className={classes.li}>
                 <NavLink activeClassName={classes.active} className="routeLink" to="/articles">
-                  <Button onClick={props.articlePointer}> Artykóły</Button>
+                  <Button type="menu" onClick={props.articlePointer}>
+                    Artykóły
+                  </Button>
                 </NavLink>
               </li>
               <li className={classes.li}>
                 <NavLink activeClassName={classes.active} className="routeLink" to="/people">
-                  <Button onClick={props.peoplePointer}>Ludzie</Button>
+                  <Button type="menu" onClick={props.peoplePointer}>
+                    Ludzie
+                  </Button>
                 </NavLink>
               </li>
               <li className={classes.li}>
                 <NavLink activeClassName={classes.active} className="routeLink" to="/nft">
-                  <Button onClick={props.nftPointer}>#NFT</Button>
+                  <Button type="menu" onClick={props.nftPointer}>
+                    #NFT
+                  </Button>
                 </NavLink>
               </li>
             </ul>

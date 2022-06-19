@@ -43,11 +43,7 @@ $btnHeight: 40px;
 .kontakt:hover + .glowKont {
   filter: drop-shadow(-3px 3px 2px var(--white));
 }
-.menu {
-  @extend .button;
-  width: $btnWidth;
-  height: $btnHeight;
-}
+
 .secondary {
   @extend .button;
   margin-left: 5px;
@@ -136,4 +132,16 @@ $btnHeight: 40px;
   top: 4px;
   filter: drop-shadow(6px 6px 2px rgba(255, 245, 112, 0.932));
   transition: all 0.25s ease-out;
+}
+
+.menu {
+  @extend .button;
+  width: $btnWidth;
+  height: $btnHeight;
+}
+
+.copyMe {
+  @extend .copy;
+  width: $btnWidth;
+  height: $btnHeight;
 }
