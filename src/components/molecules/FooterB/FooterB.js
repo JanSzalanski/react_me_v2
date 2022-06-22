@@ -3,11 +3,6 @@ import classes from './FooterB.module.css';
 // import Heading from '../../atoms/Heading/Heading';
 import DecorOne from '../../atoms/Decors/DecorOne/DecorOne';
 import ButtonIcon from '../../atoms/ButtonIcon/ButtonIcon';
-import Github from '../../atoms/Socials/Github';
-import Linkedin from '../../atoms/Socials/Linkedin';
-import Vimeo from '../../atoms/Socials/Vimeo';
-import Youtube from '../../atoms/Socials/Youtube';
-import Twitter from '../../atoms/Socials/Twitter';
 
 const FooterB = (props) => {
   return (
@@ -25,36 +20,26 @@ const FooterB = (props) => {
             data-show-count="false"
           >
             <ButtonIcon className="twitter">
-              <div className={classes.wrapperTwit}>
-                <Twitter />
-              </div>
+              <div className={classes.wrapperTwit}></div>
               Follow
             </ButtonIcon>
           </a>
           <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 
           <a href="https://www.linkedin.com/in/jan-szalanski/">
-            <ButtonIcon className="linkedin">
-              <Linkedin />
-            </ButtonIcon>
+            <ButtonIcon className="linkedin"></ButtonIcon>
           </a>
 
           <a href="https://github.com/JanSzalanski">
-            <ButtonIcon className="git">
-              <Github />
-            </ButtonIcon>
+            <ButtonIcon className="git"></ButtonIcon>
           </a>
 
           <a href="https://vimeo.com/szalanski">
-            <ButtonIcon className="vimeo">
-              <Vimeo />
-            </ButtonIcon>
+            <ButtonIcon className="vimeo"></ButtonIcon>
           </a>
 
           <a href="https://www.youtube.com/channel/UCY59lj5rPEpNdXwBlK7uMnQ">
-            <ButtonIcon className="you">
-              <Youtube />
-            </ButtonIcon>
+            <ButtonIcon className="you"></ButtonIcon>
           </a>
         </div>
 

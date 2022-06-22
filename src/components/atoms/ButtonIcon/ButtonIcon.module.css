@@ -1,5 +1,4 @@
-.buttonicon, .logout, .pen, .people, .plus, .social, .git,
-.vimeo, .linkedin, .you, .twitter {
+.buttonicon, .logout, .pen, .people, .plus, .social, .git, .vimeo, .linkedin, .you, .twitter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,8 +27,7 @@
   transition: 0.2s ease-in;
 }
 
-.buttonicon:hover, .logout:hover, .pen:hover, .people:hover, .plus:hover, .social:hover, .git:hover,
-.vimeo:hover, .linkedin:hover, .you:hover, .twitter:hover {
+.buttonicon:hover, .logout:hover, .pen:hover, .people:hover, .plus:hover, .social:hover, .git:hover, .vimeo:hover, .linkedin:hover, .you:hover, .twitter:hover {
   background-color: var(--colorArticles);
   fill: black;
 }
@@ -74,8 +72,7 @@
   background-size: 40%;
 }
 
-.social, .git,
-.vimeo, .linkedin, .you, .twitter {
+.social, .git, .vimeo, .linkedin, .you, .twitter {
   -webkit-clip-path: polygon(10% 0%, 90% 0%, 100% 15%, 100% 85%, 90% 100%, 10% 100%, 0% 85%, 0% 15%);
           clip-path: polygon(10% 0%, 90% 0%, 100% 15%, 100% 85%, 90% 100%, 10% 100%, 0% 85%, 0% 15%);
   background-color: var(--colorBgkVD);
@@ -86,15 +83,34 @@
   margin: 0;
 }
 
-.git,
-.vimeo {
+.git {
+  background-image: url("../../../assets/icons/GitHubBig.svg");
+  background-repeat: no-repeat;
+  background-position: 50%, 60%;
+  background-size: 85%;
   padding: 6px;
   width: 90px;
   height: 45px;
 }
 
 @media (max-width: 1600px) {
-  .git,
+  .git {
+    width: 75px;
+    height: 40px;
+  }
+}
+
+.vimeo {
+  background-image: url("../../../assets/icons/VimeoBig.svg");
+  background-repeat: no-repeat;
+  background-position: 50%, 60%;
+  background-size: 85%;
+  padding: 6px;
+  width: 90px;
+  height: 45px;
+}
+
+@media (max-width: 1600px) {
   .vimeo {
     width: 75px;
     height: 40px;
@@ -102,6 +118,10 @@
 }
 
 .linkedin {
+  background-image: url("../../../assets/icons/LinkedinBig.svg");
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 90%;
   padding: 4px;
   padding-top: 7px;
   padding-left: 5px;
@@ -117,6 +137,10 @@
 }
 
 .you {
+  background-image: url("../../../assets/icons/YoutubeBig.svg");
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: 90%;
   padding: 4px;
   padding-top: 8px;
   padding-left: 5px;
@@ -132,6 +156,10 @@
 }
 
 .twitter {
+  background-image: url("../../../assets/icons/Twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 15%, 50%;
+  background-size: 28%;
   padding: 6px;
   padding-left: 12px;
   width: 110px;

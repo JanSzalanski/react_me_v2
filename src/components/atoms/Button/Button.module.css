@@ -425,8 +425,8 @@
 }
 
 .kontakt:hover + .glowKont {
-  -webkit-filter: drop-shadow(-3px 3px 2px var(--white));
-          filter: drop-shadow(-3px 3px 2px var(--white));
+  -webkit-filter: drop-shadow(3px 3px 2px var(--white));
+          filter: drop-shadow(3px 3px 2px var(--white));
 }
 
 .secondary {
