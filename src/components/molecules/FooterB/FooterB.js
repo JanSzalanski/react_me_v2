@@ -19,7 +19,7 @@ const FooterB = (props) => {
             className="twitter-follow-button"
             data-show-count="false"
           >
-            <ButtonIcon className="twitter">
+            <ButtonIcon className="twit" classBgk="twitter">
               <div className={classes.wrapperTwit}></div>
               Follow
             </ButtonIcon>
@@ -27,7 +27,7 @@ const FooterB = (props) => {
           <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 
           <a href="https://www.linkedin.com/in/jan-szalanski/">
-            <ButtonIcon className="linkedin"></ButtonIcon>
+            <ButtonIcon className="link" classBgk="linkedin"></ButtonIcon>
           </a>
 
           <a href="https://github.com/JanSzalanski">
@@ -39,7 +39,7 @@ const FooterB = (props) => {
           </a>
 
           <a href="https://www.youtube.com/channel/UCY59lj5rPEpNdXwBlK7uMnQ">
-            <ButtonIcon className="you"></ButtonIcon>
+            <ButtonIcon className="you" classBgk="youtube"></ButtonIcon>
           </a>
         </div>
 
