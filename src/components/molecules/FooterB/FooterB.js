@@ -31,11 +31,11 @@ const FooterB = (props) => {
           </a>
 
           <a href="https://github.com/JanSzalanski">
-            <ButtonIcon className="git"></ButtonIcon>
+            <ButtonIcon className="git" classBgk="github"></ButtonIcon>
           </a>
 
           <a href="https://vimeo.com/szalanski">
-            <ButtonIcon className="vimeo"></ButtonIcon>
+            <ButtonIcon className="vim" classBgk="vimeo"></ButtonIcon>
           </a>
 
           <a href="https://www.youtube.com/channel/UCY59lj5rPEpNdXwBlK7uMnQ">

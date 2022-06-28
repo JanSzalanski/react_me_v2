@@ -1,4 +1,4 @@
-.buttonicon, .logout, .pen, .people, .plus, .social, .git, .vimeo, .linkedin, .you, .twitter {
+.buttonicon, .logout, .pen, .people, .plus, .social, .git, .vim, .linkedin, .you, .twitter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,21 +27,8 @@
   transition: 0.2s ease-in;
 }
 
-.buttonicon:hover, .logout:hover, .pen:hover, .people:hover, .plus:hover, .social:hover, .git:hover, .vimeo:hover, .linkedin:hover, .you:hover, .twitter:hover {
+.buttonicon:hover, .logout:hover, .pen:hover, .people:hover, .plus:hover, .social:hover, .git:hover, .vim:hover, .linkedin:hover, .you:hover, .twitter:hover {
   background-color: var(--colorArticles);
-  fill: black;
-}
-
-.buttonicon:hover path, .logout:hover path, .pen:hover path, .people:hover path, .plus:hover path, .social:hover path, .git:hover path, .vimeo:hover path, .linkedin:hover path, .you:hover path, .twitter:hover path {
-  fill: black;
-}
-
-.buttonicon:hover text, .logout:hover text, .pen:hover text, .people:hover text, .plus:hover text, .social:hover text, .git:hover text, .vimeo:hover text, .linkedin:hover text, .you:hover text, .twitter:hover text {
-  fill: black;
-}
-
-.buttonicon:hover circle, .logout:hover circle, .pen:hover circle, .people:hover circle, .plus:hover circle, .social:hover circle, .git:hover circle, .vimeo:hover circle, .linkedin:hover circle, .you:hover circle, .twitter:hover circle {
-  fill: black;
 }
 
 .logout {
@@ -72,7 +59,7 @@
   background-size: 40%;
 }
 
-.social, .git, .vimeo, .linkedin, .you, .twitter {
+.social, .git, .vim, .linkedin, .you, .twitter {
   -webkit-clip-path: polygon(10% 0%, 90% 0%, 100% 15%, 100% 85%, 90% 100%, 10% 100%, 0% 85%, 0% 15%);
           clip-path: polygon(10% 0%, 90% 0%, 100% 15%, 100% 85%, 90% 100%, 10% 100%, 0% 85%, 0% 15%);
   background-color: var(--colorBgkVD);
@@ -84,10 +71,6 @@
 }
 
 .git {
-  background-image: url("../../../assets/icons/GitHubBig.svg");
-  background-repeat: no-repeat;
-  background-position: 50%, 60%;
-  background-size: 85%;
   padding: 6px;
   width: 90px;
   height: 45px;
@@ -100,21 +83,57 @@
   }
 }
 
-.vimeo {
-  background-image: url("../../../assets/icons/VimeoBig.svg");
-  background-repeat: no-repeat;
-  background-position: 50%, 60%;
-  background-size: 85%;
+.github {
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: url("../../../assets/icons/GitHubBig.svg");
+          mask-image: url("../../../assets/icons/GitHubBig.svg");
+  -webkit-mask-size: 85%;
+          mask-size: 85%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: 50%, 60%;
+          mask-position: 50%, 60%;
+  background-color: white;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.github:hover {
+  background-color: black;
+}
+
+.vim {
   padding: 6px;
   width: 90px;
   height: 45px;
 }
 
 @media (max-width: 1600px) {
-  .vimeo {
+  .vim {
     width: 75px;
     height: 40px;
   }
+}
+
+.vimeo {
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: url("../../../assets/icons/VimeoBig.svg");
+          mask-image: url("../../../assets/icons/VimeoBig.svg");
+  -webkit-mask-size: 85%;
+          mask-size: 85%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: 50%, 60%;
+          mask-position: 50%, 60%;
+  background-color: white;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.vimeo:hover {
+  background-color: black;
 }
 
 .linkedin {
