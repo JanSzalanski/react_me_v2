@@ -216,8 +216,8 @@
           mask-size: 90%;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
-  -webkit-mask-position: 15%, 50%;
-          mask-position: 15%, 50%;
+  -webkit-mask-position: 25%, 50%;
+          mask-position: 25%, 50%;
   background-color: white;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
@@ -229,6 +229,10 @@
 
 .buttonicon:hover > .twitter, .logout:hover > .twitter, .pen:hover > .twitter, .people:hover > .twitter, .plus:hover > .twitter, .social:hover > .twitter, .git:hover > .twitter, .vim:hover > .twitter, .link:hover > .twitter, .you:hover > .twitter, .twit:hover > .twitter {
   background-color: black;
+}
+
+.buttonicon:hover > .headingTwit, .logout:hover > .headingTwit, .pen:hover > .headingTwit, .people:hover > .headingTwit, .plus:hover > .headingTwit, .social:hover > .headingTwit, .git:hover > .headingTwit, .vim:hover > .headingTwit, .link:hover > .headingTwit, .you:hover > .headingTwit, .twit:hover > .headingTwit {
+  color: red;
 }
 
 .buttonicon:hover > .vimeo, .logout:hover > .vimeo, .pen:hover > .vimeo, .people:hover > .vimeo, .plus:hover > .vimeo, .social:hover > .vimeo, .git:hover > .vimeo, .vim:hover > .vimeo, .link:hover > .vimeo, .you:hover > .vimeo, .twit:hover > .vimeo {

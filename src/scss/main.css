@@ -188,6 +188,19 @@ h2 {
   fill: red;
 }
 
+.wrapperTwit {
+  padding-top: 3px;
+  height: 28px;
+  width: 28px;
+}
+
+.headingTwit {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  display: block;
+}
+
 .contactSlide {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;

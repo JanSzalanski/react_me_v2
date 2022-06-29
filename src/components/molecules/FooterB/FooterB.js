@@ -20,8 +20,8 @@ const FooterB = (props) => {
             data-show-count="false"
           >
             <ButtonIcon className="twit" classBgk="twitter">
-              <div className={classes.wrapperTwit}></div>
-              Follow
+              <div className="wrapperTwit"></div>
+              <h3 className="headingTwit">Follow</h3>
             </ButtonIcon>
           </a>
           <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>

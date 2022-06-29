@@ -11,6 +11,10 @@
   font-family: var(--font-headers);
   text-transform: uppercase;
 
+  @media (max-width: 1600px) {
+    font-size: 2.2rem;
+  }
+
   @media (max-width: 1440px) {
     font-size: 2rem;
   }

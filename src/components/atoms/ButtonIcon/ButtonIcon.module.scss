@@ -177,7 +177,7 @@
   mask-image: url('../../../assets/icons/Twitter.svg');
   mask-size: 90%;
   mask-repeat: no-repeat;
-  mask-position: 15%, 50%;
+  mask-position: 25%, 50%;
   background-color: white;
   transition: 0.2s ease-in;
 }
@@ -188,6 +188,10 @@
 
 .buttonicon:hover > .twitter {
   background-color: black;
+}
+
+.buttonicon:hover > .headingTwit {
+  color: red;
 }
 
 .buttonicon:hover > .vimeo {

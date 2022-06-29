@@ -12,6 +12,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 1600px) {
+  .heading, .card, .detailPage, .position {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 1440px) {
   .heading, .card, .detailPage, .position {
     font-size: 2rem;
