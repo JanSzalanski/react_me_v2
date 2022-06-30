@@ -159,11 +159,14 @@
 
 .twit {
   @extend .social;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   padding-left: 15px;
   width: 110px;
   height: 45px;
-  justify-content: space-between;
 
   @media (max-width: 1600px) {
     width: 85px;
@@ -190,8 +193,8 @@
   background-color: black;
 }
 
-.buttonicon:hover > .headingTwit {
-  color: red;
+.buttonicon:hover > h3 {
+  color: black;
 }
 
 .buttonicon:hover > .vimeo {

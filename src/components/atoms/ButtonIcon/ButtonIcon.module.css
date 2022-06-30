@@ -191,13 +191,23 @@
 }
 
 .twit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
   padding-left: 15px;
   width: 110px;
   height: 45px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media (max-width: 1600px) {
@@ -231,8 +241,8 @@
   background-color: black;
 }
 
-.buttonicon:hover > .headingTwit, .logout:hover > .headingTwit, .pen:hover > .headingTwit, .people:hover > .headingTwit, .plus:hover > .headingTwit, .social:hover > .headingTwit, .git:hover > .headingTwit, .vim:hover > .headingTwit, .link:hover > .headingTwit, .you:hover > .headingTwit, .twit:hover > .headingTwit {
-  color: red;
+.buttonicon:hover > h3, .logout:hover > h3, .pen:hover > h3, .people:hover > h3, .plus:hover > h3, .social:hover > h3, .git:hover > h3, .vim:hover > h3, .link:hover > h3, .you:hover > h3, .twit:hover > h3 {
+  color: black;
 }
 
 .buttonicon:hover > .vimeo, .logout:hover > .vimeo, .pen:hover > .vimeo, .people:hover > .vimeo, .plus:hover > .vimeo, .social:hover > .vimeo, .git:hover > .vimeo, .vim:hover > .vimeo, .link:hover > .vimeo, .you:hover > .vimeo, .twit:hover > .vimeo {

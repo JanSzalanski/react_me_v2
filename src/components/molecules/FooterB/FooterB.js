@@ -20,7 +20,7 @@ const FooterB = (props) => {
             data-show-count="false"
           >
             <ButtonIcon className="twit" classBgk="twitter">
-              <div className="wrapperTwit"></div>
+              {/* <div className="wrapperTwit"></div> */}
               <h3 className="headingTwit">Follow</h3>
             </ButtonIcon>
           </a>
