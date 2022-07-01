@@ -35,7 +35,9 @@
 
 .socialWrapper {
   position: absolute;
-  width: calc(100% - 88px - 31% * 1.25);
+  width: calc(
+    100% - 88px - 31% * 1.25
+  ); // a to z czego wynika bo DecorOne tyle tylko że to nie koreponduje ze sobą w innych rozdziałkach?
   padding-right: 140px;
   padding-left: 10px;
   height: 55px;
@@ -51,6 +53,9 @@
 
   & a {
     display: block;
+  }
+  @media (max-width: 1600px) {
+    padding-right: 70px;
   }
 }
 

@@ -78,7 +78,7 @@
 
 @media (max-width: 1600px) {
   .git {
-    width: 75px;
+    width: 70px;
     height: 40px;
   }
 }
@@ -99,6 +99,13 @@
   transition: 0.2s ease-in;
 }
 
+@media (max-width: 1600px) {
+  .github {
+    -webkit-mask-size: 95%;
+            mask-size: 95%;
+  }
+}
+
 .vim {
   padding: 6px;
   width: 90px;
@@ -107,7 +114,7 @@
 
 @media (max-width: 1600px) {
   .vim {
-    width: 75px;
+    width: 70px;
     height: 40px;
   }
 }
@@ -128,6 +135,13 @@
   transition: 0.2s ease-in;
 }
 
+@media (max-width: 1600px) {
+  .vimeo {
+    -webkit-mask-size: 95%;
+            mask-size: 95%;
+  }
+}
+
 .link {
   padding: 4px;
   padding-top: 7px;
@@ -138,7 +152,7 @@
 
 @media (max-width: 1600px) {
   .link {
-    width: 75px;
+    width: 70px;
     height: 40px;
   }
 }
@@ -159,6 +173,13 @@
   transition: 0.2s ease-in;
 }
 
+@media (max-width: 1600px) {
+  .linkedin {
+    -webkit-mask-size: 100%;
+            mask-size: 100%;
+  }
+}
+
 .you {
   padding: 4px;
   padding-top: 8px;
@@ -169,7 +190,7 @@
 
 @media (max-width: 1600px) {
   .you {
-    width: 75px;
+    width: 70px;
     height: 40px;
   }
 }
@@ -190,6 +211,13 @@
   transition: 0.2s ease-in;
 }
 
+@media (max-width: 1600px) {
+  .youtube {
+    -webkit-mask-size: 100%;
+            mask-size: 100%;
+  }
+}
+
 .twit {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,9 +226,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -212,7 +240,7 @@
 
 @media (max-width: 1600px) {
   .twit {
-    width: 85px;
+    width: 70px;
     height: 40px;
   }
 }
@@ -222,15 +250,22 @@
   height: 100%;
   -webkit-mask-image: url("../../../assets/icons/Twitter.svg");
           mask-image: url("../../../assets/icons/Twitter.svg");
-  -webkit-mask-size: 90%;
-          mask-size: 90%;
+  -webkit-mask-size: 75%;
+          mask-size: 75%;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
-  -webkit-mask-position: 25%, 50%;
-          mask-position: 25%, 50%;
+  -webkit-mask-position: 50%, 50%;
+          mask-position: 50%, 50%;
   background-color: white;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+}
+
+@media (max-width: 1600px) {
+  .twitter {
+    -webkit-mask-size: 45%;
+            mask-size: 45%;
+  }
 }
 
 .buttonicon:hover > .github, .logout:hover > .github, .pen:hover > .github, .people:hover > .github, .plus:hover > .github, .social:hover > .github, .git:hover > .github, .vim:hover > .github, .link:hover > .github, .you:hover > .github, .twit:hover > .github {
