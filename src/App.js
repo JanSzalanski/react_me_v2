@@ -10,6 +10,7 @@ import DetailsPage from './pages/DetailsPage/DetailsPage';
 import SideBar from './components/organisms/SideBar/SideBar';
 import Video from './components/atoms/Videos/Video';
 import ContactBar from './components/molecules/ContactBar/ContactBar';
+import Backdrop from './components/atoms/Backdrop/Backdrop';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Redirect to="/news"></Redirect>
       </Route>
       <Route path="/news/:newsId">
+        <Backdrop />
         <DetailsPage />
         <SideBar />
       </Route>
@@ -28,7 +30,7 @@ function App() {
         <ContactBar />
       </Route>
       <Route path="/articles">
-        <Video autoP="autoPlay"></Video>
+        <Video></Video>
         <ArticlePage />
         <SideBar />
         <ContactBar />

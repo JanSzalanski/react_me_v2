@@ -10,6 +10,7 @@ const DetailsPage = (props) => {
   // const params = useParams();
   return (
     <>
+      <div className="overlay"></div>
       <div className={classes[props.type] || classes.news}>
         <Heading className="detailPage">News</Heading>
         <Pargraph>
