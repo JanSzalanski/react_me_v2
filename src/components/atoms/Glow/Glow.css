@@ -5,7 +5,7 @@
   z-index: -1;
   height: 70px;
   width: 170px;
-  background: radial-gradient(closest-side, #fff4d6, var(--colorArticles), var(--colorMainGrey));
+  background: radial-gradient(closest-side, #fff4d6, var(--colorArticles), rgba(0, 0, 0, 0.1));
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
   -webkit-transform: translateY(0);
