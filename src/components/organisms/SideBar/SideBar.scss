@@ -45,13 +45,12 @@
   left: 0;
   width: 170px;
   height: 250px;
-  // border: 1px solid black;
   // z-index: 1;
   // border: 1px solid red;
 
   @media (max-width: 1600px) {
     height: 225px;
-    top: 51%;
+    // top: 51%;
   }
 }
 
