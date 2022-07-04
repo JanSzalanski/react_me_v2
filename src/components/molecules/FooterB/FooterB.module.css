@@ -599,6 +599,12 @@
           transform: rotate(45deg);
 }
 
+@media (max-width: 1440px) {
+  .line6A {
+    display: none;
+  }
+}
+
 .line7 {
   position: absolute;
   top: 38px;
@@ -731,6 +737,13 @@
   .bgkWrap {
     -webkit-clip-path: polygon(0 20%, 3.3% 0, 97% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
             clip-path: polygon(0 20%, 3.3% 0, 97% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
+  }
+}
+
+@media (min-width: 1440px) {
+  .bgkWrap {
+    -webkit-clip-path: polygon(0 20%, 3.5% 0, 97% 0, 100% 20%, 100% 80%, 97.5% 100%, 0 100%);
+            clip-path: polygon(0 20%, 3.5% 0, 97% 0, 100% 20%, 100% 80%, 97.5% 100%, 0 100%);
   }
 }
 

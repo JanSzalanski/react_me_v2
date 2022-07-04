@@ -74,6 +74,9 @@
     width: 70px;
     height: 40px;
   }
+  @media (max-width: 1440px) {
+    width: 65px;
+  }
 }
 
 .github {
@@ -99,6 +102,9 @@
   @media (max-width: 1600px) {
     width: 70px;
     height: 40px;
+  }
+  @media (max-width: 1440px) {
+    width: 65px;
   }
 }
 
@@ -128,6 +134,9 @@
     width: 70px;
     height: 40px;
   }
+  @media (max-width: 1440px) {
+    width: 65px;
+  }
 }
 
 .linkedin {
@@ -155,6 +164,9 @@
   @media (max-width: 1600px) {
     width: 70px;
     height: 40px;
+  }
+  @media (max-width: 1440px) {
+    width: 65px;
   }
 }
 
@@ -188,6 +200,9 @@
     width: 70px;
     height: 40px;
   }
+  @media (max-width: 1440px) {
+    width: 65px;
+  }
 }
 
 .twitter {
@@ -202,6 +217,10 @@
 
   @media (max-width: 1600px) {
     mask-size: 45%;
+  }
+
+  @media (max-width: 1440px) {
+    mask-size: 60%;
   }
 }
 
