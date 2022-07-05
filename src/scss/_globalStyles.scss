@@ -284,3 +284,19 @@ input[type='radio']:checked {
   filter: blur(1px);
   opacity: 0.8;
 }
+
+.overflowWrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(90% - 80px);
+  height: calc(70% - 80px);
+  //   border: 1px solid red;
+  overflow: hidden;
+  flex-direction: row;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

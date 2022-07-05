@@ -22,7 +22,7 @@ const NewsPage = (props) => {
       <Input className="search" placeholder="szukaj"></Input>
 
       <Background />
-      <div className={classes.overflowWrapper}>
+      <div className="overflowWrapper">
         <section className={classes.slider}>
           <input type="radio" name="slider" id="s1" defaultChecked />
           <input type="radio" name="slider" id="s2" />

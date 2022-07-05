@@ -1,4 +1,4 @@
-.paragraph, .card {
+.paragraph, .card, .article {
   text-align: left;
   font-size: var(--fontSizeS);
   color: var(--white);
@@ -7,5 +7,22 @@
 
 .card {
   position: relative;
+}
+
+.article {
+  display: block;
+  padding: 30px;
+  margin: 20px;
+  position: absolute;
+  font-size: 1.8rem;
+  top: 0;
+  left: 0;
+  background-color: var(--colorArticlesE);
+  border: 1px solid var(--colorArticles);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: 500;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 /*# sourceMappingURL=Paragraph.module.css.map */

@@ -39,6 +39,7 @@ textarea:focus {
   --colorArticlesB: #ffd82b4f;
   --colorArticlesC: #ffd900a9;
   --colorArticlesD: #ffde25;
+  --colorArticlesE: #49410f7e;
   --colorArticlesDark: #ff9100;
   --color-light-grey: #8d8d8d;
   --colorMainGrey: #373737;
@@ -340,5 +341,29 @@ input[type='radio']:checked {
   -webkit-filter: blur(1px);
           filter: blur(1px);
   opacity: 0.8;
+}
+
+.overflowWrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(90% - 80px);
+  height: calc(70% - 80px);
+  overflow: hidden;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
