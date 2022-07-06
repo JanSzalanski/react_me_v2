@@ -17,6 +17,10 @@ body {
     var(--colorBgkL) 98%,
     rgba(50, 50, 45, 1) 100%
   );
+
+  @media (max-width: 1366px) {
+    padding-left: 156px;
+  }
 }
 
 strong {
@@ -64,6 +68,10 @@ h2 {
   // padding: 50px;
   // padding-left: 100px;
   // border: 1px solid greenyellow;
+
+  @media (max-width: 1366px) {
+    width: calc(100vw - 156px);
+  }
 }
 
 .video {

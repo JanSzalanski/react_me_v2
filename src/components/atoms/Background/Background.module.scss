@@ -6,6 +6,11 @@
   width: 90%;
   height: 70%;
   // border: 1px solid var(--black);
+
+  @media (max-width: 1366px) {
+    left: 51%;
+    width: 89%;
+  }
 }
 
 .grid {
@@ -13,7 +18,7 @@
   left: 40px;
   right: 40px;
   top: 40px;
-  bottom: 40px; 
+  bottom: 40px;
   background-image: url(../../../assets/siatkaWhite.webp);
   opacity: 0.12;
   background-position: 40px 31px;
@@ -25,10 +30,9 @@
   left: 40px;
   right: 40px;
   top: 40px;
-  bottom: 40px; 
+  bottom: 40px;
   border: 1px solid var(--colorArticles);
   border-radius: 7px;
-    
 }
 
 .miarkaL {

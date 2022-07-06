@@ -100,6 +100,12 @@ body {
   background: linear-gradient(90deg, var(--colorBgkL) 11%, var(--colorBgkD) 20%, var(--colorBgkD) 89%, var(--colorBgkL) 98%, #32322d 100%);
 }
 
+@media (max-width: 1366px) {
+  body {
+    padding-left: 156px;
+  }
+}
+
 strong {
   font-weight: 600;
 }
@@ -152,6 +158,12 @@ h2 {
   position: relative;
   width: calc(100vw - 176px);
   height: 100vh;
+}
+
+@media (max-width: 1366px) {
+  .page {
+    width: calc(100vw - 156px);
+  }
 }
 
 .video {

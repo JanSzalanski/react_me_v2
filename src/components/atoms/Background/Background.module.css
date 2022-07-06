@@ -8,6 +8,13 @@
   height: 70%;
 }
 
+@media (max-width: 1366px) {
+  .bgWrapper {
+    left: 51%;
+    width: 89%;
+  }
+}
+
 .grid {
   position: absolute;
   left: 40px;

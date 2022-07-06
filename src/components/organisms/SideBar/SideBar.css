@@ -392,6 +392,12 @@
           clip-path: polygon(0 1.6%, 10% 0, 100% 0, 100% 100%, 10% 100%, 0 98.4%);
 }
 
+@media (max-width: 1366px) {
+  .sidebar {
+    width: 150px;
+  }
+}
+
 .background {
   position: fixed;
   width: 176px;
@@ -401,12 +407,24 @@
   background: #181400;
 }
 
+@media (max-width: 1366px) {
+  .background {
+    width: 156px;
+  }
+}
+
 .wrapper {
   position: fixed;
   width: 170px;
   height: 100vh;
   left: 0;
   top: 0;
+}
+
+@media (max-width: 1366px) {
+  .wrapper {
+    width: 150px;
+  }
 }
 
 .glowWrapper {
@@ -422,6 +440,14 @@
 @media (max-width: 1600px) {
   .glowWrapper {
     height: 225px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .glowWrapper {
+    height: 210px;
+    width: 150px;
+    top: 50%;
   }
 }
 
@@ -449,6 +475,13 @@
 @media (max-width: 1600px) {
   .glow {
     height: 63px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .glow {
+    width: 160px;
+    height: 52px;
   }
 }
 
