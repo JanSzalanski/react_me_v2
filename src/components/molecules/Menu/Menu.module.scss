@@ -35,6 +35,11 @@
     top: calc(50% - 140px);
     left: 5px;
   }
+
+  @media (max-width: 1366px) {
+    transform: scale(0.85);
+    left: -5px;
+  }
 }
 
 .topLine {

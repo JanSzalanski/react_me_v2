@@ -38,6 +38,14 @@
   }
 }
 
+@media (max-width: 1366px) {
+  .borderMenuWrapper {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    left: -5px;
+  }
+}
+
 .topLine {
   position: absolute;
   width: 90%;
