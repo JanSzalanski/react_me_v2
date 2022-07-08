@@ -394,6 +394,12 @@
   }
 }
 
+@media (max-width: 1366px) {
+  .wrapperHeader {
+    left: 47%;
+  }
+}
+
 .innerWrapper {
   position: absolute;
   top: 0;

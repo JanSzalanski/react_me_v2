@@ -370,7 +370,7 @@
   }
 }
 
-.button, .secondary, .kontakt, .menu {
+.button, .secondary, .kontakt, .wysylka, .menu {
   margin: 10px;
   padding-right: 10px;
   display: -webkit-box;
@@ -408,7 +408,7 @@
           backdrop-filter: blur(2px);
 }
 
-.button:hover, .secondary:hover, .kontakt:hover, .menu:hover {
+.button:hover, .secondary:hover, .kontakt:hover, .wysylka:hover, .menu:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -419,12 +419,12 @@
           transform: translate(-3px, 4px);
 }
 
-.button:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow, .menu:hover + .glow {
+.button:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow, .wysylka:hover + .glow, .menu:hover + .glow {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--white));
           filter: drop-shadow(-3px 3px 2px var(--white));
 }
 
-.kontakt:hover + .glowKont {
+.kontakt:hover + .glowKont, .wysylka:hover + .glowKont {
   -webkit-filter: drop-shadow(3px 3px 2px var(--white));
           filter: drop-shadow(3px 3px 2px var(--white));
 }
@@ -464,7 +464,7 @@
   }
 }
 
-.kontakt {
+.kontakt, .wysylka {
   width: var(--buttonHeight);
   height: var(--buttonWidth);
   -webkit-box-pack: center;
@@ -477,16 +477,39 @@
           clip-path: polygon(35% 100%, 0 92%, 0 8%, 35% 0, 100% 0, 100% 100%);
 }
 
-.kontakt p {
+@media (max-width: 1366px) {
+  .kontakt, .wysylka {
+    width: calc(var(--buttonHeight) - 5px);
+    height: calc(var(--buttonWidth) - 30px);
+    font-size: 1.2rem;
+  }
+}
+
+.kontakt p, .wysylka p {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
 }
 
-.kontakt:hover {
+.kontakt:hover, .wysylka:hover {
   -webkit-transform: translate(3px, 4px);
           transform: translate(3px, 4px);
+}
+
+.wysylka {
+  width: var(--buttonWidth);
+  height: var(--buttonHeight);
+  -webkit-clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
+          clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
+  letter-spacing: 1px;
+}
+
+.wysylka p {
+  text-orientation: mixed;
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
 }
 
 .buttonWrapper {
@@ -508,6 +531,23 @@
   height: var(--buttonWidth);
   -webkit-clip-path: polygon(35% 100%, 0 92%, 0 8%, 35% 0, 100% 0, 100% 100%);
           clip-path: polygon(35% 100%, 0 92%, 0 8%, 35% 0, 100% 0, 100% 100%);
+  background-color: var(--colorArticlesB);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+@media (max-width: 1366px) {
+  .copyKont {
+    width: calc(var(--buttonHeight) - 5px);
+    height: calc(var(--buttonWidth) - 30px);
+  }
+}
+
+.copyWys {
+  width: var(--buttonWidth);
+  height: var(--buttonHeight);
+  -webkit-clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
+          clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
   background-color: var(--colorArticlesB);
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;

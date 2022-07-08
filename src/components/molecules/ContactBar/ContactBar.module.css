@@ -474,6 +474,12 @@
       justify-content: space-around;
 }
 
+@media (max-width: 1366px) {
+  .Middle {
+    height: calc(100% - (40% + 20px));
+  }
+}
+
 .background {
   position: absolute;
   width: 100%;
@@ -512,6 +518,12 @@
   left: -50px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media (max-width: 1366px) {
+  .btnWrapper {
+    left: -42px;
+  }
 }
 
 .lineRight {

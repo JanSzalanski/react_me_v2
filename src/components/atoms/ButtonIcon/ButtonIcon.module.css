@@ -89,6 +89,12 @@
   }
 }
 
+@media (max-width: 1366px) {
+  .git {
+    width: 60px;
+  }
+}
+
 .github {
   width: 100%;
   height: 100%;
@@ -128,6 +134,12 @@
 @media (max-width: 1440px) {
   .vim {
     width: 65px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .vim {
+    width: 60px;
   }
 }
 
@@ -175,6 +187,12 @@
   }
 }
 
+@media (max-width: 1366px) {
+  .link {
+    width: 60px;
+  }
+}
+
 .linkedin {
   width: 100%;
   height: 100%;
@@ -216,6 +234,12 @@
 @media (max-width: 1440px) {
   .you {
     width: 65px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .you {
+    width: 60px;
   }
 }
 
@@ -272,6 +296,12 @@
 @media (max-width: 1440px) {
   .twit {
     width: 65px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .twit {
+    width: 60px;
   }
 }
 

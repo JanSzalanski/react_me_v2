@@ -59,6 +59,11 @@
     --buttonHeight: 30px;
     --buttonHeightSec: 25px;
   }
+
+  @media (max-width: 1366px) {
+    --cardWidth: 360px;
+    --cardHeight: 292px;
+  }
 }
 
 .logo1 {

@@ -9,14 +9,28 @@
   position: relative;
 }
 
+@media (max-width: 1440px) {
+  .card {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .card {
+    font-size: var(--fontSizeXS);
+  }
+}
+
 .article {
   display: block;
+  width: calc(100% - 40px);
   padding: 30px;
-  margin: 20px;
   position: absolute;
   font-size: 1.8rem;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   background-color: var(--colorArticlesE);
   border: 1px solid var(--colorArticles);
   border-top-left-radius: 5px;
@@ -24,5 +38,11 @@
   font-weight: 500;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+}
+
+@media (max-width: 1366px) {
+  .article {
+    font-size: var(--fontSizeS);
+  }
 }
 /*# sourceMappingURL=Paragraph.module.css.map */

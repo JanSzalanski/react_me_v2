@@ -300,11 +300,16 @@ input[type='radio']:checked {
   transform: translate(-50%, -50%);
   width: calc(90% - 80px);
   height: calc(70% - 80px);
-  //   border: 1px solid red;
+  // border: 1px solid red;
   overflow: hidden;
   flex-direction: row;
   text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 1366px) {
+    left: 51%;
+    width: calc(89% - 80px);
+  }
 }

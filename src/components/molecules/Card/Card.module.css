@@ -115,6 +115,18 @@
   padding-bottom: 0;
 }
 
+@media (max-width: 1440px) {
+  .title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
 .code {
   height: 45%;
   width: 25%;

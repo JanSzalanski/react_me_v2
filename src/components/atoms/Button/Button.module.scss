@@ -85,6 +85,12 @@ $btnHeight: 40px;
   clip-path: polygon(35% 100%, 0 92%, 0 8%, 35% 0, 100% 0, 100% 100%);
   // transform: rotate(90deg);
 
+  @media (max-width: 1366px) {
+    width: calc(var(--buttonHeight) - 5px);
+    height: calc(var(--buttonWidth) - 30px);
+    font-size: 1.2rem;
+  }
+
   & p {
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -93,6 +99,24 @@ $btnHeight: 40px;
   &:hover {
     transform: translate(3px, 4px);
   }
+}
+
+.wysylka {
+  @extend .kontakt;
+  width: var(--buttonWidth);
+  height: var(--buttonHeight);
+  clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
+  letter-spacing: 1px;
+  & p {
+    text-orientation: mixed;
+    writing-mode: horizontal-tb;
+  }
+
+  // @media (max-width: 1366px) {
+  //   width: calc(var(--buttonWidth) - 30px);
+  //   height: calc(var(--buttonHight) - 5px);
+  //   font-size: 1.2rem;
+  // }
 }
 
 .buttonWrapper {
@@ -112,6 +136,19 @@ $btnHeight: 40px;
   width: var(--buttonHeight);
   height: var(--buttonWidth);
   clip-path: polygon(35% 100%, 0 92%, 0 8%, 35% 0, 100% 0, 100% 100%);
+  background-color: var(--colorArticlesB);
+  transition: all 0.2s ease-out;
+
+  @media (max-width: 1366px) {
+    width: calc(var(--buttonHeight) - 5px);
+    height: calc(var(--buttonWidth) - 30px);
+  }
+}
+
+.copyWys {
+  width: var(--buttonWidth);
+  height: var(--buttonHeight);
+  clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
   background-color: var(--colorArticlesB);
   transition: all 0.2s ease-out;
 }

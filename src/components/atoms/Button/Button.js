@@ -19,6 +19,12 @@ const Button = (props) => {
         </div>
       )}
 
+      {props.type === 'wysylka' && (
+        <div className={classes.glowWys}>
+          <div className={classes.copy}></div>
+        </div>
+      )}
+
       {props.type === 'menu' && (
         <div className={classes.glow}>
           <div className={classes.copyMe}></div>

@@ -31,6 +31,10 @@
   font-size: 2rem;
   height: 45%;
   color: black;
+
+  @media (max-width: 1366px) {
+    font-size: 1.8rem;
+  }
 }
 
 .detailPage {

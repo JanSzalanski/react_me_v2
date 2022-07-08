@@ -394,6 +394,12 @@
   }
 }
 
+@media (max-width: 1366px) {
+  .wrapperFooter {
+    left: 47%;
+  }
+}
+
 .innerWrapper {
   position: absolute;
   top: 0;
@@ -466,6 +472,12 @@
     right: 45px;
     bottom: 14px;
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .footerTitle {
+    font-size: 1rem;
   }
 }
 
@@ -733,14 +745,14 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (max-width: 1600px) {
   .bgkWrap {
     -webkit-clip-path: polygon(0 20%, 3.3% 0, 97% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
             clip-path: polygon(0 20%, 3.3% 0, 97% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
   }
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   .bgkWrap {
     -webkit-clip-path: polygon(0 20%, 3.5% 0, 97% 0, 100% 20%, 100% 80%, 97.5% 100%, 0 100%);
             clip-path: polygon(0 20%, 3.5% 0, 97% 0, 100% 20%, 100% 80%, 97.5% 100%, 0 100%);

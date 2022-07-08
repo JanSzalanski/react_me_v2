@@ -44,6 +44,12 @@
   color: black;
 }
 
+@media (max-width: 1366px) {
+  .card {
+    font-size: 1.8rem;
+  }
+}
+
 .detailPage {
   letter-spacing: 1px;
   color: white;

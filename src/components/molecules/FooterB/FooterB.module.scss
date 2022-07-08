@@ -21,7 +21,11 @@
     left: 48%;
   }
 
-  // @media (min-width: 1366px) {
+  @media (max-width: 1366px) {
+    left: 47%;
+  }
+
+  // @media (max-width: 1366px) {
   //   left: 45%;
   // }
 }
@@ -86,6 +90,10 @@
     right: 45px;
     bottom: 14px;
     font-size: 1.1rem;
+  }
+
+  @media (max-width: 1366px) {
+    font-size: 1rem;
   }
 }
 
@@ -309,11 +317,11 @@
     clip-path: polygon(0 20%, 2.5% 0, 98% 0, 100% 20%, 100% 80%, 98% 100%, 0 100%);
   }
 
-  @media (min-width: 1600px) {
+  @media (max-width: 1600px) {
     clip-path: polygon(0 20%, 3.3% 0, 97% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
   }
 
-  @media (min-width: 1440px) {
+  @media (max-width: 1440px) {
     clip-path: polygon(0 20%, 3.5% 0, 97% 0, 100% 20%, 100% 80%, 97.5% 100%, 0 100%);
   }
 }

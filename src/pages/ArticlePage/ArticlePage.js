@@ -15,7 +15,7 @@ const ArticlePage = (props) => {
       <HeaderB>Strona z artykułami</HeaderB>
       <Input className="search" placeholder="szukaj"></Input>
       <Background />
-      <div className="overflowWrapper">
+      <div className="overflowWrapper"> 
         {' '}
         <Pargraph className="article">
           W tej części "portalu" będę zamieszczał moje artykuły, ale i być może podcasty wideo? Będą
