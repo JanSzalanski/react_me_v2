@@ -12,10 +12,10 @@ const ArticlePage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
       <div className="overlay"></div>
-      <HeaderB>Strona z artykułami</HeaderB>
+      <HeaderB>Tablica z artykułami</HeaderB>
       <Input className="search" placeholder="szukaj"></Input>
       <Background />
-      <div className="overflowWrapper"> 
+      <div className="overflowWrapper">
         {' '}
         <Pargraph className="article">
           W tej części "portalu" będę zamieszczał moje artykuły, ale i być może podcasty wideo? Będą

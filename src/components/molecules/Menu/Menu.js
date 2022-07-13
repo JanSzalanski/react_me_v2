@@ -34,7 +34,7 @@ const Menu = (props) => {
               <li className={classes.li}>
                 <NavLink activeClassName={classes.active} className="routeLink" to="/news">
                   <Button type="menu" onClick={props.newsPointer}>
-                    News
+                    Nowości
                   </Button>
                 </NavLink>
               </li>
