@@ -483,7 +483,7 @@
 
 @media (max-width: 1366px) {
   .Middle {
-    height: calc(100% - (40% + 20px));
+    height: calc(100% - (40% - 40px));
   }
 }
 
