@@ -25,6 +25,12 @@
     left: 57.4%;
     height: calc(var(--inputHeight) - 6px);
   }
+
+  @media (max-width: 1280px) {
+    top: 41px;
+    left: 54.4%;
+    height: calc(var(--inputHeight) - 8px);
+  }
   // border: 1px solid whitesmoke;
 }
 
@@ -50,6 +56,10 @@
 
   @media (max-width: 1600px) {
     clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
+  }
+
+  @media (max-width: 1280px) {
+    clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
   }
 }
 
@@ -96,6 +106,10 @@
 
   @media (max-width: 1600px) {
     clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
+  }
+
+  @media (max-width: 1280px) {
+    clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
   }
 }
 

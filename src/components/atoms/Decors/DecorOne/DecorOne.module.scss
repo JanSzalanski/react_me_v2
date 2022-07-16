@@ -44,8 +44,12 @@
     clip-path: polygon(0 0, 97.7% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
   }
 
-  @media (max-width: 1366nppx) {
+  @media (max-width: 1366px) {
     clip-path: polygon(0 0, 97.7% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
+  }
+
+  @media (max-width: 1280px) {
+    clip-path: polygon(0 0, 96.7% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
   }
 }
 
@@ -69,6 +73,10 @@
     @media (max-height: 1153px) {
       clip-path: polygon(0 20%, 1.5% 0, 100% 0%, 100% 100%, 1.5% 100%, 0 80%);
     }
+  }
+
+  @media (max-width: 1280px) {
+    clip-path: polygon(0 20%, 2.5% 0, 100% 0%, 100% 100%, 2.5% 100%, 0 80%);
   }
 }
 

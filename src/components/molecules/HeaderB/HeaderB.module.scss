@@ -21,6 +21,11 @@
     margin-top: 5px;
     transform: translate(-50%, 0%) scale(95%);
   }
+  @media (max-width: 1280px) {
+    transform: translate(-50%, 0%) scale(100%);
+    width: 85%;
+    left: 44%;
+  }
 }
 
 .innerWrapper {
@@ -295,6 +300,10 @@
 
   @media (min-width: 1921px) {
     clip-path: polygon(0 20%, 2% 0, 100% 0, 100% 80%, 98% 100%, 2% 100%, 0 80%);
+  }
+
+  @media (max-width: 1280px) {
+    clip-path: polygon(0 20%, 2.8% 0, 100% 0, 100% 80%, 96.2% 100%, 3% 100%, 0 80%);
   }
 }
 

@@ -402,6 +402,15 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .wrapperHeader {
+    -webkit-transform: translate(-50%, 0%) scale(100%);
+            transform: translate(-50%, 0%) scale(100%);
+    width: 85%;
+    left: 44%;
+  }
+}
+
 .innerWrapper {
   position: absolute;
   top: 0;
@@ -721,6 +730,13 @@
   .bgkWrap {
     -webkit-clip-path: polygon(0 20%, 2% 0, 100% 0, 100% 80%, 98% 100%, 2% 100%, 0 80%);
             clip-path: polygon(0 20%, 2% 0, 100% 0, 100% 80%, 98% 100%, 2% 100%, 0 80%);
+  }
+}
+
+@media (max-width: 1280px) {
+  .bgkWrap {
+    -webkit-clip-path: polygon(0 20%, 2.8% 0, 100% 0, 100% 80%, 96.2% 100%, 3% 100%, 0 80%);
+            clip-path: polygon(0 20%, 2.8% 0, 100% 0, 100% 80%, 96.2% 100%, 3% 100%, 0 80%);
   }
 }
 

@@ -33,6 +33,14 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .wrapperAll, .contactWrap {
+    top: 41px;
+    left: 54.4%;
+    height: calc(var(--inputHeight) - 8px);
+  }
+}
+
 .backWrapper {
   position: relative;
   height: 100%;
@@ -63,6 +71,13 @@
   .background, .contactBgk {
     -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
             clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
+  }
+}
+
+@media (max-width: 1280px) {
+  .background, .contactBgk {
+    -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
+            clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
   }
 }
 
@@ -154,6 +169,13 @@
   .input, .search, .contact {
     -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
             clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
+  }
+}
+
+@media (max-width: 1280px) {
+  .input, .search, .contact {
+    -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
+            clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
   }
 }
 

@@ -402,6 +402,15 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .wrapperFooter {
+    width: 85%;
+    -webkit-transform: translate(-50%, 0%) scale(100%);
+            transform: translate(-50%, 0%) scale(100%);
+    left: 44%;
+  }
+}
+
 .innerWrapper {
   position: absolute;
   top: 0;
@@ -444,6 +453,13 @@
 @media (max-width: 1600px) {
   .socialWrapper {
     padding-right: 70px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .socialWrapper {
+    padding-right: 58px;
+    padding-left: 4px;
   }
 }
 
