@@ -339,6 +339,10 @@
   @media (max-width: 1440px) {
     clip-path: polygon(0 20%, 3.5% 0, 97% 0, 100% 20%, 100% 80%, 97.5% 100%, 0 100%);
   }
+
+  @media (max-width: 1280px) {
+    clip-path: polygon(0 20%, 3.8% 0, 96.8% 0, 100% 20%, 100% 80%, 97.2% 100%, 0 100%);
+  }
 }
 
 .scanline {
