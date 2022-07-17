@@ -72,6 +72,11 @@
     padding-right: 58px;
     padding-left: 4px;
   }
+
+  @media (max-width: 1152px) {
+    padding-right: 75px;
+    padding-left: 4px;
+  }
 }
 
 .footerTitle {
@@ -101,6 +106,12 @@
 
   @media (max-width: 1366px) {
     font-size: 1rem;
+  }
+
+  @media (max-width: 1152px) {
+    font-size: 0.9rem;
+    right: 42px;
+    bottom: 18px;
   }
 }
 

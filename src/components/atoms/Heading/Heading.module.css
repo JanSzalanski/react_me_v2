@@ -29,6 +29,12 @@
   }
 }
 
+@media (max-width: 1152px) {
+  .heading, .card, .detailPage, .position {
+    font-size: 1.6rem;
+  }
+}
+
 .card {
   margin-bottom: 0;
   padding: 0;

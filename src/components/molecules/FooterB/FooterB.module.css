@@ -463,6 +463,13 @@
   }
 }
 
+@media (max-width: 1152px) {
+  .socialWrapper {
+    padding-right: 75px;
+    padding-left: 4px;
+  }
+}
+
 .footerTitle {
   position: absolute;
   text-align: right;
@@ -496,6 +503,14 @@
 @media (max-width: 1366px) {
   .footerTitle {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 1152px) {
+  .footerTitle {
+    font-size: 0.9rem;
+    right: 42px;
+    bottom: 18px;
   }
 }
 

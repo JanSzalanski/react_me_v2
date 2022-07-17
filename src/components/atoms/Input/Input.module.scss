@@ -31,6 +31,14 @@
     left: 54.4%;
     height: calc(var(--inputHeight) - 8px);
   }
+
+  @media (max-width: 1152px) {
+    top: 41px;
+    left: 51.4%;
+    // height: calc(var(--inputHeight) - 40px);
+  }
+
+  //ale coś nie zawerza wysokosci
   // border: 1px solid whitesmoke;
 }
 
