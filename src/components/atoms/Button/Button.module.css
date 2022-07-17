@@ -485,6 +485,12 @@
   }
 }
 
+@media (max-width: 1152px) {
+  .kontakt, .wysylka {
+    left: 10px;
+  }
+}
+
 .kontakt p, .wysylka p {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
