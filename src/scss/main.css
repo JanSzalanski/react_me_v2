@@ -113,6 +113,12 @@ body {
   }
 }
 
+@media (max-width: 1366px) {
+  body {
+    padding-left: 126px;
+  }
+}
+
 strong {
   font-weight: 600;
 }
@@ -170,6 +176,12 @@ h2 {
 @media (max-width: 1366px) {
   .page {
     width: calc(100vw - 156px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .page {
+    width: calc(100vw - 126px);
   }
 }
 

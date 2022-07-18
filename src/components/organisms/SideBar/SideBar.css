@@ -398,6 +398,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 120px;
+  }
+}
+
 .background {
   position: fixed;
   width: 176px;
@@ -413,6 +419,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .background {
+    width: 120px;
+  }
+}
+
 .wrapper {
   position: fixed;
   width: 170px;
@@ -424,6 +436,12 @@
 @media (max-width: 1366px) {
   .wrapper {
     width: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 120px;
   }
 }
 
@@ -448,6 +466,12 @@
     height: 210px;
     width: 150px;
     top: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .glowWrapper {
+    width: 120px;
   }
 }
 
@@ -482,6 +506,12 @@
   .glow {
     width: 160px;
     height: 52px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .glow {
+    width: 120px;
   }
 }
 

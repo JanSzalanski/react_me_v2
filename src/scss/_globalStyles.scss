@@ -21,6 +21,10 @@ body {
   @media (max-width: 1366px) {
     padding-left: 156px;
   }
+
+  @media (max-width: 1366px) {
+    padding-left: 126px;
+  }
 }
 
 strong {
@@ -71,6 +75,10 @@ h2 {
 
   @media (max-width: 1366px) {
     width: calc(100vw - 156px);
+  }
+
+  @media (max-width: 1024px) {
+    width: calc(100vw - 126px);
   }
 }
 
@@ -312,4 +320,8 @@ input[type='radio']:checked {
     left: 51%;
     width: calc(89% - 80px);
   }
+
+  // @media (max-width: 1024px) {
+  //   width: calc(89% - 110px);
+  // }
 }

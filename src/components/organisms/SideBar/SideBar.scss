@@ -20,6 +20,10 @@
   @media (max-width: 1366px) {
     width: 150px;
   }
+
+  @media (max-width: 1024px) {
+    width: 120px;
+  }
 }
 
 .background {
@@ -35,6 +39,10 @@
   @media (max-width: 1366px) {
     width: 156px;
   }
+
+  @media (max-width: 1024px) {
+    width: 120px;
+  }
 }
 
 .wrapper {
@@ -46,6 +54,10 @@
 
   @media (max-width: 1366px) {
     width: 150px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 120px;
   }
 }
 
@@ -68,6 +80,10 @@
     height: 210px;
     width: 150px;
     top: 50%;
+  }
+
+  @media (max-width: 1024px) {
+    width: 120px;
   }
 }
 
@@ -99,6 +115,10 @@
   @media (max-width: 1366px) {
     width: 160px;
     height: 52px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 120px;
   }
 }
 

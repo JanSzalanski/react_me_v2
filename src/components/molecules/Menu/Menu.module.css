@@ -27,6 +27,7 @@
   left: 10px;
   width: 250px;
   height: 280px;
+  outline: 2px solid var(--colorArticles);
 }
 
 @media (max-width: 1600px) {
@@ -43,6 +44,14 @@
     -webkit-transform: scale(0.85);
             transform: scale(0.85);
     left: -5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .borderMenuWrapper {
+    -webkit-transform: scale(0.73);
+            transform: scale(0.73);
+    left: -24px;
   }
 }
 
