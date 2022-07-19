@@ -62,5 +62,10 @@
     font-size: var(--fontSizeS);
   }
 
+  @media (max-width: 1024px) {
+    font-size: var(--fontSizeXS);
+    padding: 20px;
+  }
+
   // text-transform: uppercase;
 }

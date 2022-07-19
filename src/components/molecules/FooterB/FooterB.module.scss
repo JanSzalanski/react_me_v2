@@ -30,6 +30,13 @@
     transform: translate(-50%, 0%) scale(100%);
     left: 44%;
   }
+
+  @media (max-width: 1024px) {
+    transform: translate(-50%, 0%) scaleY(90%);
+    width: 86%;
+    bottom: -4px;
+    left: 41%;
+  }
 }
 
 .innerWrapper {
@@ -75,6 +82,11 @@
 
   @media (max-width: 1152px) {
     padding-right: 75px;
+    padding-left: 4px;
+  }
+
+  @media (max-width: 1024px) {
+    padding-right: 65px;
     padding-left: 4px;
   }
 }

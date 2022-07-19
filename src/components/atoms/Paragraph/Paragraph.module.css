@@ -45,4 +45,11 @@
     font-size: var(--fontSizeS);
   }
 }
+
+@media (max-width: 1024px) {
+  .article {
+    font-size: var(--fontSizeXS);
+    padding: 20px;
+  }
+}
 /*# sourceMappingURL=Paragraph.module.css.map */

@@ -411,6 +411,16 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .wrapperHeader {
+    -webkit-transform: translate(-50%, 0%) scaleY(90%);
+            transform: translate(-50%, 0%) scaleY(90%);
+    top: -4px;
+    width: 86%;
+    left: 41%;
+  }
+}
+
 .innerWrapper {
   position: absolute;
   top: 0;

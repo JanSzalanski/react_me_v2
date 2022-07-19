@@ -26,6 +26,13 @@
     width: 85%;
     left: 44%;
   }
+
+  @media (max-width: 1024px) {
+    transform: translate(-50%, 0%) scaleY(90%);
+    top: -4px;
+    width: 86%;
+    left: 41%;
+  }
 }
 
 .innerWrapper {

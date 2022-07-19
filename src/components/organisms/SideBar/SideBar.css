@@ -471,7 +471,8 @@
 
 @media (max-width: 1024px) {
   .glowWrapper {
-    width: 120px;
+    height: 190px;
+    width: 126px;
   }
 }
 
