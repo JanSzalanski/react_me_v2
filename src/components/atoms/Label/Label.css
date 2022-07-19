@@ -1,7 +1,7 @@
 .customLabel {
   position: absolute;
   top: calc(50% - calc(var(--cardHeight) / 2));
-  left: calc(50% - calc(var(--cardHeight) / 2));
+  left: calc(50% - calc(var(--cardWidth) / 2));
   display: block;
   -webkit-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out;

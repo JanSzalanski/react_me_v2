@@ -58,6 +58,12 @@
   border-top: 1px dashed var(--black);
 }
 
+@media (max-width: 1024px) {
+  .wrapperColor {
+    height: 55px;
+  }
+}
+
 .card {
   width: var(--cardWidth);
   min-height: var(--cardHeight);
@@ -127,6 +133,13 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
 .code {
   height: 45%;
   width: 25%;
@@ -176,5 +189,13 @@
   color: var(--colorArticles);
   font-weight: 100;
   font-size: 1.4rem;
+}
+
+@media (max-width: 1024px) {
+  .decorData {
+    font-size: 1.2rem;
+    bottom: -35px;
+    letter-spacing: 1px;
+  }
 }
 /*# sourceMappingURL=Card.module.css.map */

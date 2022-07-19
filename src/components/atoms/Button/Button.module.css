@@ -464,6 +464,16 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .secondary {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 15px;
+    font-size: 1.1rem;
+  }
+}
+
 .kontakt, .wysylka {
   width: var(--buttonHeight);
   height: var(--buttonWidth);

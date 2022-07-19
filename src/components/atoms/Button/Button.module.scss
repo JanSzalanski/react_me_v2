@@ -71,6 +71,11 @@ $btnHeight: 40px;
     font-weight: 300;
     font-size: 1.3rem;
   }
+  @media (max-width: 1024px) {
+    justify-content: center;
+    margin: 15px;
+    font-size: 1.1rem;
+  }
 }
 
 .kontakt {
@@ -91,7 +96,6 @@ $btnHeight: 40px;
     font-size: 1.2rem;
   }
 
- 
   & p {
     writing-mode: vertical-rl;
     text-orientation: upright;

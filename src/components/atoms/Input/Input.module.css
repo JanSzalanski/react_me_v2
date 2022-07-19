@@ -95,6 +95,13 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .background, .contactBgk {
+    -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
+            clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
+  }
+}
+
 .input, .search, .contact {
   position: absolute;
   left: 50%;

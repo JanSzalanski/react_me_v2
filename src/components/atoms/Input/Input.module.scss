@@ -75,6 +75,10 @@
   @media (max-width: 1280px) {
     clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
   }
+
+  @media (max-width: 1024px) {
+    clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
+  }
 }
 
 .input {

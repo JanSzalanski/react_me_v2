@@ -68,6 +68,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .card {
+    font-size: 1.6rem;
+  }
+}
+
 .detailPage {
   letter-spacing: 1px;
   color: white;

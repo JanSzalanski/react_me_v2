@@ -21,6 +21,18 @@
   }
 }
 
+@media (max-width: 1366px) {
+  .card {
+    font-size: var(--fontSizeXS);
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    padding-top: 0px;
+  }
+}
+
 .article {
   display: block;
   width: calc(100% - 40px);
