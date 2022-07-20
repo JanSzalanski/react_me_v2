@@ -14,4 +14,11 @@
     left: 30px;
   }
 }
+
+@media (max-width: 480px) {
+  .video {
+    left: 0;
+    opacity: 0.8;
+  }
+}
 /*# sourceMappingURL=Video.module.css.map */

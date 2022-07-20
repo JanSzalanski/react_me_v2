@@ -25,6 +25,10 @@ body {
   @media (max-width: 1024px) {
     padding-left: 126px;
   }
+
+  @media (max-width: 480px) {
+    padding-left: 0;
+  }
 }
 
 strong {
@@ -79,6 +83,10 @@ h2 {
 
   @media (max-width: 1024px) {
     width: calc(100vw - 126px);
+  }
+
+  @media (max-width: 480px) {
+    width: 100vw;
   }
 }
 
