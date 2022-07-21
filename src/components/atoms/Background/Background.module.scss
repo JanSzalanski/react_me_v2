@@ -13,9 +13,9 @@
   }
 
   @media (max-width: 480px) {
-    height: 95%;
+    height: 90%;
     left: 50%;
-    width: 100%;
+    width: 95%;
   }
   // Pamiętaj że to musi korespondować z overflowWrapper w globals - użyte w articles
 }
@@ -30,6 +30,12 @@
   opacity: 0.12;
   background-position: 40px 31px;
   background-color: rgba(255, 255, 255, 0.35);
+  @media (max-width: 480px) {
+    left: 12px;
+    right: 12px;
+    top: 12px;
+    bottom: 12px;
+  }
 }
 
 .border {
@@ -40,6 +46,12 @@
   bottom: 40px;
   border: 1px solid var(--colorArticles);
   border-radius: 7px;
+  @media (max-width: 480px) {
+    left: 12px;
+    right: 12px;
+    top: 12px;
+    bottom: 12px;
+  }
 }
 
 .miarkaL {
@@ -157,7 +169,7 @@
   position: absolute;
   left: calc(41% + 62px);
   top: 0px;
-  width: calc(59% - 83px);
+  width: calc(59% - 67px);
   border-top: 2px solid var(--black);
   transform-origin: center left;
 }
@@ -170,6 +182,11 @@
   transform: skewY(45deg);
   border-top: 2px solid var(--black);
   transform-origin: center left;
+  @media (max-width: 480px) {
+    top: 0px;
+    width: 5px;
+    right: 0;
+  }
 }
 
 .line9 {
@@ -180,6 +197,11 @@
   height: calc(25% - 39px);
   border-right: 2px solid var(--black);
   transform-origin: center right;
+  @media (max-width: 480px) {
+    top: 5px;
+    height: calc(25% - 10px);
+    right: 0;
+  }
 }
 
 .line10 {
@@ -190,6 +212,11 @@
   height: 20px;
   border-left: 2px solid var(--black);
   transform-origin: top right;
+  @media (max-width: 480px) {
+    top: calc(25% - 5px);
+    height: 5px;
+    right: 0;
+  }
 }
 
 .lineR {
@@ -199,6 +226,11 @@
   transform: translateY(-50%);
   height: 50%;
   border-left: 2px solid var(--black);
+  @media (max-width: 480px) {
+    top: calc(50% + 7px);
+    height: calc(50% + 15px);
+    right: 5px;
+  }
 }
 
 .line11 {
@@ -209,6 +241,10 @@
   transform: skew(45deg);
   border-right: 2px solid var(--black);
   transform-origin: top right;
+  @media (max-width: 480px) {
+    right: 5px;
+    height: 5px;
+  }
 }
 
 .line12 {
@@ -236,6 +272,9 @@
   transform: skewY(45deg);
   border-bottom: 2px solid var(--black);
   transform-origin: center right;
+  @media (max-width: 480px) {
+    width: 5px;
+  }
 }
 
 .line15 {
@@ -245,6 +284,11 @@
   width: 31%;
   border-bottom: 2px solid var(--black);
   transform-origin: center left;
+  @media (max-width: 480px) {
+    right: calc(10% + 29px);
+    bottom: 5px;
+    width: calc(31% + 30px);
+  }
 }
 
 .line16 {
@@ -255,6 +299,11 @@
   transform: skewY(135deg);
   border-bottom: 2px solid var(--black);
   transform-origin: center right;
+  @media (max-width: 480px) {
+    right: calc(41% + 58px);
+    bottom: 5px;
+    width: 5px;
+  }
 }
 
 .line17 {
@@ -264,6 +313,9 @@
   width: calc(59% - 83px);
   border-bottom: 2px solid var(--black);
   transform-origin: center right;
+  @media (max-width: 480px) {
+    width: calc(59% - 69px);
+  }
 }
 
 .line18 {
@@ -274,6 +326,10 @@
   transform: skewY(45deg);
   border-bottom: 2px solid var(--black);
   transform-origin: center left;
+  @media (max-width: 480px) {
+    bottom: 5px;
+    width: 5px;
+  }
 }
 
 .line19 {
@@ -283,6 +339,10 @@
   height: calc(25% - 39px);
   border-left: 2px solid var(--black);
   transform-origin: center bottom;
+  @media (max-width: 480px) {
+    height: calc(25% - 25px);
+    bottom: 6px;
+  }
 }
 
 .line20 {
@@ -293,4 +353,7 @@
   transform: skew(-45deg);
   border-left: 2px solid var(--black);
   transform-origin: center bottom;
+  @media (max-width: 480px) {
+    height: 5px;
+  }
 }
