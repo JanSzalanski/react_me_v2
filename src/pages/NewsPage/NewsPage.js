@@ -18,12 +18,12 @@ const NewsPage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
       <div className="overlay"></div>
-      <HeaderB>Tu i teraz...</HeaderB>
-      <Input className="search" placeholder="szukaj"></Input>
+      {/* <HeaderB>Tu i teraz...</HeaderB> */}
+      {/* <Input className="search" placeholder="szukaj"></Input> */}
 
       <Background />
       <div className="overflowWrapper">
-        <section className={classes.slider}>
+        {/* <section className={classes.slider}>
           <input type="radio" name="slider" id="s1" defaultChecked />
           <input type="radio" name="slider" id="s2" />
           <input type="radio" name="slider" id="s3" />
@@ -92,13 +92,13 @@ const NewsPage = (props) => {
               content="siedem - Dwóch policjantów stara się złapać seryjnego mordercę wybierającego swoje ofiary według specjalnego klucza - siedmiu grzechów głównych.Github jest git ;)"
             />
           </Label>
-        </section>
+        </section> */}
       </div>
-      <FooterB>
+      {/* <FooterB>
         Jan Szałański <br />
         Polityka prywatności
         <br /> © 2022 Wszystkie prawa zastrzeżone
-      </FooterB>
+      </FooterB> */}
     </div>
   );
 };
