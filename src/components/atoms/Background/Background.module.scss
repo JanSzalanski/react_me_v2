@@ -31,10 +31,12 @@
   background-position: 40px 31px;
   background-color: rgba(255, 255, 255, 0.35);
   @media (max-width: 480px) {
+    background-size: 15%;
     left: 12px;
     right: 12px;
     top: 12px;
     bottom: 12px;
+    overflow: hidden;
   }
 }
 
@@ -62,6 +64,10 @@
   height: 100%;
   background-image: url(../../../assets/miarkaWhite.webp);
   background-position: 0px 30px;
+  @media (max-width: 480px) {
+    background-position: 0px 12px;
+    background-size: 100% 8%;
+  }
 }
 
 .miarkaR {
@@ -72,6 +78,13 @@
   height: 100%;
   background-image: url(../../../assets/miarkaWhite.webp);
   background-position: -10px 30px;
+
+  @media (max-width: 480px) {
+    right: -5px;
+    background-position: 10px 30px;
+    background-position: 0px 12px;
+    background-size: 100% 8%;
+  }
 }
 
 .lineL {
