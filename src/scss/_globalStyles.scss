@@ -235,6 +235,9 @@ input[type='radio']:checked {
 #s7:checked ~ #slide7 {
   // box-shadow: 0 100px 300px var(--colorArticles), 0 50px 100px var(--colorArticles);
   transform: translate3d(0%, 0, 0px);
+  @media (max-width: 480px) {
+    transform: translate3d(0, 0%, 0px);
+  }
 }
 
 #s1:checked ~ #slide2,
@@ -247,6 +250,9 @@ input[type='radio']:checked {
   transform: translate3d(30%, 0, -200px);
   opacity: 0.8;
   filter: blur(1px);
+  @media (max-width: 480px) {
+    transform: translate3d(0, 30%, -200px);
+  }
 }
 
 #s1:checked ~ #slide3,
@@ -259,6 +265,9 @@ input[type='radio']:checked {
   transform: translate3d(60%, 0, -600px);
   filter: blur(3px);
   opacity: 0.6;
+  @media (max-width: 480px) {
+    transform: translate3d(0, 60%, -600px);
+  }
 }
 
 #s1:checked ~ #slide4,
@@ -271,6 +280,9 @@ input[type='radio']:checked {
   transform: translate3d(100%, 0, -1200px);
   filter: blur(5px);
   opacity: 0.4;
+  @media (max-width: 480px) {
+    transform: translate3d(0, 100%, -1200px);
+  }
 }
 
 #s1:checked ~ #slide5,
@@ -283,6 +295,9 @@ input[type='radio']:checked {
   transform: translate3d(-100%, 0, -1200px);
   filter: blur(5px);
   opacity: 0.4;
+  @media (max-width: 480px) {
+    transform: translate3d(0, -100%, -1200px);
+  }
 }
 
 #s1:checked ~ #slide6,
@@ -295,6 +310,9 @@ input[type='radio']:checked {
   transform: translate3d(-60%, 0, -600px);
   filter: blur(3px);
   opacity: 0.6;
+  @media (max-width: 480px) {
+    transform: translate3d(0, -60%, -600px);
+  }
 }
 
 #s1:checked ~ #slide7,
@@ -307,6 +325,9 @@ input[type='radio']:checked {
   transform: translate3d(-30%, 0, -200px);
   filter: blur(1px);
   opacity: 0.8;
+  @media (max-width: 480px) {
+    transform: translate3d(0, -30%, -200px);
+  }
 }
 
 .overflowWrapper {
