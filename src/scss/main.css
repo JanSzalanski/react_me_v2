@@ -96,6 +96,13 @@ textarea:focus {
   }
 }
 
+@media (max-width: 480px) {
+  :root {
+    --cardWidth: 300px;
+    --cardHeight: 243px;
+  }
+}
+
 .logo1 {
   fill: white;
   -webkit-transition: 0.2s ease-in;
@@ -423,6 +430,13 @@ input[type='radio']:checked {
   .overflowWrapper {
     left: 51%;
     width: calc(89% - 80px);
+  }
+}
+
+@media (max-width: 480px) {
+  .overflowWrapper {
+    width: calc(90% - 8px);
+    left: 50%;
   }
 }
 /*# sourceMappingURL=main.css.map */

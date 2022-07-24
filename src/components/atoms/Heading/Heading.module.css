@@ -74,6 +74,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .card {
+    font-size: 1.5rem;
+  }
+}
+
 .detailPage {
   letter-spacing: 1px;
   color: white;

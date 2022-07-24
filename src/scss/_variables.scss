@@ -69,6 +69,11 @@
     --cardWidth: 330px;
     --cardHeight: 268px;
   }
+
+  @media (max-width: 480px) {
+    --cardWidth: 300px;
+    --cardHeight: 243px;
+  }
 }
 
 .logo1 {

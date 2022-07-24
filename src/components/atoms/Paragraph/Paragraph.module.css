@@ -33,6 +33,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .card {
+    font-size: 1.1rem;
+  }
+}
+
 .article {
   display: block;
   width: calc(100% - 40px);

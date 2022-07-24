@@ -329,6 +329,11 @@ input[type='radio']:checked {
     width: calc(89% - 80px);
   }
 
+  @media (max-width: 480px) {
+    width: calc(90% - 8px);
+    left: 50%;
+  }
+
   // @media (max-width: 1024px) {
   //   width: calc(89% - 110px);
   // }

@@ -26,6 +26,11 @@
     // font-size: 1.1rem;
     padding-top: 0px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
+    // padding-top: 0px;
+  }
 }
 
 // .cardDate {

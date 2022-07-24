@@ -50,6 +50,10 @@ $colorMainA: rgba(yellow, 0.15);
   @media (max-width: 1024px) {
     height: 55px;
   }
+
+  @media (max-width: 480px) {
+    height: 45px;
+  }
 }
 
 .card {
@@ -98,6 +102,10 @@ $colorMainA: rgba(yellow, 0.15);
   background-color: var(--colorBgkD);
   border-top: 3px double var(--colorArticles);
   border-bottom: 3px double var(--colorArticles);
+
+  @media (max-width: 480px) {
+    border-bottom: 2px solid var(--colorArticles);
+  }
 }
 
 .title {
@@ -119,6 +127,12 @@ $colorMainA: rgba(yellow, 0.15);
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 .code {
@@ -139,6 +153,10 @@ $colorMainA: rgba(yellow, 0.15);
   border-bottom: 1px solid var(--colorArticles);
   border-left: 2px solid var(--colorArticles);
   transform: skew(45deg);
+  @media (max-width: 480px) {
+    bottom: -9px;
+    height: 10px;
+  }
 }
 
 .decorB {
@@ -149,6 +167,13 @@ $colorMainA: rgba(yellow, 0.15);
   bottom: -18px;
   right: 0;
   border: 5px solid var(--colorArticles);
+  @media (max-width: 480px) {
+    // background-color: red;
+    bottom: -9px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--colorArticles);
+  }
 }
 
 .decorC {
@@ -159,6 +184,12 @@ $colorMainA: rgba(yellow, 0.15);
   right: 0px;
   border-top: 20px solid var(--colorBgkD);
   border-right: 21px solid transparent;
+
+  @media (max-width: 480px) {
+    bottom: -7px;
+    border-top: 10px solid var(--colorBgkD);
+    border-right: 11px solid transparent;
+  }
 }
 
 .decorData {
@@ -173,6 +204,12 @@ $colorMainA: rgba(yellow, 0.15);
   @media (max-width: 1024px) {
     font-size: 1.2rem;
     bottom: -35px;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    bottom: -22px;
     letter-spacing: 1px;
   }
 }

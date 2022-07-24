@@ -64,6 +64,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .wrapperColor {
+    height: 45px;
+  }
+}
+
 .card {
   width: var(--cardWidth);
   min-height: var(--cardHeight);
@@ -113,6 +119,12 @@
   border-bottom: 3px double var(--colorArticles);
 }
 
+@media (max-width: 480px) {
+  .paragraphWrapper {
+    border-bottom: 2px solid var(--colorArticles);
+  }
+}
+
 .title {
   text-align: left;
   color: var(--white);
@@ -140,6 +152,14 @@
   }
 }
 
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
 .code {
   height: 45%;
   width: 25%;
@@ -161,6 +181,13 @@
           transform: skew(45deg);
 }
 
+@media (max-width: 480px) {
+  .decorA {
+    bottom: -9px;
+    height: 10px;
+  }
+}
+
 .decorB {
   width: 20px;
   height: 20px;
@@ -171,6 +198,15 @@
   border: 5px solid var(--colorArticles);
 }
 
+@media (max-width: 480px) {
+  .decorB {
+    bottom: -9px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--colorArticles);
+  }
+}
+
 .decorC {
   width: 0px;
   height: 0px;
@@ -179,6 +215,14 @@
   right: 0px;
   border-top: 20px solid var(--colorBgkD);
   border-right: 21px solid transparent;
+}
+
+@media (max-width: 480px) {
+  .decorC {
+    bottom: -7px;
+    border-top: 10px solid var(--colorBgkD);
+    border-right: 11px solid transparent;
+  }
 }
 
 .decorData {
@@ -195,6 +239,14 @@
   .decorData {
     font-size: 1.2rem;
     bottom: -35px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .decorData {
+    font-size: 0.9rem;
+    bottom: -22px;
     letter-spacing: 1px;
   }
 }
