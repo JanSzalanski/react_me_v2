@@ -55,6 +55,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .wrapperAll, .contactWrap {
+    display: none;
+  }
+}
+
 .backWrapper {
   position: relative;
   height: 100%;

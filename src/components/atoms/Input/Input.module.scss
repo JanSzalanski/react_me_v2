@@ -44,6 +44,11 @@
     // height: calc(var(--inputHeight) - 40px);
   }
 
+  @media (max-width: 480px) {
+    display: none;
+    // height: calc(var(--inputHeight) - 40px);
+  }
+
   //ale coś nie zawerza wysokosci
   // border: 1px solid whitesmoke;
 }

@@ -100,6 +100,8 @@ textarea:focus {
   :root {
     --cardWidth: 300px;
     --cardHeight: 243px;
+    --buttonWidthSec: 155px;
+    --buttonHeightSec: 28px;
   }
 }
 
@@ -301,6 +303,14 @@ input[type='radio'] {
   transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
   cursor: pointer;
   pointer-events: auto;
+}
+
+@media (max-width: 480px) {
+  input[type='radio'] {
+    margin-top: 25px;
+    width: 12px;
+    height: 12px;
+  }
 }
 
 input[type='radio']:checked {
@@ -526,6 +536,7 @@ input[type='radio']:checked {
 
 @media (max-width: 480px) {
   .overflowWrapper {
+    height: 90%;
     width: calc(90% - 8px);
     left: 50%;
   }
