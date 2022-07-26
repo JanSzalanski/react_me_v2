@@ -77,6 +77,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .decorHeader {
+    display: none;
+  }
+}
+
 .decorFooter {
   position: absolute;
   width: calc(100% - 88px - 31% * 1.25);

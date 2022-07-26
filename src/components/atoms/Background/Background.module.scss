@@ -5,7 +5,7 @@
   transform: translate(-50%, -50%);
   width: 90%;
   height: 70%;
-  // border: 1px solid white;
+  // border: 1px solid blue;
 
   @media (max-width: 1366px) {
     left: 51%;
@@ -13,9 +13,9 @@
   }
 
   @media (max-width: 480px) {
-    height: 90%;
+    height: 85%;
     left: 50%;
-    width: 95%;
+    width: 100%;
   }
   // Pamiętaj że to musi korespondować z overflowWrapper w globals - użyte w articles
 }

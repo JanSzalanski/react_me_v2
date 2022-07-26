@@ -8,6 +8,7 @@
   width: 90%;
   height: 107px;
   transform: translate(-50%, 0%);
+  // border: 1px solid yellowgreen;
 
   @media (max-width: 1600px) {
     width: 82%;
@@ -33,6 +34,14 @@
     width: 86%;
     left: 41%;
   }
+  @media (max-width: 480px) {
+    transform: translate(-50%, 0%) scaleY(100%);
+    left: 50%;
+    top: 0;
+    width: 100%;
+    height: 7%;
+    margin-top: 0px;
+  }
 }
 
 .innerWrapper {
@@ -42,7 +51,12 @@
   transform: translate(-50%, 0%);
   width: 80%;
   height: 100%;
-  // border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.171);
+
+  @media (max-width: 480px) {
+    left: calc(50% - 2px);
+    width: calc(100% - (20% + 53px));
+  }
 }
 
 .line1 {
@@ -52,6 +66,9 @@
   transform: translateX(-50%);
   width: calc(100% - 80px);
   border-top: 2px solid var(--black);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line2 {
@@ -62,6 +79,9 @@
   border-top: 2px solid var(--black);
   transform: rotate(45deg);
   transform-origin: top left;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line2A {
@@ -72,6 +92,9 @@
   border-top: 1px solid var(--blackA);
   transform: rotate(-45deg);
   transform-origin: top left;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line3 {
@@ -81,6 +104,9 @@
   height: 40px;
   border-right: 2px solid var(--black);
   transform-origin: top right;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line3A {
@@ -90,6 +116,9 @@
   height: 40px;
   border-right: 1px solid var(--blackA);
   transform-origin: top right;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line4 {
@@ -100,6 +129,9 @@
   border-top: 2px solid var(--black);
   transform: rotate(-45deg);
   transform-origin: top right;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line4A {
@@ -110,6 +142,9 @@
   border-top: 1px solid var(--blackA);
   transform: rotate(45deg);
   transform-origin: top right;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line5 {
@@ -118,6 +153,9 @@
   left: calc(53px + 31% * 1.25);
   width: calc(100% - 92px - 31% * 1.25);
   border-bottom: 2px solid var(--black);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line6 {
@@ -128,6 +166,9 @@
   border-bottom: 2px solid var(--black);
   transform-origin: top right;
   transform: rotate(-45deg);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line6A {
@@ -141,6 +182,9 @@
   @media (max-width: 1366px) {
     display: none;
   }
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line7 {
@@ -150,6 +194,9 @@
   width: calc(31% * 1.25);
   transform-origin: top right;
   border-bottom: 2px solid var(--black);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line7A {
@@ -162,6 +209,9 @@
   @media (max-width: 1366px) {
     display: none;
   }
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line8 {
@@ -172,6 +222,9 @@
   border-bottom: 2px solid var(--black);
   transform: rotate(45deg);
   transform-origin: bottom left;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line8A {
@@ -185,6 +238,9 @@
   @media (max-width: 1366px) {
     display: none;
   }
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line8B {
@@ -195,6 +251,9 @@
   border-bottom: 1px solid var(--blackA);
   transform: rotate(-45deg);
   transform-origin: bottom left;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line9 {
@@ -203,6 +262,9 @@
   left: 27px;
   height: 55px;
   border-left: 2px solid var(--black);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line9A {
@@ -211,6 +273,9 @@
   left: 16px;
   height: 55px;
   border-left: 1px solid var(--blackA);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line10 {
@@ -221,6 +286,9 @@
   border-bottom: 2px solid var(--black);
   transform: rotate(-45deg);
   transform-origin: bottom left;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line10A {
@@ -231,6 +299,9 @@
   border-bottom: 1px solid var(--blackA);
   transform: rotate(45deg);
   transform-origin: bottom left;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .lineA {
@@ -241,6 +312,13 @@
   border-bottom: 2px solid var(--colorArticles);
   transform: rotate(45deg);
   transform-origin: center left;
+
+  @media (max-width: 480px) {
+    width: 10px;
+    transform: translate(0, -100%) rotate(45deg);
+    bottom: 5px;
+    left: 0px;
+  }
 }
 
 .lineB {
@@ -249,16 +327,28 @@
   left: 45px;
   bottom: 31px;
   border-bottom: 2px solid var(--colorArticles);
+  @media (max-width: 480px) {
+    border-bottom: 1px solid var(--colorArticles);
+    left: 7px;
+    width: calc(100% - 14px);
+    bottom: 0px;
+  }
 }
 
 .lineC {
   position: absolute;
   width: 17px;
   left: calc(31% * 1.25 + 48px);
-  top: 62px;
+  bottom: 41px;
   border-bottom: 2px solid var(--colorArticles);
   transform: rotate(135deg);
   transform-origin: center left;
+  @media (max-width: 480px) {
+    left: calc(100% - 7px);
+    transform: translate(0, -100%) rotate(-45deg);
+    width: 10px;
+    bottom: -2px;
+  }
 }
 
 .lineD {
@@ -268,6 +358,12 @@
   top: 7px;
   border-right: 2px solid var(--colorArticles);
   transform-origin: center right;
+  @media (max-width: 480px) {
+    border-right: 1px solid var(--colorArticles);
+    height: calc(100% - 7px);
+    left: 0;
+    top: 0;
+  }
 }
 
 .lineE {
@@ -276,6 +372,12 @@
   width: calc(31% * 1.25 + 1px);
   top: 7px;
   border-bottom: 2px solid var(--colorArticles);
+  @media (max-width: 480px) {
+    border-bottom: 1px solid var(--colorArticles);
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
 }
 
 .lineF {
@@ -286,6 +388,9 @@
   border-bottom: 2px solid var(--colorArticles);
   transform: rotate(-45deg);
   transform-origin: center right;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .lineG {
@@ -294,6 +399,12 @@
   left: 35px;
   top: 18px;
   border-right: 2px solid var(--colorArticles);
+  @media (max-width: 480px) {
+    border-right: 1px solid var(--colorArticles);
+    height: calc(100% - 7px);
+    left: calc(100% - 1px);
+    top: 0;
+  }
 }
 
 .bgkWrap {
@@ -304,6 +415,7 @@
   top: 6px;
   clip-path: polygon(0 20%, 3% 0, 100% 0, 100% 80%, 97% 100%, 2% 100%, 0 80%);
   overflow: hidden;
+  // border: 1px solid lightgreen;
 
   @media (min-width: 1921px) {
     clip-path: polygon(0 20%, 2% 0, 100% 0, 100% 80%, 98% 100%, 2% 100%, 0 80%);
@@ -315,6 +427,15 @@
 
   @media (max-width: 1024px) {
     clip-path: polygon(0 20%, 3.7% 0, 100% 0, 100% 80%, 95.8% 100%, 3% 100%, 0 80%);
+  }
+
+  @media (max-width: 480px) {
+    clip-path: polygon(0 20%, 0 0, 100% 0, 100% 80%, 98% 100%, 2% 100%, 0 80%);
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100%;
   }
 }
 

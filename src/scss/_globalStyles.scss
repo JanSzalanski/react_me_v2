@@ -27,7 +27,7 @@ body {
   }
 
   @media (max-width: 480px) {
-    padding-left: 0;
+    padding: 0;
   }
 }
 
@@ -334,7 +334,7 @@ input[type='radio']:checked {
     transform: translate3d(0, -30%, -200px);
   }
 }
-
+// rozmiar odpowiada za slider i powinnien nawiazywac do grid w background
 .overflowWrapper {
   position: absolute;
   left: 50%;
@@ -356,8 +356,8 @@ input[type='radio']:checked {
   }
 
   @media (max-width: 480px) {
-    height: 90%;
-    width: calc(90% - 8px);
+    height: calc(85% - 24px);
+    width: calc(100% - 24px);
     left: 50%;
   }
 

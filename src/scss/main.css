@@ -139,7 +139,7 @@ body {
 
 @media (max-width: 480px) {
   body {
-    padding-left: 0;
+    padding: 0;
   }
 }
 
@@ -536,8 +536,8 @@ input[type='radio']:checked {
 
 @media (max-width: 480px) {
   .overflowWrapper {
-    height: 90%;
-    width: calc(90% - 8px);
+    height: calc(85% - 24px);
+    width: calc(100% - 24px);
     left: 50%;
   }
 }

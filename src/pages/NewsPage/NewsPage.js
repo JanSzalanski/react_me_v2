@@ -18,7 +18,7 @@ const NewsPage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
       <div className="overlay"></div>
-      {/* <HeaderB>Tu i teraz...</HeaderB> */}
+      <HeaderB>Tu i teraz...</HeaderB>
       <Input className="search" placeholder="szukaj"></Input>
 
       <Background />

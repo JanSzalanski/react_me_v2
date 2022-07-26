@@ -55,6 +55,10 @@
   @media (max-width: 1024px) {
     clip-path: polygon(0 0, 96.2% 0, 100% 20%, 100% 80%, 97% 100%, 0 100%);
   }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .decorFooter {
