@@ -2,12 +2,17 @@ import React from 'react';
 import classes from './HeaderB.module.css';
 import Heading from '../../atoms/Heading/Heading';
 import DecorOne from '../../atoms/Decors/DecorOne/DecorOne';
+import DecorTwo from '../../atoms/Decors/DecorTwo/DecorTwo';
 
 const HeaderB = (props) => {
   return (
     <header className={classes[props.className] || classes.wrapperHeader}>
+      <DecorTwo></DecorTwo>
+      <DecorTwo className="decortwo2"></DecorTwo>
+
       <div className={classes.innerWrapper}>
         <DecorOne className="decorHeader"></DecorOne>
+
         <div className={classes.bgkWrap}>
           <div className={classes.background}></div>
           <div className={classes.lines}></div>

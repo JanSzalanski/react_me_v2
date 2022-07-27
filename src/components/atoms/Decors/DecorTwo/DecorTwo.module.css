@@ -1,0 +1,21 @@
+@media (max-width: 480px) {
+  .decortwo, .decortwo2 {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    right: calc(100% - (10% + 24px));
+    height: 100%;
+    background-image: url(/src/assets/icons/decor2.svg);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    opacity: 0.2;
+  }
+}
+
+.decortwo2 {
+  right: 0;
+  left: calc(100% - (10% + 29px));
+  width: calc(10% + 29px);
+}
+/*# sourceMappingURL=DecorTwo.module.css.map */

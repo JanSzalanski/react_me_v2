@@ -35,6 +35,7 @@
     left: 41%;
   }
   @media (max-width: 480px) {
+    overflow: hidden;
     transform: translate(-50%, 0%) scaleY(100%);
     left: 50%;
     top: 0;
@@ -51,7 +52,7 @@
   transform: translate(-50%, 0%);
   width: 80%;
   height: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.171);
+  // border: 1px solid rgba(255, 255, 255, 0.171);
 
   @media (max-width: 480px) {
     left: calc(50% - 2px);
