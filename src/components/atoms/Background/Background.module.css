@@ -374,7 +374,7 @@
 
 @media (max-width: 480px) {
   .line15 {
-    width: calc(100% - (20% + 68px));
+    width: calc(100% - (20% + 63px));
     right: calc(10% + 29px);
     bottom: 5px;
   }
@@ -394,7 +394,7 @@
 
 @media (max-width: 480px) {
   .line16 {
-    right: calc(100% - (10% + 39px));
+    right: calc(100% - (10% + 34px));
     bottom: 5px;
     width: 5px;
   }
@@ -412,8 +412,8 @@
 
 @media (max-width: 480px) {
   .line17 {
-    right: calc(100% - (10% + 34px));
-    width: calc(10% + 29px);
+    right: calc(100% - (10% + 29px));
+    width: calc(10% + 24px);
   }
 }
 

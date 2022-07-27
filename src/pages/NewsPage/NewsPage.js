@@ -94,11 +94,11 @@ const NewsPage = (props) => {
           </Label>
         </section>
       </div>
-      {/* <FooterB>
+      <FooterB>
         Jan Szałański <br />
         Polityka prywatności
         <br /> © 2022 Wszystkie prawa zastrzeżone
-      </FooterB> */}
+      </FooterB>
     </div>
   );
 };

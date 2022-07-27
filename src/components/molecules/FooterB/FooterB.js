@@ -3,13 +3,21 @@ import classes from './FooterB.module.css';
 // import Heading from '../../atoms/Heading/Heading';
 import DecorOne from '../../atoms/Decors/DecorOne/DecorOne';
 import ButtonIcon from '../../atoms/ButtonIcon/ButtonIcon';
+import DecorTwo from '../../atoms/Decors/DecorTwo/DecorTwo';
 
 const FooterB = (props) => {
   return (
     <footer className={classes[props.className] || classes.wrapperFooter}>
+      <DecorTwo className="decortwo3"></DecorTwo>
+      <DecorTwo className="decortwo4"></DecorTwo>
       <div className={classes.innerWrapper}>
         <DecorOne className="decorFooter"></DecorOne>
 
+        <div className={classes.bgkWrap}>
+          <div className={classes.background}></div>
+          <div className={classes.lines}></div>
+          <div className={classes.scanline}></div>
+        </div>
         <div className={classes.socialWrapper}>
           <h3 className={classes.tittle1}>
             moje <b /> socjale
@@ -43,12 +51,6 @@ const FooterB = (props) => {
           </a>
         </div>
 
-        <div className={classes.bgkWrap}>
-          <div className={classes.background}></div>
-          <div className={classes.lines}></div>
-          <div className={classes.scanline}></div>
-        </div>
-
         <div className={classes.lineA}></div>
         <div className={classes.lineB}></div>
         <div className={classes.lineC}></div>
@@ -57,6 +59,7 @@ const FooterB = (props) => {
         <div className={classes.lineF}></div>
         <div className={classes.lineG}></div>
         <h2 className={classes.footerTitle}>{props.children}</h2>
+        <h2 className={classes.footerTitleM}>© 2022 Jan Szałański Polityka prywatności</h2>
 
         <div className={classes.line1}></div>
         <div className={classes.line2}></div>

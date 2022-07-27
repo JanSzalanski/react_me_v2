@@ -89,6 +89,10 @@
   @media (max-width: 1024px) {
     clip-path: polygon(0 20%, 3.5% 0, 100% 0%, 100% 100%, 3.5% 100%, 0 80%);
   }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .second {

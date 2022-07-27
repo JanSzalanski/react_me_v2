@@ -61,6 +61,9 @@
   background-position: none;
   background-size: auto;
   margin: 0;
+  @media (max-width: 480px) {
+    background-color: var(--colorArticles);
+  }
 }
 
 .git {
@@ -86,6 +89,12 @@
     width: 40px;
     padding: 4px;
   }
+
+  @media (max-width: 480px) {
+    width: 38px;
+    height: 38px;
+    padding: 4px;
+  }
 }
 
 .github {
@@ -106,6 +115,9 @@
     mask-size: 100%;
     mask-repeat: no-repeat;
     mask-position: 50%, 50%;
+  }
+  @media (max-width: 480px) {
+    background-color: black;
   }
 }
 
@@ -129,6 +141,11 @@
     width: 40px;
     padding: 4px;
   }
+  @media (max-width: 480px) {
+    width: 38px;
+    height: 38px;
+    padding: 4px;
+  }
 }
 
 .vimeo {
@@ -150,6 +167,9 @@
     mask-size: 80%;
     mask-repeat: no-repeat;
     mask-position: 50%, 50%;
+  }
+  @media (max-width: 480px) {
+    background-color: black;
   }
 }
 
@@ -175,6 +195,12 @@
     width: 40px;
     padding: 4px;
   }
+
+  @media (max-width: 480px) {
+    width: 38px;
+    height: 38px;
+    padding: 4px;
+  }
 }
 
 .linkedin {
@@ -195,6 +221,9 @@
     mask-size: 80%;
     mask-repeat: no-repeat;
     mask-position: 50%, 50%;
+  }
+  @media (max-width: 480px) {
+    background-color: black;
   }
 }
 
@@ -221,6 +250,12 @@
     width: 40px;
     padding: 4px;
   }
+
+  @media (max-width: 480px) {
+    width: 38px;
+    height: 38px;
+    padding: 4px;
+  }
 }
 
 .youtube {
@@ -242,6 +277,10 @@
     mask-size: 100%;
     mask-repeat: no-repeat;
     mask-position: 50%, 50%;
+  }
+
+  @media (max-width: 480px) {
+    background-color: black;
   }
 }
 
@@ -271,6 +310,12 @@
     width: 40px;
     padding: 4px;
   }
+
+  @media (max-width: 480px) {
+    width: 38px;
+    height: 38px;
+    padding: 4px;
+  }
 }
 
 .twitter {
@@ -290,28 +335,51 @@
   @media (max-width: 1440px) {
     mask-size: 70%;
   }
+
+  @media (max-width: 480px) {
+    background-color: black;
+    mask-size: 75%;
+  }
 }
 
 .buttonicon:hover > .github {
   background-color: black;
+  @media (max-width: 480px) {
+    background-color: white;
+  }
 }
 
 .buttonicon:hover > .twitter {
   background-color: black;
+  @media (max-width: 480px) {
+    background-color: white;
+  }
 }
 
 .buttonicon:hover > h3 {
   color: black;
+  @media (max-width: 480px) {
+    background-color: white;
+  }
 }
 
 .buttonicon:hover > .vimeo {
   background-color: black;
+  @media (max-width: 480px) {
+    background-color: white;
+  }
 }
 
 .buttonicon:hover > .youtube {
   background-color: black;
+  @media (max-width: 480px) {
+    background-color: white;
+  }
 }
 
 .buttonicon:hover > .linkedin {
   background-color: black;
+  @media (max-width: 480px) {
+    background-color: white;
+  }
 }

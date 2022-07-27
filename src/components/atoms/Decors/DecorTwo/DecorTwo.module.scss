@@ -1,21 +1,44 @@
 .decortwo {
   @media (max-width: 480px) {
+    // border: 1px solid greenyellow;
     position: absolute;
     left: 0;
-    top: 0px;
+    top: 2px;
     right: calc(100% - (10% + 24px));
-    height: 100%;
+    bottom: 8px;
+    // height: calc(100% - 10px);
     background-image: url(/src/assets/icons/decor2.svg);
     background-position: center;
     background-repeat: repeat-x;
-    background-size: contain;
+    background-size: cover;
     opacity: 0.2;
   }
 }
 
 .decortwo2 {
   @extend .decortwo;
+  //   border: 1px solid red;
   right: 0;
   left: calc(100% - (10% + 29px));
+  width: calc(10% + 29px);
+}
+
+.decortwo3 {
+  @extend .decortwo;
+  //   border: 1px solid red;
+  bottom: 2px;
+  top: 8px;
+  right: 0;
+  left: calc(100% - (10% + 24px));
+  width: calc(10% + 29px);
+}
+
+.decortwo4 {
+  @extend .decortwo;
+  //   border: 1px solid red;
+  top: 8px;
+  bottom: 2px;
+  left: 0;
+  right: calc(100% - (10% + 29px));
   width: calc(10% + 29px);
 }

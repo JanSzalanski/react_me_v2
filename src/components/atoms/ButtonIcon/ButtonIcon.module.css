@@ -70,6 +70,12 @@
   margin: 0;
 }
 
+@media (max-width: 480px) {
+  .social, .git, .vim, .link, .you, .twit {
+    background-color: var(--colorArticles);
+  }
+}
+
 .git {
   padding: 6px;
   width: 90px;
@@ -98,6 +104,14 @@
 @media (max-width: 1152px) {
   .git {
     width: 40px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .git {
+    width: 38px;
+    height: 38px;
     padding: 4px;
   }
 }
@@ -138,6 +152,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .github {
+    background-color: black;
+  }
+}
+
 .vim {
   padding: 6px;
   width: 90px;
@@ -166,6 +186,14 @@
 @media (max-width: 1152px) {
   .vim {
     width: 40px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vim {
+    width: 38px;
+    height: 38px;
     padding: 4px;
   }
 }
@@ -206,6 +234,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .vimeo {
+    background-color: black;
+  }
+}
+
 .link {
   padding: 4px;
   padding-top: 7px;
@@ -236,6 +270,14 @@
 @media (max-width: 1152px) {
   .link {
     width: 40px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .link {
+    width: 38px;
+    height: 38px;
     padding: 4px;
   }
 }
@@ -276,6 +318,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .linkedin {
+    background-color: black;
+  }
+}
+
 .you {
   padding: 4px;
   padding-top: 8px;
@@ -306,6 +354,14 @@
 @media (max-width: 1152px) {
   .you {
     width: 40px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .you {
+    width: 38px;
+    height: 38px;
     padding: 4px;
   }
 }
@@ -343,6 +399,12 @@
             mask-repeat: no-repeat;
     -webkit-mask-position: 50%, 50%;
             mask-position: 50%, 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .youtube {
+    background-color: black;
   }
 }
 
@@ -392,6 +454,14 @@
   }
 }
 
+@media (max-width: 480px) {
+  .twit {
+    width: 38px;
+    height: 38px;
+    padding: 4px;
+  }
+}
+
 .twitter {
   width: 100%;
   height: 100%;
@@ -422,27 +492,71 @@
   }
 }
 
+@media (max-width: 480px) {
+  .twitter {
+    background-color: black;
+    -webkit-mask-size: 75%;
+            mask-size: 75%;
+  }
+}
+
 .buttonicon:hover > .github, .logout:hover > .github, .pen:hover > .github, .people:hover > .github, .plus:hover > .github, .social:hover > .github, .git:hover > .github, .vim:hover > .github, .link:hover > .github, .you:hover > .github, .twit:hover > .github {
   background-color: black;
+}
+
+@media (max-width: 480px) {
+  .buttonicon:hover > .github, .logout:hover > .github, .pen:hover > .github, .people:hover > .github, .plus:hover > .github, .social:hover > .github, .git:hover > .github, .vim:hover > .github, .link:hover > .github, .you:hover > .github, .twit:hover > .github {
+    background-color: white;
+  }
 }
 
 .buttonicon:hover > .twitter, .logout:hover > .twitter, .pen:hover > .twitter, .people:hover > .twitter, .plus:hover > .twitter, .social:hover > .twitter, .git:hover > .twitter, .vim:hover > .twitter, .link:hover > .twitter, .you:hover > .twitter, .twit:hover > .twitter {
   background-color: black;
 }
 
+@media (max-width: 480px) {
+  .buttonicon:hover > .twitter, .logout:hover > .twitter, .pen:hover > .twitter, .people:hover > .twitter, .plus:hover > .twitter, .social:hover > .twitter, .git:hover > .twitter, .vim:hover > .twitter, .link:hover > .twitter, .you:hover > .twitter, .twit:hover > .twitter {
+    background-color: white;
+  }
+}
+
 .buttonicon:hover > h3, .logout:hover > h3, .pen:hover > h3, .people:hover > h3, .plus:hover > h3, .social:hover > h3, .git:hover > h3, .vim:hover > h3, .link:hover > h3, .you:hover > h3, .twit:hover > h3 {
   color: black;
+}
+
+@media (max-width: 480px) {
+  .buttonicon:hover > h3, .logout:hover > h3, .pen:hover > h3, .people:hover > h3, .plus:hover > h3, .social:hover > h3, .git:hover > h3, .vim:hover > h3, .link:hover > h3, .you:hover > h3, .twit:hover > h3 {
+    background-color: white;
+  }
 }
 
 .buttonicon:hover > .vimeo, .logout:hover > .vimeo, .pen:hover > .vimeo, .people:hover > .vimeo, .plus:hover > .vimeo, .social:hover > .vimeo, .git:hover > .vimeo, .vim:hover > .vimeo, .link:hover > .vimeo, .you:hover > .vimeo, .twit:hover > .vimeo {
   background-color: black;
 }
 
+@media (max-width: 480px) {
+  .buttonicon:hover > .vimeo, .logout:hover > .vimeo, .pen:hover > .vimeo, .people:hover > .vimeo, .plus:hover > .vimeo, .social:hover > .vimeo, .git:hover > .vimeo, .vim:hover > .vimeo, .link:hover > .vimeo, .you:hover > .vimeo, .twit:hover > .vimeo {
+    background-color: white;
+  }
+}
+
 .buttonicon:hover > .youtube, .logout:hover > .youtube, .pen:hover > .youtube, .people:hover > .youtube, .plus:hover > .youtube, .social:hover > .youtube, .git:hover > .youtube, .vim:hover > .youtube, .link:hover > .youtube, .you:hover > .youtube, .twit:hover > .youtube {
   background-color: black;
 }
 
+@media (max-width: 480px) {
+  .buttonicon:hover > .youtube, .logout:hover > .youtube, .pen:hover > .youtube, .people:hover > .youtube, .plus:hover > .youtube, .social:hover > .youtube, .git:hover > .youtube, .vim:hover > .youtube, .link:hover > .youtube, .you:hover > .youtube, .twit:hover > .youtube {
+    background-color: white;
+  }
+}
+
 .buttonicon:hover > .linkedin, .logout:hover > .linkedin, .pen:hover > .linkedin, .people:hover > .linkedin, .plus:hover > .linkedin, .social:hover > .linkedin, .git:hover > .linkedin, .vim:hover > .linkedin, .link:hover > .linkedin, .you:hover > .linkedin, .twit:hover > .linkedin {
   background-color: black;
+}
+
+@media (max-width: 480px) {
+  .buttonicon:hover > .linkedin, .logout:hover > .linkedin, .pen:hover > .linkedin, .people:hover > .linkedin, .plus:hover > .linkedin, .social:hover > .linkedin, .git:hover > .linkedin, .vim:hover > .linkedin, .link:hover > .linkedin, .you:hover > .linkedin, .twit:hover > .linkedin {
+    background-color: white;
+  }
 }
 /*# sourceMappingURL=ButtonIcon.module.css.map */

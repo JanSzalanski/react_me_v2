@@ -803,6 +803,7 @@
 
 @media (max-width: 480px) {
   .lineA {
+    border-bottom: 1px solid var(--colorArticles);
     width: 10px;
     -webkit-transform: translate(0, -100%) rotate(45deg);
             transform: translate(0, -100%) rotate(45deg);
@@ -842,6 +843,7 @@
 
 @media (max-width: 480px) {
   .lineC {
+    border-bottom: 1px solid var(--colorArticles);
     left: calc(100% - 7px);
     -webkit-transform: translate(0, -100%) rotate(-45deg);
             transform: translate(0, -100%) rotate(-45deg);
