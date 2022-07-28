@@ -24,6 +24,10 @@
   @media (max-width: 1024px) {
     width: 120px;
   }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .background {
@@ -42,6 +46,10 @@
 
   @media (max-width: 1024px) {
     width: 120px;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
   }
 }
 
@@ -120,6 +128,10 @@
 
   @media (max-width: 1024px) {
     width: 120px;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
   }
 }
 

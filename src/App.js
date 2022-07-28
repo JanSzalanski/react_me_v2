@@ -26,7 +26,7 @@ function App() {
       <Route path="/news">
         <Video></Video>
         <NewsPage />
-        {/* <SideBar /> */}
+        <SideBar />
         {/* <ContactBar /> */}
       </Route>
       <Route path="/articles">

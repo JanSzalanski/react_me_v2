@@ -28,7 +28,7 @@
   left: 10px;
   width: 250px;
   height: 280px;
-  // outline: 2px solid var(--colorArticles);
+  outline: 2px solid lightseagreen;
 
   @media (max-width: 1600px) {
     transform: scale(0.9);
@@ -45,6 +45,10 @@
     transform: scale(0.73);
     left: -24px;
   }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .topLine {
@@ -53,6 +57,9 @@
   top: -8px;
   left: 0;
   border-top: 1px solid var(--colorArticlesB);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .topLineCorner {
@@ -62,6 +69,9 @@
   left: 89.3%;
   border-top: 1px solid var(--colorArticlesB);
   transform: rotate(-45deg);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .rightLineCornerA {
@@ -71,6 +81,9 @@
   right: -13px;
   border-right: 1px solid var(--colorArticlesB);
   transform: rotate(45deg);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .rightLineCornerB {
@@ -80,6 +93,9 @@
   border-right: 1px solid var(--colorArticlesB);
   transform: rotate(-45deg);
   top: 94.3%;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .rightLine {
@@ -88,6 +104,9 @@
   bottom: 5%;
   right: -8px;
   border-right: 1px solid var(--colorArticlesB);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .underLine {
@@ -96,6 +115,9 @@
   bottom: -8px;
   right: 20px;
   border-bottom: 1px solid var(--colorArticlesB);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .underLineCornerB {
@@ -105,6 +127,9 @@
   right: 10px;
   border-bottom: 1px solid var(--colorArticlesB);
   transform: rotate(45deg);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .underLineCornerA {
@@ -114,6 +139,9 @@
   right: calc(18px + 45%);
   border-bottom: 1px solid var(--colorArticlesB);
   transform: rotate(-45deg);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .backgroundMenu {
@@ -125,6 +153,10 @@
   height: 280px;
   clip-path: polygon(0% 0%, 92% 0, 100% 5%, 100% 95%, 92% 100%, 48% 100%, 40% 95%, 8% 95%, 0 90%);
   overflow: hidden;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .backgroundMenu::before {
@@ -140,6 +172,10 @@
   z-index: 2;
   pointer-events: none;
   opacity: 0.4;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .scanline {
@@ -158,6 +194,10 @@
   transform: translateY(0);
   will-change: transform;
   animation: scanline 8s linear infinite;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .cornerTopRight {
@@ -168,6 +208,9 @@
   outline: 1px solid var(--colorArticles);
   transform-origin: top left;
   transform: rotate(35deg);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .cornerBottomRight {
@@ -178,6 +221,9 @@
   outline: 1px solid var(--colorArticles);
   transform-origin: top left;
   transform: rotate(-35deg);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .cornerMiddle {
@@ -188,6 +234,9 @@
   outline: 1px solid var(--colorArticles);
   transform-origin: bottom left;
   transform: rotate(215deg);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .cornerBottomLeft {
@@ -198,6 +247,9 @@
   outline: 1px solid var(--colorArticles);
   transform-origin: bottom left;
   transform: rotate(35deg);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .bottomLine {
@@ -206,6 +258,9 @@
   bottom: 14px;
   left: 20px;
   outline: 1px solid var(--colorArticles);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .borderMenu {
@@ -232,4 +287,7 @@
   font-weight: 300;
   font-family: var(--font-pixel);
   color: var(--colorArticlesC);
+  @media (max-width: 480px) {
+    display: none;
+  }
 }

@@ -404,6 +404,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+}
+
 .background {
   position: fixed;
   width: 176px;
@@ -422,6 +428,12 @@
 @media (max-width: 1024px) {
   .background {
     width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .background {
+    display: none;
   }
 }
 
@@ -513,6 +525,12 @@
 @media (max-width: 1024px) {
   .glow {
     width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .glow {
+    display: none;
   }
 }
 
