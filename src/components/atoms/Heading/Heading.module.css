@@ -95,7 +95,6 @@
   letter-spacing: 1px;
   color: var(--colorArticles);
   text-shadow: -4px 4px 2px black;
-  text-align: center;
 }
 
 @media (max-width: 480px) {
@@ -112,6 +111,7 @@
             transform: translate(-50%, -50%);
     font-weight: 500;
     letter-spacing: 2px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=Heading.module.css.map */
