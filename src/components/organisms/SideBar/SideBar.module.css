@@ -457,6 +457,16 @@
   }
 }
 
+@media (max-width: 480px) {
+  .wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .glowWrapper {
   position: absolute;
   top: 49%;
@@ -549,4 +559,8 @@
 .animeD {
   top: 75%;
 }
-/*# sourceMappingURL=SideBar.css.map */
+
+.ulistM {
+  position: absolute;
+}
+/*# sourceMappingURL=SideBar.module.css.map */

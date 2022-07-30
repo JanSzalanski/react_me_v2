@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import './SideBar.css';
+import classes from './SideBar.module.css';
 import Menu from '../../molecules/Menu/Menu';
+import Button from '../../atoms/Button/Button';
+import { NavLink } from 'react-router-dom';
 
 const SideBar = (props) => {
   const [animeA, setAnimeA] = useState(false);
@@ -42,6 +44,15 @@ const SideBar = (props) => {
   };
   return (
     <div className="wrapper">
+      <ul className={classes.ulistM}>
+        <li className={classes.li}>
+          <NavLink activeClassName={classes.active} className="routeLink" to="/news">
+            <Button type="menu" onClick={props.newsPointer}>
+              Nowości
+            </Button>
+          </NavLink>
+        </li>
+      </ul>
       <div className="background"></div>
       <div className="glowWrapper">
         <div className={classesGlow.join(' ')} />

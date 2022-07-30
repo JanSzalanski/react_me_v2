@@ -136,6 +136,13 @@ $btnHeight: 40px;
 
 .buttonWrapper {
   position: relative;
+  @media (max-width: 480px) {
+    // position: absolute;
+    position: unset;
+    border: 1px solid red;
+    width: $btnWidth;
+    height: $btnHeight;
+  }
 }
 
 .copy {

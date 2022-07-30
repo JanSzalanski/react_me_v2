@@ -370,7 +370,7 @@
   }
 }
 
-.button, .secondary, .kontakt, .wysylka, .menu {
+.button, .secondary, .kontakt, .wysylka, .menu, .menuM {
   margin: 10px;
   padding-right: 10px;
   display: -webkit-box;
@@ -408,7 +408,7 @@
           backdrop-filter: blur(2px);
 }
 
-.button:hover, .secondary:hover, .kontakt:hover, .wysylka:hover, .menu:hover {
+.button:hover, .secondary:hover, .kontakt:hover, .wysylka:hover, .menu:hover, .menuM:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -419,7 +419,7 @@
           transform: translate(-3px, 4px);
 }
 
-.button:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow, .wysylka:hover + .glow, .menu:hover + .glow {
+.button:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow, .wysylka:hover + .glow, .menu:hover + .glow, .menuM:hover + .glow {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--white));
           filter: drop-shadow(-3px 3px 2px var(--white));
 }
@@ -541,6 +541,15 @@
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .buttonWrapper {
+    position: unset;
+    border: 1px solid red;
+    width: 210px;
+    height: 40px;
+  }
+}
+
 .copy, .copyMe {
   width: var(--buttonWidth);
   height: var(--buttonHeight);
@@ -600,9 +609,15 @@
   transition: all 0.25s ease-out;
 }
 
-.menu {
+.menu, .menuM {
   width: 210px;
   height: 40px;
+}
+
+.menuM {
+  position: absolute;
+  top: 30px;
+  left: 10px;
 }
 
 .copyMe {
