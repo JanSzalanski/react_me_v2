@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import classes from './SideBar.module.css';
+import './SideBar.css';
 import Menu from '../../molecules/Menu/Menu';
-import Button from '../../atoms/Button/Button';
-import { NavLink } from 'react-router-dom';
+import MenuMTop from '../../molecules/MenuMTop/MenuMTop';
 
 const SideBar = (props) => {
   const [animeA, setAnimeA] = useState(false);
@@ -43,29 +42,28 @@ const SideBar = (props) => {
     setAnimeD(true);
   };
   return (
-    <div className="wrapper">
-      <ul className={classes.ulistM}>
-        <li className={classes.li}>
-          <NavLink activeClassName={classes.active} className="routeLink" to="/news">
-            <Button type="menu" onClick={props.newsPointer}>
-              Nowości
-            </Button>
-          </NavLink>
-        </li>
-      </ul>
-      <div className="background"></div>
-      <div className="glowWrapper">
-        <div className={classesGlow.join(' ')} />
+    <>
+      <div className="wrapper">
+        <div className="background"></div>
+        <div className="glowWrapper">
+          <div className={classesGlow.join(' ')} />
+        </div>
+        <div className="sidebar"></div>
+        <div className="helper" />
+        <Menu
+          newsPointer={newsHandler}
+          articlePointer={articleHandler}
+          peoplePointer={peopleHandler}
+          nftPointer={nftHandler}
+        />
       </div>
-      <div className="sidebar"></div>
-      {/* <div className="helper" /> */}
-      <Menu
+      <MenuMTop>
         newsPointer={newsHandler}
         articlePointer={articleHandler}
         peoplePointer={peopleHandler}
         nftPointer={nftHandler}
-      />
-    </div>
+      </MenuMTop>
+    </>
   );
 };
 

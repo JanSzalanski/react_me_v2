@@ -1,0 +1,17 @@
+.menu {
+  display: none;
+  @media (max-width: 480px) {
+    width: 100%;
+    display: block;
+    height: 58px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    border: 1px solid orangered;
+  } // z-index: -1; width: 100%;
+}
+
+.ulist {
+  list-style: none;
+}

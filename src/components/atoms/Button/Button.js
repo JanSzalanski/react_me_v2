@@ -3,11 +3,17 @@ import PropTypes from 'prop-types';
 import classes from './Button.module.css';
 
 const Button = (props) => {
+  let cssClasses = ['button'];
+  if (props.mobile === 'news') {
+    cssClasses = ['news', props.type];
+  }
+
   return (
     <div className={classes.buttonWrapper}>
       <button
-        className={classes[props.type] || classes.button}
+        className={cssClasses.join(' ') || classes.button}
         type={props.type || 'button'}
+        mobile={props.mobile}
         onClick={props.onClick}
       >
         <p>{props.children}</p>
