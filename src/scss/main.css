@@ -541,4 +541,10 @@ input[type='radio']:checked {
     left: 50%;
   }
 }
+
+.news {
+  color: white;
+  background-color: red;
+  border: 1px solid blue;
+}
 /*# sourceMappingURL=main.css.map */

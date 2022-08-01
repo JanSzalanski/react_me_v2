@@ -136,13 +136,14 @@ $btnHeight: 40px;
 
 .buttonWrapper {
   position: relative;
-  @media (max-width: 480px) {
-    position: unset;
-    // border: 1px solid red;
-    width: $btnWidth;
-    height: $btnHeight;
-    // z-index: 2;
-  }
+  // border: 1px solid yellowgreen;
+  // @media (max-width: 480px) {
+  //   position: unset;
+  //   // border: 1px solid red;
+  //   width: $btnWidth;
+  //   height: $btnHeight;
+  //   // z-index: 2;
+  // }
 }
 
 .copy {
@@ -203,4 +204,24 @@ $btnHeight: 40px;
   @extend .copy;
   width: $btnWidth;
   height: $btnHeight;
+}
+
+.news {
+  transform-origin: top left;
+  padding: 0;
+  margin: 0;
+  left: 30px;
+  // top: 10px;
+  position: absolute;
+  transform: rotate(60deg);
+}
+
+.art {
+  transform-origin: top right;
+  padding: 0;
+  margin: 0;
+  right: 30px;
+  // top: 10px;
+  position: absolute;
+  transform: rotate(-60deg);
 }

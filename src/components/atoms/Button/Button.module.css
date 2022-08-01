@@ -541,14 +541,6 @@
   position: relative;
 }
 
-@media (max-width: 480px) {
-  .buttonWrapper {
-    position: unset;
-    width: 210px;
-    height: 40px;
-  }
-}
-
 .copy, .copyMe {
   width: var(--buttonWidth);
   height: var(--buttonHeight);
@@ -616,5 +608,27 @@
 .copyMe {
   width: 210px;
   height: 40px;
+}
+
+.news {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  padding: 0;
+  margin: 0;
+  left: 30px;
+  position: absolute;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.art {
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  padding: 0;
+  margin: 0;
+  right: 30px;
+  position: absolute;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
 }
 /*# sourceMappingURL=Button.module.css.map */
