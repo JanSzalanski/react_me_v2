@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './MenuMTop.module.css';
 import { NavLink } from 'react-router-dom';
-import Button from '../../atoms/Button/Button';
+import ButtonM from '../../atoms/ButtonM/ButtonM';
 
 const MenuMTop = (props) => {
   return (
@@ -10,16 +10,12 @@ const MenuMTop = (props) => {
         <ul className={classes.ulist}>
           <li className={classes.li}>
             <NavLink activeClassName={classes.active} className="routeLink" to="/news">
-              <Button type="menu" mobile="news" onClick={props.newsPointer}>
-                Nowości
-              </Button>
+              <ButtonM className="new">Nowości</ButtonM>
             </NavLink>
           </li>
           <li className={classes.li}>
             <NavLink activeClassName={classes.active} className="routeLink" to="/articles">
-              <Button type="menu" mobile="art" onClick={props.articlePointer}>
-                Artykuły
-              </Button>
+              <ButtonM className="art">Artykuły</ButtonM>
             </NavLink>
           </li>
         </ul>

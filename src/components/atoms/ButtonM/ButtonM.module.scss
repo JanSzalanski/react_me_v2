@@ -1,3 +1,58 @@
+@import '../../../scss/animations';
+
+$btnWidth: 35px;
+$btnHeight: 145px;
 .buttonM {
-  position: inherit;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  background-color: var(--colorArticlesB);
+  width: $btnWidth;
+  height: $btnHeight;
+  padding-top: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.15s ease-out, transform 0.2s ease-out;
+  border-left: 1px solid var(--colorArticles);
+  border-right: 1px solid var(--colorArticles);
+  border-bottom: 1px solid var(--colorArticles);
+  border-top: 1px solid var(--colorArticles);
+  // text-shadow: -3px 4px 3px var(--blackA);
+
+  backdrop-filter: blur(2px);
+
+  // z-index: 1;
+  & p {
+    font-family: var(--font-headers);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: var(--colorArticles);
+    letter-spacing: -3px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-shadow: -3px 4px 3px var(--black);
+  }
+
+  &:hover {
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-name: btnBlink;
+    transform: translate(-3px, 4px);
+  }
+}
+
+.new {
+  @extend .buttonM;
+  left: 7px;
+  top: 7px;
+  clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
+}
+
+.art {
+  @extend .buttonM;
+  right: 7px;
+  top: 7px;
+  clip-path: polygon(100% 0, 100% 100%, 60% 100%, 0 75%, 0 0);
 }
