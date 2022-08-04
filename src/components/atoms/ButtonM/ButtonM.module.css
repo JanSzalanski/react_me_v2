@@ -370,7 +370,7 @@
   }
 }
 
-.buttonM, .new, .art {
+.buttonM, .new, .copy, .art {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,7 +400,7 @@
           backdrop-filter: blur(2px);
 }
 
-.buttonM p, .new p, .art p {
+.buttonM p, .new p, .copy p, .art p {
   font-family: var(--font-headers);
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -413,7 +413,7 @@
   text-shadow: -3px 4px 3px var(--black);
 }
 
-.buttonM:hover, .new:hover, .art:hover {
+.buttonM:hover, .new:hover, .copy:hover, .art:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -424,11 +424,37 @@
           transform: translate(-3px, 4px);
 }
 
-.new {
-  left: 7px;
+.buttonWrapper {
+  position: relative;
+}
+
+.new, .copy {
+  left: 15px;
   top: 7px;
   -webkit-clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
+}
+
+.copy {
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  top: 12px;
+  left: 8px;
+  border: none;
+  background-color: var(--colorArticlesB);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
+}
+
+.glow {
+  z-index: -1;
+  position: absolute;
+  -webkit-filter: drop-shadow(-5px 5px 2px rgba(255, 245, 112, 0.8));
+          filter: drop-shadow(-5px 5px 2px rgba(255, 245, 112, 0.8));
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .art {
