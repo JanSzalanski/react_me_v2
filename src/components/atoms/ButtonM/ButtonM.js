@@ -4,10 +4,6 @@ import classes from './ButtonM.module.css';
 const ButtonM = (props) => {
   return (
     <div className={classes.buttonWrapper}>
-      <div className={classes.glow}>
-        <div className={classes.copy}></div>
-      </div>
-
       <button
         className={classes[props.className] || classes.buttonM}
         type={props.type || 'buttonM'}
@@ -15,6 +11,17 @@ const ButtonM = (props) => {
       >
         <p>{props.children}</p>
       </button>
+      {props.className === 'new' && (
+        <div className={classes.glow}>
+          <div className={classes.copy}></div>
+        </div>
+      )}
+
+      {props.className === 'art' && (
+        <div className={classes.glowA}>
+          <div className={classes.copyA}></div>
+        </div>
+      )}
     </div>
   );
 };
