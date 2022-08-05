@@ -3,7 +3,7 @@ import classes from './ButtonM.module.css';
 
 const ButtonM = (props) => {
   return (
-    <div className={classes.buttonWrapper}>
+    <div className={props.type === 'top' ? classes.buttonWrapper : classes.buttonWrapperB}>
       <button
         className={classes[props.className] || classes.buttonM}
         type={props.type || 'buttonM'}
@@ -20,6 +20,18 @@ const ButtonM = (props) => {
       {props.className === 'art' && (
         <div className={classes.glowA}>
           <div className={classes.copyA}></div>
+        </div>
+      )}
+
+      {props.className === 'lud' && (
+        <div className={classes.glowB}>
+          <div className={classes.copyB}></div>
+        </div>
+      )}
+
+      {props.className === 'nft' && (
+        <div className={classes.glowC}>
+          <div className={classes.copyC}></div>
         </div>
       )}
     </div>

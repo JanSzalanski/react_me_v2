@@ -1,24 +1,24 @@
 import React from 'react';
-import classes from './MenuMTop.module.css';
+import classes from './MenuMBottom.module.css';
 import { NavLink } from 'react-router-dom';
 import ButtonM from '../../atoms/ButtonM/ButtonM';
 
-const MenuMTop = (props) => {
+const MenuMBottom = (props) => {
   return (
     <>
       <nav className={classes.menu}>
         <ul className={classes.ulist}>
           <li className={classes.li}>
-            <NavLink activeClassName={classes.active} className="routeLink" to="/news">
-              <ButtonM className="new" type="top">
-                Nowości
+            <NavLink activeClassName={classes.active} className="routeLink" to="/people">
+              <ButtonM className="lud" type="bottom">
+                Ludzie
               </ButtonM>
             </NavLink>
           </li>
           <li className={classes.li}>
-            <NavLink activeClassName={classes.active} className="routeLink" to="/articles">
-              <ButtonM className="art" type="top">
-                Artykuły
+            <NavLink activeClassName={classes.active} className="routeLink" to="/nft">
+              <ButtonM className="nft" type="bottom">
+                NFT
               </ButtonM>
             </NavLink>
           </li>
@@ -28,4 +28,4 @@ const MenuMTop = (props) => {
   );
 };
 
-export default MenuMTop;
+export default MenuMBottom;

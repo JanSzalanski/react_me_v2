@@ -370,7 +370,7 @@
   }
 }
 
-.buttonM, .new, .copy, .copyA, .art {
+.buttonM, .new, .copy, .copyA, .copyB, .copyC, .art, .lud, .nft {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,33 +378,29 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+  -webkit-box-align: bottom;
+      -ms-flex-align: bottom;
+          align-items: bottom;
   background-color: var(--colorArticlesB);
   width: 35px;
   height: 145px;
   padding-top: 5px;
   cursor: pointer;
   text-decoration: none;
-  margin-bottom: 20px;
+  color: var(--colorArticles);
   -webkit-transition: color 0.15s ease-out, -webkit-transform 0.2s ease-out;
   transition: color 0.15s ease-out, -webkit-transform 0.2s ease-out;
   transition: color 0.15s ease-out, transform 0.2s ease-out;
   transition: color 0.15s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-  border-left: 1px solid var(--colorArticles);
-  border-right: 1px solid var(--colorArticles);
-  border-bottom: 1px solid var(--colorArticles);
-  border-top: 1px solid var(--colorArticles);
+  border: 1px solid var(--colorArticles);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
 }
 
-.buttonM p, .new p, .copy p, .copyA p, .art p {
+.buttonM p, .new p, .copy p, .copyA p, .copyB p, .copyC p, .art p, .lud p, .nft p {
   font-family: var(--font-headers);
   font-size: 1.3rem;
   text-transform: uppercase;
-  color: var(--colorArticles);
   letter-spacing: -3px;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -413,7 +409,7 @@
   text-shadow: -3px 4px 3px var(--black);
 }
 
-.buttonM:hover, .new:hover, .copy:hover, .copyA:hover, .art:hover {
+.buttonM:hover, .new:hover, .copy:hover, .copyA:hover, .copyB:hover, .copyC:hover, .art:hover, .lud:hover, .nft:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -424,22 +420,28 @@
           transform: translate(-6px, 4px);
 }
 
+.buttonWrapperB {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
 .buttonWrapper {
   position: relative;
 }
 
-.new, .copy, .copyA {
+.new, .copy, .copyA, .copyB, .copyC {
   left: 15px;
   top: 7px;
   -webkit-clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
 }
 
-.copy, .copyA {
+.copy, .copyA, .copyB, .copyC {
   -webkit-backdrop-filter: blur(0px);
           backdrop-filter: blur(0px);
-  top: 12px;
   left: 8px;
+  top: 12px;
   border: none;
   background-color: var(--colorArticlesB);
   -webkit-transition: all 0.2s ease-out;
@@ -448,7 +450,7 @@
           clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
 }
 
-.copy:hover, .copyA:hover {
+.copy:hover, .copyA:hover, .copyB:hover, .copyC:hover {
   -webkit-animation-iteration-count: none;
           animation-iteration-count: none;
   -webkit-animation-duration: none;
@@ -465,7 +467,21 @@
           clip-path: polygon(100% 0, 100% 100%, 60% 100%, 0 75%, 0 0);
 }
 
-.glow, .glowA {
+.copyB {
+  left: 8px;
+  top: -157px;
+  -webkit-clip-path: polygon(40% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(40% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+}
+
+.copyC {
+  left: calc(100vw - (8px + 35px));
+  top: -157px;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 25%, 40% 0);
+          clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 25%, 40% 0);
+}
+
+.glow, .glowA, .glowB, .glowC {
   z-index: -1;
   position: absolute;
   -webkit-filter: drop-shadow(-5px 5px 2px rgba(255, 245, 112, 0.8));
@@ -474,7 +490,7 @@
   transition: all 0.25s ease-out;
 }
 
-.buttonM:hover + .glow, .new:hover + .glow, .copy:hover + .glow, .copyA:hover + .glow, .art:hover + .glow, .buttonM:hover + .glowA, .new:hover + .glowA, .copy:hover + .glowA, .copyA:hover + .glowA, .art:hover + .glowA {
+.buttonM:hover + .glow, .new:hover + .glow, .copy:hover + .glow, .copyA:hover + .glow, .copyB:hover + .glow, .copyC:hover + .glow, .art:hover + .glow, .lud:hover + .glow, .nft:hover + .glow, .buttonM:hover + .glowA, .new:hover + .glowA, .copy:hover + .glowA, .copyA:hover + .glowA, .copyB:hover + .glowA, .copyC:hover + .glowA, .art:hover + .glowA, .lud:hover + .glowA, .nft:hover + .glowA, .buttonM:hover + .glowB, .new:hover + .glowB, .copy:hover + .glowB, .copyA:hover + .glowB, .copyB:hover + .glowB, .copyC:hover + .glowB, .art:hover + .glowB, .lud:hover + .glowB, .nft:hover + .glowB, .buttonM:hover + .glowC, .new:hover + .glowC, .copy:hover + .glowC, .copyA:hover + .glowC, .copyB:hover + .glowC, .copyC:hover + .glowC, .art:hover + .glowC, .lud:hover + .glowC, .nft:hover + .glowC {
   -webkit-filter: drop-shadow(0px 0px 2px rgba(255, 245, 112, 0.8));
           filter: drop-shadow(0px 0px 2px rgba(255, 245, 112, 0.8));
 }
@@ -489,6 +505,16 @@
           filter: drop-shadow(5px 5px 2px rgba(255, 245, 112, 0.8));
 }
 
+.glowB {
+  -webkit-filter: drop-shadow(-5px -5px 2px rgba(255, 245, 112, 0.8));
+          filter: drop-shadow(-5px -5px 2px rgba(255, 245, 112, 0.8));
+}
+
+.glowC {
+  -webkit-filter: drop-shadow(5px -5px 2px rgba(255, 245, 112, 0.8));
+          filter: drop-shadow(5px -5px 2px rgba(255, 245, 112, 0.8));
+}
+
 .art {
   right: 15px;
   top: 7px;
@@ -499,5 +525,29 @@
 .buttonM.art:hover, .art:hover {
   -webkit-transform: translate(6px, 4px);
           transform: translate(6px, 4px);
+}
+
+.lud {
+  left: 15px;
+  bottom: 7px;
+  -webkit-clip-path: polygon(40% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(40% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+}
+
+.buttonM.lud:hover, .lud:hover {
+  -webkit-transform: translate(-6px, -4px);
+          transform: translate(-6px, -4px);
+}
+
+.nft {
+  right: 15px;
+  bottom: 7px;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 25%, 40% 0);
+          clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 25%, 40% 0);
+}
+
+.buttonM.nft:hover, .nft:hover {
+  -webkit-transform: translate(6px, -4px);
+          transform: translate(6px, -4px);
 }
 /*# sourceMappingURL=ButtonM.module.css.map */

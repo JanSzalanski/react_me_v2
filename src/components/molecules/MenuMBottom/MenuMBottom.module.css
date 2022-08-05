@@ -1,0 +1,21 @@
+.menu {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .menu {
+    width: 100%;
+    display: block;
+    height: 58px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+.ulist {
+  list-style: none;
+}
+/*# sourceMappingURL=MenuMBottom.module.css.map */

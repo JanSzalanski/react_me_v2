@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './SideBar.css';
 import Menu from '../../molecules/Menu/Menu';
 import MenuMTop from '../../molecules/MenuMTop/MenuMTop';
+import MenuMBottom from '../../molecules/MenuMBottom/MenuMBottom';
 
 const SideBar = (props) => {
   const [animeA, setAnimeA] = useState(false);
@@ -60,9 +61,11 @@ const SideBar = (props) => {
       <MenuMTop>
         newsPointer={newsHandler}
         articlePointer={articleHandler}
+      </MenuMTop>
+      <MenuMBottom>
         peoplePointer={peopleHandler}
         nftPointer={nftHandler}
-      </MenuMTop>
+      </MenuMBottom>
     </>
   );
 };
