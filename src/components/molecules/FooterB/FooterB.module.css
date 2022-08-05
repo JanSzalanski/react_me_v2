@@ -782,7 +782,7 @@
 .line6 {
   position: absolute;
   top: 24px;
-  right: calc(39px + 31% * 1.25);
+  right: calc(38px + 31% * 1.25);
   width: 20px;
   border-bottom: 2px solid var(--black);
   -webkit-transform-origin: top right;

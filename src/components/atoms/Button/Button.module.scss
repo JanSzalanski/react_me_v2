@@ -65,6 +65,9 @@ $btnHeight: 40px;
     animation-duration: 0.5s;
     animation-name: btnBlinkB;
     transform: translate(0px, 0px);
+    @media (max-width: 480px) {
+      transform: translate(-50%, -50%);
+    }
   }
 
   @media (max-width: 1600px) {

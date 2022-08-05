@@ -418,8 +418,8 @@
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  -webkit-animation-name: btnBlink;
-          animation-name: btnBlink;
+  -webkit-animation-name: btnBlinkB;
+          animation-name: btnBlinkB;
   -webkit-transform: translate(-6px, 4px);
           transform: translate(-6px, 4px);
 }
@@ -446,6 +446,17 @@
   transition: all 0.2s ease-out;
   -webkit-clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
+}
+
+.copy:hover, .copyA:hover {
+  -webkit-animation-iteration-count: none;
+          animation-iteration-count: none;
+  -webkit-animation-duration: none;
+          animation-duration: none;
+  -webkit-animation-name: none;
+          animation-name: none;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .copyA {
@@ -483,5 +494,10 @@
   top: 7px;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 60% 100%, 0 75%, 0 0);
           clip-path: polygon(100% 0, 100% 100%, 60% 100%, 0 75%, 0 0);
+}
+
+.buttonM.art:hover, .art:hover {
+  -webkit-transform: translate(6px, 4px);
+          transform: translate(6px, 4px);
 }
 /*# sourceMappingURL=ButtonM.module.css.map */

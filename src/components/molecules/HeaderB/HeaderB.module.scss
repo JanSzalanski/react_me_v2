@@ -319,7 +319,7 @@
     width: 10px;
     transform: translate(0, -100%) rotate(45deg);
     bottom: 5px;
-    left: 0px;
+    left: 1px;
   }
 }
 
@@ -341,7 +341,7 @@
   position: absolute;
   width: 17px;
   left: calc(31% * 1.25 + 48px);
-  bottom: 41px;
+  bottom: 42px;
   border-bottom: 2px solid var(--colorArticles);
   transform: rotate(135deg);
   transform-origin: center left;

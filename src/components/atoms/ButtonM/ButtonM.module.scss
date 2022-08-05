@@ -38,7 +38,7 @@ $btnHeight: 145px;
   &:hover {
     animation-iteration-count: 1;
     animation-duration: 0.5s;
-    animation-name: btnBlink;
+    animation-name: btnBlinkB;
     transform: translate(-6px, 4px);
   }
 }
@@ -66,6 +66,12 @@ $btnHeight: 145px;
   background-color: var(--colorArticlesB);
   transition: all 0.2s ease-out;
   clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
+  &:hover {
+    animation-iteration-count: none;
+    animation-duration: none;
+    animation-name: none;
+    transform: none;
+  }
 }
 
 .copyA {
@@ -100,4 +106,7 @@ $btnHeight: 145px;
   right: 15px;
   top: 7px;
   clip-path: polygon(100% 0, 100% 100%, 60% 100%, 0 75%, 0 0);
+}
+.buttonM.art:hover {
+  transform: translate(6px, 4px);
 }
