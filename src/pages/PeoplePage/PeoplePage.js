@@ -11,7 +11,7 @@ const PeoplePage = (props) => {
     <div className={classes[props.type] || 'page'}>
       <div className="overlay"></div>
       <HeaderB>Strona o ludziach</HeaderB>
-      <Input className="search" placeholder="szukaj"></Input>
+      <Input className="search" placeholder="szukaj" bgk="bgkS"></Input>
       <Background />
       <FooterB>
         Jan Szałański <br />

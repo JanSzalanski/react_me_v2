@@ -6,27 +6,32 @@ import Textarea from '../../atoms/Textarea/Textarea';
 
 const ContactBar = (props) => {
   const [animeKont, setAnimeKont] = useState(null);
+  const [kolorKont, setKolorKont] = useState(null);
 
   const kontaktHandler = () => {
     if (animeKont === null || animeKont === 'contactHide') {
+      setKolorKont('colorIn');
       setAnimeKont('contactSlide');
     } else if (animeKont === 'contactSlide') {
       setAnimeKont('contactHide');
+      setKolorKont('colorOut');
     } else {
       setAnimeKont(null);
+      setKolorKont(null);
     }
   };
 
   const cssClasses = [classes.contactWrapper, animeKont];
+  const bgkClasses = [classes.background, kolorKont];
   return (
     <div className={cssClasses.join(' ')}>
-      <div className={classes.Top}>
-        <h2>Kontakt</h2>
-      </div>
       <div className={classes.bgkWrap}>
-        <div className={classes.background} />
+        <div className={bgkClasses.join(' ')} />
         <div className={classes.lines} />
         <div className={classes.scanline} />
+      </div>
+      <div className={classes.Top}>
+        <h2>Kontakt</h2>
       </div>
       <form method="post" action="" className={classes.Middle}>
         <Input

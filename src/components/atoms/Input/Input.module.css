@@ -55,19 +55,21 @@
   }
 }
 
-@media (max-width: 480px) {
-  .wrapperAll, .contactWrap {
-    display: none;
-  }
-}
-
 .backWrapper {
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-.background, .contactBgk {
+.backWrapperB {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
+          filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
+}
+
+.background, .bgkS, .contactBgk {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -81,30 +83,36 @@
 }
 
 @media (min-width: 1921px) {
-  .background, .contactBgk {
+  .background, .bgkS, .contactBgk {
     -webkit-clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
             clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
   }
 }
 
 @media (max-width: 1600px) {
-  .background, .contactBgk {
+  .background, .bgkS, .contactBgk {
     -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
             clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
   }
 }
 
 @media (max-width: 1280px) {
-  .background, .contactBgk {
+  .background, .bgkS, .contactBgk {
     -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
             clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
   }
 }
 
 @media (max-width: 1024px) {
-  .background, .contactBgk {
+  .background, .bgkS, .contactBgk {
     -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
             clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
+  }
+}
+
+@media (max-width: 480px) {
+  .bgkS {
+    display: none;
   }
 }
 
@@ -212,6 +220,12 @@
   background-size: 15px;
   background-position: 15px 50%;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 480px) {
+  .search {
+    display: none;
+  }
 }
 
 .contact {

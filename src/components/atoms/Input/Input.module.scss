@@ -44,11 +44,6 @@
     // height: calc(var(--inputHeight) - 40px);
   }
 
-  @media (max-width: 480px) {
-    display: none;
-    // height: calc(var(--inputHeight) - 40px);
-  }
-
   //ale coś nie zawerza wysokosci
   // border: 1px solid whitesmoke;
 }
@@ -57,6 +52,13 @@
   position: relative;
   height: 100%;
   width: 100%;
+}
+
+.backWrapperB {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
 }
 
 .background {
@@ -83,6 +85,13 @@
 
   @media (max-width: 1024px) {
     clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
+  }
+}
+
+.bgkS {
+  @extend .background;
+  @media (max-width: 480px) {
+    display: none;
   }
 }
 
@@ -143,6 +152,10 @@
   background-size: 15px;
   background-position: 15px 50%;
   background-repeat: no-repeat;
+  @media (max-width: 480px) {
+    display: none;
+    // height: calc(var(--inputHeight) - 40px);
+  }
 }
 
 .contact {

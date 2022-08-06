@@ -13,7 +13,7 @@ const ArticlePage = (props) => {
     <div className={classes[props.type] || 'page'}>
       <div className="overlay"></div>
       <HeaderB>Tablica z artykułami</HeaderB>
-      <Input className="search" placeholder="szukaj"></Input>
+      <Input className="search" placeholder="szukaj" bgk="bgkS"></Input>
       <Background />
       <div className="overflowWrapper">
         <Pargraph className="article">

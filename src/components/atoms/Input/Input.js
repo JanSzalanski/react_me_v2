@@ -4,7 +4,7 @@ import classes from './Input.module.css';
 const Input = (props) => {
   return (
     <div className={classes[props.class] || classes.wrapperAll}>
-      <div className={classes.backWrapper}>
+      <div className={props.bgk === 'bgkS' ? classes.backWrapper : classes.backWrapperB}>
         <div className={classes[props.bgk] || classes.background}></div>
       </div>
       <input

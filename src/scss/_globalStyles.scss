@@ -166,12 +166,29 @@ h2 {
   animation-duration: 0.6s;
   animation-name: slideKont;
   animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.colorIn {
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-name: KolorIn;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
 }
 
 .contactHide {
   animation-iteration-count: 1;
   animation-duration: 0.6s;
   animation-name: hideKont;
+  animation-fill-mode: both;
+}
+
+.colorOut {
+  animation-iteration-count: 1;
+  animation-duration: 0.6s;
+  animation-name: KolorOut;
   animation-fill-mode: both;
 }
 
@@ -365,4 +382,3 @@ input[type='radio']:checked {
   //   width: calc(89% - 110px);
   // }
 }
-

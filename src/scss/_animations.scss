@@ -181,6 +181,16 @@
   }
 }
 
+@keyframes KolorIn {
+  0% {
+    background-color: var(--colorArticlesA);
+  }
+
+  100% {
+    background-color: var(--colorSocial);
+  }
+}
+
 @keyframes hideKont {
   0% {
     transform: translateX(-365px);
@@ -188,5 +198,15 @@
 
   100% {
     transform: translateX(0px);
+  }
+}
+
+@keyframes KolorOut {
+  0% {
+    background-color: var(--colorSocial);
+  }
+
+  100% {
+    background-color: var(--colorArticlesA);
   }
 }

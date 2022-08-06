@@ -10,6 +10,8 @@
   position: relative;
   height: 100%;
   width: 100%;
+  -webkit-filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
+          filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
 }
 
 .background, .contactBgk {
