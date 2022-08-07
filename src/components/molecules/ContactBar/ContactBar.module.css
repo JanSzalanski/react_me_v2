@@ -406,12 +406,62 @@
   }
 }
 
+@media (max-width: 480px) {
+  @-webkit-keyframes slideKont {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100vw);
+              transform: translateX(-100vw);
+    }
+  }
+  @keyframes slideKont {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100vw);
+              transform: translateX(-100vw);
+    }
+  }
+  @-webkit-keyframes hideKont {
+    0% {
+      -webkit-transform: translateX(-100vw);
+              transform: translateX(-100vw);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes hideKont {
+    0% {
+      -webkit-transform: translateX(-100vw);
+              transform: translateX(-100vw);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+}
+
 .contactWrapper {
   height: 100%;
   width: 385px;
   position: absolute;
   top: 0;
   right: -365px;
+}
+
+@media (max-width: 480px) {
+  .contactWrapper {
+    width: 100vw;
+    right: -100vw;
+  }
 }
 
 .bgkWrap {
@@ -480,6 +530,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .bgkWrap {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+
 .Top {
   position: absolute;
   display: -webkit-box;
@@ -516,6 +573,15 @@
   }
 }
 
+@media (max-width: 480px) {
+  .Top {
+    width: 100%;
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
+}
+
 .Middle {
   position: absolute;
   top: calc(15% + 20px);
@@ -541,6 +607,15 @@
 @media (max-width: 1366px) {
   .Middle {
     height: calc(100% - (40% - 40px));
+  }
+}
+
+@media (max-width: 480px) {
+  .Middle {
+    width: 100%;
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
   }
 }
 
@@ -596,6 +671,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .btnWrapper {
+    left: -30px;
+  }
+}
+
 .lineRight {
   position: absolute;
   right: 0;
@@ -620,6 +701,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .lineLeft {
+    left: 0px;
+    height: 100%;
+  }
+}
+
 .lineTop {
   position: absolute;
   border-top: 2px solid var(--colorArticles);
@@ -634,6 +722,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .lineTop {
+    width: 100%;
+  }
+}
+
 .lineBottom {
   position: absolute;
   border-bottom: 2px solid var(--colorArticles);
@@ -645,6 +739,12 @@
 @media (max-width: 1152px) {
   .lineBottom {
     width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lineBottom {
+    width: 100%;
   }
 }
 
@@ -666,6 +766,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .line1 {
+    display: none;
+  }
+}
+
 .line2 {
   position: absolute;
   right: 263px;
@@ -680,6 +786,12 @@
 @media (max-width: 1152px) {
   .line2 {
     right: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .line2 {
+    display: none;
   }
 }
 
@@ -701,6 +813,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .line3 {
+    display: none;
+  }
+}
+
 .line4 {
   position: absolute;
   right: 284px;
@@ -712,6 +830,12 @@
 @media (max-width: 1152px) {
   .line4 {
     right: 261px;
+  }
+}
+
+@media (max-width: 480px) {
+  .line4 {
+    display: none;
   }
 }
 
@@ -733,6 +857,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .line5 {
+    display: none;
+  }
+}
+
 .line6 {
   position: absolute;
   right: 243px;
@@ -751,6 +881,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .line6 {
+    display: none;
+  }
+}
+
 .line7 {
   position: absolute;
   right: 263px;
@@ -763,6 +899,12 @@
 @media (max-width: 1152px) {
   .line7 {
     right: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .line7 {
+    display: none;
   }
 }
 
@@ -784,6 +926,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .line8 {
+    display: none;
+  }
+}
+
 .line9 {
   position: absolute;
   right: 284px;
@@ -795,6 +943,12 @@
 @media (max-width: 1152px) {
   .line9 {
     right: 261px;
+  }
+}
+
+@media (max-width: 480px) {
+  .line9 {
+    display: none;
   }
 }
 
@@ -813,6 +967,12 @@
 @media (max-width: 1152px) {
   .line10 {
     right: 340px;
+  }
+}
+
+@media (max-width: 480px) {
+  .line10 {
+    display: none;
   }
 }
 /*# sourceMappingURL=ContactBar.module.css.map */

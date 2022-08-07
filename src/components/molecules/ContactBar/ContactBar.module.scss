@@ -6,6 +6,11 @@
   position: absolute;
   top: 0;
   right: -365px;
+
+  @media (max-width: 480px) {
+    width: 100vw;
+    right: -100vw;
+  }
 }
 
 .bgkWrap {
@@ -181,6 +186,10 @@
       6.8% 82%
     );
   }
+
+  @media (max-width: 480px) {
+    clip-path: none;
+  }
 }
 
 .Top {
@@ -210,6 +219,12 @@
       font-size: 2rem;
     }
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    right: 50%;
+    transform: translate(50%, 0);
+  }
 }
 
 .Middle {
@@ -229,6 +244,12 @@
 
   @media (max-width: 1366px) {
     height: calc(100% - (40% - 40px));
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    right: 50%;
+    transform: translate(50%, 0);
   }
 }
 
@@ -279,6 +300,10 @@
   @media (max-width: 1152px) {
     left: -22px;
   }
+
+  @media (max-width: 480px) {
+    left: -30px;
+  }
 }
 
 .lineRight {
@@ -300,6 +325,11 @@
   @media (max-width: 1152px) {
     left: 23px;
   }
+
+  @media (max-width: 480px) {
+    left: 0px;
+    height: 100%;
+  }
 }
 
 .lineTop {
@@ -312,6 +342,10 @@
   @media (max-width: 1152px) {
     width: 220px;
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 }
 
 .lineBottom {
@@ -323,6 +357,10 @@
 
   @media (max-width: 1152px) {
     width: 220px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
   }
 }
 
@@ -338,6 +376,10 @@
   @media (max-width: 1152px) {
     right: 220px;
   }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line2 {
@@ -351,6 +393,9 @@
 
   @media (max-width: 1152px) {
     right: 240px;
+  }
+  @media (max-width: 480px) {
+    display: none;
   }
 }
 
@@ -366,6 +411,9 @@
   @media (max-width: 1152px) {
     right: 240px;
   }
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line4 {
@@ -377,6 +425,9 @@
 
   @media (max-width: 1152px) {
     right: 261px;
+  }
+  @media (max-width: 480px) {
+    display: none;
   }
 }
 
@@ -392,6 +443,9 @@
   @media (max-width: 1152px) {
     right: 340px;
   }
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line6 {
@@ -406,6 +460,9 @@
   @media (max-width: 1152px) {
     right: 220px;
   }
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line7 {
@@ -418,6 +475,9 @@
 
   @media (max-width: 1152px) {
     right: 240px;
+  }
+  @media (max-width: 480px) {
+    display: none;
   }
 }
 
@@ -433,6 +493,9 @@
   @media (max-width: 1152px) {
     right: 240px;
   }
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .line9 {
@@ -444,6 +507,9 @@
 
   @media (max-width: 1152px) {
     right: 261px;
+  }
+  @media (max-width: 480px) {
+    display: none;
   }
 }
 
@@ -458,5 +524,8 @@
 
   @media (max-width: 1152px) {
     right: 340px;
+  }
+  @media (max-width: 480px) {
+    display: none;
   }
 }

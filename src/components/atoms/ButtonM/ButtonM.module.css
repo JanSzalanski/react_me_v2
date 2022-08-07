@@ -406,6 +406,49 @@
   }
 }
 
+@media (max-width: 480px) {
+  @-webkit-keyframes slideKont {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100vw);
+              transform: translateX(-100vw);
+    }
+  }
+  @keyframes slideKont {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100vw);
+              transform: translateX(-100vw);
+    }
+  }
+  @-webkit-keyframes hideKont {
+    0% {
+      -webkit-transform: translateX(-100vw);
+              transform: translateX(-100vw);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes hideKont {
+    0% {
+      -webkit-transform: translateX(-100vw);
+              transform: translateX(-100vw);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+}
+
 .buttonM, .new, .copy, .copyA, .copyB, .copyC, .art, .lud, .nft {
   position: absolute;
   display: -webkit-box;
