@@ -457,9 +457,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: bottom;
-      -ms-flex-align: bottom;
-          align-items: bottom;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: var(--colorArticlesB);
   width: 35px;
   height: 145px;
@@ -607,6 +607,9 @@
 }
 
 .lud {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   left: 15px;
   bottom: 7px;
   -webkit-clip-path: polygon(40% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
@@ -619,6 +622,9 @@
 }
 
 .nft {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   right: 15px;
   bottom: 7px;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 25%, 40% 0);

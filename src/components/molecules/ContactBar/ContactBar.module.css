@@ -735,7 +735,7 @@
 
 @media (max-width: 480px) {
   .lineTop {
-    width: 100%;
+    width: calc(100vw - 4px);
   }
 }
 
@@ -755,7 +755,7 @@
 
 @media (max-width: 480px) {
   .lineBottom {
-    width: 100%;
+    width: calc(100vw - 4px);
   }
 }
 

@@ -6,7 +6,7 @@ $btnHeight: 145px;
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: bottom;
+  align-items: flex-start;
   background-color: var(--colorArticlesB);
   width: $btnWidth;
   height: $btnHeight;
@@ -141,6 +141,7 @@ $btnHeight: 145px;
 .lud {
   @extend .buttonM;
   // transform-origin: top center;
+  align-items: center;
   left: 15px;
   bottom: 7px;
   // transform: translate(0, -50%);
@@ -153,6 +154,7 @@ $btnHeight: 145px;
 
 .nft {
   @extend .buttonM;
+  align-items: center;
   right: 15px;
   bottom: 7px;
   clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 25%, 40% 0);

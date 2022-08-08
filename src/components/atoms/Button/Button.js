@@ -54,7 +54,7 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['button', 'secondary', 'kontakt', 'menu', 'wysylka']),
+  type: PropTypes.oneOf(['button', 'secondary', 'kontakt', 'kontaktM', 'menu', 'wysylka']),
 };
 
 Button.defaultProps = {
