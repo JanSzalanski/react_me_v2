@@ -44,6 +44,10 @@ $btnHeight: 40px;
   filter: drop-shadow(3px 3px 2px var(--white));
 }
 
+.kontakt:hover + .glowKontM {
+  filter: drop-shadow(3px 3px 2px var(--white));
+}
+
 .secondary {
   @extend .button;
   margin-left: 5px;
@@ -119,6 +123,15 @@ $btnHeight: 40px;
   }
 }
 
+.kontaktM {
+  @extend .kontakt;
+  display: none;
+  @media (max-width: 480px) {
+    justify-content: center;
+    display: flex;
+  }
+}
+
 .wysylka {
   @extend .kontakt;
   width: var(--buttonWidth);
@@ -171,6 +184,14 @@ $btnHeight: 40px;
   }
 }
 
+.copyKontM {
+  @extend .copyKont;
+  display: none;
+  @media (max-width: 480px) {
+    display: block;
+  }
+}
+
 .copyWys {
   width: var(--buttonWidth);
   height: var(--buttonHeight);
@@ -195,6 +216,14 @@ $btnHeight: 40px;
   top: 4px;
   filter: drop-shadow(6px 6px 2px rgba(255, 245, 112, 0.932));
   transition: all 0.25s ease-out;
+}
+
+.glowKontM {
+  @extend .glowKont;
+  display: none;
+  @media (max-width: 480px) {
+    display: block;
+  }
 }
 
 .menu {

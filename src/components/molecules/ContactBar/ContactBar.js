@@ -101,6 +101,11 @@ const ContactBar = (props) => {
           Kontakt
         </Button>
       </div>
+      <div className={classes.btnWrapperB}>
+        <Button type="kontaktM" onClick={kontaktHandler}>
+          {'>>>'}
+        </Button>
+      </div>
     </div>
   );
 };

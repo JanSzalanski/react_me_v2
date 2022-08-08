@@ -43,6 +43,12 @@ const Button = (props) => {
           <div className={classes.copyKont}></div>
         </div>
       )}
+
+      {props.type === 'kontaktM' && (
+        <div className={classes.glowKontM}>
+          <div className={classes.copyKontM}></div>
+        </div>
+      )}
     </div>
   );
 };

@@ -449,7 +449,7 @@
   }
 }
 
-.button, .secondary, .kontakt, .wysylka, .menu {
+.button, .secondary, .kontakt, .kontaktM, .wysylka, .menu {
   margin: 10px;
   padding-right: 10px;
   display: -webkit-box;
@@ -487,7 +487,7 @@
           backdrop-filter: blur(2px);
 }
 
-.button:hover, .secondary:hover, .kontakt:hover, .wysylka:hover, .menu:hover {
+.button:hover, .secondary:hover, .kontakt:hover, .kontaktM:hover, .wysylka:hover, .menu:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -498,12 +498,17 @@
           transform: translate(-3px, 4px);
 }
 
-.button:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow, .wysylka:hover + .glow, .menu:hover + .glow {
+.button:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow, .kontaktM:hover + .glow, .wysylka:hover + .glow, .menu:hover + .glow {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--white));
           filter: drop-shadow(-3px 3px 2px var(--white));
 }
 
-.kontakt:hover + .glowKont, .wysylka:hover + .glowKont {
+.kontakt:hover + .glowKont, .kontaktM:hover + .glowKont, .wysylka:hover + .glowKont, .kontakt:hover + .glowKontM, .kontaktM:hover + .glowKontM, .wysylka:hover + .glowKontM {
+  -webkit-filter: drop-shadow(3px 3px 2px var(--white));
+          filter: drop-shadow(3px 3px 2px var(--white));
+}
+
+.kontakt:hover + .glowKontM, .kontaktM:hover + .glowKontM, .wysylka:hover + .glowKontM {
   -webkit-filter: drop-shadow(3px 3px 2px var(--white));
           filter: drop-shadow(3px 3px 2px var(--white));
 }
@@ -575,7 +580,7 @@
   }
 }
 
-.kontakt, .wysylka {
+.kontakt, .kontaktM, .wysylka {
   width: var(--buttonHeight);
   height: var(--buttonWidth);
   -webkit-box-pack: center;
@@ -589,23 +594,38 @@
 }
 
 @media (max-width: 1366px) {
-  .kontakt, .wysylka {
+  .kontakt, .kontaktM, .wysylka {
     width: calc(var(--buttonHeight) - 5px);
     height: calc(var(--buttonWidth) - 30px);
     font-size: 1.2rem;
   }
 }
 
-.kontakt p, .wysylka p {
+.kontakt p, .kontaktM p, .wysylka p {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
 }
 
-.kontakt:hover, .wysylka:hover {
+.kontakt:hover, .kontaktM:hover, .wysylka:hover {
   -webkit-transform: translate(3px, 4px);
           transform: translate(3px, 4px);
+}
+
+.kontaktM {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .kontaktM {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .wysylka {
@@ -637,7 +657,7 @@
   transition: all 0.2s ease-out;
 }
 
-.copyKont {
+.copyKont, .copyKontM {
   width: var(--buttonHeight);
   height: var(--buttonWidth);
   -webkit-clip-path: polygon(35% 100%, 0 92%, 0 8%, 35% 0, 100% 0, 100% 100%);
@@ -648,9 +668,19 @@
 }
 
 @media (max-width: 1366px) {
-  .copyKont {
+  .copyKont, .copyKontM {
     width: calc(var(--buttonHeight) - 5px);
     height: calc(var(--buttonWidth) - 30px);
+  }
+}
+
+.copyKontM {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .copyKontM {
+    display: block;
   }
 }
 
@@ -675,7 +705,7 @@
   transition: all 0.25s ease-out;
 }
 
-.glowKont {
+.glowKont, .glowKontM {
   z-index: -1;
   position: absolute;
   left: 5px;
@@ -684,6 +714,16 @@
           filter: drop-shadow(6px 6px 2px rgba(255, 245, 112, 0.932));
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+}
+
+.glowKontM {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .glowKontM {
+    display: block;
+  }
 }
 
 .menu {

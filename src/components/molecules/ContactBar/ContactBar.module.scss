@@ -306,7 +306,18 @@
   }
 }
 
+.btnWrapperB {
+  @extend .btnWrapper;
+  display: none;
+  @media (max-width: 480px) {
+    display: block;
+
+    left: calc(100vw - 35px);
+  }
+}
+
 .lineRight {
+  /// aco to za diabelstwo ?
   position: absolute;
   right: 0;
   top: 0;

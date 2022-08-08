@@ -651,7 +651,7 @@
           animation: scanline 16s linear infinite;
 }
 
-.btnWrapper {
+.btnWrapper, .btnWrapperB {
   position: absolute;
   top: 50%;
   left: -50px;
@@ -660,20 +660,31 @@
 }
 
 @media (max-width: 1366px) {
-  .btnWrapper {
+  .btnWrapper, .btnWrapperB {
     left: -42px;
   }
 }
 
 @media (max-width: 1152px) {
-  .btnWrapper {
+  .btnWrapper, .btnWrapperB {
     left: -22px;
   }
 }
 
 @media (max-width: 480px) {
-  .btnWrapper {
+  .btnWrapper, .btnWrapperB {
     left: -30px;
+  }
+}
+
+.btnWrapperB {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .btnWrapperB {
+    display: block;
+    left: calc(100vw - 35px);
   }
 }
 
