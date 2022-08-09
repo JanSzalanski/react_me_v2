@@ -19,7 +19,7 @@ const NewsPage = (props) => {
     <div className={classes[props.type] || 'page'}>
       <div className="overlay"></div>
       <HeaderB>Tu i teraz...</HeaderB>
-      <Input className="search" placeholder="szukaj" bgk="bgkS"></Input>
+      {/* <Input className="search" placeholder="szukaj" bgk="bgkS"></Input> */}
 
       <Background />
       <div className="overflowWrapper">

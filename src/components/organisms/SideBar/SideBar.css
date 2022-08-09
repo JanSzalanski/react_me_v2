@@ -538,11 +538,7 @@
 
 @media (max-width: 480px) {
   .wrapper {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100px;
-    height: 100px;
+    display: none;
   }
 }
 
@@ -574,6 +570,12 @@
   .glowWrapper {
     height: 190px;
     width: 126px;
+  }
+}
+
+@media (max-width: 480px) {
+  .glowWrapper {
+    display: none;
   }
 }
 

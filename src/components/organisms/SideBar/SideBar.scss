@@ -69,11 +69,7 @@
   }
 
   @media (max-width: 480px) {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100px;
-    height: 100px;
+    display: none;
   }
 }
 
@@ -101,6 +97,10 @@
   @media (max-width: 1024px) {
     height: 190px;
     width: 126px;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
   }
 }
 
