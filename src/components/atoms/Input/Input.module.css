@@ -1,4 +1,4 @@
-.wrapperAll, .contactWrap {
+.wrapperAll {
   position: absolute;
   left: 24%;
   top: 11.7%;
@@ -7,26 +7,26 @@
 }
 
 @media (min-width: 1921px) and (min-height: 1153px) {
-  .wrapperAll, .contactWrap {
+  .wrapperAll {
     top: 10.5%;
   }
 }
 
 @media (max-width: 1600px) {
-  .wrapperAll, .contactWrap {
+  .wrapperAll {
     top: 80px;
     left: 63.7%;
   }
 }
 
 @media (max-width: 1440px) {
-  .wrapperAll, .contactWrap {
+  .wrapperAll {
     left: 59.2%;
   }
 }
 
 @media (max-width: 1366px) {
-  .wrapperAll, .contactWrap {
+  .wrapperAll {
     top: 40px;
     left: 57.4%;
     height: calc(var(--inputHeight) - 6px);
@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 1280px) {
-  .wrapperAll, .contactWrap {
+  .wrapperAll {
     top: 41px;
     left: 54.4%;
     height: calc(var(--inputHeight) - 8px);
@@ -42,16 +42,22 @@
 }
 
 @media (max-width: 1152px) {
-  .wrapperAll, .contactWrap {
+  .wrapperAll {
     top: 41px;
     left: 51.4%;
   }
 }
 
 @media (max-width: 1024px) {
-  .wrapperAll, .contactWrap {
+  .wrapperAll {
     top: 37px;
     left: 45.8%;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapperAll {
+    display: none;
   }
 }
 

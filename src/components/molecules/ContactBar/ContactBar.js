@@ -1,3 +1,5 @@
+// i co dodanie nazwy klasy podobnej do contactWrapper tutaj i w input troszke sam siebie zmylilem... a to wygenerowalo nie oczekiwany blad!!! kuźwa jakie to potrafi byc przewrotne.
+
 import React, { useState } from 'react';
 import classes from './ContactBar.module.css';
 import Button from '../../atoms/Button/Button';
