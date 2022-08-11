@@ -145,6 +145,21 @@ body {
   }
 }
 
+.wrapCont {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .wrapCont {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
 strong {
   font-weight: 600;
 }

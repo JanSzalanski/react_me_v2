@@ -27,7 +27,9 @@ function App() {
         <Video></Video>
         <NewsPage />
         <SideBar />
-        <ContactBar />
+        <div className="wrapCont">
+          <ContactBar />
+        </div>
       </Route>
       <Route path="/articles">
         <Video></Video>
