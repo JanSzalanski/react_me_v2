@@ -589,7 +589,7 @@
   top: calc(15% + 20px);
   right: 0;
   width: 385px;
-  height: calc(100% - (40% + 40px));
+  height: calc(100% - (40% - 40px));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,12 +604,6 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-@media (max-width: 1366px) {
-  .Middle {
-    height: calc(100% - (40% - 40px));
-  }
 }
 
 @media (max-width: 480px) {

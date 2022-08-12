@@ -124,8 +124,8 @@ body {
   font-size: 1.6rem;
   overflow: hidden;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(11%, var(--colorBgkL)), color-stop(20%, var(--colorBgkD)), color-stop(89%, var(--colorBgkD)), color-stop(98%, var(--colorBgkL)), to(#32322d));
-  background: linear-gradient(90deg, var(--colorBgkL) 11%, var(--colorBgkD) 20%, var(--colorBgkD) 89%, var(--colorBgkL) 98%, #32322d 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, var(--colorArticles)), color-stop(11%, var(--colorBgkL)), color-stop(20%, var(--colorBgkD)), color-stop(89%, var(--colorBgkD)), color-stop(96%, var(--colorBgkL)), to(var(--colorArticles)));
+  background: linear-gradient(90deg, var(--colorArticles) 8%, var(--colorBgkL) 11%, var(--colorBgkD) 20%, var(--colorBgkD) 89%, var(--colorBgkL) 96%, var(--colorArticles) 100%);
 }
 
 @media (max-width: 1366px) {
@@ -251,10 +251,8 @@ h2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--colorArticlesDarkB);
+  background-color: var(--colorArticlesE);
   mix-blend-mode: overlay;
-  -webkit-backdrop-filter: sephia(50%);
-          backdrop-filter: sephia(50%);
 }
 
 .twitter-follow-button {

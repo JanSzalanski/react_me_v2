@@ -56,7 +56,7 @@
   width: 90%;
   top: -8px;
   left: 0;
-  border-top: 1px solid var(--colorArticlesB);
+  border-top: 1px solid var(--colorArticlesF);
   @media (max-width: 480px) {
     display: none;
   }
@@ -67,7 +67,7 @@
   width: 13px;
   top: -13px;
   left: 89.3%;
-  border-top: 1px solid var(--colorArticlesB);
+  border-top: 1px solid var(--colorArticlesF);
   transform: rotate(-45deg);
   @media (max-width: 480px) {
     display: none;
@@ -79,7 +79,7 @@
   top: 3px;
   height: 13px;
   right: -13px;
-  border-right: 1px solid var(--colorArticlesD);
+  border-right: 1px solid var(--colorArticlesF);
   transform: rotate(45deg);
   @media (max-width: 480px) {
     display: none;
@@ -90,7 +90,7 @@
   position: absolute;
   height: 13px;
   right: -13px;
-  border-right: 1px solid var(--colorArticlesB);
+  border-right: 1px solid var(--colorArticlesF);
   transform: rotate(-45deg);
   top: 94.3%;
   @media (max-width: 480px) {
@@ -103,7 +103,7 @@
   top: 5%;
   bottom: 5%;
   right: -8px;
-  border-right: 1px solid var(--colorArticlesB);
+  border-right: 1px solid var(--colorArticlesF);
   @media (max-width: 480px) {
     display: none;
   }
@@ -114,7 +114,7 @@
   width: 45%;
   bottom: -8px;
   right: 20px;
-  border-bottom: 1px solid var(--colorArticlesB);
+  border-bottom: 1px solid var(--colorArticlesF);
   @media (max-width: 480px) {
     display: none;
   }
@@ -125,7 +125,7 @@
   width: 5%;
   bottom: -13px;
   right: 10px;
-  border-bottom: 1px solid var(--colorArticlesB);
+  border-bottom: 1px solid var(--colorArticlesF);
   transform: rotate(45deg);
   @media (max-width: 480px) {
     display: none;
@@ -137,7 +137,7 @@
   width: 5%;
   bottom: -13px;
   right: calc(18px + 45%);
-  border-bottom: 1px solid var(--colorArticlesB);
+  border-bottom: 1px solid var(--colorArticlesF);
   transform: rotate(-45deg);
   @media (max-width: 480px) {
     display: none;

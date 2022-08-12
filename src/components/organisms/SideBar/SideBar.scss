@@ -38,7 +38,7 @@
   top: 0;
   // z-index: -1;
   // background: rgb(0, 0, 0);
-  background: #181400;
+  background: #091831;
 
   @media (max-width: 1366px) {
     width: 156px;
@@ -113,10 +113,10 @@
   width: 165px;
   background: radial-gradient(
     closest-side,
-    rgb(255, 244, 214) 10%,
-    var(--colorArticles) 50%,
-    #ffd82b50 75%,
-    rgba(0, 0, 0, 0) 97%
+    rgb(227, 248, 255) 30%,
+    var(--colorArticlesD) 55%,
+    #00b7ff85 75%,
+    rgba(0, 0, 0, 0) 95%
   );
   transition: top 0.4s ease-in-out;
   animation-iteration-count: infinite;
