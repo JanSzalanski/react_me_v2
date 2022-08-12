@@ -38,6 +38,7 @@ body {
 .wrapCont {
   display: block;
   @media (max-width: 480px) {
+    pointer-events: none;
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -121,8 +122,10 @@ h2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(126, 103, 0);
+  background-color: var(--colorArticlesDarkB);
+
   mix-blend-mode: overlay;
+  backdrop-filter: sephia(50%);
 }
 
 .twitter-follow-button {

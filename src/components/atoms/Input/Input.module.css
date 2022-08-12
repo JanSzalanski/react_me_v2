@@ -140,7 +140,7 @@
      -moz-appearance: none;
           appearance: none;
   outline: none;
-  background-color: var(--colorGrey100);
+  background-color: var(--colorArticlesDarkB);
   letter-spacing: 1px;
 }
 
@@ -149,7 +149,7 @@
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--colorMainGrey);
+  color: var(--colorGrey100);
   line-height: var(--inputHeight);
 }
 
@@ -158,7 +158,7 @@
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--colorMainGrey);
+  color: var(--colorGrey100);
   line-height: var(--inputHeight);
 }
 
@@ -167,7 +167,7 @@
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--colorMainGrey);
+  color: var(--colorGrey100);
   line-height: var(--inputHeight);
 }
 
@@ -176,7 +176,7 @@
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--colorMainGrey);
+  color: var(--colorGrey100);
   line-height: var(--inputHeight);
 }
 

@@ -6,6 +6,8 @@
   position: absolute;
   top: 0;
   right: -365px;
+  z-index: 1;
+  pointer-events: auto;
 
   @media (max-width: 480px) {
     width: 100vw;

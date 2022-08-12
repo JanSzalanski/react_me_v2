@@ -50,7 +50,7 @@
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 10px;
-  background-color: var(--colorArticles);
+  background-color: var(--colorArticlesG);
   -webkit-box-shadow: none;
           box-shadow: none;
   height: 70px;

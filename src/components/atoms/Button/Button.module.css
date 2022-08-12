@@ -461,8 +461,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--black);
-  text-shadow: -3px 4px 3px rgba(255, 238, 0, 0.8);
+  color: var(--white);
+  text-shadow: -3px 4px 3px var(--colorArticlesD);
   background-color: var(--colorArticlesB);
   width: var(--buttonWidth);
   height: var(--buttonHeight);
@@ -499,18 +499,18 @@
 }
 
 .button:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow, .kontaktM:hover + .glow, .wysylka:hover + .glow, .menu:hover + .glow {
-  -webkit-filter: drop-shadow(-3px 3px 2px var(--white));
-          filter: drop-shadow(-3px 3px 2px var(--white));
+  -webkit-filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
+          filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
 
 .kontakt:hover + .glowKont, .kontaktM:hover + .glowKont, .wysylka:hover + .glowKont, .kontakt:hover + .glowKontM, .kontaktM:hover + .glowKontM, .wysylka:hover + .glowKontM {
-  -webkit-filter: drop-shadow(3px 3px 2px var(--white));
-          filter: drop-shadow(3px 3px 2px var(--white));
+  -webkit-filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
+          filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
 }
 
 .kontakt:hover + .glowKontM, .kontaktM:hover + .glowKontM, .wysylka:hover + .glowKontM {
-  -webkit-filter: drop-shadow(3px 3px 2px var(--white));
-          filter: drop-shadow(3px 3px 2px var(--white));
+  -webkit-filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
+          filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
 }
 
 .secondary {
@@ -519,7 +519,7 @@
   width: var(--buttonWidthSec);
   height: var(--buttonHeightSec);
   font-size: 1.5rem;
-  color: var(--colorArticles);
+  color: var(--colorArticlesDark);
   background-color: var(--color-light-grey);
   text-shadow: none;
   border-left: 1px solid var(--colorArticles);
@@ -652,7 +652,7 @@
   height: var(--buttonHeight);
   -webkit-clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
           clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
-  background-color: var(--colorArticlesB);
+  background-color: var(--colorArticlesE);
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -699,8 +699,8 @@
   position: absolute;
   left: 5px;
   top: 4px;
-  -webkit-filter: drop-shadow(-6px 6px 2px rgba(255, 245, 112, 0.932));
-          filter: drop-shadow(-6px 6px 2px rgba(255, 245, 112, 0.932));
+  -webkit-filter: drop-shadow(-6px 6px 2px var(--colorArticlesF));
+          filter: drop-shadow(-6px 6px 2px var(--colorArticlesF));
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }

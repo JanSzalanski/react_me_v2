@@ -35,25 +35,33 @@ function App() {
         <Video></Video>
         <ArticlePage />
         <SideBar />
-        <ContactBar />
+        <div className="wrapCont">
+          <ContactBar />
+        </div>
       </Route>
       <Route path="/people">
         <Video></Video>
         <PeoplePage />
         <SideBar />
-        <ContactBar />
+        <div className="wrapCont">
+          <ContactBar />
+        </div>
       </Route>
       <Route path="/nft">
         <Video></Video>
         <NftPage />
         <SideBar />
-        <ContactBar />
+        <div className="wrapCont">
+          <ContactBar />
+        </div>
       </Route>
       <Route path="*">
         <Video></Video>
         <NotFound />
         <SideBar />
-        <ContactBar />
+        <div className="wrapCont">
+          <ContactBar />
+        </div>
       </Route>
     </Switch>
   );
