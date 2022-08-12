@@ -27,7 +27,7 @@
     color: var(--colorArticles);
   }
   55% {
-    color: var(--white);
+    color: black;
   }
   60% {
     border-bottom: 2px solid var(--colorArticles);
@@ -40,7 +40,7 @@
     border-left: 2px solid var(--white);
   }
   75% {
-    color: var(--colorArticles);
+    color: black;
   }
   80% {
     border-top: 1px solid var(--colorArticles);
@@ -90,7 +90,7 @@
     color: var(--colorArticles);
   }
   55% {
-    color: var(--white);
+    color: black;
   }
   60% {
     border-bottom: 2px solid var(--colorArticles);
@@ -103,7 +103,7 @@
     border-left: 2px solid var(--white);
   }
   75% {
-    color: var(--colorArticles);
+    color: black;
   }
   80% {
     border-top: 1px solid var(--colorArticles);

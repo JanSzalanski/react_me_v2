@@ -81,7 +81,9 @@ const ContactBar = (props) => {
           className="contact"
           placeholder="Treść wiadomości *"
         />
-        <Button>Wyślij</Button>
+        <div className={classes.btnWrapperC}>
+          <Button>Wyślij</Button>
+        </div>
       </form>
 
       <div className={classes.lineRight} />

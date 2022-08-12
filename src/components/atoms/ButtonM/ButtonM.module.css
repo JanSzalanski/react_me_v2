@@ -27,7 +27,7 @@
     color: var(--colorArticles);
   }
   55% {
-    color: var(--white);
+    color: black;
   }
   60% {
     border-bottom: 2px solid var(--colorArticles);
@@ -40,7 +40,7 @@
     border-left: 2px solid var(--white);
   }
   75% {
-    color: var(--colorArticles);
+    color: black;
   }
   80% {
     border-top: 1px solid var(--colorArticles);
@@ -90,7 +90,7 @@
     color: var(--colorArticles);
   }
   55% {
-    color: var(--white);
+    color: black;
   }
   60% {
     border-bottom: 2px solid var(--colorArticles);
@@ -103,7 +103,7 @@
     border-left: 2px solid var(--white);
   }
   75% {
-    color: var(--colorArticles);
+    color: black;
   }
   80% {
     border-top: 1px solid var(--colorArticles);
@@ -460,13 +460,14 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  pointer-events: auto;
   background-color: var(--colorArticlesB);
   width: 35px;
   height: 145px;
   padding-top: 5px;
   cursor: pointer;
   text-decoration: none;
-  color: var(--colorArticles);
+  color: var(--white);
   -webkit-transition: color 0.15s ease-out, -webkit-transform 0.2s ease-out;
   transition: color 0.15s ease-out, -webkit-transform 0.2s ease-out;
   transition: color 0.15s ease-out, transform 0.2s ease-out;
@@ -485,7 +486,7 @@
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
-  text-shadow: -3px 4px 3px var(--black);
+  text-shadow: -3px 4px 3px var(--colorArticlesD);
 }
 
 .buttonM:hover, .new:hover, .copy:hover, .copyA:hover, .copyB:hover, .copyC:hover, .art:hover, .lud:hover, .nft:hover {
@@ -522,7 +523,7 @@
   left: 8px;
   top: 12px;
   border: none;
-  background-color: var(--colorArticlesB);
+  background-color: var(--colorArticlesE);
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   -webkit-clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
@@ -563,15 +564,15 @@
 .glow, .glowA, .glowB, .glowC {
   z-index: -1;
   position: absolute;
-  -webkit-filter: drop-shadow(-5px 5px 2px rgba(255, 245, 112, 0.8));
-          filter: drop-shadow(-5px 5px 2px rgba(255, 245, 112, 0.8));
+  -webkit-filter: drop-shadow(-5px 5px 2px var(--colorArticlesF));
+          filter: drop-shadow(-5px 5px 2px var(--colorArticlesF));
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
 
 .buttonM:hover + .glow, .new:hover + .glow, .copy:hover + .glow, .copyA:hover + .glow, .copyB:hover + .glow, .copyC:hover + .glow, .art:hover + .glow, .lud:hover + .glow, .nft:hover + .glow, .buttonM:hover + .glowA, .new:hover + .glowA, .copy:hover + .glowA, .copyA:hover + .glowA, .copyB:hover + .glowA, .copyC:hover + .glowA, .art:hover + .glowA, .lud:hover + .glowA, .nft:hover + .glowA, .buttonM:hover + .glowB, .new:hover + .glowB, .copy:hover + .glowB, .copyA:hover + .glowB, .copyB:hover + .glowB, .copyC:hover + .glowB, .art:hover + .glowB, .lud:hover + .glowB, .nft:hover + .glowB, .buttonM:hover + .glowC, .new:hover + .glowC, .copy:hover + .glowC, .copyA:hover + .glowC, .copyB:hover + .glowC, .copyC:hover + .glowC, .art:hover + .glowC, .lud:hover + .glowC, .nft:hover + .glowC {
-  -webkit-filter: drop-shadow(0px 0px 2px rgba(255, 245, 112, 0.8));
-          filter: drop-shadow(0px 0px 2px rgba(255, 245, 112, 0.8));
+  -webkit-filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
+          filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
 
 .buttonM.art:hover, .art:hover {
@@ -580,18 +581,18 @@
 }
 
 .glowA {
-  -webkit-filter: drop-shadow(5px 5px 2px rgba(255, 245, 112, 0.8));
-          filter: drop-shadow(5px 5px 2px rgba(255, 245, 112, 0.8));
+  -webkit-filter: drop-shadow(5px 5px 2px var(--colorArticlesF));
+          filter: drop-shadow(5px 5px 2px var(--colorArticlesF));
 }
 
 .glowB {
-  -webkit-filter: drop-shadow(-5px -5px 2px rgba(255, 245, 112, 0.8));
-          filter: drop-shadow(-5px -5px 2px rgba(255, 245, 112, 0.8));
+  -webkit-filter: drop-shadow(-5px -5px 2px var(--colorArticlesF));
+          filter: drop-shadow(-5px -5px 2px var(--colorArticlesF));
 }
 
 .glowC {
-  -webkit-filter: drop-shadow(5px -5px 2px rgba(255, 245, 112, 0.8));
-          filter: drop-shadow(5px -5px 2px rgba(255, 245, 112, 0.8));
+  -webkit-filter: drop-shadow(5px -5px 2px var(--colorArticlesF));
+          filter: drop-shadow(5px -5px 2px var(--colorArticlesF));
 }
 
 .art {
@@ -604,6 +605,11 @@
 .buttonM.art:hover, .art:hover {
   -webkit-transform: translate(6px, 4px);
           transform: translate(6px, 4px);
+}
+
+.buttonM.art:hover + .glow, .art.new:hover + .glow, .art.copy:hover + .glow, .art.copyA:hover + .glow, .art.copyB:hover + .glow, .art.copyC:hover + .glow, .art:hover + .glow, .art.lud:hover + .glow, .art.nft:hover + .glow, .buttonM.art:hover + .glowA, .art:hover + .glowA, .buttonM.art:hover + .glowB, .art:hover + .glowB, .buttonM.art:hover + .glowC, .art:hover + .glowC {
+  -webkit-filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
+          filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
 }
 
 .lud {
@@ -621,6 +627,11 @@
           transform: translate(-6px, -4px);
 }
 
+.buttonM.lud:hover + .glow, .lud.new:hover + .glow, .lud.copy:hover + .glow, .lud.copyA:hover + .glow, .lud.copyB:hover + .glow, .lud.copyC:hover + .glow, .lud.art:hover + .glow, .lud:hover + .glow, .lud.nft:hover + .glow, .buttonM.lud:hover + .glowA, .lud:hover + .glowA, .buttonM.lud:hover + .glowB, .lud:hover + .glowB, .buttonM.lud:hover + .glowC, .lud:hover + .glowC {
+  -webkit-filter: drop-shadow(-3px -3px 2px var(--colorArticlesD));
+          filter: drop-shadow(-3px -3px 2px var(--colorArticlesD));
+}
+
 .nft {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -634,5 +645,10 @@
 .buttonM.nft:hover, .nft:hover {
   -webkit-transform: translate(6px, -4px);
           transform: translate(6px, -4px);
+}
+
+.buttonM.nft:hover + .glow, .nft.new:hover + .glow, .nft.copy:hover + .glow, .nft.copyA:hover + .glow, .nft.copyB:hover + .glow, .nft.copyC:hover + .glow, .nft.art:hover + .glow, .nft.lud:hover + .glow, .nft:hover + .glow, .buttonM.nft:hover + .glowA, .nft:hover + .glowA, .buttonM.nft:hover + .glowB, .nft:hover + .glowB, .buttonM.nft:hover + .glowC, .nft:hover + .glowC {
+  -webkit-filter: drop-shadow(3px -3px 2px var(--colorArticlesD));
+          filter: drop-shadow(3px -3px 2px var(--colorArticlesD));
 }
 /*# sourceMappingURL=ButtonM.module.css.map */

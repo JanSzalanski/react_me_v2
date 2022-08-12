@@ -7,6 +7,7 @@ $btnHeight: 145px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  pointer-events: auto;
   background-color: var(--colorArticlesB);
   width: $btnWidth;
   height: $btnHeight;
@@ -14,11 +15,9 @@ $btnHeight: 145px;
   cursor: pointer;
   text-decoration: none;
   // margin-bottom: 20px;
-  color: var(--colorArticles);
+  color: var(--white);
   transition: color 0.15s ease-out, transform 0.2s ease-out;
   border: 1px solid var(--colorArticles);
-
-  // text-shadow: -3px 4px 3px var(--blackA);
 
   backdrop-filter: blur(2px);
 
@@ -30,7 +29,7 @@ $btnHeight: 145px;
     letter-spacing: -3px;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    text-shadow: -3px 4px 3px var(--black);
+    text-shadow: -3px 4px 3px var(--colorArticlesD);
   }
 
   &:hover {
@@ -66,7 +65,7 @@ $btnHeight: 145px;
   left: 8px;
   top: 12px;
   border: none;
-  background-color: var(--colorArticlesB);
+  background-color: var(--colorArticlesE);
   transition: all 0.2s ease-out;
   clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
   &:hover {
@@ -102,12 +101,12 @@ $btnHeight: 145px;
   position: absolute;
   // left: 10px;
   // top: 10px;
-  filter: drop-shadow(-5px 5px 2px rgba(255, 245, 112, 0.8));
+  filter: drop-shadow(-5px 5px 2px var(--colorArticlesF));
   transition: all 0.25s ease-out;
 }
 
 .buttonM:hover + .glow {
-  filter: drop-shadow(0px 0px 2px rgba(255, 245, 112, 0.8));
+  filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
 .buttonM.art:hover {
   transform: translate(-6px, 4px);
@@ -115,17 +114,17 @@ $btnHeight: 145px;
 
 .glowA {
   @extend .glow;
-  filter: drop-shadow(5px 5px 2px rgba(255, 245, 112, 0.8));
+  filter: drop-shadow(5px 5px 2px var(--colorArticlesF));
 }
 
 .glowB {
   @extend .glow;
-  filter: drop-shadow(-5px -5px 2px rgba(255, 245, 112, 0.8));
+  filter: drop-shadow(-5px -5px 2px var(--colorArticlesF));
 }
 
 .glowC {
   @extend .glow;
-  filter: drop-shadow(5px -5px 2px rgba(255, 245, 112, 0.8));
+  filter: drop-shadow(5px -5px 2px var(--colorArticlesF));
 }
 
 .art {
@@ -136,6 +135,10 @@ $btnHeight: 145px;
 }
 .buttonM.art:hover {
   transform: translate(6px, 4px);
+}
+
+.buttonM.art:hover + .glow {
+  filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
 }
 
 .lud {
@@ -152,6 +155,10 @@ $btnHeight: 145px;
   transform: translate(-6px, -4px);
 }
 
+.buttonM.lud:hover + .glow {
+  filter: drop-shadow(-3px -3px 2px var(--colorArticlesD));
+}
+
 .nft {
   @extend .buttonM;
   align-items: center;
@@ -162,4 +169,8 @@ $btnHeight: 145px;
 
 .buttonM.nft:hover {
   transform: translate(6px, -4px);
+}
+
+.buttonM.nft:hover + .glow {
+  filter: drop-shadow(3px -3px 2px var(--colorArticlesD));
 }
