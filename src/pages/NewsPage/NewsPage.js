@@ -13,6 +13,7 @@ import FooterB from '../../components/molecules/FooterB/FooterB';
 import Background from '../../components/atoms/Background/Background';
 import HeaderB from '../../components/molecules/HeaderB/HeaderB';
 // import ContactBar from '../../components/molecules/ContactBar/ContactBar';
+import InputR from '../../components/atoms/InputR/InputR';
 
 const NewsPage = (props) => {
   return (
@@ -24,13 +25,13 @@ const NewsPage = (props) => {
       <Background />
       <div className="overflowWrapper">
         <section className={classes.slider}>
-          <input type="radio" name="slider" id="s1" defaultChecked />
-          <input type="radio" name="slider" id="s2" />
-          <input type="radio" name="slider" id="s3" />
-          <input type="radio" name="slider" id="s4" />
-          <input type="radio" name="slider" id="s5" />
-          <input type="radio" name="slider" id="s6" />
-          <input type="radio" name="slider" id="s7" />
+          <InputR className="first" name="slider" id="s1" defaultChecked></InputR>
+          <InputR name="slider" id="s2"></InputR>
+          <InputR name="slider" id="s3"></InputR>
+          <InputR name="slider" id="s4"></InputR>
+          <InputR name="slider" id="s5"></InputR>
+          <InputR name="slider" id="s6"></InputR>
+          <InputR className="last" name="slider" id="s7"></InputR>
 
           <Label htmlFor="s1" id="slide1" name="slide1">
             <Card

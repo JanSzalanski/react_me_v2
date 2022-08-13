@@ -230,7 +230,7 @@
   bottom: -40px;
   right: 0px;
   font-family: var(--font-headers);
-  color: var(--colorArticles);
+  color: var(--white);
   font-weight: 100;
   font-size: 1.4rem;
 }

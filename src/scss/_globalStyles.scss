@@ -132,6 +132,19 @@ h2 {
   @media (max-width: 1024px) {
     width: calc(100vw - 126px);
   }
+
+  @media (max-width: 480px) {
+    width: 100vw;
+    background: linear-gradient(
+      90deg,
+      var(--colorArticles) 0%,
+      var(--colorBgkL) 10%,
+      var(--colorBgkD) 20%,
+      var(--colorBgkD) 80%,
+      var(--colorBgkL) 90%,
+      var(--colorArticles) 100%
+    );
+  }
 }
 
 .backgroundBack {
@@ -221,23 +234,17 @@ h2 {
 }
 
 input[type='radio'] {
+  display: inline-block;
   position: relative;
-  // bottom: 20px;
-  // left: 50%;
   width: 22px;
-  height: 22px;
-  // appearance: none;
-  // border: 2px solid var(--colorArticles);
-  // border-radius: 50%;
+  height: 12px;
   margin: 10px 10px 10px 0;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
   opacity: 0.5;
   transition: 120ms transform ease-in-out;
   cursor: pointer;
   pointer-events: auto;
+  // display: grid;
+  place-content: center;
   @media (max-width: 480px) {
     margin-top: 25px;
     width: 12px;
@@ -246,34 +253,24 @@ input[type='radio'] {
 }
 
 input[type='radio']:checked {
-  // width: 0.75em;
-  // height: 0.75em;
-  // border-radius: 50%;
-  // // transform: scale(0);
-  // // transition: 120ms transform ease-in-out;
-  // box-shadow: inset 1em 1em var(--colorArticles);
-  // border: 2px solid var(--colorArticles);
   opacity: 1;
 }
 
-// #slide1 {
-//   background: tomato;
+// input[type='radio']::after {
+//   content: '';
+//   display: inline-block;
+//   background-color: var(--black);
+//   width: 18px;
+//   height: 8px;
+//   // border-radius: 50%;
+//   transform: scale(0);
+//   transition: 120ms transform ease-in-out;
+//   box-shadow: inset 1em 1em var(--black);
 // }
 
-// #slide2 {
-//   background: slateblue;
-// }
-
-// #slide3 {
-//   background: yellowgreen;
-// }
-
-// #slide4 {
-//   background: grey;
-// }
-
-// #slide5 {
-//   background: dodgerblue;
+// input[type='radio']:checked::after {
+//   display: inline-block;
+//   transform: scale(1.2);
 // }
 
 #s1:checked ~ #slide1,
