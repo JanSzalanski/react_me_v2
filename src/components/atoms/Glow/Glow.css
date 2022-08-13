@@ -5,25 +5,25 @@
   z-index: -1;
   height: 70px;
   width: 170px;
-  background: radial-gradient(closest-side, #d6faff, var(--colorArticles), rgba(0, 0, 0, 0.1));
+  background: radial-gradient(closest-side, #fff4d6, var(--colorArticles), rgba(0, 0, 0, 0.1));
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
   -webkit-transform: translateY(0);
-  transform: translateY(0);
+          transform: translateY(0);
 }
 
 .moveA {
   -webkit-transform: translateY(50px);
-  transform: translateY(50px);
+          transform: translateY(50px);
 }
 
 .moveB {
   -webkit-transform: translateY(120px);
-  transform: translateY(120px);
+          transform: translateY(120px);
 }
 
 .moveC {
   -webkit-transform: translateY(180px);
-  transform: translateY(180px);
+          transform: translateY(180px);
 }
 /*# sourceMappingURL=Glow.css.map */

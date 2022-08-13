@@ -19,11 +19,16 @@ function App() {
         <Redirect to="/news"></Redirect>
       </Route>
       <Route path="/news/:newsId">
+        <div className="backgroundBack"></div>
         <Backdrop />
         <DetailsPage />
         <SideBar />
+        <div className="wrapCont">
+          <ContactBar />
+        </div>
       </Route>
       <Route path="/news">
+        <div className="backgroundBody"></div>
         <Video></Video>
         <NewsPage />
         <SideBar />
@@ -32,6 +37,7 @@ function App() {
         </div>
       </Route>
       <Route path="/articles">
+        <div className="backgroundBody"></div>
         <Video></Video>
         <ArticlePage />
         <SideBar />
@@ -40,6 +46,7 @@ function App() {
         </div>
       </Route>
       <Route path="/people">
+        <div className="backgroundBody"></div>
         <Video></Video>
         <PeoplePage />
         <SideBar />
@@ -48,6 +55,7 @@ function App() {
         </div>
       </Route>
       <Route path="/nft">
+        <div className="backgroundBody"></div>
         <Video></Video>
         <NftPage />
         <SideBar />
@@ -56,6 +64,7 @@ function App() {
         </div>
       </Route>
       <Route path="*">
+        <div className="backgroundBody"></div>
         <Video></Video>
         <NotFound />
         <SideBar />

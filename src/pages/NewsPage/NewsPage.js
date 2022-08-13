@@ -41,7 +41,7 @@ const NewsPage = (props) => {
               earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit
               voluptatibus minus totam eos accusamus dolores adipisci!"
             />
-          </Label> 
+          </Label>
           <Label htmlFor="s2" id="slide2" name="slide2">
             <Card
               path="a2"

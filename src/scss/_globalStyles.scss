@@ -9,15 +9,7 @@ body {
   // height: 100vh;
   width: 100%;
   // background: #3b3a34;
-  background: linear-gradient(
-    90deg,
-    var(--colorArticles) 8%,
-    var(--colorBgkL) 11%,
-    var(--colorBgkD) 20%,
-    var(--colorBgkD) 89%,
-    var(--colorBgkL) 96%,
-    var(--colorArticles) 100%
-  );
+  background-color: black;
 
   @media (max-width: 1366px) {
     padding-left: 156px;
@@ -119,7 +111,43 @@ h2 {
   opacity: 0.75;
 }
 
+.backgroundBody {
+  position: absolute;
+  width: calc(100vw - 176px);
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--colorArticles) 0%,
+    var(--colorBgkL) 2%,
+    var(--colorBgkD) 20%,
+    var(--colorBgkD) 89%,
+    var(--colorBgkL) 96%,
+    var(--colorArticles) 100%
+  );
+
+  @media (max-width: 1366px) {
+    width: calc(100vw - 156px);
+  }
+
+  @media (max-width: 1024px) {
+    width: calc(100vw - 126px);
+  }
+}
+
+.backgroundBack {
+  @extend .backgroundBody;
+  z-index: -2;
+  background: linear-gradient(
+    90deg,
+    var(--colorArticles) 0%,
+    var(--colorBgkL) 2%,
+    var(--colorBgkD) 20%,
+    var(--colorBgkD) 100%
+  );
+}
+
 .overlay {
+  // border: 1px solid yellow;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -160,27 +188,6 @@ h2 {
     display: none;
   }
 }
-
-// .backgroundPage {
-//   left: ;
-//   position: absolute;
-//   z-index: -1;
-//   background: #4a4a4a;
-//   height: 100vh;
-//   width: 100vw;
-//   background: radial-gradient(
-//     circle farthest-corner at center center,
-//     #4a4a4a 3%,
-//     #292929 65%,
-//     #2f3026 68%,
-//     #2f3026 72%,
-//     #292929 74%,
-//     #292929 88%,
-//     #444542 90%,
-//     #4e4f4c 92%,
-//     #292929 94%
-//   );
-// }
 
 .contactSlide {
   animation-iteration-count: 1;
