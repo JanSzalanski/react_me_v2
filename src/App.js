@@ -5,8 +5,6 @@ import NewsPage from './pages/NewsPage/NewsPage';
 import ArticlePage from './pages/ArticlePage/ArticlePage';
 import PeoplePage from './pages/PeoplePage/PeoplePage';
 import NftPage from './pages/NftPage/NftPage';
-// import NotFound from './pages/404/NotFound';
-// import DetailsPage from './pages/DetailsPage/DetailsPage';
 import SideBar from './components/organisms/SideBar/SideBar';
 import Video from './components/atoms/Videos/Video';
 import ContactBar from './components/molecules/ContactBar/ContactBar';
