@@ -16,6 +16,7 @@ const Textarea = (props) => {
         autoComplete={props.autocomplete}
         tabIndex={props.tabindex}
         maxLength={props.maxlength}
+        onChange={props.onChange}
         //   onClick={props.onClick}
       />
     </div>

@@ -15,6 +15,7 @@ const Input = (props) => {
         className={classes[props.className] || classes.input}
         placeholder={props.placeholder || 'input'}
         type={classes[props.type] || 'text'}
+        onChange={props.onChange}
         //   onClick={props.onClick}
       />
     </div>

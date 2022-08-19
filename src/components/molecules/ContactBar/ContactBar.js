@@ -7,20 +7,67 @@ import Input from '../../atoms/Input/Input';
 import Textarea from '../../atoms/Textarea/Textarea';
 
 const ContactBar = (props) => {
+  const [enteredName, setEnteredName] = useState('');
+  const [enteredEmail, setEnteredEmail] = useState('');
+  const [enteredTitle, setEnteredTitle] = useState('');
+  const [enteredMessage, setEnteredMessage] = useState('');
+  const [flag, setFlag] = useState(false);
+  const [flagMessage, setFlagMessage] = useState('');
   const [animeKont, setAnimeKont] = useState(null);
   const [kolorKont, setKolorKont] = useState(null);
+
+  const nameChangeHandler = (event) => {
+    setEnteredName(event.target.value);
+  };
+
+  const emailChangeHandler = (event) => {
+    setEnteredEmail(event.target.value);
+  };
+
+  const titleChangeHandler = (event) => {
+    setEnteredTitle(event.target.value);
+  };
+
+  const messageChangeHandler = (event) => {
+    setEnteredMessage(event.target.value);
+  };
 
   const kontaktHandler = () => {
     if (animeKont === null || animeKont === 'contactHide') {
       setKolorKont('colorIn');
       setAnimeKont('contactSlide');
     } else if (animeKont === 'contactSlide') {
+      setFlag(false);
+      setFlagMessage('');
       setAnimeKont('contactHide');
       setKolorKont('colorOut');
     } else {
       setAnimeKont(null);
       setKolorKont(null);
     }
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const formData = {
+      name: enteredName,
+      email: enteredEmail,
+      title: enteredTitle,
+      message: enteredMessage,
+    };
+    console.log(formData);
+    // props.onSubmitForm(formData);
+    setEnteredName('');
+    setEnteredEmail('');
+    setEnteredTitle('');
+    setEnteredMessage('');
+    setFlag(true);
+    setFlagMessage(
+      `Na razie formularz kontaktowy nie działa na tej stronie, możesz skorzystać z formularza na stronie klasycznej`,
+    );
+
+    return;
   };
 
   const cssClasses = [classes.contactWrapper, animeKont];
@@ -35,7 +82,7 @@ const ContactBar = (props) => {
       <div className={classes.Top}>
         <h2>Kontakt</h2>
       </div>
-      <form method="post" action="" className={classes.Middle}>
+      <form onSubmit={submitHandler} className={classes.Middle}>
         <Input
           type="text"
           name="imie"
@@ -46,6 +93,7 @@ const ContactBar = (props) => {
           class="contactWrap"
           className="contact"
           placeholder="Imię *"
+          onChange={nameChangeHandler}
         />
         <Input
           type="email"
@@ -57,6 +105,7 @@ const ContactBar = (props) => {
           class="contactWrap"
           className="contact"
           placeholder="E-mail *"
+          onChange={emailChangeHandler}
         />
         <Input
           type="topic"
@@ -68,6 +117,7 @@ const ContactBar = (props) => {
           class="contactWrap"
           className="contact"
           placeholder="Temat *"
+          onChange={titleChangeHandler}
         />
         <Textarea
           type="textarea"
@@ -80,9 +130,11 @@ const ContactBar = (props) => {
           class="contactWrap"
           className="contact"
           placeholder="Treść wiadomości *"
+          onChange={messageChangeHandler}
         />
+        {flag && <h1 className={classes.warning}>{flagMessage}</h1>}
         <div className={classes.btnWrapperC}>
-          <Button>Wyślij</Button>
+          <Button type="submit">Wyślij</Button>
         </div>
       </form>
 
