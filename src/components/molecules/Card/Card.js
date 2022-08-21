@@ -5,6 +5,7 @@ import Heading from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
 import { Link } from 'react-router-dom';
+import NewsDate from '../../atoms/NewsDate/NewsDate';
 
 const Card = ({ className, cardType, date, title, content, path }) => {
   const withFlex = classes.wrapper + ' flex';
@@ -29,7 +30,11 @@ const Card = ({ className, cardType, date, title, content, path }) => {
             {cardType === 'news' && <div className={classes.decorA} />}
             {cardType === 'news' && <div className={classes.decorB} />}
             {cardType === 'news' && <div className={classes.decorC} />}
-            {cardType === 'news' && <div className={classes.decorData}>{date}</div>}
+            {cardType === 'news' && (
+              <div className={classes.decorData}>
+                <NewsDate date={date}></NewsDate>
+              </div>
+            )}
             <Paragraph className="card">{content}</Paragraph>
             {/*pamiętaj ta klasa "card" jest w klasach dla Paragraph!*/}
           </div>
@@ -52,8 +57,8 @@ const Card = ({ className, cardType, date, title, content, path }) => {
 //   date: PropTypes.instanceOf(Date),
 // };
 
-// Card.defaultProps = {
-//   cardType: 'news',
-// };
+Card.defaultProps = {
+  cardType: 'news',
+};
 
 export default Card;

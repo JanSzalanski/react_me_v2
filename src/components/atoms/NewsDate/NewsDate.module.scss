@@ -1,0 +1,33 @@
+.date {
+  position: absolute;
+  bottom: -6.5rem;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 9rem;
+  height: 8rem;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background-color: var(--blackB);
+  color: var(--white);
+  border-radius: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.month {
+  font-family: 300;
+  font-size: 1.2rem;
+  font-weight: bold;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.year {
+  font-size: 1.4rem;
+}
+
+.day {
+  font-size: 1.8rem;
+  font-weight: bold;
+}

@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import InputR from '../../atoms/InputR/InputR';
-import classes from './InputRList.module.css';
+
+// import classes from './InputRList.module.css';
 
 const InputRList = (props) => {
   return (
     <>
       {props.items.map((record, index) => {
         return (
-          <div key={record.path} className={classes.wrapper}>
+          <React.Fragment key={record.path}>
             {index > 0 && index + 1 < props.items.length && (
               <InputR name="slider" id={`s${index + 1}`}></InputR>
             )}
@@ -18,7 +19,7 @@ const InputRList = (props) => {
             {index + 1 === props.items.length && (
               <InputR className="last" name="slider" id={`s${index + 1}`}></InputR>
             )}
-          </div>
+          </React.Fragment>
         );
       })}
     </>

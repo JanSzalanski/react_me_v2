@@ -57,6 +57,7 @@ textarea:focus {
   --colorBgkVD: rgb(45, 44, 37);
   --black: rgb(80, 80, 80);
   --blackA: rgba(80, 80, 80, 0.6);
+  --blackB: rgb(32, 32, 32);
   --white: rgba(255, 255, 255, 0.959);
   --colorSocial: rgb(5, 5, 5);
   --fontSizeXXS: 1rem;

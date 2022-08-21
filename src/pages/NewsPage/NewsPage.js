@@ -26,14 +26,14 @@ const DUMMY_NEWS = [
   },
   {
     path: 'a2',
-    date: new Date(2022, 3, 10),
+    date: new Date(2022, 11, 10),
     title: 'Drugi news',
     content:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit',
   },
   {
     path: 'a3',
-    date: new Date(2022, 4, 2),
+    date: new Date(2022, 9, 2),
     title: 'Trzeci news',
     content:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam !',
@@ -46,19 +46,19 @@ const DUMMY_NEWS = [
   },
   {
     path: 'a5',
-    date: new Date(2022, 5, 10),
+    date: new Date(2022, 4, 10),
     title: 'Piąty news',
     content: 'Coś wyjątkowego sobie sprezentowałem',
   },
   {
     path: 'a6',
-    date: new Date(2022, 6, 1),
+    date: new Date(2022, 10, 1),
     title: 'Szósty news',
     content: 'A terz kolejny prezent',
   },
   {
     path: 'a7',
-    date: new Date(2022, 6, 10),
+    date: new Date(2022, 8, 10),
     title: 'Siódmy news',
     content: 'Ale z tym zabawy jedno sie zyskuje cos innego traci w tym react',
   },
@@ -95,7 +95,6 @@ const NewsPage = (props) => {
                   name={`slide${index + 1}`}
                 >
                   <Card
-                    // key={index.toString()}
                     path={record.path}
                     date={record.date}
                     title={record.title}
