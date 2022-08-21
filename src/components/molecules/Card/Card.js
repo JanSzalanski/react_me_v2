@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Card.module.css';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Heading from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
@@ -44,16 +44,16 @@ const Card = ({ className, cardType, date, title, content, path }) => {
   );
 };
 
-Card.propTypes = {
-  cardType: PropTypes.oneOf(['news', 'normal']),
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  path: PropTypes.string,
-  date: PropTypes.string,
-};
+// Card.propTypes = {
+//   cardType: PropTypes.oneOf(['news', 'normal']),
+//   title: PropTypes.string.isRequired,
+//   content: PropTypes.string.isRequired,
+//   path: PropTypes.string,
+//   date: PropTypes.instanceOf(Date),
+// };
 
-Card.defaultProps = {
-  cardType: 'news',
-};
+// Card.defaultProps = {
+//   cardType: 'news',
+// };
 
 export default Card;

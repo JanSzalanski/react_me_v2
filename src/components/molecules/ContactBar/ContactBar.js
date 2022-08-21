@@ -12,9 +12,20 @@ const ContactBar = (props) => {
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredMessage, setEnteredMessage] = useState('');
   const [flag, setFlag] = useState(false);
-  const [flagMessage, setFlagMessage] = useState('');
+  // const [flagMessage, setFlagMessage] = useState('');
   const [animeKont, setAnimeKont] = useState(null);
   const [kolorKont, setKolorKont] = useState(null);
+
+  let warrning = (
+    <h1 className={classes.warning}>
+      Na razie formularz kontaktowy nie działa na tej stronie, możesz skorzystać z formularza na
+      stronie klasycznej
+    </h1>
+  );
+
+  if (!flag) {
+    warrning = null;
+  }
 
   const nameChangeHandler = (event) => {
     setEnteredName(event.target.value);
@@ -38,7 +49,6 @@ const ContactBar = (props) => {
       setAnimeKont('contactSlide');
     } else if (animeKont === 'contactSlide') {
       setFlag(false);
-      setFlagMessage('');
       setAnimeKont('contactHide');
       setKolorKont('colorOut');
     } else {
@@ -56,16 +66,14 @@ const ContactBar = (props) => {
       title: enteredTitle,
       message: enteredMessage,
     };
-    console.log(formData);
     // props.onSubmitForm(formData);
     setEnteredName('');
     setEnteredEmail('');
     setEnteredTitle('');
     setEnteredMessage('');
     setFlag(true);
-    setFlagMessage(
-      `Na razie formularz kontaktowy nie działa na tej stronie, możesz skorzystać z formularza na stronie klasycznej`,
-    );
+
+    console.log(formData);
 
     return;
   };
@@ -94,6 +102,7 @@ const ContactBar = (props) => {
           className="contact"
           placeholder="Imię *"
           onChange={nameChangeHandler}
+          value={enteredName}
         />
         <Input
           type="email"
@@ -106,6 +115,7 @@ const ContactBar = (props) => {
           className="contact"
           placeholder="E-mail *"
           onChange={emailChangeHandler}
+          value={enteredEmail}
         />
         <Input
           type="topic"
@@ -118,6 +128,7 @@ const ContactBar = (props) => {
           className="contact"
           placeholder="Temat *"
           onChange={titleChangeHandler}
+          value={enteredTitle}
         />
         <Textarea
           type="textarea"
@@ -131,8 +142,9 @@ const ContactBar = (props) => {
           className="contact"
           placeholder="Treść wiadomości *"
           onChange={messageChangeHandler}
+          value={enteredMessage}
         />
-        {flag && <h1 className={classes.warning}>{flagMessage}</h1>}
+        {warrning}
         <div className={classes.btnWrapperC}>
           <Button type="submit">Wyślij</Button>
         </div>

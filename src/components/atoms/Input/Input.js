@@ -16,6 +16,7 @@ const Input = (props) => {
         placeholder={props.placeholder || 'input'}
         type={classes[props.type] || 'text'}
         onChange={props.onChange}
+        value={props.value}
         //   onClick={props.onClick}
       />
     </div>
