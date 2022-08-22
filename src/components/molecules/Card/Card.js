@@ -29,16 +29,18 @@ const Card = ({ className, cardType, date, title, content, path }) => {
             <h2 className={classes.title}>{title}</h2>
             {cardType === 'news' && <div className={classes.decorA} />}
             {cardType === 'news' && <div className={classes.decorB} />}
-            {cardType === 'news' && <div className={classes.decorC} />}
+            {/* {cardType === 'news' && <div className={classes.decorC} />} */}
             <Paragraph className="card">{content}</Paragraph>
             {/*pamiętaj ta klasa "card" jest w klasach dla Paragraph!*/}
           </div>
-          {cardType === 'news' && (
+        </div>
+        {cardType === 'news' && (
+          <div className={classes.btnWrapper}>
             <Link className="routeLink" to={`/news/${path}`}>
               <Button type="secondary">Detale</Button>
             </Link>
-          )}
-        </div>
+          </div>
+        )}
         {cardType === 'news' && <NewsDate date={date}></NewsDate>}
       </div>
     </div>

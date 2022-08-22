@@ -3,10 +3,21 @@ import classes from './Button.module.css';
 
 const Button = (props) => {
   let cssClasses = [classes[props.type] || classes.button];
-  if (props.mobile === 'news') {
-    cssClasses.push(classes.news);
-  } else if (props.mobile === 'art') {
-    cssClasses.push(classes.art);
+  if (props.type === 'secondary') {
+    return (
+      <>
+        <button
+          className={cssClasses.join(' ')}
+          type={props.type || 'button'}
+          onClick={props.onClick}
+        >
+          <p>{props.children}</p>
+        </button>
+        <div className={classes.glowS}>
+          <div className={classes.copyS}></div>
+        </div>
+      </>
+    );
   }
 
   return (
@@ -24,6 +35,18 @@ const Button = (props) => {
           <div className={classes.copy}></div>
         </div>
       )}
+
+      {props.type === 'submit' && (
+        <div className={classes.glow}>
+          <div className={classes.copy}></div>
+        </div>
+      )}
+
+      {/* {props.type === 'secondary' && (
+        <div className={classes.glowS}>
+          <div className={classes.copyS}></div>
+        </div>
+      )} */}
 
       {props.type === 'wysylka' && (
         <div className={classes.glowWys}>

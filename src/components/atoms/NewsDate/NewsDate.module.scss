@@ -22,19 +22,26 @@ $height: calc(var(--cardHeight) / 4.7);
 
 .month {
   font-size: 1.2rem;
-  // font-weight: bold;
   letter-spacing: 2px;
-
   text-transform: uppercase;
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 }
 
 .year {
   letter-spacing: 1px;
   font-size: 1.4rem;
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 }
 
 .day {
   letter-spacing: 1px;
   font-size: 1.8rem;
   font-weight: bold;
+  @media (max-width: 480px) {
+    font-size: 1.4rem;
+  }
 }

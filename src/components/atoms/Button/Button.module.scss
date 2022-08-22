@@ -50,28 +50,21 @@ $btnHeight: 40px;
 
 .secondary {
   @extend .button;
-  margin-left: 5px;
-  padding-left: 10px;
-  width: var(--buttonWidthSec);
-  height: var(--buttonHeightSec);
-  font-size: 1.5rem;
-  color: var(--colorArticlesDark);
-  background-color: var(--color-light-grey);
-  text-shadow: none;
-  border-left: 1px solid var(--colorArticles);
-  border-right: 1px solid var(--colorArticles);
-  border-bottom: 1px solid var(--colorArticles);
-  border-top: 1px solid var(--colorArticles);
-  backdrop-filter: none;
+  position: absolute;
+  left: calc(50% - (var(--buttonWidth) / 3));
+  top: calc(50% - (var(--buttonHeight) / 2));
+  // transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  width: calc(var(--buttonWidth) / 1.5);
+  height: var(--buttonHeight);
 
   &:hover {
     animation-iteration-count: 1;
     animation-duration: 0.5s;
     animation-name: btnBlinkB;
-    transform: translate(0px, 0px);
-    @media (max-width: 480px) {
-      transform: translate(-50%, -50%);
-    }
+    transform: translate(-3px, 4px);
   }
 
   @media (max-width: 1600px) {
@@ -87,11 +80,11 @@ $btnHeight: 40px;
   @media (max-width: 480px) {
     justify-content: center;
     position: absolute;
-    left: 50%;
-    bottom: -15px;
-    transform: translate(-50%, -50%);
     margin: 0px;
     font-size: 1rem;
+    width: calc(var(--buttonWidth) / 1.8);
+    height: calc(var(--buttonHeight) - 6px);
+    left: calc(50% - (var(--buttonWidth) / 3.6));
   }
 }
 
@@ -153,7 +146,7 @@ $btnHeight: 40px;
 .buttonWrapper {
   position: relative;
   // border: 1px solid yellowgreen;
-  // @media (max-width: 480px) {
+  // // @media (max-width: 480px) {
   //   position: unset;
   //   // border: 1px solid red;
   //   width: $btnWidth;
@@ -168,6 +161,21 @@ $btnHeight: 40px;
   clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
   background-color: var(--colorArticlesE);
   transition: all 0.2s ease-out;
+}
+
+.copyS {
+  @extend .copy;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  background-color: var(--colorArticlesB);
+  width: calc(var(--buttonWidth) / 1.5);
+
+  @media (max-width: 480px) {
+    left: calc(50% - (var(--buttonWidth) / 3.6));
+    width: calc(var(--buttonWidth) / 1.8);
+    height: calc(var(--buttonHeight) - 6px);
+  }
 }
 
 .copyKont {
@@ -207,6 +215,16 @@ $btnHeight: 40px;
   top: 4px;
   filter: drop-shadow(-6px 6px 2px var(--colorArticlesF));
   transition: all 0.25s ease-out;
+}
+
+.glowS {
+  @extend .glow;
+  // width: calc(var(--buttonWidth) / 1.5);
+  @media (max-width: 480px) {
+    left: calc(50% - (var(--buttonWidth) / 3.6) - 5px);
+    width: calc(var(--buttonWidth) / 1.8);
+    height: calc(var(--buttonHeight) - 6px);
+  }
 }
 
 .glowKont {

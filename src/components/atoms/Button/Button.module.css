@@ -498,7 +498,7 @@
           transform: translate(-3px, 4px);
 }
 
-.button:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow, .kontaktM:hover + .glow, .wysylka:hover + .glow, .menu:hover + .glow {
+.button:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow, .kontaktM:hover + .glow, .wysylka:hover + .glow, .menu:hover + .glow, .button:hover + .glowS, .secondary:hover + .glowS, .kontakt:hover + .glowS, .kontaktM:hover + .glowS, .wysylka:hover + .glowS, .menu:hover + .glowS {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
           filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
@@ -514,20 +514,16 @@
 }
 
 .secondary {
-  margin-left: 5px;
-  padding-left: 10px;
-  width: var(--buttonWidthSec);
-  height: var(--buttonHeightSec);
-  font-size: 1.5rem;
-  color: var(--colorArticlesDark);
-  background-color: var(--color-light-grey);
-  text-shadow: none;
-  border-left: 1px solid var(--colorArticles);
-  border-right: 1px solid var(--colorArticles);
-  border-bottom: 1px solid var(--colorArticles);
-  border-top: 1px solid var(--colorArticles);
-  -webkit-backdrop-filter: none;
-          backdrop-filter: none;
+  position: absolute;
+  left: calc(50% - (var(--buttonWidth) / 3));
+  top: calc(50% - (var(--buttonHeight) / 2));
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(var(--buttonWidth) / 1.5);
+  height: var(--buttonHeight);
 }
 
 .secondary:hover {
@@ -537,15 +533,8 @@
           animation-duration: 0.5s;
   -webkit-animation-name: btnBlinkB;
           animation-name: btnBlinkB;
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-}
-
-@media (max-width: 480px) {
-  .secondary:hover {
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
+  -webkit-transform: translate(-3px, 4px);
+          transform: translate(-3px, 4px);
 }
 
 @media (max-width: 1600px) {
@@ -571,12 +560,11 @@
         -ms-flex-pack: center;
             justify-content: center;
     position: absolute;
-    left: 50%;
-    bottom: -15px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
     margin: 0px;
     font-size: 1rem;
+    width: calc(var(--buttonWidth) / 1.8);
+    height: calc(var(--buttonHeight) - 6px);
+    left: calc(50% - (var(--buttonWidth) / 3.6));
   }
 }
 
@@ -647,7 +635,7 @@
   position: relative;
 }
 
-.copy, .copyMe {
+.copy, .copyS, .copyMe {
   width: var(--buttonWidth);
   height: var(--buttonHeight);
   -webkit-clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
@@ -655,6 +643,22 @@
   background-color: var(--colorArticlesE);
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.copyS {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  background-color: var(--colorArticlesB);
+  width: calc(var(--buttonWidth) / 1.5);
+}
+
+@media (max-width: 480px) {
+  .copyS {
+    left: calc(50% - (var(--buttonWidth) / 3.6));
+    width: calc(var(--buttonWidth) / 1.8);
+    height: calc(var(--buttonHeight) - 6px);
+  }
 }
 
 .copyKont, .copyKontM {
@@ -694,7 +698,7 @@
   transition: all 0.2s ease-out;
 }
 
-.glow {
+.glow, .glowS {
   z-index: -1;
   position: absolute;
   left: 5px;
@@ -703,6 +707,14 @@
           filter: drop-shadow(-6px 6px 2px var(--colorArticlesF));
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+}
+
+@media (max-width: 480px) {
+  .glowS {
+    left: calc(50% - (var(--buttonWidth) / 3.6) - 5px);
+    width: calc(var(--buttonWidth) / 1.8);
+    height: calc(var(--buttonHeight) - 6px);
+  }
 }
 
 .glowKont, .glowKontM {

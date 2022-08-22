@@ -70,6 +70,25 @@
   }
 }
 
+.btnWrapper {
+  width: calc(var(--buttonWidth) / 1.3);
+  height: calc(var(--buttonHeight) + 10px);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+@media (max-width: 480px) {
+  .btnWrapper {
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: calc(var(--buttonWidth) / 1.3);
+    height: calc(var(--buttonHeight) + 8px);
+  }
+}
+
 .card {
   width: var(--cardWidth);
   min-height: var(--cardHeight);
@@ -92,7 +111,8 @@
   -webkit-clip-path: polygon(92% 0%, 100% 8%, 100% 100%, 8% 100%, 0% 92%, 0 0);
           clip-path: polygon(92% 0%, 100% 8%, 100% 100%, 8% 100%, 0% 92%, 0 0);
   position: relative;
-  background-color: var(--colorBgkVD);
+  background-image: url(../../../assets/backgrounds/simple_dashedC.webp);
+  background-repeat: repeat;
 }
 
 .cardShapeA, .cardShapeB {
@@ -117,11 +137,15 @@
   background-color: var(--colorBgkD);
   border-top: 3px double var(--colorArticles);
   border-bottom: 3px double var(--colorArticles);
+  -webkit-box-shadow: -4px 4px 8px 0px rgba(73, 152, 255, 0.65);
+          box-shadow: -4px 4px 8px 0px rgba(73, 152, 255, 0.65);
 }
 
 @media (max-width: 480px) {
   .paragraphWrapper {
     border-bottom: 2px solid var(--colorArticles);
+    -webkit-box-shadow: -3px 3px 5px 0px rgba(73, 152, 255, 0.65);
+            box-shadow: -3px 3px 5px 0px rgba(73, 152, 255, 0.65);
   }
 }
 
@@ -175,16 +199,20 @@
   position: absolute;
   bottom: -19px;
   right: 0;
-  border-bottom: 1px solid var(--colorArticles);
+  border-bottom: 2px solid var(--colorArticles);
   border-left: 2px solid var(--colorArticles);
   -webkit-transform: skew(45deg);
           transform: skew(45deg);
+  -webkit-box-shadow: -6px 7px 8px 0px rgba(73, 152, 255, 0.6);
+          box-shadow: -6px 7px 8px 0px rgba(73, 152, 255, 0.6);
 }
 
 @media (max-width: 480px) {
   .decorA {
     bottom: -9px;
     height: 10px;
+    -webkit-box-shadow: -3px 4px 5px 0px rgba(73, 152, 255, 0.6);
+            box-shadow: -3px 4px 5px 0px rgba(73, 152, 255, 0.6);
   }
 }
 
@@ -193,17 +221,15 @@
   height: 20px;
   background-color: var(--colorBgkD);
   position: absolute;
-  bottom: -18px;
+  bottom: -17px;
   right: 0;
-  border: 5px solid var(--colorArticles);
 }
 
 @media (max-width: 480px) {
   .decorB {
-    bottom: -9px;
+    bottom: -7px;
     width: 10px;
     height: 10px;
-    border: 2px solid var(--colorArticles);
   }
 }
 

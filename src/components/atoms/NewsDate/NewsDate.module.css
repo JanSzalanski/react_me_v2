@@ -31,14 +31,32 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 480px) {
+  .month {
+    font-size: 1rem;
+  }
+}
+
 .year {
   letter-spacing: 1px;
   font-size: 1.4rem;
+}
+
+@media (max-width: 480px) {
+  .year {
+    font-size: 1rem;
+  }
 }
 
 .day {
   letter-spacing: 1px;
   font-size: 1.8rem;
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .day {
+    font-size: 1.4rem;
+  }
 }
 /*# sourceMappingURL=NewsDate.module.css.map */

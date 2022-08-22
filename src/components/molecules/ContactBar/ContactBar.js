@@ -85,7 +85,7 @@ const ContactBar = (props) => {
       <div className={classes.bgkWrap}>
         <div className={bgkClasses.join(' ')} />
         <div className={classes.lines} />
-        <div className={classes.scanline} />
+        {/* <div className={classes.scanline} /> */}
       </div>
       <div className={classes.Top}>
         <h2>Kontakt</h2>
