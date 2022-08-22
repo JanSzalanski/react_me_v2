@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,YAAY;CACtB",
-    "sources": [
-        "InputRList.module.scss"
-    ],
-    "names": [],
-    "file": "InputRList.module.css"
-}

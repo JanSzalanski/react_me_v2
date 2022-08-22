@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react';
 import InputR from '../../atoms/InputR/InputR';
 
-// import classes from './InputRList.module.css';
-
 const InputRList = (props) => {
   return (
     <>

@@ -1,20 +1,11 @@
 import React from 'react';
-import Label from '../../components/atoms/Label/Label';
 import classes from './NewsPage.module.css';
-// import Button from '../../components/atoms/Button/Button';
 import Input from '../../components/atoms/Input/Input';
-// import ButtonIcon from '../../components/atoms/ButtonIcon/ButtonIcon';
-// import Pargraph from '../../components/atoms/Paragraph/Paragraph';
-import Card from '../../components/molecules/Card/Card';
-// import Footer from '../../components/molecules/Footer/Footer';
 import FooterB from '../../components/molecules/FooterB/FooterB';
-// import { Link } from 'react-router-dom';
-// import PerspectiveA from '../../components/organisms/PerspectiveA/PerspectiveA';
 import Background from '../../components/atoms/Background/Background';
 import HeaderB from '../../components/molecules/HeaderB/HeaderB';
-// import ContactBar from '../../components/molecules/ContactBar/ContactBar';
-// import InputR from '../../components/atoms/InputR/InputR';
 import InputRList from '../../components/molecules/InputRList/InputRList';
+import LabelList from '../../components/molecules/LabelList/LabelList';
 
 const DUMMY_NEWS = [
   {
@@ -85,25 +76,7 @@ const NewsPage = (props) => {
       <div className="overflowWrapper">
         <section className={classes.slider}>
           <InputRList items={DUMMY_NEWS}></InputRList>
-          {DUMMY_NEWS.map((record, index) => {
-            return (
-              <>
-                <Label
-                  key={record.title}
-                  htmlFor={`s${index + 1}`}
-                  id={`slide${index + 1}`}
-                  name={`slide${index + 1}`}
-                >
-                  <Card
-                    path={record.path}
-                    date={record.date}
-                    title={record.title}
-                    content={record.content}
-                  ></Card>
-                </Label>
-              </>
-            );
-          })}
+          <LabelList items={DUMMY_NEWS}></LabelList>
         </section>
       </div>
 
