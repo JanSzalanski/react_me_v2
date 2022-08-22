@@ -30,11 +30,6 @@ const Card = ({ className, cardType, date, title, content, path }) => {
             {cardType === 'news' && <div className={classes.decorA} />}
             {cardType === 'news' && <div className={classes.decorB} />}
             {cardType === 'news' && <div className={classes.decorC} />}
-            {cardType === 'news' && (
-              <div className={classes.decorData}>
-                <NewsDate date={date}></NewsDate>
-              </div>
-            )}
             <Paragraph className="card">{content}</Paragraph>
             {/*pamiętaj ta klasa "card" jest w klasach dla Paragraph!*/}
           </div>
@@ -44,6 +39,7 @@ const Card = ({ className, cardType, date, title, content, path }) => {
             </Link>
           )}
         </div>
+        {cardType === 'news' && <NewsDate date={date}></NewsDate>}
       </div>
     </div>
   );

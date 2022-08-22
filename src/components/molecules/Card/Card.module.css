@@ -227,8 +227,6 @@
 
 .decorData {
   position: absolute;
-  bottom: -40px;
-  right: 0px;
   font-family: var(--font-headers);
   color: var(--white);
   font-weight: 100;

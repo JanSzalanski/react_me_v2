@@ -1,33 +1,40 @@
+$width: calc(var(--cardWidth) / 5);
+$height: calc(var(--cardHeight) / 4.7);
+
 .date {
+  font-weight: 100;
   position: absolute;
-  bottom: -6.5rem;
-  right: 0px;
+  top: 5%;
+  right: 5%;
+  font-family: var(--font-headers);
+  // transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  width: 9rem;
-  height: 8rem;
-  border: 1px solid rgba(255, 255, 255, 0.85);
+  width: $width;
+  height: $height;
+  border: 2px solid rgba(255, 255, 255, 0.85);
   background-color: var(--blackB);
   color: var(--white);
-  border-radius: 14px;
+  border-radius: 12px;
   align-items: center;
   justify-content: center;
 }
 
 .month {
-  font-family: 300;
   font-size: 1.2rem;
-  font-weight: bold;
-  &::first-letter {
-    text-transform: uppercase;
-  }
+  // font-weight: bold;
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
 }
 
 .year {
+  letter-spacing: 1px;
   font-size: 1.4rem;
 }
 
 .day {
+  letter-spacing: 1px;
   font-size: 1.8rem;
   font-weight: bold;
 }

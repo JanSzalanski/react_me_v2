@@ -1,7 +1,9 @@
 .date {
+  font-weight: 100;
   position: absolute;
-  bottom: -6.5rem;
-  right: 0px;
+  top: 5%;
+  right: 5%;
+  font-family: var(--font-headers);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,12 +11,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 9rem;
-  height: 8rem;
-  border: 1px solid rgba(255, 255, 255, 0.85);
+  width: calc(var(--cardWidth) / 5);
+  height: calc(var(--cardHeight) / 4.7);
+  border: 2px solid rgba(255, 255, 255, 0.85);
   background-color: var(--blackB);
   color: var(--white);
-  border-radius: 14px;
+  border-radius: 12px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -24,20 +26,18 @@
 }
 
 .month {
-  font-family: 300;
   font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.month::first-letter {
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .year {
+  letter-spacing: 1px;
   font-size: 1.4rem;
 }
 
 .day {
+  letter-spacing: 1px;
   font-size: 1.8rem;
   font-weight: bold;
 }

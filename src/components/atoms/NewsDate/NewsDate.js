@@ -3,7 +3,7 @@ import classes from './NewsDate.module.css';
 
 const NewsDate = (props) => {
   const year = props.date.getFullYear();
-  const month = props.date.toLocaleString('pl-PL', { month: 'long' });
+  const month = props.date.toLocaleString('pl-PL', { month: 'short' });
   const day = props.date.toLocaleString('pl-PL', { day: '2-digit' });
 
   return (
