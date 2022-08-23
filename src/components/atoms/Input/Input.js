@@ -17,6 +17,7 @@ const Input = (props) => {
         type={classes[props.type] || 'text'}
         onChange={props.onChange}
         value={props.value}
+        required={props.required}
         //   onClick={props.onClick}
       />
     </div>

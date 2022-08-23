@@ -25,6 +25,13 @@ const ContactBar = (props) => {
 
   if (!flag) {
     warrning = null;
+  } else if (
+    flag &&
+    enteredName.trim().length === 0 &&
+    enteredEmail.trim().length === 0 &&
+    enteredMessage.trim().length === 0
+  ) {
+    warrning = <h1 className={classes.warning}>Nie podałeś żadnych wymaganych danych</h1>;
   }
 
   const nameChangeHandler = (event) => {
@@ -59,6 +66,14 @@ const ContactBar = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+    if (
+      enteredName.trim().length === 0 &&
+      enteredEmail.trim().length === 0 &&
+      enteredMessage.trim().length === 0
+    ) {
+      setFlag(true);
+      return;
+    }
 
     const formData = {
       name: enteredName,
@@ -126,7 +141,7 @@ const ContactBar = (props) => {
           bgk="contactBgk"
           class="contactWrap"
           className="contact"
-          placeholder="Temat *"
+          placeholder="Temat"
           onChange={titleChangeHandler}
           value={enteredTitle}
         />

@@ -29,7 +29,6 @@ const Card = ({ className, cardType, date, title, content, path }) => {
             <h2 className={classes.title}>{title}</h2>
             {cardType === 'news' && <div className={classes.decorA} />}
             {cardType === 'news' && <div className={classes.decorB} />}
-            {/* {cardType === 'news' && <div className={classes.decorC} />} */}
             <Paragraph className="card">{content}</Paragraph>
             {/*pamiętaj ta klasa "card" jest w klasach dla Paragraph!*/}
           </div>

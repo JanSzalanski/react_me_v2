@@ -18,6 +18,7 @@ const Textarea = (props) => {
         maxLength={props.maxlength}
         onChange={props.onChange}
         value={props.value}
+        required={props.required}
         //   onClick={props.onClick}
       />
     </div>
