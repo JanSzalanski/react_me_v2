@@ -7,54 +7,6 @@ import HeaderB from '../../components/molecules/HeaderB/HeaderB';
 import InputRList from '../../components/molecules/InputRList/InputRList';
 import LabelList from '../../components/molecules/LabelList/LabelList';
 
-const DUMMY_NEWS = [
-  {
-    path: 'a1',
-    date: new Date(2022, 1, 2),
-    title: 'Pierwszy news',
-    content:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestiasearum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderitvoluptatibus minus totam eos accusamus dolores adipisci!',
-  },
-  {
-    path: 'a2',
-    date: new Date(2022, 11, 10),
-    title: 'Drugi news',
-    content:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit',
-  },
-  {
-    path: 'a3',
-    date: new Date(2022, 9, 2),
-    title: 'Trzeci news',
-    content:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam !',
-  },
-  {
-    path: 'a4',
-    date: new Date(2022, 4, 10),
-    title: 'Czwarty news',
-    content: 'To jest troche treści po polsku',
-  },
-  {
-    path: 'a5',
-    date: new Date(2022, 4, 10),
-    title: 'Piąty news',
-    content: 'Coś wyjątkowego sobie sprezentowałem',
-  },
-  {
-    path: 'a6',
-    date: new Date(2022, 10, 1),
-    title: 'Szósty news',
-    content: 'A terz kolejny prezent',
-  },
-  {
-    path: 'a7',
-    date: new Date(2022, 8, 10),
-    title: 'Siódmy news',
-    content: 'Ale z tym zabawy jedno sie zyskuje cos innego traci w tym react',
-  },
-];
-
 const NewsPage = (props) => {
   // const [records, setRecords] = useState(DUMMY_NEWS);
 
@@ -75,8 +27,8 @@ const NewsPage = (props) => {
       <Background />
       <div className="overflowWrapper">
         <section className={classes.slider}>
-          <InputRList items={DUMMY_NEWS}></InputRList>
-          <LabelList items={DUMMY_NEWS}></LabelList>
+          <InputRList items={props.data}></InputRList>
+          <LabelList items={props.data}></LabelList>
         </section>
       </div>
 

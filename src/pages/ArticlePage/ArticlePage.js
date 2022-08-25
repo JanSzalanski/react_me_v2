@@ -6,7 +6,6 @@ import FooterB from '../../components/molecules/FooterB/FooterB';
 import classes from './ArticlePage.module.css';
 import Background from '../../components/atoms/Background/Background';
 import Pargraph from '../../components/atoms/Paragraph/Paragraph';
-// import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 
 const ArticlePage = (props) => {
   return (
@@ -15,6 +14,7 @@ const ArticlePage = (props) => {
       <HeaderB>Tablica z artykułami</HeaderB>
       <Input className="search" placeholder="szukaj" bgk="bgkS"></Input>
       <Background />
+
       <div className="overflowWrapper">
         <Pargraph className="article">
           W tej części "portalu" będę zamieszczał moje artykuły, ale i być może podcasty wideo? Będą

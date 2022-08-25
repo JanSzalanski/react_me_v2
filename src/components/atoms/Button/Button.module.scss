@@ -88,6 +88,12 @@ $btnHeight: 40px;
   }
 }
 
+.secondaryB {
+  @extend .secondary;
+  margin-top: 40px;
+  // position: relative;
+}
+
 .kontakt {
   // position: absolute;
   @extend .button;

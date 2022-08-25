@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './News.module.css';
 import Heading from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
+import NewsDate from '../../atoms/NewsDate/NewsDate';
 
 const News = (props) => {
   return (
@@ -9,6 +10,7 @@ const News = (props) => {
       <div className={props.className || classes.wrapper}>
         <Heading>{props.title}</Heading>
         <Paragraph>{props.content}</Paragraph>
+        <NewsDate date={props.date} />
       </div>
     </>
   );

@@ -4,7 +4,7 @@ import classes from './Card.module.css';
 import Heading from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import NewsDate from '../../atoms/NewsDate/NewsDate';
 
 const Card = ({ className, cardType, date, title, content, path }) => {
@@ -35,9 +35,9 @@ const Card = ({ className, cardType, date, title, content, path }) => {
         </div>
         {cardType === 'news' && (
           <div className={classes.btnWrapper}>
-            <Link className="routeLink" to={`/news/${path}`}>
+            <NavLink className="routeLink" to={`/news/${path}`}>
               <Button type="secondary">Detale</Button>
-            </Link>
+            </NavLink>
           </div>
         )}
         {cardType === 'news' && <NewsDate date={date}></NewsDate>}
