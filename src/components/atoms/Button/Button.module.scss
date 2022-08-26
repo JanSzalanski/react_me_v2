@@ -51,8 +51,8 @@ $btnHeight: 40px;
 .secondary {
   @extend .button;
   position: absolute;
-  left: calc(50% - (var(--buttonWidth) / 3));
-  top: calc(50% - (var(--buttonHeight) / 2));
+  left: calc(50% - (var(--buttonWidth) / 3) + 20px);
+  top: calc(50% - (var(--buttonHeight) / 2) - 20px);
   // transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
@@ -90,7 +90,8 @@ $btnHeight: 40px;
 
 .secondaryB {
   @extend .secondary;
-  margin-top: 40px;
+  top: 3px;
+  left: 11px;
   // position: relative;
 }
 
@@ -159,6 +160,16 @@ $btnHeight: 40px;
   //   height: $btnHeight;
   //   // z-index: 2;
   // }
+}
+
+.buttonSWrapper {
+  width: calc(var(--buttonWidth) / 1.5 + 10px);
+  height: calc(var(--buttonHeight) + 10px);
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  // border: 1px solid red;
+  z-index: 1; //powrócił stary błąd chroma tutaj sprawę rozwiążał podwyższenie z-index hover z przyciksu wpływał na zmiany w wyświetlaniu newsDAte oraz nie respektowanie path i hidden overflov na rogu karty
 }
 
 .copy {

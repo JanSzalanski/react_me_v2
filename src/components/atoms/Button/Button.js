@@ -3,9 +3,9 @@ import classes from './Button.module.css';
 
 const Button = (props) => {
   let cssClasses = [classes[props.type] || classes.button];
-  if (props.type === 'secondary') {
+  if (props.type === 'secondaryB') {
     return (
-      <>
+      <div className={classes.buttonSWrapper}>
         <button
           className={cssClasses.join(' ')}
           type={props.type || 'button'}
@@ -16,7 +16,7 @@ const Button = (props) => {
         <div className={classes.glowS}>
           <div className={classes.copyS}></div>
         </div>
-      </>
+      </div>
     );
   }
 
