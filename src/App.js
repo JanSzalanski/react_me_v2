@@ -16,48 +16,64 @@ const NotFound = React.lazy(() => import('./pages/404/NotFound'));
 const DUMMY_NEWS = [
   {
     path: 'a1',
-    date: new Date(2022, 1, 2),
+    date: new Date(2022, 7, 27),
     title: 'Pierwszy news',
+    short:
+      'Witaj na metawersowym wariancie mojej strony domowej! Witryna ta będzie rozwijana przeze mnie do pełnoprawnego projektu Web. 3.0!',
     content:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestiasearum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderitvoluptatibus minus totam eos accusamus dolores adipisci!',
+      'Stało się... Jesteś na metawersowym wariancie mojej strony domowej. Witrynę postaram się rozwinąć do pełnoprawnego projektu Web. 3.0. Będzie ona agregować technologie klasyczne, jak i te ze świata blockchain. Jeśli umiejętności mi na to pozwolą, dodam także obsługę gogli VR. Jeszcze zanim uda mi się to wszystko wdrożyć, tak strona już teraz korzysta z tej samej technologii co pewnie dobrze Ci znany Netflix! ',
   },
   {
     path: 'a2',
-    date: new Date(2022, 11, 10),
-    title: 'Drugi news',
-    content:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit',
+    date: new Date(2022, 7, 27),
+    title: 'Wersja beta - smutna żaba :(',
+    short:
+      'PS pozostałe "newsy" to na razie tzw. "dummy data" czyli takie tymczasowe dane do operowania treścią — strona ta to jeszcze tak naprawdę wersja beta.',
+    content: '',
   },
   {
     path: 'a3',
-    date: new Date(2022, 9, 2),
-    title: 'Trzeci news',
-    content:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam !',
+    date: new Date(2022, 7, 27),
+    title: 'To wymaga czasu...',
+    short:
+      'Różne rzeczy będą się pojawiać i zmieniać na bieżącą, o czym dowiecie się właśnie z kolejnych rekordów.',
+    content: '',
   },
   {
     path: 'a4',
-    date: new Date(2022, 4, 10),
+    date: new Date(2022, 0, 1),
     title: 'Czwarty news',
-    content: 'To jest troche treści po polsku',
+    short:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit',
+    content:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempore neque recusandae omnis at perspiciatis odit possimus quod asperiores id nesciunt quae, consequatur ipsa veniam esse eveniet iusto corrupti et?',
   },
   {
     path: 'a5',
-    date: new Date(2022, 4, 10),
+    date: new Date(2022, 0, 1),
     title: 'Piąty news',
-    content: 'Coś wyjątkowego sobie sprezentowałem',
+    short:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste!',
+    content:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit. Deserunt tempore neque recusandae omnis at perspiciatis odit possimus quod asperiores id nesciunt quae, consequatur ipsa veniam esse eveniet iusto corrupti et?',
   },
   {
     path: 'a6',
-    date: new Date(2022, 10, 1),
+    date: new Date(2022, 0, 1),
     title: 'Szósty news',
-    content: 'A terz kolejny prezent',
+    short:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste!',
+    content:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit. Deserunt tempore neque recusandae omnis at perspiciatis odit possimus quod asperiores id nesciunt quae, consequatur ipsa veniam esse eveniet iusto corrupti et?',
   },
   {
     path: 'a7',
-    date: new Date(2022, 8, 10),
+    date: new Date(2022, 0, 1),
     title: 'Siódmy news',
-    content: 'Ale z tym zabawy jedno sie zyskuje cos innego traci w tym react',
+    short:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste!',
+    content:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit. Deserunt tempore neque recusandae omnis at perspiciatis odit possimus quod asperiores id nesciunt quae, consequatur ipsa veniam esse eveniet iusto corrupti et?',
   },
 ];
 

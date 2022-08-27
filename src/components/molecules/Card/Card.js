@@ -7,7 +7,7 @@ import Button from '../../atoms/Button/Button';
 import { NavLink } from 'react-router-dom';
 import NewsDate from '../../atoms/NewsDate/NewsDate';
 
-const Card = ({ className, cardType, date, title, content, path }) => {
+const Card = ({ className, cardType, date, title, short, content, path }) => {
   const withFlex = classes.wrapper + ' flex';
 
   return (
@@ -29,11 +29,11 @@ const Card = ({ className, cardType, date, title, content, path }) => {
             <h2 className={classes.title}>{title}</h2>
             {cardType === 'news' && <div className={classes.decorA} />}
             {cardType === 'news' && <div className={classes.decorB} />}
-            <Paragraph className="card">{content}</Paragraph>
+            <Paragraph className="card">{short}</Paragraph>
             {/*pamiętaj ta klasa "card" jest w klasach dla Paragraph!*/}
           </div>
         </div>
-        {cardType === 'news' && (
+        {cardType === 'news' && content && (
           <div className={classes.btnWrapper}>
             <NavLink className="routeLink" to={`/news/${path}`}>
               <Button type="secondaryB">Detale</Button>

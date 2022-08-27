@@ -644,8 +644,8 @@
   width: calc(var(--buttonWidth) / 1.5 + 10px);
   height: calc(var(--buttonHeight) + 10px);
   position: absolute;
-  bottom: 12px;
-  left: 12px;
+  bottom: 5px;
+  left: 5px;
   z-index: 1;
 }
 

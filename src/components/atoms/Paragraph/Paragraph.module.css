@@ -1,6 +1,8 @@
 .paragraph, .card, .article {
   text-align: left;
-  font-size: var(--fontSizeS);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.1rem;
   color: var(--white);
   padding: 15px;
 }

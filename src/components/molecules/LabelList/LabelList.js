@@ -18,6 +18,7 @@ const LabelList = (props) => {
                 path={record.path}
                 date={record.date}
                 title={record.title}
+                short={record.short}
                 content={record.content}
               ></Card>
             </Label>
