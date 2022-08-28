@@ -21,7 +21,7 @@ const DetailsPage = (props) => {
       <div className={classes[props.type] || classes.news}>
         <News title={singleNews.title} content={singleNews.content} date={singleNews.date}></News>
         <Link className="routeLink" to="/">
-          <Button type="button">powrót</Button>
+          <Button type="buttonDetails">powrót</Button>
         </Link>
       </div>
     </>

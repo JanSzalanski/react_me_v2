@@ -1,4 +1,4 @@
-.paragraph, .card, .article {
+.paragraph, .card, .article, .details {
   text-align: left;
   font-size: 1.6rem;
   font-weight: 500;
@@ -71,5 +71,10 @@
     font-size: var(--fontSizeXS);
     padding: 20px;
   }
+}
+
+.details {
+  padding-left: 50px;
+  padding-right: 345px;
 }
 /*# sourceMappingURL=Paragraph.module.css.map */

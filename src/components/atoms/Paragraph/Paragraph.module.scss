@@ -85,3 +85,9 @@
 
   // text-transform: uppercase;
 }
+
+.details {
+  @extend .paragraph;
+  padding-left: 50px;
+  padding-right: 345px;
+}

@@ -8,8 +8,8 @@ const News = (props) => {
   return (
     <>
       <div className={props.className || classes.wrapper}>
-        <Heading>{props.title}</Heading>
-        <Paragraph>{props.content}</Paragraph>
+        <Heading className="detailPage">{props.title}</Heading>
+        <Paragraph className="details">{props.content}</Paragraph>
         <NewsDate date={props.date} />
       </div>
     </>

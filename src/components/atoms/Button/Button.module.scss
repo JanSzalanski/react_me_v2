@@ -172,6 +172,23 @@ $btnHeight: 40px;
   z-index: 1; //powrócił stary błąd chroma tutaj sprawę rozwiążał podwyższenie z-index hover z przyciksu wpływał na zmiany w wyświetlaniu newsDAte oraz nie respektowanie path i hidden overflov na rogu karty
 }
 
+.buttonDetails {
+  @extend .button;
+  position: absolute;
+  top: 0px;
+  left: 11px;
+  margin: 0;
+}
+
+.buttonDWrapper {
+  @extend .buttonSWrapper;
+  width: var(--buttonWidth);
+  height: var(--buttonHeight);
+  bottom: 50px;
+  left: 320px;
+  // border: 1px solid red;
+}
+
 .copy {
   width: var(--buttonWidth);
   height: var(--buttonHeight);

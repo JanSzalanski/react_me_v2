@@ -20,6 +20,19 @@ const Button = (props) => {
     );
   }
 
+  if (props.type === 'buttonDetails') {
+    return (
+      <div className={classes.buttonDWrapper}>
+        <button className={classes[props.type]} onClick={props.onClick}>
+          <p>{props.children}</p>
+        </button>
+        <div className={classes.glow}>
+          <div className={classes.copy}></div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className={classes.buttonWrapper}>
       <button

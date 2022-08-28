@@ -449,7 +449,7 @@
   }
 }
 
-.button, .secondary, .secondaryB, .kontakt, .kontaktM, .wysylka, .menu {
+.button, .secondary, .secondaryB, .kontakt, .kontaktM, .wysylka, .buttonDetails, .menu {
   margin: 10px;
   padding-right: 10px;
   display: -webkit-box;
@@ -487,7 +487,7 @@
           backdrop-filter: blur(2px);
 }
 
-.button:hover, .secondary:hover, .secondaryB:hover, .kontakt:hover, .kontaktM:hover, .wysylka:hover, .menu:hover {
+.button:hover, .secondary:hover, .secondaryB:hover, .kontakt:hover, .kontaktM:hover, .wysylka:hover, .buttonDetails:hover, .menu:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -498,7 +498,7 @@
           transform: translate(-3px, 4px);
 }
 
-.button:hover + .glow, .secondary:hover + .glow, .secondaryB:hover + .glow, .kontakt:hover + .glow, .kontaktM:hover + .glow, .wysylka:hover + .glow, .menu:hover + .glow, .button:hover + .glowS, .secondary:hover + .glowS, .secondaryB:hover + .glowS, .kontakt:hover + .glowS, .kontaktM:hover + .glowS, .wysylka:hover + .glowS, .menu:hover + .glowS {
+.button:hover + .glow, .secondary:hover + .glow, .secondaryB:hover + .glow, .kontakt:hover + .glow, .kontaktM:hover + .glow, .wysylka:hover + .glow, .buttonDetails:hover + .glow, .menu:hover + .glow, .button:hover + .glowS, .secondary:hover + .glowS, .secondaryB:hover + .glowS, .kontakt:hover + .glowS, .kontaktM:hover + .glowS, .wysylka:hover + .glowS, .buttonDetails:hover + .glowS, .menu:hover + .glowS {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
           filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
@@ -640,13 +640,27 @@
   position: relative;
 }
 
-.buttonSWrapper {
+.buttonSWrapper, .buttonDWrapper {
   width: calc(var(--buttonWidth) / 1.5 + 10px);
   height: calc(var(--buttonHeight) + 10px);
   position: absolute;
   bottom: 5px;
   left: 5px;
   z-index: 1;
+}
+
+.buttonDetails {
+  position: absolute;
+  top: 0px;
+  left: 11px;
+  margin: 0;
+}
+
+.buttonDWrapper {
+  width: var(--buttonWidth);
+  height: var(--buttonHeight);
+  bottom: 50px;
+  left: 320px;
 }
 
 .copy, .copyS, .copyMe {
