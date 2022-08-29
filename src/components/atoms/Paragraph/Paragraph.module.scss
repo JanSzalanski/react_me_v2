@@ -90,4 +90,9 @@
   @extend .paragraph;
   padding-left: 50px;
   padding-right: 345px;
+
+  @media (max-width: 480px) {
+    padding: 0px;
+    font-size: 1.4rem;
+  }
 }

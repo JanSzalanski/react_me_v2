@@ -77,4 +77,11 @@
   padding-left: 50px;
   padding-right: 345px;
 }
+
+@media (max-width: 480px) {
+  .details {
+    padding: 0px;
+    font-size: 1.4rem;
+  }
+}
 /*# sourceMappingURL=Paragraph.module.css.map */
