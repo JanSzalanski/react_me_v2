@@ -10,7 +10,7 @@ const News = (props) => {
       <div className={props.className || classes.wrapper}>
         <Heading className="detailPage">{props.title}</Heading>
         <Paragraph className="details">{props.content}</Paragraph>
-        <NewsDate date={props.date} />
+        <NewsDate className="details" date={props.date} />
       </div>
     </>
   );

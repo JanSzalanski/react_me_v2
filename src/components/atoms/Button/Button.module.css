@@ -663,6 +663,15 @@
   left: 320px;
 }
 
+@media (max-width: 480px) {
+  .buttonDWrapper {
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 .copy, .copyS, .copyMe {
   width: var(--buttonWidth);
   height: var(--buttonHeight);

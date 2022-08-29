@@ -7,7 +7,7 @@ const NewsDate = (props) => {
   const day = props.date.toLocaleString('pl-PL', { day: '2-digit' });
 
   return (
-    <div className={classes.date}>
+    <div className={classes[props.className] || classes.date}>
       <div className={classes.day}>{day}</div>
       <div className={classes.month}>{month}</div>
       <div className={classes.year}>{year}</div>

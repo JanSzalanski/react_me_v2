@@ -14,6 +14,7 @@
 @media (max-width: 1440px) {
   .card {
     font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 }
 
@@ -37,7 +38,8 @@
 
 @media (max-width: 480px) {
   .card {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -80,6 +82,7 @@
 
 @media (max-width: 480px) {
   .details {
+    margin: 0;
     padding: 0px;
     font-size: 1.4rem;
   }

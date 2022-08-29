@@ -4,4 +4,10 @@
   padding: 50px;
   padding-left: 100px;
 }
+
+@media (max-width: 480px) {
+  .news {
+    padding: 50px;
+  }
+}
 /*# sourceMappingURL=DetailsPage.module.css.map */
