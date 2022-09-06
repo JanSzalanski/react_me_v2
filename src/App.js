@@ -41,12 +41,11 @@ const DUMMY_NEWS = [
   },
   {
     path: 'a4',
-    date: new Date(2022, 0, 1),
-    title: 'Czwarty news',
-    short:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit',
+    date: new Date(2022, 8, 6),
+    title: 'NFT nie zapomniałem o nim',
+    short: 'Dodałem główną grafikę do działu NFT. Oczywiście wszystko moja produkcja.',
     content:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempore neque recusandae omnis at perspiciatis odit possimus quod asperiores id nesciunt quae, consequatur ipsa veniam esse eveniet iusto corrupti et?',
+      'Dodałem główną grafikę do działu NFT. Taki efekt "chodził" za mną już od dawna - myślałem to będzie pasować do koncepcji blockchain, a zarazem nie wstawię oklepanego efektu pikseli. Minimalistyczny styl grafik w pikselach jest fajny, ale dla mnie zbyt powszechny wśród stron tego typu, a ja nie przepadam za nazbyt popularnymi rozwiązaniami. Dlatego odkopałem spośród sprzętu dawno nieużywanego mój tablecik - dobrze, że działał. Uruchomiłem Photoshop i do dzieła. Tak więc grafika hand made, a nie tam jakieś generowane przez algorytm piksele. Choć to stwierdzenie może zaskakiwać — bo czy cała ta koncepcja NFT to nie tylko skok na kasę po linii najmniejszego oporu?',
   },
   {
     path: 'a5',

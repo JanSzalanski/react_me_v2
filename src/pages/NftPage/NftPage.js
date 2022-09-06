@@ -12,6 +12,10 @@ const NftPage = (props) => {
       <HeaderB>Słów kilka o NFT...</HeaderB>
       <Input className="search" placeholder="szukaj" bgk="bgkS"></Input>
       <Background />
+      <div className={classes.wrapperGraphic}>
+        <div className={classes.nftGraphic} />
+      </div>
+
       <FooterB>
         Jan Szałański <br />
         Polityka prywatności
