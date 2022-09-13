@@ -4,7 +4,10 @@ import Input from '../../components/atoms/Input/Input';
 import FooterB from '../../components/molecules/FooterB/FooterB';
 import classes from './PeoplePage.module.css';
 import Background from '../../components/atoms/Background/Background';
-import Pargraph from '../../components/atoms/Paragraph/Paragraph';
+// import Pargraph from '../../components/atoms/Paragraph/Paragraph';
+import CommentForm from '../../components/comments/CommentForm/CommentForm';
+import ZoneTop from '../../components/UI/Zones/ZoneTop';
+import ZoneBottom from '../../components/UI/Zones/ZoneBottom';
 // import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 
 const PeoplePage = (props) => {
@@ -15,11 +18,16 @@ const PeoplePage = (props) => {
       <Input className="search" placeholder="szukaj" bgk="bgkS"></Input>
       <Background />
       <div className="overflowWrapper">
-        <Pargraph className="article">
-          W centrum mimo rozwoju całej otaczającej nas technologii dalej pozostaje człowiek. Odnoszę
-          nawet wrażenie, że w niektórych dziedzinach nawet tych stricte informatycznych ten trend
-          nawet się nasila. Dlatego ten dział będzie dla ludzi i o ludziach.
-        </Pargraph>
+        <ZoneTop>
+          <p>
+            W centrum mimo rozwoju całej otaczającej nas technologii dalej pozostaje człowiek.
+            Odnoszę nawet wrażenie, że w niektórych dziedzinach nawet tych stricte informatycznych
+            ten trend nawet się nasila. Dlatego ten dział będzie dla ludzi i o ludziach.
+          </p>
+        </ZoneTop>
+        <ZoneBottom>
+          <CommentForm />
+        </ZoneBottom>
       </div>
 
       <FooterB>

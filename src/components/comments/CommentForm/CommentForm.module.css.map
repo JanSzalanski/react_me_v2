@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,SAAS;EACjB,SAAS,EAAE,GAAG;CACf;;AAED,AAAA,YAAY,CAAC;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;CACpB",
+    "sources": [
+        "CommentForm.module.scss"
+    ],
+    "names": [],
+    "file": "CommentForm.module.css"
+}

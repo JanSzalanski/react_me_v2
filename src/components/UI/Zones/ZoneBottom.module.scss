@@ -1,0 +1,30 @@
+.zoneBottom {
+  text-align: left;
+  line-height: 2.1rem;
+  color: var(--white);
+  display: block;
+  width: calc(100% - 40px);
+  padding: 30px;
+  position: absolute;
+  font-size: 1.8rem;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: var(--colorArticlesE);
+  border: 1px solid var(--colorArticles);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+
+  @media (max-width: 1366px) {
+    font-size: var(--fontSizeS);
+  }
+
+  @media (max-width: 1024px) {
+    font-size: var(--fontSizeXS);
+    padding: 20px;
+  }
+
+  // text-transform: uppercase;
+}
