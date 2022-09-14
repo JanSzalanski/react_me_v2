@@ -8,6 +8,7 @@ const Textarea = (props) => {
         <div className={classes[props.bgk] || classes.background}></div>
       </div>
       <textarea
+        type={props.type}
         className={classes[props.className] || classes.textarea}
         placeholder={props.placeholder || 'textarea'}
         rows={props.rows}

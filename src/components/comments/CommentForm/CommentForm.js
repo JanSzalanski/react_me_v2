@@ -11,36 +11,38 @@ const CommentForm = React.memo((props) => {
   };
   return (
     <section className={classes.wrapper}>
-      <form onSubmit={submitHandler}>
-        <div className={classes.formControl}>
-          <Input
-            type="text"
-            name="imie"
-            maxlength="30"
-            tabindex="1"
-            autocomplete="off"
-            bgk="contactBgk"
-            class="contactWrap"
-            className="contact"
-            placeholder="Imię"
-          />
+      <form onSubmit={submitHandler} className={classes.form}>
+        <div className={classes.leftWrap}>
+          <div className={classes.formControl}>
+            <Input
+              type="text"
+              name="imie"
+              maxlength="30"
+              tabindex="1"
+              autocomplete="off"
+              bgk="contactBgk"
+              class="contactWrap"
+              className="contact"
+              placeholder="Imię"
+            />
+          </div>
+
+          <div className={classes.formActions}>
+            <Button type="submit">Dodaj komentarz</Button>
+          </div>
         </div>
-        <div className={classes.formControl}>
+        <div className={classes.rightWrap}>
           <Textarea
-            type="textarea"
             name="message"
             maxlength="600"
             tabindex="4"
             cols="80"
             rows="3"
-            bgk="contactBgk"
-            class="contactWrap"
-            className="contact"
+            bgk="commentBgk"
+            class="commentWrap"
+            className="comment"
             placeholder="Treść komentarza"
           />
-        </div>
-        <div className={classes.formActions}>
-          <Button type="submit">Dodaj komentarz</Button>
         </div>
       </form>
     </section>

@@ -79,3 +79,24 @@
   clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
   width: calc(var(--inputWidth) + 62px);
 }
+
+.comment {
+  @extend .textarea;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.commentWrap {
+  @extend .wrapperAll;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid yellowgreen;
+}
+
+.commentBgk {
+  @extend .textarea;
+  width: 502px;
+  height: calc(var(--inputHeight) * 2 + 2px);
+}
