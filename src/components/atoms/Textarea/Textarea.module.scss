@@ -1,10 +1,9 @@
 .wrapperAll {
-  position: absolute;
-  left: 24%;
-  top: 11.7%;
+  // position: absolute;
+  // left: 24%;
+  // top: 11.7%;
   width: calc(var(--inputWidth) + 24px);
   height: calc(5.5 * var(--inputHeight) + 4px);
-
   // border: 1px solid whitesmoke;
 }
 
@@ -50,9 +49,6 @@
     letter-spacing: 1px;
     color: var(--colorGrey100);
     line-height: var(--inputHeight);
-    // width: 100%;
-    // height: 100%;
-    // border: 1px solid black;
   }
 
   &:focus {
@@ -82,21 +78,21 @@
 
 .comment {
   @extend .textarea;
-  position: relative;
-  width: 100%;
-  height: 100%;
+  // position: relative;
+  // width: 100%;
+  // height: 100%;
 }
 
 .commentWrap {
   @extend .wrapperAll;
-  position: relative;
-  width: 100%;
-  height: 100%;
+  // position: relative;
+  // width: 100%;
+  // height: 100%;
   border: 1px solid yellowgreen;
 }
 
 .commentBgk {
-  @extend .textarea;
-  width: 502px;
-  height: calc(var(--inputHeight) * 2 + 2px);
+  @extend .background;
+  // width: 502px;
+  // height: calc(var(--inputHeight) * 2 + 2px);
 }

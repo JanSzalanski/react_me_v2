@@ -1,7 +1,4 @@
 .wrapperAll, .contactWrap, .commentWrap {
-  position: absolute;
-  left: 24%;
-  top: 11.7%;
   width: calc(var(--inputWidth) + 24px);
   height: calc(5.5 * var(--inputHeight) + 4px);
 }
@@ -14,7 +11,7 @@
           filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
 }
 
-.background, .contactBgk {
+.background, .contactBgk, .commentBgk {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -27,7 +24,7 @@
           clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
 }
 
-.textarea, .contact, .comment, .commentBgk {
+.textarea, .contact, .comment {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -49,7 +46,7 @@
   letter-spacing: 1px;
 }
 
-.textarea::-webkit-input-placeholder, .contact::-webkit-input-placeholder, .comment::-webkit-input-placeholder, .commentBgk::-webkit-input-placeholder {
+.textarea::-webkit-input-placeholder, .contact::-webkit-input-placeholder, .comment::-webkit-input-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -58,7 +55,7 @@
   line-height: var(--inputHeight);
 }
 
-.textarea:-ms-input-placeholder, .contact:-ms-input-placeholder, .comment:-ms-input-placeholder, .commentBgk:-ms-input-placeholder {
+.textarea:-ms-input-placeholder, .contact:-ms-input-placeholder, .comment:-ms-input-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -67,7 +64,7 @@
   line-height: var(--inputHeight);
 }
 
-.textarea::-ms-input-placeholder, .contact::-ms-input-placeholder, .comment::-ms-input-placeholder, .commentBgk::-ms-input-placeholder {
+.textarea::-ms-input-placeholder, .contact::-ms-input-placeholder, .comment::-ms-input-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -76,7 +73,7 @@
   line-height: var(--inputHeight);
 }
 
-.textarea::placeholder, .contact::placeholder, .comment::placeholder, .commentBgk::placeholder {
+.textarea::placeholder, .contact::placeholder, .comment::placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -85,7 +82,7 @@
   line-height: var(--inputHeight);
 }
 
-.textarea:focus, .contact:focus, .comment:focus, .commentBgk:focus {
+.textarea:focus, .contact:focus, .comment:focus {
   background-color: var(--white);
 }
 
@@ -108,21 +105,7 @@
   width: calc(var(--inputWidth) + 62px);
 }
 
-.comment {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
 .commentWrap {
-  position: relative;
-  width: 100%;
-  height: 100%;
   border: 1px solid yellowgreen;
-}
-
-.commentBgk {
-  width: 502px;
-  height: calc(var(--inputHeight) * 2 + 2px);
 }
 /*# sourceMappingURL=Textarea.module.css.map */

@@ -33,6 +33,7 @@ const CommentForm = React.memo((props) => {
         </div>
         <div className={classes.rightWrap}>
           <Textarea
+            type="textarea"
             name="message"
             maxlength="600"
             tabindex="4"
