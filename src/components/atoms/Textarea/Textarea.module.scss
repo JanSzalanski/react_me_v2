@@ -1,9 +1,8 @@
 .wrapperAll {
-  // position: absolute;
-  // left: 24%;
-  // top: 11.7%;
-  width: calc(var(--inputWidth) + 24px);
-  height: calc(5.5 * var(--inputHeight) + 4px);
+  position: relative;
+  height: calc(var(--inputHeight) * 5.5);
+  width: calc(var(--inputWidth) + 64px);
+
   // border: 1px solid whitesmoke;
 }
 
@@ -19,23 +18,23 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: calc(5.5 * var(--inputHeight) + 2px);
-  width: calc(var(--inputWidth) + 22px);
+  height: calc(100% + 2px);
+  width: calc(100% + 2px);
   background-color: var(--colorArticles);
-  clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+  // clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+  clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
 }
 
 .textarea {
   position: absolute;
   left: 50%;
   top: 50%;
+  height: 100%;
+  width: 100%;
   transform: translate(-50%, -50%);
-  height: calc(var(--inputHeight) * 5.5);
-  min-width: var(--inputWidth);
-  width: calc(var(--inputWidth) + 20px);
   padding: 15px 30px;
   font-size: var(--fontSizeM);
-  clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+  clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
   border: none;
   appearance: none;
   outline: none;
@@ -56,43 +55,19 @@
   }
 }
 
-.contact {
-  @extend .textarea;
-  clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
-  width: calc(var(--inputWidth) + 60px);
-}
-
-.contactWrap {
-  @extend .wrapperAll;
-  position: relative;
-  left: 0;
-  top: 0;
-  width: calc(var(--inputWidth) + 64px);
-}
-
-.contactBgk {
-  @extend .background;
-  clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
-  width: calc(var(--inputWidth) + 62px);
-}
-
 .comment {
   @extend .textarea;
-  // position: relative;
-  // width: 100%;
-  // height: 100%;
+
+  clip-path: polygon(0% 10%, 2.5% 0%, 100% 0%, 100% 90%, 97.5% 100%, 0 100%);
 }
 
 .commentWrap {
   @extend .wrapperAll;
-  // position: relative;
-  // width: 100%;
-  // height: 100%;
-  border: 1px solid yellowgreen;
+  height: calc(var(--inputHeight) * 2.5);
+  width: 100%;
 }
 
 .commentBgk {
   @extend .background;
-  // width: 502px;
-  // height: calc(var(--inputHeight) * 2 + 2px);
+  clip-path: polygon(0% 10%, 2.5% 0%, 100% 0%, 100% 90%, 97.5% 100%, 0 100%);
 }

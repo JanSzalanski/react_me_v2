@@ -4,7 +4,7 @@
   color: var(--white);
   display: block;
   width: calc(100% - 40px);
-  padding: 30px;
+  padding: 10px;
   position: absolute;
   font-size: 1.8rem;
   bottom: 20px;
@@ -29,7 +29,6 @@
 @media (max-width: 1024px) {
   .zoneBottom {
     font-size: var(--fontSizeXS);
-    padding: 20px;
   }
 }
 /*# sourceMappingURL=ZoneBottom.module.css.map */

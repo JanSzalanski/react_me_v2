@@ -1,6 +1,7 @@
-.wrapperAll, .contactWrap, .commentWrap {
-  width: calc(var(--inputWidth) + 24px);
-  height: calc(5.5 * var(--inputHeight) + 4px);
+.wrapperAll, .commentWrap {
+  position: relative;
+  height: calc(var(--inputHeight) * 5.5);
+  width: calc(var(--inputWidth) + 64px);
 }
 
 .backWrapper {
@@ -11,32 +12,31 @@
           filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
 }
 
-.background, .contactBgk, .commentBgk {
+.background, .commentBgk {
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: calc(5.5 * var(--inputHeight) + 2px);
-  width: calc(var(--inputWidth) + 22px);
+  height: calc(100% + 2px);
+  width: calc(100% + 2px);
   background-color: var(--colorArticles);
-  -webkit-clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
-          clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+  -webkit-clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
+          clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
 }
 
-.textarea, .contact, .comment {
+.textarea, .comment {
   position: absolute;
   left: 50%;
   top: 50%;
+  height: 100%;
+  width: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: calc(var(--inputHeight) * 5.5);
-  min-width: var(--inputWidth);
-  width: calc(var(--inputWidth) + 20px);
   padding: 15px 30px;
   font-size: var(--fontSizeM);
-  -webkit-clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
-          clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
+  -webkit-clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
+          clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
   border: none;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -46,7 +46,7 @@
   letter-spacing: 1px;
 }
 
-.textarea::-webkit-input-placeholder, .contact::-webkit-input-placeholder, .comment::-webkit-input-placeholder {
+.textarea::-webkit-input-placeholder, .comment::-webkit-input-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -55,7 +55,7 @@
   line-height: var(--inputHeight);
 }
 
-.textarea:-ms-input-placeholder, .contact:-ms-input-placeholder, .comment:-ms-input-placeholder {
+.textarea:-ms-input-placeholder, .comment:-ms-input-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -64,7 +64,7 @@
   line-height: var(--inputHeight);
 }
 
-.textarea::-ms-input-placeholder, .contact::-ms-input-placeholder, .comment::-ms-input-placeholder {
+.textarea::-ms-input-placeholder, .comment::-ms-input-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -73,7 +73,7 @@
   line-height: var(--inputHeight);
 }
 
-.textarea::placeholder, .contact::placeholder, .comment::placeholder {
+.textarea::placeholder, .comment::placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -82,30 +82,22 @@
   line-height: var(--inputHeight);
 }
 
-.textarea:focus, .contact:focus, .comment:focus {
+.textarea:focus, .comment:focus {
   background-color: var(--white);
 }
 
-.contact {
-  -webkit-clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
-          clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
-  width: calc(var(--inputWidth) + 60px);
-}
-
-.contactWrap {
-  position: relative;
-  left: 0;
-  top: 0;
-  width: calc(var(--inputWidth) + 64px);
-}
-
-.contactBgk {
-  -webkit-clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
-          clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
-  width: calc(var(--inputWidth) + 62px);
+.comment {
+  -webkit-clip-path: polygon(0% 10%, 2.5% 0%, 100% 0%, 100% 90%, 97.5% 100%, 0 100%);
+          clip-path: polygon(0% 10%, 2.5% 0%, 100% 0%, 100% 90%, 97.5% 100%, 0 100%);
 }
 
 .commentWrap {
-  border: 1px solid yellowgreen;
+  height: calc(var(--inputHeight) * 2.5);
+  width: 100%;
+}
+
+.commentBgk {
+  -webkit-clip-path: polygon(0% 10%, 2.5% 0%, 100% 0%, 100% 90%, 97.5% 100%, 0 100%);
+          clip-path: polygon(0% 10%, 2.5% 0%, 100% 0%, 100% 90%, 97.5% 100%, 0 100%);
 }
 /*# sourceMappingURL=Textarea.module.css.map */

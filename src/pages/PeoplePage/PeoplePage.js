@@ -15,7 +15,7 @@ const PeoplePage = (props) => {
     <div className={classes[props.type] || 'page'}>
       <div className="overlay"></div>
       <HeaderB>Strona o ludziach</HeaderB>
-      <Input className="search" placeholder="szukaj" bgk="bgkS"></Input>
+      <Input className="search" placeholder="szukaj" bgk="bgkS" tabindex="14"></Input>
       <Background />
       <div className="overflowWrapper">
         <ZoneTop>

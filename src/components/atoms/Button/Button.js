@@ -5,7 +5,7 @@ const Button = (props) => {
   let cssClasses = [classes[props.type] || classes.button];
   if (props.type === 'secondaryB') {
     return (
-      <div className={classes.buttonSWrapper}>
+      <div className={classes.buttonSWrapper} tabIndex={props.tabindex}>
         <button
           className={cssClasses.join(' ')}
           type={props.type || 'button'}
@@ -22,7 +22,7 @@ const Button = (props) => {
 
   if (props.type === 'buttonDetails') {
     return (
-      <div className={classes.buttonDWrapper}>
+      <div className={classes.buttonDWrapper} tabIndex={props.tabindex}>
         <button className={classes[props.type]} onClick={props.onClick}>
           <p>{props.children}</p>
         </button>
@@ -34,7 +34,7 @@ const Button = (props) => {
   }
 
   return (
-    <div className={classes.buttonWrapper}>
+    <div className={classes.buttonWrapper} tabIndex={props.tabindex}>
       <button
         className={cssClasses.join(' ')}
         type={props.type || 'button'}

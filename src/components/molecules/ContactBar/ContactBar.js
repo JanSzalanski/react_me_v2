@@ -150,18 +150,18 @@ const ContactBar = (props) => {
           name="message"
           maxlength="600"
           tabindex="4"
-          cols="80"
-          rows="5"
-          bgk="contactBgk"
-          class="contactWrap"
-          className="contact"
+          // bgk="contactBgk"
+          // wrap="contactWrap"
+          // className="contact"
           placeholder="Treść wiadomości *"
           onChange={messageChangeHandler}
           value={enteredMessage}
         />
         {warrning}
         <div className={classes.btnWrapperC}>
-          <Button type="submit">Wyślij</Button>
+          <Button tabindex="5" type="submit">
+            Wyślij
+          </Button>
         </div>
       </form>
 
@@ -180,7 +180,7 @@ const ContactBar = (props) => {
       <div className={classes.line9} />
       <div className={classes.line10} />
       <div className={classes.btnWrapper}>
-        <Button type="kontakt" onClick={kontaktHandler}>
+        <Button tabindex="6" type="kontakt" onClick={kontaktHandler}>
           Kontakt
         </Button>
       </div>

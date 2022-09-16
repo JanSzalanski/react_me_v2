@@ -129,7 +129,6 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: var(--inputHeight);
-  min-width: var(--inputWidth);
   width: calc(var(--inputWidth) + 20px);
   padding: 15px 30px;
   font-size: var(--fontSizeM);
@@ -240,11 +239,18 @@
   width: calc(var(--inputWidth) + 60px);
 }
 
+@media (max-width: 480px) {
+  .contact {
+    display: block;
+  }
+}
+
 .contactWrap {
   position: relative;
   left: 0;
   top: 0;
   width: calc(var(--inputWidth) + 64px);
+  height: calc(var(--inputHeight) + 4px);
 }
 
 .contactBgk {

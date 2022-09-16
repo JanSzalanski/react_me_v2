@@ -16,19 +16,19 @@
           align-items: center;
 }
 
-.formActions {
+.leftWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.leftWrap {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   border: 1px solid red;
   width: 20%;
   height: 100%;
@@ -38,5 +38,6 @@
   border: 1px solid red;
   width: 80%;
   height: 100%;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=CommentForm.module.css.map */
