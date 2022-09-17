@@ -33,6 +33,19 @@ const Button = (props) => {
     );
   }
 
+  if (props.type === 'submit' && props.className === 'comment') {
+    return (
+      <div className={classes.buttonCWrapper} tabIndex={props.tabindex}>
+        <button type={props.type} className={classes[props.className]} onClick={props.onClick}>
+          <p>{props.children}</p>
+        </button>
+        <div className={classes.glowComm}>
+          <div className={classes.copyComm}></div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className={classes.buttonWrapper} tabIndex={props.tabindex}>
       <button

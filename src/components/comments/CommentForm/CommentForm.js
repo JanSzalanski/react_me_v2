@@ -19,13 +19,13 @@ const CommentForm = React.memo((props) => {
             maxlength="30"
             tabindex="7"
             autocomplete="off"
-            bgk="contactBgk"
-            class="contactWrap"
-            className="contact"
+            bgk="commentBgk"
+            class="commentWrap"
+            className="comment"
             placeholder="Imię"
           />
 
-          <Button tabindex="9" type="submit">
+          <Button tabindex="9" type="submit" className="comment">
             Dodaj komentarz
           </Button>
         </div>

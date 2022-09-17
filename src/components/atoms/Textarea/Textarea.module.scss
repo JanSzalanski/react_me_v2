@@ -26,6 +26,7 @@
 }
 
 .textarea {
+  resize: none;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -57,17 +58,16 @@
 
 .comment {
   @extend .textarea;
-
-  clip-path: polygon(0% 10%, 2.5% 0%, 100% 0%, 100% 90%, 97.5% 100%, 0 100%);
+  clip-path: polygon(0 0, 98% 0, 100% 15%, 100% 85%, 98% 100%, 0 100%);
 }
 
 .commentWrap {
   @extend .wrapperAll;
-  height: calc(var(--inputHeight) * 2.5);
+  height: 100%;
   width: 100%;
 }
 
 .commentBgk {
   @extend .background;
-  clip-path: polygon(0% 10%, 2.5% 0%, 100% 0%, 100% 90%, 97.5% 100%, 0 100%);
+  clip-path: polygon(0 0, 98% 0, 100% 15%, 100% 85%, 98% 100%, 0 100%);
 }
