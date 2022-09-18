@@ -81,7 +81,7 @@ const Button = (props) => {
       )}
 
       {props.type === 'menu' && (
-        <div className={classes.glow}>
+        <div className={classes.glowMe}>
           <div className={classes.copyMe}></div>
         </div>
       )}

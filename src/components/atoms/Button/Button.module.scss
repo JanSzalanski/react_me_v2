@@ -40,6 +40,10 @@ $btnHeight: 40px;
   filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
 
+.button:hover + .glowComm {
+  filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
+}
+
 .kontakt:hover + .glowKont {
   filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
 }
@@ -267,6 +271,21 @@ $btnHeight: 40px;
   transition: all 0.2s ease-out;
 }
 
+.copyMe {
+  @extend .copy;
+  width: $btnWidth;
+  height: $btnHeight;
+  background-color: var(--colorArticlesE);
+}
+
+.copyComm {
+  @extend .copy;
+  background-color: var(--colorArticlesB);
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+}
+
 .glow {
   z-index: -1;
   position: absolute;
@@ -294,6 +313,10 @@ $btnHeight: 40px;
   filter: drop-shadow(6px 6px 2px var(--colorArticlesF));
   transition: all 0.25s ease-out;
 }
+.glowMe {
+  @extend .glow;
+  filter: drop-shadow(-6px 6px 2px var(--colorArticlesC));
+}
 
 .glowKontM {
   @extend .glowKont;
@@ -303,14 +326,19 @@ $btnHeight: 40px;
   }
 }
 
-.menu {
-  @extend .button;
-  width: $btnWidth;
-  height: $btnHeight;
+.glowComm {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: -5px;
+  top: 4px;
+  filter: drop-shadow(-6px 6px 2px var(--colorArticlesF));
+  transition: all 0.25s ease-out;
 }
 
-.copyMe {
-  @extend .copy;
+.menu {
+  @extend .button;
   width: $btnWidth;
   height: $btnHeight;
 }

@@ -230,10 +230,8 @@
 }
 
 .warning {
-  position: absolute;
-  left: 50%;
-  top: 73%;
-  transform: translateX(-50%);
+  position: relative;
+  // transform: translateX(-50%);
   // border: 1px solid red;
   display: inline-block;
   width: 80%;

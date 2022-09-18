@@ -585,11 +585,7 @@
 }
 
 .warning {
-  position: absolute;
-  left: 50%;
-  top: 73%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  position: relative;
   display: inline-block;
   width: 80%;
   height: 40px;
