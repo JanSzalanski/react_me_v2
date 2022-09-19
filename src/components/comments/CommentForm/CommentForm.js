@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import Card from '../../molecules/Card/Card';
 import classes from './CommentForm.module.css';
 import Button from '../../atoms/Button/Button';
@@ -6,9 +6,13 @@ import Input from '../../atoms/Input/Input';
 import Textarea from '../../atoms/Textarea/Textarea';
 
 const CommentForm = React.memo((props) => {
+  const [enteredName, setEnteredName] = useState('');
+  const [enteredContents, setEnteredContents] = useState('');
+
   const submitHandler = (event) => {
     event.preventDefault();
   };
+
   return (
     <section className={classes.wrapper}>
       <form onSubmit={submitHandler} className={classes.form}>
@@ -22,7 +26,9 @@ const CommentForm = React.memo((props) => {
             bgk="commentBgk"
             class="commentWrap"
             className="comment"
-            placeholder="Imię"
+            placeholder="Podaj Imię"
+            value={enteredName}
+            onChange={(event) => setEnteredName(event.target.value)}
           />
 
           <Button tabindex="9" type="submit" className="comment">
@@ -39,7 +45,11 @@ const CommentForm = React.memo((props) => {
             wrap="commentWrap"
             className="comment"
             placeholder="Treść komentarza*"
-            // onChange={messageChangeHandler}
+            value={enteredContents}
+            onChange={(event) => {
+              setEnteredContents(event.target.value);
+            }}
+
             // value={enteredMessage}
           />
         </div>

@@ -41,5 +41,6 @@
   padding: 10px;
   width: 75%;
   height: 12vh;
+  border-left: 1px solid var(--colorArticles);
 }
 /*# sourceMappingURL=CommentForm.module.css.map */
