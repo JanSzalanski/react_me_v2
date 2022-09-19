@@ -6,8 +6,9 @@ import classes from './PeoplePage.module.css';
 import Background from '../../components/atoms/Background/Background';
 // import Pargraph from '../../components/atoms/Paragraph/Paragraph';
 import CommentForm from '../../components/comments/CommentForm/CommentForm';
-import ZoneTop from '../../components/UI/Zones/ZoneTop';
+// import ZoneTop from '../../components/UI/Zones/ZoneTop';
 import ZoneBottom from '../../components/UI/Zones/ZoneBottom';
+import Filter from '../../components/comments/Filter/Filter';
 // import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 
 const PeoplePage = (props) => {
@@ -18,13 +19,7 @@ const PeoplePage = (props) => {
       <Input className="search" placeholder="szukaj" bgk="bgkS" tabindex="14"></Input>
       <Background />
       <div className="overflowWrapper">
-        <ZoneTop>
-          <p>
-            W centrum mimo rozwoju całej otaczającej nas technologii dalej pozostaje człowiek.
-            Odnoszę nawet wrażenie, że w niektórych dziedzinach nawet tych stricte informatycznych
-            ten trend nawet się nasila. Dlatego ten dział będzie dla ludzi i o ludziach.
-          </p>
-        </ZoneTop>
+        <Filter />
         <ZoneBottom>
           <CommentForm />
         </ZoneBottom>

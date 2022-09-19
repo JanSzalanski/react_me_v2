@@ -33,14 +33,14 @@
   -ms-flex-line-pack: center;
       align-content: center;
   width: 25%;
-  height: 12vh;
+  height: 10vh;
   padding: 10px;
 }
 
 .rightWrap {
   padding: 10px;
   width: 75%;
-  height: 12vh;
+  height: 10vh;
   border-left: 1px solid var(--colorArticles);
 }
 /*# sourceMappingURL=CommentForm.module.css.map */
