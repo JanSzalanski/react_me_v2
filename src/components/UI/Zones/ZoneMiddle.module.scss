@@ -1,0 +1,28 @@
+.zoneMiddle {
+  text-align: left;
+  line-height: 2.1rem;
+  color: var(--white);
+  display: block;
+  width: calc(100% - 40px);
+  // height: 100%;
+  padding: 20px;
+  position: absolute;
+  font-size: 1.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--colorArticlesE);
+  border: 1px solid var(--colorArticles);
+  flex-grow: 2;
+
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+
+  @media (max-width: 1366px) {
+    font-size: var(--fontSizeS);
+  }
+
+  @media (max-width: 1024px) {
+    font-size: var(--fontSizeXS);
+  }
+}

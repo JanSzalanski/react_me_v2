@@ -4,11 +4,10 @@ import Input from '../../components/atoms/Input/Input';
 import FooterB from '../../components/molecules/FooterB/FooterB';
 import classes from './PeoplePage.module.css';
 import Background from '../../components/atoms/Background/Background';
+import Comments from '../../components/comments/Comments/Comments';
 // import Pargraph from '../../components/atoms/Paragraph/Paragraph';
-import CommentForm from '../../components/comments/CommentForm/CommentForm';
 // import ZoneTop from '../../components/UI/Zones/ZoneTop';
-import ZoneBottom from '../../components/UI/Zones/ZoneBottom';
-import Filter from '../../components/comments/Filter/Filter';
+
 // import ContactBar from '../../components/molecules/ContactBar/ContactBar';
 
 const PeoplePage = (props) => {
@@ -19,10 +18,7 @@ const PeoplePage = (props) => {
       <Input className="search" placeholder="szukaj" bgk="bgkS" tabindex="14"></Input>
       <Background />
       <div className="overflowWrapper">
-        <Filter />
-        <ZoneBottom>
-          <CommentForm />
-        </ZoneBottom>
+        <Comments />
       </div>
 
       <FooterB>
