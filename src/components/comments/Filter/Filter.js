@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './Filter.module.css';
 import ZoneTop from '../../UI/Zones/ZoneTop';
 import Input from '../../atoms/Input/Input';
 import Button from '../../atoms/Button/Button';
 
 const Filter = React.memo((props) => {
+  const [enteredFilter, setEnteredFilter] = useState('');
   return (
     <ZoneTop>
       <section className={classes.search}>
@@ -21,8 +22,8 @@ const Filter = React.memo((props) => {
           bgk="commentBgk"
           class="commentWrap"
           className="comment"
-          // value={enteredName}
-          // onChange={(event) => setEnteredName(event.target.value)}
+          value={enteredFilter}
+          onChange={(event) => setEnteredFilter(event.target.value)}
         />
       </section>
     </ZoneTop>

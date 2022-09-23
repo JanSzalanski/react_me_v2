@@ -13,7 +13,7 @@ const CommentList = (props) => {
             key={comment.id}
             onClick={props.onRemoveItem.bind(this, comment.id)}
           >
-            <span className={classes.name}>{comment.name}</span>
+            <span className={classes.name}>{comment.name} :</span>
             <span className={classes.contents}>{comment.contents}</span>
           </li>
         ))}

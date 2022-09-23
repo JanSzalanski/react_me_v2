@@ -25,6 +25,10 @@ const Comments = () => {
       });
   }, []);
 
+  useEffect(() => {
+    console.log('RENDERING COMMENTS');
+  });
+
   //połaczenie z firebase ustawienie metody przesyłu POST i przesłanie dodawanego komentarza jeszcze bez catch & err
   const addCommentHandler = (comment) => {
     fetch('https://react-dummy-base-default-rtdb.europe-west1.firebasedatabase.app/comments.json', {
