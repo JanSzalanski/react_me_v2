@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import classes from '../Comments/Comments.module.css';
 import CommentList from '../CommentList/CommentList';
 import Filter from '../Filter/Filter';
@@ -9,25 +9,14 @@ const Comments = () => {
   const [commentArr, setCommentArr] = useState([]);
 
   //połaczenie z firebase tylko raz zaraz po wyrenderowaniu komponentu i to dzieki useEffect z pusta tablicą jako drugi argument - jeszcze bez catch & err
-  useEffect(() => {
-    fetch('https://react-dummy-base-default-rtdb.europe-west1.firebasedatabase.app/comments.json')
-      .then((response) => response.json())
-      .then((responseData) => {
-        const loadedComments = [];
-        for (const key in responseData) {
-          loadedComments.push({
-            id: key,
-            name: responseData[key].name,
-            contents: responseData[key].contents,
-          });
-        }
-        setCommentArr(loadedComments);
-      });
-  }, []);
 
   useEffect(() => {
     console.log('RENDERING COMMENTS');
   });
+
+  const filteredCommentsHandler = useCallback((filteredComments) => {
+    setCommentArr(filteredComments);
+  }, []);
 
   //połaczenie z firebase ustawienie metody przesyłu POST i przesłanie dodawanego komentarza jeszcze bez catch & err
   const addCommentHandler = (comment) => {
@@ -50,7 +39,7 @@ const Comments = () => {
 
   return (
     <div className={classes.comments}>
-      <Filter />
+      <Filter onLoadComments={filteredCommentsHandler} />
       <ZoneMiddle>
         <CommentList comments={commentArr} onRemoveItem={removeCommentHandler} />
       </ZoneMiddle>
