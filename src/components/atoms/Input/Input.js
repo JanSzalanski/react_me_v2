@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import classes from './Input.module.css';
+// import { forwardRef } from 'react/cjs/react.production.min';
 
-const Input = (props) => {
+const Input = forwardRef((props, ref) => {
   return (
     <div className={classes[props.class] || classes.wrapperAll}>
       <div className={props.bgk === 'bgkS' ? classes.backWrapper : classes.backWrapperB}>
@@ -17,11 +18,12 @@ const Input = (props) => {
         type={classes[props.type] || 'text'}
         onChange={props.onChange}
         value={props.value}
+        ref={ref}
         required={props.required}
         //   onClick={props.onClick}
       />
     </div>
   );
-};
+});
 
 export default Input;
