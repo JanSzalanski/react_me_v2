@@ -449,7 +449,7 @@
   }
 }
 
-.button, .secondary, .secondaryB, .kontakt, .kontaktM, .wysylka, .buttonDetails, .comment, .menu {
+.button, .secondary, .secondaryB, .secondaryC, .kontakt, .kontaktM, .wysylka, .buttonDetails, .comment, .menu {
   margin: 10px;
   padding-right: 10px;
   display: -webkit-box;
@@ -487,7 +487,7 @@
           backdrop-filter: blur(2px);
 }
 
-.button:hover, .secondary:hover, .secondaryB:hover, .kontakt:hover, .kontaktM:hover, .wysylka:hover, .buttonDetails:hover, .comment:hover, .menu:hover {
+.button:hover, .secondary:hover, .secondaryB:hover, .secondaryC:hover, .kontakt:hover, .kontaktM:hover, .wysylka:hover, .buttonDetails:hover, .comment:hover, .menu:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -498,12 +498,12 @@
           transform: translate(-3px, 4px);
 }
 
-.button:hover + .glow, .secondary:hover + .glow, .secondaryB:hover + .glow, .kontakt:hover + .glow, .kontaktM:hover + .glow, .wysylka:hover + .glow, .buttonDetails:hover + .glow, .comment:hover + .glow, .menu:hover + .glow, .button:hover + .glowS, .secondary:hover + .glowS, .secondaryB:hover + .glowS, .kontakt:hover + .glowS, .kontaktM:hover + .glowS, .wysylka:hover + .glowS, .buttonDetails:hover + .glowS, .comment:hover + .glowS, .menu:hover + .glowS, .button:hover + .glowMe, .secondary:hover + .glowMe, .secondaryB:hover + .glowMe, .kontakt:hover + .glowMe, .kontaktM:hover + .glowMe, .wysylka:hover + .glowMe, .buttonDetails:hover + .glowMe, .comment:hover + .glowMe, .menu:hover + .glowMe {
+.button:hover + .glow, .secondary:hover + .glow, .secondaryB:hover + .glow, .secondaryC:hover + .glow, .kontakt:hover + .glow, .kontaktM:hover + .glow, .wysylka:hover + .glow, .buttonDetails:hover + .glow, .comment:hover + .glow, .menu:hover + .glow, .button:hover + .glowS, .secondary:hover + .glowS, .secondaryB:hover + .glowS, .secondaryC:hover + .glowS, .kontakt:hover + .glowS, .kontaktM:hover + .glowS, .wysylka:hover + .glowS, .buttonDetails:hover + .glowS, .comment:hover + .glowS, .menu:hover + .glowS, .button:hover + .glowMe, .secondary:hover + .glowMe, .secondaryB:hover + .glowMe, .secondaryC:hover + .glowMe, .kontakt:hover + .glowMe, .kontaktM:hover + .glowMe, .wysylka:hover + .glowMe, .buttonDetails:hover + .glowMe, .comment:hover + .glowMe, .menu:hover + .glowMe {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
           filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
 
-.button:hover + .glowComm, .secondary:hover + .glowComm, .secondaryB:hover + .glowComm, .kontakt:hover + .glowComm, .kontaktM:hover + .glowComm, .wysylka:hover + .glowComm, .buttonDetails:hover + .glowComm, .comment:hover + .glowComm, .menu:hover + .glowComm {
+.button:hover + .glowComm, .secondary:hover + .glowComm, .secondaryB:hover + .glowComm, .secondaryC:hover + .glowComm, .kontakt:hover + .glowComm, .kontaktM:hover + .glowComm, .wysylka:hover + .glowComm, .buttonDetails:hover + .glowComm, .comment:hover + .glowComm, .menu:hover + .glowComm {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
           filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
@@ -518,7 +518,7 @@
           filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
 }
 
-.secondary, .secondaryB {
+.secondary, .secondaryB, .secondaryC {
   position: absolute;
   left: calc(50% - (var(--buttonWidth) / 3) + 20px);
   top: calc(50% - (var(--buttonHeight) / 2) - 20px);
@@ -531,7 +531,7 @@
   height: var(--buttonHeight);
 }
 
-.secondary:hover, .secondaryB:hover {
+.secondary:hover, .secondaryB:hover, .secondaryC:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -543,14 +543,14 @@
 }
 
 @media (max-width: 1600px) {
-  .secondary, .secondaryB {
+  .secondary, .secondaryB, .secondaryC {
     font-weight: 300;
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .secondary, .secondaryB {
+  .secondary, .secondaryB, .secondaryC {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -560,7 +560,7 @@
 }
 
 @media (max-width: 480px) {
-  .secondary, .secondaryB {
+  .secondary, .secondaryB, .secondaryC {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -573,7 +573,7 @@
   }
 }
 
-.secondaryB {
+.secondaryB, .secondaryC {
   top: 3px;
   left: 11px;
 }
@@ -682,6 +682,7 @@
 
 .buttonCWrapper {
   position: relative;
+  border: 1px solid orange;
   width: 100%;
   height: 100%;
 }

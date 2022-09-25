@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './CommentList.module.css';
+import Button from '../../atoms/Button/Button';
 
 const CommentList = (props) => {
   return (
@@ -8,13 +9,12 @@ const CommentList = (props) => {
 
       <ul className={classes.ul}>
         {props.comments.map((comment) => (
-          <li
-            className={classes.comment}
-            key={comment.id}
-            onClick={props.onRemoveItem.bind(this, comment.id)}
-          >
-            <span className={classes.name}>{comment.name} :</span>
+          <li className={classes.comment} key={comment.id}>
+            <span className={classes.name}>{comment.name}:</span>
             <span className={classes.contents}>{comment.contents}</span>
+            <Button type="secondaryC" onClick={props.onRemoveItem.bind(this, comment.id)}>
+              Usuń
+            </Button>
           </li>
         ))}
       </ul>

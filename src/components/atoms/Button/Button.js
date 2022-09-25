@@ -3,9 +3,26 @@ import classes from './Button.module.css';
 
 const Button = (props) => {
   let cssClasses = [classes[props.type] || classes.button];
-  if (props.type === 'secondaryB') {
+  if (props.type === 'secondaryB' || props.type === 'secondaryC') {
     return (
       <div className={classes.buttonSWrapper} tabIndex={props.tabindex}>
+        <button
+          className={cssClasses.join(' ')}
+          type={props.type || 'button'}
+          onClick={props.onClick}
+        >
+          <p>{props.children}</p>
+        </button>
+        <div className={classes.glowS}>
+          <div className={classes.copyS}></div>
+        </div>
+      </div>
+    );
+  }
+
+  if (props.type === 'secondaryC') {
+    return (
+      <div className={classes.buttonCWrapper} tabIndex={props.tabindex}>
         <button
           className={cssClasses.join(' ')}
           type={props.type || 'button'}
