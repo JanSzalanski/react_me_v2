@@ -34,7 +34,14 @@ const Comments = () => {
   };
 
   const removeCommentHandler = (commentId) => {
-    setCommentArr((prevComments) => prevComments.filter((comment) => comment.id !== commentId));
+    fetch(
+      `https://react-dummy-base-default-rtdb.europe-west1.firebasedatabase.app/comments/${commentId}.json`,
+      {
+        method: 'DELETE',
+      },
+    ).then((response) => {
+      setCommentArr((prevComments) => prevComments.filter((comment) => comment.id !== commentId));
+    });
   };
 
   return (
