@@ -4,6 +4,7 @@ import CommentList from '../CommentList/CommentList';
 import Filter from '../Filter/Filter';
 import CommentForm from '../CommentForm/CommentForm';
 import ZoneMiddle from '../../UI/Zones/ZoneMiddle';
+import LoadingSpiner from '../../UI/LoadingSpiner/LoadingSpiner';
 
 const Comments = () => {
   const [commentArr, setCommentArr] = useState([]);
@@ -48,7 +49,9 @@ const Comments = () => {
     <div className={classes.comments}>
       <Filter onLoadComments={filteredCommentsHandler} />
       <ZoneMiddle>
-        <CommentList comments={commentArr} onRemoveItem={removeCommentHandler} />
+        <CommentList comments={commentArr} onRemoveItem={removeCommentHandler}>
+          <LoadingSpiner />
+        </CommentList>
       </ZoneMiddle>
       <CommentForm onAddComment={addCommentHandler} />
     </div>
