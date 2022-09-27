@@ -5,6 +5,7 @@ import FooterB from '../../components/molecules/FooterB/FooterB';
 import classes from './PeoplePage.module.css';
 import Background from '../../components/atoms/Background/Background';
 import Comments from '../../components/comments/Comments/Comments';
+import ErrorModal from '../../components/UI/ErrorModal/ErrorModal';
 // import Pargraph from '../../components/atoms/Paragraph/Paragraph';
 // import ZoneTop from '../../components/UI/Zones/ZoneTop';
 
@@ -26,6 +27,7 @@ const PeoplePage = (props) => {
         Polityka prywatności
         <br /> © 2022 Wszystkie prawa zastrzeżone
       </FooterB>
+      <ErrorModal></ErrorModal>
     </div>
   );
 };
