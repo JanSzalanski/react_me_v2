@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './CommentList.module.css';
-// import Button from '../../atoms/Button/Button';
+import Button from '../../atoms/Button/Button';
 
 const CommentList = (props) => {
   return (
     <section className={classes.commmentList}>
-      {/* <ul className={classes.ul}>
+      <ul className={classes.ul}>
         {props.comments.map((comment) => (
           <li className={classes.comment} key={comment.id}>
             <span className={classes.name}>{comment.name}:</span>
@@ -15,9 +15,9 @@ const CommentList = (props) => {
             </Button>
           </li>
         ))}
-      </ul> */}
+      </ul>
       {props.children}
-      <h2 className={classes.info}>Pobieranie</h2>
+      {props.loading && <h2 className={classes.info}>Pobieranie</h2>}
     </section>
   );
 };
