@@ -10,7 +10,7 @@ const ErrorModal = (props) => {
         <h2>Wystąpił bląd</h2>
         <p>{props.children}</p>
         <div className={classes.actions}>
-          <Button type="button" onClick={props.onClose}>
+          <Button type="modal" onClick={props.onClose}>
             Spoko
           </Button>
         </div>

@@ -46,6 +46,7 @@ const CommentForm = React.memo((props) => {
               name="message"
               maxlength="500"
               tabindex="8"
+              required
               bgk="commentBgk"
               wrap="commentWrap"
               className="comment"

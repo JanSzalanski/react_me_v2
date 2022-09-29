@@ -1,14 +1,30 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useReducer, useState, useEffect, useCallback } from 'react';
 import classes from '../Comments/Comments.module.css';
 import CommentList from '../CommentList/CommentList';
 import Filter from '../Filter/Filter';
 import CommentForm from '../CommentForm/CommentForm';
 import ZoneMiddle from '../../UI/Zones/ZoneMiddle';
 import LoadingSpiner from '../../UI/LoadingSpiner/LoadingSpiner';
+import ErrorModal from '../../UI/ErrorModal/ErrorModal';
+
+const commentReducer = (currentComment, action) => {
+  switch (action.type) {
+    case 'SET':
+      return action.comments;
+    case 'ADD':
+      return [...currentComment, action.comment];
+    case 'DELETE':
+      return currentComment.filter((com) => com.id !== action.id);
+    default:
+      throw new Error('Ten blad nie powinnen sie zdarzyc: def in reducer');
+  }
+};
 
 const Comments = () => {
-  const [commentArr, setCommentArr] = useState([]);
+  const [commentArr, dispach] = useReducer(commentReducer, []);
+  // const [commentArr, setCommentArr] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState();
   //połaczenie z firebase tylko raz zaraz po wyrenderowaniu komponentu i to dzieki useEffect z pusta tablicą jako drugi argument - jeszcze bez catch & err
 
   useEffect(() => {
@@ -16,7 +32,7 @@ const Comments = () => {
   });
 
   const filteredCommentsHandler = useCallback((filteredComments) => {
-    setCommentArr(filteredComments);
+    dispach({ type: 'SET', comments: filteredComments });
   }, []);
 
   //połaczenie z firebase ustawienie metody przesyłu POST i przesłanie dodawanego komentarza jeszcze bez catch & err
@@ -32,9 +48,12 @@ const Comments = () => {
         return response.json();
       })
       .then((responseData) => {
-        setIsLoading(true);
-        setCommentArr((prevComments) => [...prevComments, { id: responseData.name, ...comment }]);
+        // setCommentArr((prevComments) => [...prevComments, { id: responseData.name, ...comment }]);
+        dispach({ type: 'ADD', comment: { id: responseData.name, ...comment } });
+      })
+      .catch((error) => {
         setIsLoading(false);
+        setError('Ooo coś poszło nie tak przy połączeniu z bazą');
       });
   };
 
@@ -45,22 +64,39 @@ const Comments = () => {
       {
         method: 'DELETE',
       },
-    ).then((response) => {
-      setIsLoading(false);
-      setCommentArr((prevComments) => prevComments.filter((comment) => comment.id !== commentId));
-    });
+    )
+      .then((response) => {
+        setIsLoading(false);
+        // setCommentArr((prevComments) => prevComments.filter((comment) => comment.id !== commentId));
+        dispach({ type: 'DELETE', id: commentId });
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        setError('Ooo coś poszło nie tak przy połączeniu z bazą');
+      });
+  };
+
+  const clearError = () => {
+    setError(null);
   };
 
   return (
-    <div className={classes.comments}>
-      <Filter onLoadComments={filteredCommentsHandler} />
-      <ZoneMiddle>
-        <CommentList loading={isLoading} comments={commentArr} onRemoveItem={removeCommentHandler}>
-          {isLoading && <LoadingSpiner />}
-        </CommentList>
-      </ZoneMiddle>
-      <CommentForm onAddComment={addCommentHandler} />
-    </div>
+    <>
+      {error && <ErrorModal onClose={clearError}>{error}</ErrorModal>}
+      <div className={classes.comments}>
+        <Filter onLoadComments={filteredCommentsHandler} />
+        <ZoneMiddle>
+          <CommentList
+            loading={isLoading}
+            comments={commentArr}
+            onRemoveItem={removeCommentHandler}
+          >
+            {isLoading && <LoadingSpiner />}
+          </CommentList>
+        </ZoneMiddle>
+        <CommentForm onAddComment={addCommentHandler} />
+      </div>
+    </>
   );
 };
 
