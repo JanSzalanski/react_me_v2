@@ -1,4 +1,4 @@
-import React, { useReducer, useState, useEffect, useCallback } from 'react';
+import React, { useReducer, useEffect, useCallback } from 'react';
 import classes from '../Comments/Comments.module.css';
 import CommentList from '../CommentList/CommentList';
 import Filter from '../Filter/Filter';
@@ -16,15 +16,31 @@ const commentReducer = (currentComment, action) => {
     case 'DELETE':
       return currentComment.filter((com) => com.id !== action.id);
     default:
-      throw new Error('Ten blad nie powinnen sie zdarzyc: def in reducer');
+      throw new Error('Ten blad nie powinnen sie zdarzyc: red def in comment');
+  }
+};
+
+const httpReducer = (currentHttpState, action) => {
+  switch (action.type) {
+    case 'SEND':
+      return { loading: true, error: null };
+    case 'RESPONSE':
+      return { ...currentHttpState, loading: false };
+    case 'ERROR':
+      return { loading: false, error: action.errorMessage };
+    case 'CLEAR':
+      return { ...currentHttpState, error: null };
+    default:
+      throw new Error('Ten blad nie powinnen sie zdarzyc: red def in http');
   }
 };
 
 const Comments = () => {
   const [commentArr, dispach] = useReducer(commentReducer, []);
+  const [httpState, dispachHttp] = useReducer(httpReducer, { loading: false, error: null });
   // const [commentArr, setCommentArr] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState();
+  // const [isLoading, setIsLoading] = useState(false);
+  // const [error, setError] = useState();
   //połaczenie z firebase tylko raz zaraz po wyrenderowaniu komponentu i to dzieki useEffect z pusta tablicą jako drugi argument - jeszcze bez catch & err
 
   useEffect(() => {
@@ -37,14 +53,14 @@ const Comments = () => {
 
   //połaczenie z firebase ustawienie metody przesyłu POST i przesłanie dodawanego komentarza jeszcze bez catch & err
   const addCommentHandler = (comment) => {
-    setIsLoading(true);
+    dispachHttp({ type: 'SEND' });
     fetch('https://react-dummy-base-default-rtdb.europe-west1.firebasedatabase.app/comments.json', {
       method: 'POST',
       body: JSON.stringify(comment),
       headers: { 'Content-Type': 'application/json' },
     })
       .then((response) => {
-        setIsLoading(false);
+        dispachHttp({ type: 'RESPONSE' });
         return response.json();
       })
       .then((responseData) => {
@@ -52,46 +68,44 @@ const Comments = () => {
         dispach({ type: 'ADD', comment: { id: responseData.name, ...comment } });
       })
       .catch((error) => {
-        setIsLoading(false);
-        setError('Ooo coś poszło nie tak przy połączeniu z bazą');
+        dispachHttp({ type: 'ERROR', errorMessage: 'Błąd połaczenia z bazą' });
       });
   };
 
   const removeCommentHandler = (commentId) => {
-    setIsLoading(true);
+    dispachHttp({ type: 'SEND' });
     fetch(
-      `https://react-dummy-base-default-rtdb.europe-west1.firebasedatabase.app/comments/${commentId}.json`,
+      `https://react-dummy-base-default-rtdb.europe-west1.firebasedatabase.app/comments/${commentId}.js.on`,
       {
         method: 'DELETE',
       },
     )
       .then((response) => {
-        setIsLoading(false);
+        dispachHttp({ type: 'RESPONSE' });
         // setCommentArr((prevComments) => prevComments.filter((comment) => comment.id !== commentId));
         dispach({ type: 'DELETE', id: commentId });
       })
       .catch((error) => {
-        setIsLoading(false);
-        setError('Ooo coś poszło nie tak przy połączeniu z bazą');
+        dispachHttp({ type: 'ERROR', errorMessage: 'Błąd połaczenia z bazą' });
       });
   };
 
   const clearError = () => {
-    setError(null);
+    dispachHttp({ type: 'CLEAR' });
   };
 
   return (
     <>
-      {error && <ErrorModal onClose={clearError}>{error}</ErrorModal>}
+      {httpState.error && <ErrorModal onClose={clearError}>{httpState.error}</ErrorModal>}
       <div className={classes.comments}>
         <Filter onLoadComments={filteredCommentsHandler} />
         <ZoneMiddle>
           <CommentList
-            loading={isLoading}
+            loading={httpState.loading}
             comments={commentArr}
             onRemoveItem={removeCommentHandler}
           >
-            {isLoading && <LoadingSpiner />}
+            {httpState.loading && <LoadingSpiner />}
           </CommentList>
         </ZoneMiddle>
         <CommentForm onAddComment={addCommentHandler} />
