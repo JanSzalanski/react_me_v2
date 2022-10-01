@@ -36,7 +36,7 @@ const CommentForm = React.memo((props) => {
               onChange={(event) => setEnteredName(event.target.value)}
             />
 
-            <Button tabindex="9" type="submit" className="comment">
+            <Button type="buttonFlex" tabindex="9" className="comment">
               Dodaj komentarz
             </Button>
           </div>

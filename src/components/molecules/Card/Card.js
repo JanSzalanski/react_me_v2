@@ -36,7 +36,7 @@ const Card = ({ className, cardType, date, title, short, content, path }) => {
         {cardType === 'news' && content && (
           <div className={classes.btnWrapper}>
             <NavLink className="routeLink" to={`/news/${path}`}>
-              <Button type="secondaryB">Detale</Button>
+              <Button type="secondary">Detale</Button>
             </NavLink>
           </div>
         )}

@@ -471,7 +471,7 @@
   }
 }
 
-.button, .secondary, .secondaryB, .secondaryC, .kontakt, .kontaktM, .wysylka, .buttonDetails, .comment, .menu {
+.button, .buttonFlex, .secondary, .kontakt, .kontaktM, .buttonDetails, .comment, .menu {
   margin: 10px;
   padding-right: 10px;
   display: -webkit-box;
@@ -509,7 +509,7 @@
           backdrop-filter: blur(2px);
 }
 
-.button:hover, .secondary:hover, .secondaryB:hover, .secondaryC:hover, .kontakt:hover, .kontaktM:hover, .wysylka:hover, .buttonDetails:hover, .comment:hover, .menu:hover {
+.button:hover, .buttonFlex:hover, .secondary:hover, .kontakt:hover, .kontaktM:hover, .buttonDetails:hover, .comment:hover, .menu:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -520,17 +520,17 @@
           transform: translate(-3px, 4px);
 }
 
-.button:hover + .glow, .secondary:hover + .glow, .secondaryB:hover + .glow, .secondaryC:hover + .glow, .kontakt:hover + .glow, .kontaktM:hover + .glow, .wysylka:hover + .glow, .buttonDetails:hover + .glow, .comment:hover + .glow, .menu:hover + .glow, .button:hover + .glowS, .secondary:hover + .glowS, .secondaryB:hover + .glowS, .secondaryC:hover + .glowS, .kontakt:hover + .glowS, .kontaktM:hover + .glowS, .wysylka:hover + .glowS, .buttonDetails:hover + .glowS, .comment:hover + .glowS, .menu:hover + .glowS, .button:hover + .glowMe, .secondary:hover + .glowMe, .secondaryB:hover + .glowMe, .secondaryC:hover + .glowMe, .kontakt:hover + .glowMe, .kontaktM:hover + .glowMe, .wysylka:hover + .glowMe, .buttonDetails:hover + .glowMe, .comment:hover + .glowMe, .menu:hover + .glowMe {
+.button:hover + .glow, .buttonFlex:hover + .glow, .secondary:hover + .glow, .kontakt:hover + .glow, .kontaktM:hover + .glow, .buttonDetails:hover + .glow, .comment:hover + .glow, .menu:hover + .glow, .button:hover + .glowS, .buttonFlex:hover + .glowS, .secondary:hover + .glowS, .kontakt:hover + .glowS, .kontaktM:hover + .glowS, .buttonDetails:hover + .glowS, .comment:hover + .glowS, .menu:hover + .glowS, .button:hover + .glowMe, .buttonFlex:hover + .glowMe, .secondary:hover + .glowMe, .kontakt:hover + .glowMe, .kontaktM:hover + .glowMe, .buttonDetails:hover + .glowMe, .comment:hover + .glowMe, .menu:hover + .glowMe {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
           filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
 
-.button:hover + .glowComm, .secondary:hover + .glowComm, .secondaryB:hover + .glowComm, .secondaryC:hover + .glowComm, .kontakt:hover + .glowComm, .kontaktM:hover + .glowComm, .wysylka:hover + .glowComm, .buttonDetails:hover + .glowComm, .comment:hover + .glowComm, .menu:hover + .glowComm {
+.button:hover + .glowComm, .buttonFlex:hover + .glowComm, .secondary:hover + .glowComm, .kontakt:hover + .glowComm, .kontaktM:hover + .glowComm, .buttonDetails:hover + .glowComm, .comment:hover + .glowComm, .menu:hover + .glowComm {
   -webkit-filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
           filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
 
-.kontakt:hover + .glowKont, .kontaktM:hover + .glowKont, .wysylka:hover + .glowKont, .kontakt:hover + .glowKontM, .kontaktM:hover + .glowKontM, .wysylka:hover + .glowKontM {
+.kontakt:hover + .glowKont, .kontaktM:hover + .glowKont, .kontakt:hover + .glowKontM, .kontaktM:hover + .glowKontM {
   -webkit-filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
           filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
 }
@@ -540,10 +540,25 @@
           filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
 }
 
-.secondary, .secondaryB, .secondaryC {
+.buttonFlex {
+  font-size: 1.2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+}
+
+.secondary {
   position: absolute;
-  left: calc(50% - (var(--buttonWidth) / 3) + 20px);
-  top: calc(50% - (var(--buttonHeight) / 2) - 20px);
+  top: 3px;
+  left: 11px;
   margin: 0;
   padding: 0;
   -webkit-box-pack: center;
@@ -553,7 +568,7 @@
   height: var(--buttonHeight);
 }
 
-.secondary:hover, .secondaryB:hover, .secondaryC:hover {
+.secondary:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -565,14 +580,14 @@
 }
 
 @media (max-width: 1600px) {
-  .secondary, .secondaryB, .secondaryC {
+  .secondary {
     font-weight: 300;
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .secondary, .secondaryB, .secondaryC {
+  .secondary {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -582,7 +597,7 @@
 }
 
 @media (max-width: 480px) {
-  .secondary, .secondaryB, .secondaryC {
+  .secondary {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -595,12 +610,7 @@
   }
 }
 
-.secondaryB, .secondaryC {
-  top: 3px;
-  left: 11px;
-}
-
-.kontakt, .kontaktM, .wysylka {
+.kontakt, .kontaktM {
   width: var(--buttonHeight);
   height: var(--buttonWidth);
   -webkit-box-pack: center;
@@ -614,21 +624,21 @@
 }
 
 @media (max-width: 1366px) {
-  .kontakt, .kontaktM, .wysylka {
+  .kontakt, .kontaktM {
     width: calc(var(--buttonHeight) - 5px);
     height: calc(var(--buttonWidth) - 30px);
     font-size: 1.2rem;
   }
 }
 
-.kontakt p, .kontaktM p, .wysylka p {
+.kontakt p, .kontaktM p {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
 }
 
-.kontakt:hover, .kontaktM:hover, .wysylka:hover {
+.kontakt:hover, .kontaktM:hover {
   -webkit-transform: translate(3px, 4px);
           transform: translate(3px, 4px);
 }
@@ -646,21 +656,6 @@
     display: -ms-flexbox;
     display: flex;
   }
-}
-
-.wysylka {
-  width: var(--buttonWidth);
-  height: var(--buttonHeight);
-  -webkit-clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
-          clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
-  letter-spacing: 1px;
-}
-
-.wysylka p {
-  text-orientation: mixed;
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
 }
 
 .buttonDetails {
@@ -702,12 +697,6 @@
   z-index: 1;
 }
 
-.buttonCWrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
 .buttonDWrapper {
   width: var(--buttonWidth);
   height: var(--buttonHeight);
@@ -722,6 +711,12 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+}
+
+.buttonFlexWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .copy, .copyS, .copyMe, .copyComm {

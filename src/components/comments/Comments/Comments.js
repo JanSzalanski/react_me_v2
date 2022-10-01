@@ -75,7 +75,7 @@ const Comments = () => {
   const removeCommentHandler = (commentId) => {
     dispachHttp({ type: 'SEND' });
     fetch(
-      `https://react-dummy-base-default-rtdb.europe-west1.firebasedatabase.app/comments/${commentId}.js.on`,
+      `https://react-dummy-base-default-rtdb.europe-west1.firebasedatabase.app/comments/${commentId}.json`,
       {
         method: 'DELETE',
       },

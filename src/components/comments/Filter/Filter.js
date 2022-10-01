@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import classes from './Filter.module.css';
 import ZoneTop from '../../UI/Zones/ZoneTop';
 import Input from '../../atoms/Input/Input';
-import Button from '../../atoms/Button/Button';
+// import Button from '../../atoms/Button/Button';
 
 const Filter = React.memo((props) => {
   const { onLoadComments } = props;
@@ -40,9 +40,6 @@ const Filter = React.memo((props) => {
   return (
     <ZoneTop>
       <section className={classes.search}>
-        <Button tabindex="10" type="submit" className="comment">
-          Filtruj
-        </Button>
         <Input
           type="text"
           name="imie"

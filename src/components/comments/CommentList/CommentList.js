@@ -10,9 +10,11 @@ const CommentList = (props) => {
           <li className={classes.comment} key={comment.id}>
             <span className={classes.name}>{comment.name}:</span>
             <span className={classes.contents}>{comment.contents}</span>
-            <Button type="secondaryC" onClick={props.onRemoveItem.bind(this, comment.id)}>
-              Usuń
-            </Button>
+            <div className={classes.btnWrap}>
+              <Button type="buttonFlex" onClick={props.onRemoveItem.bind(this, comment.id)}>
+                Usuń
+              </Button>
+            </div>
           </li>
         ))}
       </ul>

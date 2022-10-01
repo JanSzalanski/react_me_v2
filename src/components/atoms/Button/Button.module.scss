@@ -52,11 +52,25 @@ $btnHeight: 40px;
   filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
 }
 
+.buttonFlex {
+  @extend .button;
+  font-size: 1.2rem;
+  // font-size: 1.2rem;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+}
+
 .secondary {
   @extend .button;
   position: absolute;
-  left: calc(50% - (var(--buttonWidth) / 3) + 20px);
-  top: calc(50% - (var(--buttonHeight) / 2) - 20px);
+  top: 3px;
+  left: 11px;
   // transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
@@ -92,17 +106,17 @@ $btnHeight: 40px;
   }
 }
 
-.secondaryB {
-  @extend .secondary;
-  top: 3px;
-  left: 11px;
-  // position: relative;
-}
+// .secondaryB {
+//   @extend .secondary;
+//   top: 3px;
+//   left: 11px;
+//   // position: relative;
+// }
 
-.secondaryC {
-  @extend .secondaryB;
-  // position: relative;
-}
+// .secondaryC {
+//   @extend .secondaryB;
+//   // position: relative;
+// }
 
 .kontakt {
   // position: absolute;
@@ -141,23 +155,23 @@ $btnHeight: 40px;
   }
 }
 
-.wysylka {
-  @extend .kontakt;
-  width: var(--buttonWidth);
-  height: var(--buttonHeight);
-  clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
-  letter-spacing: 1px;
-  & p {
-    text-orientation: mixed;
-    writing-mode: horizontal-tb;
-  }
+// .wysylka {
+//   @extend .kontakt;
+//   width: var(--buttonWidth);
+//   height: var(--buttonHeight);
+//   clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
+//   letter-spacing: 1px;
+//   & p {
+//     text-orientation: mixed;
+//     writing-mode: horizontal-tb;
+//   }
 
-  // @media (max-width: 1366px) {
-  //   width: calc(var(--buttonWidth) - 30px);
-  //   height: calc(var(--buttonHight) - 5px);
-  //   font-size: 1.2rem;
-  // }
-}
+//   // @media (max-width: 1366px) {
+//   //   width: calc(var(--buttonWidth) - 30px);
+//   //   height: calc(var(--buttonHight) - 5px);
+//   //   font-size: 1.2rem;
+//   // }
+// }
 
 .buttonDetails {
   @extend .button;
@@ -185,7 +199,7 @@ $btnHeight: 40px;
   // border: 1px solid yellowgreen;
   // // @media (max-width: 480px) {
   //   position: unset;
-  //   // border: 1px solid red;
+  // border: 1px solid red;
   //   width: $btnWidth;
   //   height: $btnHeight;
   //   // z-index: 2;
@@ -202,13 +216,6 @@ $btnHeight: 40px;
   z-index: 1; //powrócił stary błąd chroma tutaj sprawę rozwiążał podwyższenie z-index hover z przyciksu wpływał na zmiany w wyświetlaniu newsDAte oraz nie respektowanie path i hidden overflov na rogu karty
 }
 
-.buttonCWrapper {
-  position: relative;
-  // border: 1px solid orange;
-  width: 100%;
-  height: 100%;
-}
-
 .buttonDWrapper {
   @extend .buttonSWrapper;
   width: var(--buttonWidth);
@@ -221,6 +228,14 @@ $btnHeight: 40px;
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+.buttonFlexWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // flex-grow: 2;
+  // border: 1px solid greenyellow;
 }
 
 .copy {
@@ -318,6 +333,7 @@ $btnHeight: 40px;
   filter: drop-shadow(6px 6px 2px var(--colorArticlesF));
   transition: all 0.25s ease-out;
 }
+
 .glowMe {
   @extend .glow;
   filter: drop-shadow(-6px 6px 2px var(--colorArticlesC));

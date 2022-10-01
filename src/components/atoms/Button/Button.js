@@ -3,26 +3,10 @@ import classes from './Button.module.css';
 
 const Button = (props) => {
   let cssClasses = [classes[props.type] || classes.button];
-  if (props.type === 'secondaryB' || props.type === 'secondaryC') {
+
+  if (props.type === 'secondary') {
     return (
       <div className={classes.buttonSWrapper} tabIndex={props.tabindex}>
-        <button
-          className={cssClasses.join(' ')}
-          type={props.type || 'button'}
-          onClick={props.onClick}
-        >
-          <p>{props.children}</p>
-        </button>
-        <div className={classes.glowS}>
-          <div className={classes.copyS}></div>
-        </div>
-      </div>
-    );
-  }
-
-  if (props.type === 'secondaryC') {
-    return (
-      <div className={classes.buttonCWrapper} tabIndex={props.tabindex}>
         <button
           className={cssClasses.join(' ')}
           type={props.type || 'button'}
@@ -50,10 +34,10 @@ const Button = (props) => {
     );
   }
 
-  if (props.type === 'submit' && props.className === 'comment') {
+  if (props.type === 'buttonFlex') {
     return (
-      <div className={classes.buttonCWrapper} tabIndex={props.tabindex}>
-        <button type={props.type} className={classes[props.className]} onClick={props.onClick}>
+      <div className={classes.buttonFlexWrapper} tabIndex={props.tabindex}>
+        <button className={cssClasses.join(' ')} onClick={props.onClick} tabIndex={props.tabindex}>
           <p>{props.children}</p>
         </button>
         <div className={classes.glowComm}>
@@ -81,18 +65,6 @@ const Button = (props) => {
 
       {props.type === 'submit' && (
         <div className={classes.glow}>
-          <div className={classes.copy}></div>
-        </div>
-      )}
-
-      {/* {props.type === 'secondary' && (
-        <div className={classes.glowS}>
-          <div className={classes.copyS}></div>
-        </div>
-      )} */}
-
-      {props.type === 'wysylka' && (
-        <div className={classes.glowWys}>
           <div className={classes.copy}></div>
         </div>
       )}
