@@ -55,6 +55,13 @@
   border: 1px solid gray;
 }
 
+@media (max-width: 1600px) {
+  .comment {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
 .name {
   padding: 5px;
   position: relative;
@@ -67,11 +74,30 @@
   padding: 20px;
   padding-left: 20px;
   position: relative;
-  width: calc(65% - 10px);
+  width: calc(70% - 10px);
+}
+
+@media (max-width: 1600px) {
+  .contents {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .contents {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .btnWrap {
-  width: calc(25% - 10px);
+  width: calc(20% - 10px);
+  height: var(--buttonHeight);
 }
 
 .info {

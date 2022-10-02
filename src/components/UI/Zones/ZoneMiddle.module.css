@@ -7,7 +7,7 @@
   padding: 20px;
   position: absolute;
   font-size: 1.8rem;
-  top: 50%;
+  top: calc(50% - 18px);
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -19,6 +19,20 @@
   font-weight: 500;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+}
+
+@media (max-width: 1600px) {
+  .zoneMiddle {
+    top: calc(50% - 10px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .zoneMiddle {
+    top: calc(50% - 12px);
+  }
 }
 
 @media (max-width: 1366px) {

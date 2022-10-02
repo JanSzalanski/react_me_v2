@@ -12,6 +12,12 @@ const CommentForm = React.memo((props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+    if (enteredName.trim() === '') {
+      props.onAddComment({ name: 'anonim', contents: enteredContents });
+      setEnteredName('');
+      setEnteredContents('');
+      return;
+    }
     props.onAddComment({ name: enteredName, contents: enteredContents });
     setEnteredName('');
     setEnteredContents('');
@@ -44,7 +50,8 @@ const CommentForm = React.memo((props) => {
             <Textarea
               type="textarea"
               name="message"
-              maxlength="500"
+              minlength="5"
+              maxlength="320"
               tabindex="8"
               required
               bgk="commentBgk"
