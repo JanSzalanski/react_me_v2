@@ -6,21 +6,16 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 90%;
   height: 70%;
-}
-
-@media (max-width: 1366px) {
-  .wrapperGraphic {
+  // background-color: var(--colorArticles);
+  @media (max-width: 1366px) {
     left: 51%;
     width: 89%;
   }
-}
 
-@media (max-width: 480px) {
-  .wrapperGraphic {
+  @media (max-width: 480px) {
     height: 85%;
     left: 50%;
     width: 100%;
@@ -35,21 +30,36 @@
   background-size: contain;
   background-color: #0c1216;
   opacity: 0.8;
+  // border: 1px solid blue;
   left: 40px;
   right: 40px;
   top: 40px;
   bottom: 40px;
   border-radius: 7px;
-}
 
-@media (max-width: 480px) {
-  .nftGraphic {
+  @media (max-width: 480px) {
     background-position: 50% 100%;
     background-size: 175% 75%;
+
     left: 12px;
     right: 12px;
     top: 12px;
     bottom: 12px;
   }
 }
-/*# sourceMappingURL=NftPage.module.css.map */
+
+.title {
+  position: absolute;
+  left: 60px;
+  bottom: 60px;
+  text-align: left;
+  // padding-left: 20px;
+  display: block;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: var(--bold);
+  color: var(--white);
+  // margin-bottom: 5px;
+  font-family: var(--font-headers);
+  text-transform: uppercase;
+}

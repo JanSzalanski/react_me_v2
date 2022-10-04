@@ -20,17 +20,11 @@
 }
 
 .inputWrap {
-  width: 40%;
-  @media (max-width: 1600px) {
-    width: 45%;
-  }
+  width: 45%;
 }
 .titleWrap {
   // border: 1px solid red;
-  width: 60%;
-  @media (max-width: 1600px) {
-    width: 55%;
-  }
+  width: 55%;
 }
 
 .title {
@@ -56,10 +50,6 @@
   @media (max-width: 1600px) {
     font-size: 1.6rem;
     line-height: 1.6rem;
-  }
-
-  @media (max-width: 1440px) {
-    font-size: 1.6rem;
   }
 
   @media (max-width: 1366px) {

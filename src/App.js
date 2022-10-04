@@ -4,7 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import NewsPage from './pages/NewsPage/NewsPage';
 import ArticlePage from './pages/ArticlePage/ArticlePage';
 import PeoplePage from './pages/PeoplePage/PeoplePage';
-import NftPage from './pages/NftPage/NftPage';
+import NftPage from './pages/Blockchain/Blockchain';
 import SideBar from './components/organisms/SideBar/SideBar';
 import Video from './components/atoms/Videos/Video';
 import ContactBar from './components/molecules/ContactBar/ContactBar';
@@ -49,12 +49,12 @@ const DUMMY_NEWS = [
   },
   {
     path: 'a5',
-    date: new Date(2022, 0, 1),
+    date: new Date(2022, 8, 25),
     title: 'Piąty news',
     short:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste!',
+      'Na podstronie "Ludzie" dodałem uproszczoną funkcjonalność dodawania komentarzy. Podstrona #NFT zmienia się na #BLOCKCHAIN \\ AI',
     content:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit. Deserunt tempore neque recusandae omnis at perspiciatis odit possimus quod asperiores id nesciunt quae, consequatur ipsa veniam esse eveniet iusto corrupti et?',
+      'Na podstronie "Ludzie" dodałem uproszczoną funkcjonalność dodawania komentarzy. Podstrona #NFT zmienia się na #BLOCKCHAIN  AI. Komentarze zapisuj się do bazy danych, tak więc mamy tutaj do czynienia z pewnym rozwiązaniem backend. Nowa nazwa podstrony z kolei to naturalna konsekwencja tego, że ta strona ma być przedstawicielką Web 3.0 ?- a to jest coś więcej niż samo NFT. Mało tego moje zainteresowania wykraczają także poza blockcahin dla tego też i sztuczna inteligencja. ',
   },
   {
     path: 'a6',

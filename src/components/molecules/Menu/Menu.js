@@ -55,7 +55,7 @@ const Menu = (props) => {
               <li className={classes.li}>
                 <NavLink activeClassName={classes.active} className="routeLink" to="/nft">
                   <Button type="menu" tabindex="13" onClick={props.nftPointer}>
-                    #NFT
+                    #BLOCKCHAIN \ AI
                   </Button>
                 </NavLink>
               </li>
