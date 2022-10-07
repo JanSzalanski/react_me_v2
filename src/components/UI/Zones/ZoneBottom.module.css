@@ -4,6 +4,7 @@
   color: var(--white);
   display: block;
   width: calc(100% - 40px);
+  height: calc(10vh + 40px);
   padding: 10px;
   position: absolute;
   font-size: 1.8rem;
