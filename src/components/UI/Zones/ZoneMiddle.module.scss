@@ -25,6 +25,8 @@
   }
 
   @media (max-width: 1366px) {
+    top: calc(var(--inputHeight) + 52px);
+    height: calc(100% - (var(--inputHeight) + 32px + 10vh + 52px));
     font-size: var(--fontSizeS);
   }
 

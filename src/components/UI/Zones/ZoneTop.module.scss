@@ -1,5 +1,5 @@
 .zoneTop {
-  text-align: left;
+  // text-align: left;
   line-height: 2.1rem;
   color: var(--white);
   display: block;
@@ -19,6 +19,7 @@
   backdrop-filter: blur(8px);
 
   @media (max-width: 1366px) {
+    height: calc(var(--inputHeight) + 30px);
     font-size: var(--fontSizeS);
   }
 

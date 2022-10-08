@@ -1,5 +1,4 @@
 .zoneTop {
-  text-align: left;
   line-height: 2.1rem;
   color: var(--white);
   display: block;
@@ -23,6 +22,7 @@
 
 @media (max-width: 1366px) {
   .zoneTop {
+    height: calc(var(--inputHeight) + 30px);
     font-size: var(--fontSizeS);
   }
 }
