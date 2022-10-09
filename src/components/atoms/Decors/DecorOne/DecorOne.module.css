@@ -13,15 +13,14 @@
   margin-left: 5px;
   margin-right: 5px;
   background-color: var(--colorBgkVD);
-  -webkit-transform: skew(-45deg);
-          transform: skew(-45deg);
+  transform: skew(-45deg);
 }
 
 .decorHeader {
   position: absolute;
-  width: calc(100% - 88px - 31% * 1.25);
+  width: calc(100% - 88px - 38.75%);
   height: 55px;
-  left: calc(56px + 31% * 1.25);
+  left: calc(56px + 38.75%);
   overflow: hidden;
   top: 7px;
   -webkit-clip-path: polygon(0 0, 98.2% 0, 100% 20%, 100% 80%, 98.5% 100%, 0 100%);
@@ -29,54 +28,45 @@
   border-left: 5px solid var(--colorArticles);
   border-top: 1px solid var(--colorArticles);
 }
-
 .decorHeader .rectangle {
-  -webkit-transform: skew(-45deg) translateX(0px);
-          transform: skew(-45deg) translateX(0px);
+  transform: skew(-45deg) translateX(0px);
 }
-
 @media (min-width: 1921px) {
   .decorHeader {
     -webkit-clip-path: polygon(0 0, 98.7% 0, 100% 20%, 100% 80%, 98.9% 100%, 0 100%);
             clip-path: polygon(0 0, 98.7% 0, 100% 20%, 100% 80%, 98.9% 100%, 0 100%);
   }
 }
-
 @media (min-width: 1921px) and (max-height: 1153px) {
   .decorHeader {
     -webkit-clip-path: polygon(0 0, 98.3% 0, 100% 20%, 100% 80%, 98.6% 100%, 0 100%);
             clip-path: polygon(0 0, 98.3% 0, 100% 20%, 100% 80%, 98.6% 100%, 0 100%);
   }
 }
-
 @media (max-width: 1600px) {
   .decorHeader {
     -webkit-clip-path: polygon(0 0, 97.7% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
             clip-path: polygon(0 0, 97.7% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
   }
 }
-
 @media (max-width: 1366px) {
   .decorHeader {
     -webkit-clip-path: polygon(0 0, 97.7% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
             clip-path: polygon(0 0, 97.7% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
   }
 }
-
 @media (max-width: 1280px) {
   .decorHeader {
     -webkit-clip-path: polygon(0 0, 96.7% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
             clip-path: polygon(0 0, 96.7% 0, 100% 20%, 100% 80%, 97.6% 100%, 0 100%);
   }
 }
-
 @media (max-width: 1024px) {
   .decorHeader {
     -webkit-clip-path: polygon(0 0, 96.2% 0, 100% 20%, 100% 80%, 97% 100%, 0 100%);
             clip-path: polygon(0 0, 96.2% 0, 100% 20%, 100% 80%, 97% 100%, 0 100%);
   }
 }
-
 @media (max-width: 480px) {
   .decorHeader {
     display: none;
@@ -85,49 +75,42 @@
 
 .decorFooter {
   position: absolute;
-  width: calc(100% - 88px - 31% * 1.25);
+  width: calc(100% - 88px - 38.75%);
   height: 55px;
-  right: calc(54px + 31% * 1.25);
+  right: calc(54px + 38.75%);
   overflow: hidden;
   bottom: 7px;
   -webkit-clip-path: polygon(0 20%, 2% 0, 100% 0%, 100% 100%, 2% 100%, 0 80%);
           clip-path: polygon(0 20%, 2% 0, 100% 0%, 100% 100%, 2% 100%, 0 80%);
   border-bottom: 1px solid var(--colorArticles);
 }
-
 .decorFooter .rectangle {
-  -webkit-transform: skew(45deg);
-          transform: skew(45deg);
+  transform: skew(45deg);
 }
-
 @media (min-width: 1921px) {
   .decorFooter {
     -webkit-clip-path: polygon(0 20%, 1% 0, 100% 0%, 100% 100%, 1% 100%, 0 80%);
             clip-path: polygon(0 20%, 1% 0, 100% 0%, 100% 100%, 1% 100%, 0 80%);
   }
 }
-
 @media (min-width: 1921px) and (max-height: 1153px) {
   .decorFooter {
     -webkit-clip-path: polygon(0 20%, 1.5% 0, 100% 0%, 100% 100%, 1.5% 100%, 0 80%);
             clip-path: polygon(0 20%, 1.5% 0, 100% 0%, 100% 100%, 1.5% 100%, 0 80%);
   }
 }
-
 @media (max-width: 1280px) {
   .decorFooter {
     -webkit-clip-path: polygon(0 20%, 2.5% 0, 100% 0%, 100% 100%, 2.5% 100%, 0 80%);
             clip-path: polygon(0 20%, 2.5% 0, 100% 0%, 100% 100%, 2.5% 100%, 0 80%);
   }
 }
-
 @media (max-width: 1024px) {
   .decorFooter {
     -webkit-clip-path: polygon(0 20%, 3.5% 0, 100% 0%, 100% 100%, 3.5% 100%, 0 80%);
             clip-path: polygon(0 20%, 3.5% 0, 100% 0%, 100% 100%, 3.5% 100%, 0 80%);
   }
 }
-
 @media (max-width: 480px) {
   .decorFooter {
     display: none;
@@ -149,13 +132,11 @@
   position: absolute;
   left: 50%;
   top: 0;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   width: 130%;
   height: 100%;
 }
 
 .clear {
   clear: both;
-}
-/*# sourceMappingURL=DecorOne.module.css.map */
+}/*# sourceMappingURL=DecorOne.module.css.map */

@@ -8,16 +8,14 @@
   position: relative;
   height: 100%;
   width: 100%;
-  -webkit-filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
-          filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
+  filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
 }
 
 .background, .commentBgk {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: calc(100% + 2px);
   width: calc(100% + 2px);
   background-color: var(--colorArticles);
@@ -32,8 +30,7 @@
   top: 50%;
   height: 100%;
   width: 100%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 15px 30px;
   font-size: var(--fontSizeM);
   -webkit-clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
@@ -46,8 +43,7 @@
   background-color: var(--colorArticlesDarkB);
   letter-spacing: 1px;
 }
-
-.textarea::-webkit-input-placeholder, .comment::-webkit-input-placeholder {
+.textarea::-moz-placeholder, .comment::-moz-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -55,7 +51,6 @@
   color: var(--colorGrey100);
   line-height: var(--inputHeight);
 }
-
 .textarea:-ms-input-placeholder, .comment:-ms-input-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
@@ -64,16 +59,6 @@
   color: var(--colorGrey100);
   line-height: var(--inputHeight);
 }
-
-.textarea::-ms-input-placeholder, .comment::-ms-input-placeholder {
-  font-weight: var(--bold);
-  font-size: var(--fontSizeXS);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--colorGrey100);
-  line-height: var(--inputHeight);
-}
-
 .textarea::placeholder, .comment::placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
@@ -82,7 +67,6 @@
   color: var(--colorGrey100);
   line-height: var(--inputHeight);
 }
-
 .textarea:focus, .comment:focus {
   background-color: var(--colorGrey100);
 }
@@ -100,5 +84,4 @@
 .commentBgk {
   -webkit-clip-path: polygon(0 0, 98% 0, 100% 15%, 100% 85%, 98% 100%, 0 100%);
           clip-path: polygon(0 0, 98% 0, 100% 15%, 100% 85%, 98% 100%, 0 100%);
-}
-/*# sourceMappingURL=Textarea.module.css.map */
+}/*# sourceMappingURL=Textarea.module.css.map */

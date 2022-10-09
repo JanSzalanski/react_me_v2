@@ -4,16 +4,13 @@
   left: calc(50% - 15rem);
   width: 30rem;
   background: var(--colorBgkD);
-  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   z-index: 100;
   border-radius: 7px;
 }
-
 .modal p {
   padding: 1rem;
 }
-
 .modal h2 {
   margin: 0;
   padding: 1rem;
@@ -23,12 +20,8 @@
 }
 
 .actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding: 0 0.5rem;
 }
 
@@ -40,5 +33,4 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.75);
   z-index: 50;
-}
-/*# sourceMappingURL=ErrorModal.module.css.map */
+}/*# sourceMappingURL=ErrorModal.module.css.map */

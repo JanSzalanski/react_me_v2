@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,CAAC;EACV,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,CAAC;EACR,SAAS,EAAE,kDAAkD;EAC7D,gBAAgB,EAAE,YAAY;EAC9B,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,GAAG;CAIb",
-    "sources": [
-        "TrapezeA.module.scss"
-    ],
-    "names": [],
-    "file": "TrapezeA.module.css"
-}
+{"version":3,"sources":["TrapezeA.module.scss","TrapezeA.module.css"],"names":[],"mappings":"AAAA;EACE,kBAAA;EACA,gBAAA;EACA,UAAA;EACA,OAAA;EACA,QAAA;EACA,qEAAA;UAAA,6DAAA;EACA,8BAAA;EACA,WAAA;EACA,YAAA;EACA,YAAA;ACCF","file":"TrapezeA.module.css"}

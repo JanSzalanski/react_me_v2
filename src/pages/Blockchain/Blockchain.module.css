@@ -6,19 +6,16 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 90%;
   height: 70%;
 }
-
 @media (max-width: 1366px) {
   .wrapperGraphic {
     left: 51%;
     width: 89%;
   }
 }
-
 @media (max-width: 480px) {
   .wrapperGraphic {
     height: 85%;
@@ -41,7 +38,6 @@
   bottom: 40px;
   border-radius: 7px;
 }
-
 @media (max-width: 480px) {
   .nftGraphic {
     background-position: 50% 100%;
@@ -65,5 +61,4 @@
   color: var(--white);
   font-family: var(--font-headers);
   text-transform: uppercase;
-}
-/*# sourceMappingURL=Blockchain.module.css.map */
+}/*# sourceMappingURL=Blockchain.module.css.map */

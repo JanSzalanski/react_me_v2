@@ -1,4 +1,4 @@
-.paragraph, .card, .article, .details {
+.paragraph, .details, .article, .card {
   text-align: left;
   font-size: 1.6rem;
   font-weight: 500;
@@ -10,32 +10,27 @@
 .card {
   position: relative;
 }
-
 @media (max-width: 1440px) {
   .card {
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
 }
-
 @media (max-width: 1366px) {
   .card {
     font-size: var(--fontSizeXS);
   }
 }
-
 @media (max-width: 1366px) {
   .card {
     font-size: var(--fontSizeXS);
   }
 }
-
 @media (max-width: 1024px) {
   .card {
     padding-top: 0px;
   }
 }
-
 @media (max-width: 480px) {
   .card {
     font-size: 1.2rem;
@@ -51,8 +46,7 @@
   font-size: 1.8rem;
   top: 20px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   background-color: var(--colorArticlesE);
   border: 1px solid var(--colorArticles);
   border-top-left-radius: 5px;
@@ -61,13 +55,11 @@
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
-
 @media (max-width: 1366px) {
   .article {
     font-size: var(--fontSizeS);
   }
 }
-
 @media (max-width: 1024px) {
   .article {
     font-size: var(--fontSizeXS);
@@ -79,12 +71,10 @@
   padding-left: 50px;
   padding-right: 345px;
 }
-
 @media (max-width: 480px) {
   .details {
     margin: 0;
     padding: 0px;
     font-size: 1.4rem;
   }
-}
-/*# sourceMappingURL=Paragraph.module.css.map */
+}/*# sourceMappingURL=Paragraph.module.css.map */

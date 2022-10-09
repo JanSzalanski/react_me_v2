@@ -1,5 +1,5 @@
 .zoneTop {
-  // text-align: left;
+  text-align: left;
   line-height: 2.1rem;
   color: var(--white);
   display: block;
@@ -27,5 +27,14 @@
     font-size: var(--fontSizeXS);
   }
 
+  & p {
+    display: block;
+  }
+
   // text-transform: uppercase;
+}
+
+.zoneTopRelative {
+  @extend .zoneTop;
+  height: auto;
 }

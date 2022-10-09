@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;CACd",
-    "sources": [
-        "DetailsLayout.module.scss"
-    ],
-    "names": [],
-    "file": "DetailsLayout.module.css"
-}
+{"version":3,"sources":["DetailsLayout.module.scss","DetailsLayout.module.css"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,aAAA;ACCF","file":"DetailsLayout.module.css"}

@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,uCAAuC;EAC5C,IAAI,EAAE,sCAAsC;EAE5C,OAAO,EAAE,KAAK;EAGd,UAAU,EAAE,iBAAiB;EAC7B,MAAM,EAAE,OAAO;EACf,cAAc,EAAE,IAAI;CACrB",
-    "sources": [
-        "Label.scss"
-    ],
-    "names": [],
-    "file": "Label.css"
-}
+{"version":3,"sources":["Label.scss","Label.css"],"names":[],"mappings":"AAAA;EACE,kBAAA;EACA,sCAAA;EACA,sCAAA;EAEA,cAAA;EAGA,6BAAA;EACA,eAAA;EACA,oBAAA;ACFF","file":"Label.css"}

@@ -1,4 +1,4 @@
-.heading, .card, .detailPage, .position {
+.heading, .position, .detailPage, .card {
   text-align: left;
   padding: 15px;
   padding-left: 50px;
@@ -11,39 +11,33 @@
   font-family: var(--font-headers);
   text-transform: uppercase;
 }
-
 @media (max-width: 1600px) {
-  .heading, .card, .detailPage, .position {
+  .heading, .position, .detailPage, .card {
     font-size: 2.2rem;
   }
 }
-
 @media (max-width: 1440px) {
-  .heading, .card, .detailPage, .position {
+  .heading, .position, .detailPage, .card {
     font-size: 2rem;
   }
 }
-
 @media (max-width: 1366px) {
-  .heading, .card, .detailPage, .position {
+  .heading, .position, .detailPage, .card {
     font-size: 1.8rem;
   }
 }
-
 @media (max-width: 1152px) {
-  .heading, .card, .detailPage, .position {
+  .heading, .position, .detailPage, .card {
     font-size: 1.6rem;
   }
 }
-
 @media (max-width: 1024px) {
-  .heading, .card, .detailPage, .position {
+  .heading, .position, .detailPage, .card {
     font-size: 1.4rem;
   }
 }
-
 @media (max-width: 480px) {
-  .heading, .card, .detailPage, .position {
+  .heading, .position, .detailPage, .card {
     font-size: 1.5rem;
   }
 }
@@ -51,36 +45,24 @@
 .card {
   margin-bottom: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   font-size: 2rem;
   height: 45%;
   color: black;
 }
-
 @media (max-width: 1366px) {
   .card {
     font-size: 1.8rem;
   }
 }
-
 @media (max-width: 1024px) {
   .card {
     font-size: 1.6rem;
   }
 }
-
 @media (max-width: 480px) {
   .card {
     font-size: 1.5rem;
@@ -95,9 +77,8 @@
 .position {
   letter-spacing: 1px;
   color: var(--colorArticles);
-  text-shadow: -4px 4px 2px black;
+  text-shadow: -4px 4px 2px rgb(0, 0, 0);
 }
-
 @media (max-width: 480px) {
   .position {
     display: block;
@@ -108,11 +89,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-weight: 500;
     letter-spacing: 2px;
     text-align: center;
   }
-}
-/*# sourceMappingURL=Heading.module.css.map */
+}/*# sourceMappingURL=Heading.module.css.map */

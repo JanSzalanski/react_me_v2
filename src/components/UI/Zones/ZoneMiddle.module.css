@@ -10,26 +10,21 @@
   font-size: 1.8rem;
   top: calc(var(--inputHeight) + 62px);
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   background-color: var(--colorArticlesE);
   border: 1px solid var(--colorArticles);
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  flex-grow: 2;
   overflow-y: auto;
   font-weight: 500;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
-
 @media (max-width: 1600px) {
   .zoneMiddle {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
-
 @media (max-width: 1366px) {
   .zoneMiddle {
     top: calc(var(--inputHeight) + 52px);
@@ -37,10 +32,8 @@
     font-size: var(--fontSizeS);
   }
 }
-
 @media (max-width: 1024px) {
   .zoneMiddle {
     font-size: var(--fontSizeXS);
   }
-}
-/*# sourceMappingURL=ZoneMiddle.module.css.map */
+}/*# sourceMappingURL=ZoneMiddle.module.css.map */

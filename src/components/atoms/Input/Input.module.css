@@ -5,26 +5,22 @@
   width: calc(var(--inputWidth) + 24px);
   height: calc(var(--inputHeight) + 4px);
 }
-
 @media (min-width: 1921px) and (min-height: 1153px) {
   .wrapperAll {
     top: 10.5%;
   }
 }
-
 @media (max-width: 1600px) {
   .wrapperAll {
     top: 80px;
     left: 63.7%;
   }
 }
-
 @media (max-width: 1440px) {
   .wrapperAll {
     left: 59.2%;
   }
 }
-
 @media (max-width: 1366px) {
   .wrapperAll {
     top: 40px;
@@ -32,7 +28,6 @@
     height: calc(var(--inputHeight) - 6px);
   }
 }
-
 @media (max-width: 1280px) {
   .wrapperAll {
     top: 41px;
@@ -40,21 +35,18 @@
     height: calc(var(--inputHeight) - 8px);
   }
 }
-
 @media (max-width: 1152px) {
   .wrapperAll {
     top: 41px;
     left: 51.4%;
   }
 }
-
 @media (max-width: 1024px) {
   .wrapperAll {
     top: 37px;
     left: 45.8%;
   }
 }
-
 @media (max-width: 480px) {
   .wrapperAll {
     display: none;
@@ -71,46 +63,40 @@
   position: relative;
   height: 100%;
   width: 100%;
-  -webkit-filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
-          filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
+  filter: drop-shadow(-5px 5px 8px var(--colorArticlesB));
 }
 
-.background, .bgkS, .contactBgk, .commentBgk {
+.background, .commentBgk, .contactBgk, .bgkS {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: calc(var(--inputHeight) + 4px);
   width: calc(var(--inputWidth) + 22px);
   background-color: var(--colorArticles);
   -webkit-clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
           clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
 }
-
 @media (min-width: 1921px) {
-  .background, .bgkS, .contactBgk, .commentBgk {
+  .background, .commentBgk, .contactBgk, .bgkS {
     -webkit-clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
             clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
   }
 }
-
 @media (max-width: 1600px) {
-  .background, .bgkS, .contactBgk, .commentBgk {
+  .background, .commentBgk, .contactBgk, .bgkS {
     -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
             clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
   }
 }
-
 @media (max-width: 1280px) {
-  .background, .bgkS, .contactBgk, .commentBgk {
+  .background, .commentBgk, .contactBgk, .bgkS {
     -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
             clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
   }
 }
-
 @media (max-width: 1024px) {
-  .background, .bgkS, .contactBgk, .commentBgk {
+  .background, .commentBgk, .contactBgk, .bgkS {
     -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
             clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
   }
@@ -122,12 +108,11 @@
   }
 }
 
-.input, .search, .contact, .comment {
+.input, .comment, .contact, .search {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: var(--inputHeight);
   width: calc(var(--inputWidth) + 20px);
   padding: 15px 30px;
@@ -142,8 +127,7 @@
   background-color: var(--colorArticlesDarkB);
   letter-spacing: 1px;
 }
-
-.input::-webkit-input-placeholder, .search::-webkit-input-placeholder, .contact::-webkit-input-placeholder, .comment::-webkit-input-placeholder {
+.input::-moz-placeholder, .comment::-moz-placeholder, .contact::-moz-placeholder, .search::-moz-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -151,8 +135,7 @@
   color: var(--colorGrey100);
   line-height: var(--inputHeight);
 }
-
-.input:-ms-input-placeholder, .search:-ms-input-placeholder, .contact:-ms-input-placeholder, .comment:-ms-input-placeholder {
+.input:-ms-input-placeholder, .comment:-ms-input-placeholder, .contact:-ms-input-placeholder, .search:-ms-input-placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -160,8 +143,7 @@
   color: var(--colorGrey100);
   line-height: var(--inputHeight);
 }
-
-.input::-ms-input-placeholder, .search::-ms-input-placeholder, .contact::-ms-input-placeholder, .comment::-ms-input-placeholder {
+.input::placeholder, .comment::placeholder, .contact::placeholder, .search::placeholder {
   font-weight: var(--bold);
   font-size: var(--fontSizeXS);
   text-transform: uppercase;
@@ -169,51 +151,34 @@
   color: var(--colorGrey100);
   line-height: var(--inputHeight);
 }
-
-.input::placeholder, .search::placeholder, .contact::placeholder, .comment::placeholder {
-  font-weight: var(--bold);
-  font-size: var(--fontSizeXS);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--colorGrey100);
-  line-height: var(--inputHeight);
-}
-
 @media (max-width: 1600px) {
-  .input::-webkit-input-placeholder, .search::-webkit-input-placeholder, .contact::-webkit-input-placeholder, .comment::-webkit-input-placeholder {
+  .input::-moz-placeholder, .comment::-moz-placeholder, .contact::-moz-placeholder, .search::-moz-placeholder {
     font-size: 1.1rem;
   }
-  .input:-ms-input-placeholder, .search:-ms-input-placeholder, .contact:-ms-input-placeholder, .comment:-ms-input-placeholder {
+  .input:-ms-input-placeholder, .comment:-ms-input-placeholder, .contact:-ms-input-placeholder, .search:-ms-input-placeholder {
     font-size: 1.1rem;
   }
-  .input::-ms-input-placeholder, .search::-ms-input-placeholder, .contact::-ms-input-placeholder, .comment::-ms-input-placeholder {
-    font-size: 1.1rem;
-  }
-  .input::placeholder, .search::placeholder, .contact::placeholder, .comment::placeholder {
+  .input::placeholder, .comment::placeholder, .contact::placeholder, .search::placeholder {
     font-size: 1.1rem;
   }
 }
-
-.input:focus, .search:focus, .contact:focus, .comment:focus {
+.input:focus, .comment:focus, .contact:focus, .search:focus {
   background-color: var(--colorGrey100);
 }
-
 @media (min-width: 1921px) {
-  .input, .search, .contact, .comment {
+  .input, .comment, .contact, .search {
     -webkit-clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
             clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
   }
 }
-
 @media (max-width: 1600px) {
-  .input, .search, .contact, .comment {
+  .input, .comment, .contact, .search {
     -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
             clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 94% 100%, 0 100%);
   }
 }
-
 @media (max-width: 1280px) {
-  .input, .search, .contact, .comment {
+  .input, .comment, .contact, .search {
     -webkit-clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
             clip-path: polygon(0% 40%, 0% 0%, 100% 0%, 100% 60%, 95% 100%, 0 100%);
   }
@@ -226,7 +191,6 @@
   background-position: 15px 50%;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 480px) {
   .search {
     display: none;
@@ -238,7 +202,6 @@
           clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 93% 100%, 0 100%);
   width: calc(var(--inputWidth) + 60px);
 }
-
 @media (max-width: 480px) {
   .contact {
     display: block;
@@ -265,7 +228,6 @@
   height: 100%;
   width: 100%;
 }
-
 @media (max-width: 480px) {
   .comment {
     display: block;
@@ -286,5 +248,4 @@
           clip-path: polygon(0% 40%, 7% 0%, 100% 0%, 100% 60%, 100% 100%, 0 100%);
   width: calc(100% + 2px);
   height: calc(100% + 2px);
-}
-/*# sourceMappingURL=Input.module.css.map */
+}/*# sourceMappingURL=Input.module.css.map */

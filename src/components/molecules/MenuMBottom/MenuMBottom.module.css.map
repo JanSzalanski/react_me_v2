@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;CAad;;AAZC,MAAM,EAAE,SAAS,EAAE,KAAK;EAF1B,AAAA,KAAK,CAAC;IAGF,KAAK,EAAE,IAAI;IACX,OAAO,EAAE,KAAK;IACd,MAAM,EAAE,IAAI;IACZ,QAAQ,EAAE,QAAQ;IAClB,IAAI,EAAE,GAAG;IACT,MAAM,EAAE,CAAC;IACT,SAAS,EAAE,kBAAkB;IAC7B,cAAc,EAAE,IAAI;GAIvB;;;AAED,AAAA,MAAM,CAAC;EACL,UAAU,EAAE,IAAI;CACjB",
-    "sources": [
-        "MenuMBottom.module.scss"
-    ],
-    "names": [],
-    "file": "MenuMBottom.module.css"
-}
+{"version":3,"sources":["MenuMBottom.module.scss","MenuMBottom.module.css"],"names":[],"mappings":"AAAA;EACE,aAAA;ACCF;ADAE;EAFF;IAGI,WAAA;IACA,cAAA;IACA,YAAA;IACA,kBAAA;IACA,SAAA;IACA,SAAA;IACA,6BAAA;IACA,oBAAA;ECGF;AACF;;ADEA;EACE,gBAAA;ACCF","file":"MenuMBottom.module.css"}

@@ -10,8 +10,7 @@
   font-size: 1.8rem;
   bottom: 20px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   background-color: var(--colorArticlesE);
   border: 1px solid var(--colorArticles);
   border-bottom-left-radius: 5px;
@@ -20,17 +19,14 @@
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
-
 @media (max-width: 1366px) {
   .zoneBottom {
     height: calc(10vh + 10px);
     font-size: var(--fontSizeS);
   }
 }
-
 @media (max-width: 1024px) {
   .zoneBottom {
     font-size: var(--fontSizeXS);
   }
-}
-/*# sourceMappingURL=ZoneBottom.module.css.map */
+}/*# sourceMappingURL=ZoneBottom.module.css.map */

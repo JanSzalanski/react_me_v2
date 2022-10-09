@@ -1,7 +1,6 @@
 .menu {
   display: none;
 }
-
 @media (max-width: 480px) {
   .menu {
     width: 100%;
@@ -10,13 +9,11 @@
     position: absolute;
     left: 50%;
     bottom: 0;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     pointer-events: none;
   }
 }
 
 .ulist {
   list-style: none;
-}
-/*# sourceMappingURL=MenuMBottom.module.css.map */
+}/*# sourceMappingURL=MenuMBottom.module.css.map */

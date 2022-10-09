@@ -1,5 +1,5 @@
 @media (max-width: 480px) {
-  .decortwo, .decortwo2, .decortwo3, .decortwo4 {
+  .decortwo, .decortwo4, .decortwo3, .decortwo2 {
     position: absolute;
     left: 0;
     top: 2px;
@@ -33,5 +33,4 @@
   left: 0;
   right: calc(100% - (10% + 29px));
   width: calc(10% + 29px);
-}
-/*# sourceMappingURL=DecorTwo.module.css.map */
+}/*# sourceMappingURL=DecorTwo.module.css.map */

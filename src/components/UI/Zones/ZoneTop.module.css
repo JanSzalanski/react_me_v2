@@ -1,4 +1,5 @@
-.zoneTop {
+.zoneTop, .zoneTopRelative {
+  text-align: left;
   line-height: 2.1rem;
   color: var(--white);
   display: block;
@@ -9,8 +10,7 @@
   font-size: 1.8rem;
   top: 20px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   background-color: var(--colorArticlesE);
   border: 1px solid var(--colorArticles);
   border-top-left-radius: 5px;
@@ -19,17 +19,21 @@
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
-
 @media (max-width: 1366px) {
-  .zoneTop {
+  .zoneTop, .zoneTopRelative {
     height: calc(var(--inputHeight) + 30px);
     font-size: var(--fontSizeS);
   }
 }
-
 @media (max-width: 1024px) {
-  .zoneTop {
+  .zoneTop, .zoneTopRelative {
     font-size: var(--fontSizeXS);
   }
 }
-/*# sourceMappingURL=ZoneTop.module.css.map */
+.zoneTop p, .zoneTopRelative p {
+  display: block;
+}
+
+.zoneTopRelative {
+  height: auto;
+}/*# sourceMappingURL=ZoneTop.module.css.map */

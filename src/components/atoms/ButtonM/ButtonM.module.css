@@ -60,7 +60,6 @@
     color: var(--colorArticles);
   }
 }
-
 @keyframes btnBlink {
   0% {
     color: var(--colorArticles);
@@ -123,7 +122,6 @@
     color: var(--colorArticles);
   }
 }
-
 @-webkit-keyframes btnBlinkB {
   0% {
     color: var(--colorArticles);
@@ -186,7 +184,6 @@
     color: var(--colorArticles);
   }
 }
-
 @keyframes btnBlinkB {
   0% {
     color: var(--colorArticles);
@@ -249,105 +246,78 @@
     color: var(--colorArticles);
   }
 }
-
 @-webkit-keyframes glowMovment {
   0% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
   }
   25% {
-    -webkit-transform: translate(-10px, 4px);
-            transform: translate(-10px, 4px);
+    transform: translate(-10px, 4px);
   }
   50% {
-    -webkit-transform: translate(0px, 8px);
-            transform: translate(0px, 8px);
+    transform: translate(0px, 8px);
   }
   75% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px);
+    transform: translate(5px, 4px);
   }
   100% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
   }
 }
-
 @keyframes glowMovment {
   0% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
   }
   25% {
-    -webkit-transform: translate(-10px, 4px);
-            transform: translate(-10px, 4px);
+    transform: translate(-10px, 4px);
   }
   50% {
-    -webkit-transform: translate(0px, 8px);
-            transform: translate(0px, 8px);
+    transform: translate(0px, 8px);
   }
   75% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px);
+    transform: translate(5px, 4px);
   }
   100% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
   }
 }
-
 @-webkit-keyframes scanline {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   60% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(500%);
-            transform: translateY(500%);
+    transform: translateY(500%);
   }
 }
-
 @keyframes scanline {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   60% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(500%);
-            transform: translateY(500%);
+    transform: translateY(500%);
   }
 }
-
 @-webkit-keyframes slideKont {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-365px);
-            transform: translateX(-365px);
+    transform: translateX(-365px);
   }
 }
-
 @keyframes slideKont {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-365px);
-            transform: translateX(-365px);
+    transform: translateX(-365px);
   }
 }
-
 @-webkit-keyframes KolorIn {
   0% {
     background-color: var(--colorArticlesA);
@@ -356,7 +326,6 @@
     background-color: var(--colorSocial);
   }
 }
-
 @keyframes KolorIn {
   0% {
     background-color: var(--colorArticlesA);
@@ -365,29 +334,22 @@
     background-color: var(--colorSocial);
   }
 }
-
 @-webkit-keyframes hideKont {
   0% {
-    -webkit-transform: translateX(-365px);
-            transform: translateX(-365px);
+    transform: translateX(-365px);
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
-
 @keyframes hideKont {
   0% {
-    -webkit-transform: translateX(-365px);
-            transform: translateX(-365px);
+    transform: translateX(-365px);
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
-
 @-webkit-keyframes KolorOut {
   0% {
     background-color: var(--colorSocial);
@@ -396,7 +358,6 @@
     background-color: var(--colorArticlesA);
   }
 }
-
 @keyframes KolorOut {
   0% {
     background-color: var(--colorSocial);
@@ -405,83 +366,61 @@
     background-color: var(--colorArticlesA);
   }
 }
-
 @media (max-width: 480px) {
   @-webkit-keyframes slideKont {
     0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(-100vw);
-              transform: translateX(-100vw);
+      transform: translateX(-100vw);
     }
   }
   @keyframes slideKont {
     0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(-100vw);
-              transform: translateX(-100vw);
+      transform: translateX(-100vw);
     }
   }
   @-webkit-keyframes hideKont {
     0% {
-      -webkit-transform: translateX(-100vw);
-              transform: translateX(-100vw);
+      transform: translateX(-100vw);
     }
     100% {
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
+      transform: translateX(0px);
     }
   }
   @keyframes hideKont {
     0% {
-      -webkit-transform: translateX(-100vw);
-              transform: translateX(-100vw);
+      transform: translateX(-100vw);
     }
     100% {
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
+      transform: translateX(0px);
     }
   }
 }
-
 @-webkit-keyframes lds-ring {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 @keyframes lds-ring {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
-.buttonM, .new, .copy, .copyA, .copyB, .copyC, .art, .lud, .nft {
+.buttonM, .nft, .lud, .art, .new, .copy, .copyC, .copyB, .copyA {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: center;
+  align-items: flex-start;
   pointer-events: auto;
   background-color: var(--colorArticlesB);
   width: 35px;
@@ -490,36 +429,29 @@
   cursor: pointer;
   text-decoration: none;
   color: var(--white);
-  -webkit-transition: color 0.15s ease-out, -webkit-transform 0.2s ease-out;
-  transition: color 0.15s ease-out, -webkit-transform 0.2s ease-out;
   transition: color 0.15s ease-out, transform 0.2s ease-out;
-  transition: color 0.15s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
   border: 1px solid var(--colorArticles);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
 }
-
-.buttonM p, .new p, .copy p, .copyA p, .copyB p, .copyC p, .art p, .lud p, .nft p {
+.buttonM p, .nft p, .lud p, .art p, .new p, .copy p, .copyC p, .copyB p, .copyA p {
   font-family: var(--font-headers);
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: -3px;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   text-orientation: upright;
   text-shadow: -3px 4px 3px var(--colorArticlesD);
 }
-
-.buttonM:hover, .new:hover, .copy:hover, .copyA:hover, .copyB:hover, .copyC:hover, .art:hover, .lud:hover, .nft:hover {
+.buttonM:hover, .nft:hover, .lud:hover, .art:hover, .new:hover, .copy:hover, .copyC:hover, .copyB:hover, .copyA:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-name: btnBlinkB;
           animation-name: btnBlinkB;
-  -webkit-transform: translate(-6px, 4px);
-          transform: translate(-6px, 4px);
+  transform: translate(-6px, 4px);
 }
 
 .buttonWrapperB {
@@ -532,39 +464,36 @@
   position: relative;
 }
 
-.new, .copy, .copyA, .copyB, .copyC {
+.new, .copy, .copyC, .copyB, .copyA {
   left: 15px;
   top: 7px;
   -webkit-clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
 }
 
-.copy, .copyA, .copyB, .copyC {
+.copy, .copyC, .copyB, .copyA {
   -webkit-backdrop-filter: blur(0px);
           backdrop-filter: blur(0px);
   left: 8px;
   top: 12px;
   border: none;
   background-color: var(--colorArticlesE);
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   -webkit-clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 100% 75%, 40% 100%, 0 100%, 0 0);
 }
-
-.copy:hover, .copyA:hover, .copyB:hover, .copyC:hover {
+.copy:hover, .copyC:hover, .copyB:hover, .copyA:hover {
   -webkit-animation-iteration-count: none;
           animation-iteration-count: none;
   -webkit-animation-duration: none;
           animation-duration: none;
   -webkit-animation-name: none;
           animation-name: none;
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
 .copyA {
-  left: calc(100vw - (8px + 35px));
+  left: calc(100vw - 43px);
   -webkit-clip-path: polygon(100% 0, 100% 100%, 60% 100%, 0 75%, 0 0);
           clip-path: polygon(100% 0, 100% 100%, 60% 100%, 0 75%, 0 0);
 }
@@ -577,44 +506,37 @@
 }
 
 .copyC {
-  left: calc(100vw - (8px + 35px));
+  left: calc(100vw - 43px);
   top: -157px;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 25%, 40% 0);
           clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 25%, 40% 0);
 }
 
-.glow, .glowA, .glowB, .glowC {
+.glow, .glowC, .glowB, .glowA {
   z-index: -1;
   position: absolute;
-  -webkit-filter: drop-shadow(-5px 5px 2px var(--colorArticlesF));
-          filter: drop-shadow(-5px 5px 2px var(--colorArticlesF));
-  -webkit-transition: all 0.25s ease-out;
+  filter: drop-shadow(-5px 5px 2px var(--colorArticlesF));
   transition: all 0.25s ease-out;
 }
 
-.buttonM:hover + .glow, .new:hover + .glow, .copy:hover + .glow, .copyA:hover + .glow, .copyB:hover + .glow, .copyC:hover + .glow, .art:hover + .glow, .lud:hover + .glow, .nft:hover + .glow, .buttonM:hover + .glowA, .new:hover + .glowA, .copy:hover + .glowA, .copyA:hover + .glowA, .copyB:hover + .glowA, .copyC:hover + .glowA, .art:hover + .glowA, .lud:hover + .glowA, .nft:hover + .glowA, .buttonM:hover + .glowB, .new:hover + .glowB, .copy:hover + .glowB, .copyA:hover + .glowB, .copyB:hover + .glowB, .copyC:hover + .glowB, .art:hover + .glowB, .lud:hover + .glowB, .nft:hover + .glowB, .buttonM:hover + .glowC, .new:hover + .glowC, .copy:hover + .glowC, .copyA:hover + .glowC, .copyB:hover + .glowC, .copyC:hover + .glowC, .art:hover + .glowC, .lud:hover + .glowC, .nft:hover + .glowC {
-  -webkit-filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
-          filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
+.buttonM:hover + .glow, .nft:hover + .glow, .lud:hover + .glow, .art:hover + .glow, .buttonM:hover + .glowC, .nft:hover + .glowC, .lud:hover + .glowC, .art:hover + .glowC, .buttonM:hover + .glowB, .nft:hover + .glowB, .lud:hover + .glowB, .art:hover + .glowB, .buttonM:hover + .glowA, .nft:hover + .glowA, .lud:hover + .glowA, .art:hover + .glowA, .new:hover + .glow, .new:hover + .glowC, .new:hover + .glowB, .new:hover + .glowA, .copy:hover + .glow, .copy:hover + .glowC, .copy:hover + .glowB, .copy:hover + .glowA, .copyA:hover + .glow, .copyA:hover + .glowC, .copyA:hover + .glowB, .copyA:hover + .glowA, .copyB:hover + .glow, .copyB:hover + .glowC, .copyB:hover + .glowB, .copyB:hover + .glowA, .copyC:hover + .glow, .copyC:hover + .glowC, .copyC:hover + .glowB, .copyC:hover + .glowA {
+  filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
 
 .buttonM.art:hover, .art:hover {
-  -webkit-transform: translate(-6px, 4px);
-          transform: translate(-6px, 4px);
+  transform: translate(-6px, 4px);
 }
 
 .glowA {
-  -webkit-filter: drop-shadow(5px 5px 2px var(--colorArticlesF));
-          filter: drop-shadow(5px 5px 2px var(--colorArticlesF));
+  filter: drop-shadow(5px 5px 2px var(--colorArticlesF));
 }
 
 .glowB {
-  -webkit-filter: drop-shadow(-5px -5px 2px var(--colorArticlesF));
-          filter: drop-shadow(-5px -5px 2px var(--colorArticlesF));
+  filter: drop-shadow(-5px -5px 2px var(--colorArticlesF));
 }
 
 .glowC {
-  -webkit-filter: drop-shadow(5px -5px 2px var(--colorArticlesF));
-          filter: drop-shadow(5px -5px 2px var(--colorArticlesF));
+  filter: drop-shadow(5px -5px 2px var(--colorArticlesF));
 }
 
 .art {
@@ -625,19 +547,15 @@
 }
 
 .buttonM.art:hover, .art:hover {
-  -webkit-transform: translate(6px, 4px);
-          transform: translate(6px, 4px);
+  transform: translate(6px, 4px);
 }
 
-.buttonM.art:hover + .glow, .art.new:hover + .glow, .art.copy:hover + .glow, .art.copyA:hover + .glow, .art.copyB:hover + .glow, .art.copyC:hover + .glow, .art:hover + .glow, .art.lud:hover + .glow, .art.nft:hover + .glow, .buttonM.art:hover + .glowA, .art:hover + .glowA, .buttonM.art:hover + .glowB, .art:hover + .glowB, .buttonM.art:hover + .glowC, .art:hover + .glowC {
-  -webkit-filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
-          filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
+.buttonM.art:hover + .glow, .art:hover + .glow, .art:hover + .glowA, .art:hover + .glowB, .art:hover + .glowC {
+  filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
 }
 
 .lud {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   left: 15px;
   bottom: 7px;
   -webkit-clip-path: polygon(40% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
@@ -645,19 +563,15 @@
 }
 
 .buttonM.lud:hover, .lud:hover {
-  -webkit-transform: translate(-6px, -4px);
-          transform: translate(-6px, -4px);
+  transform: translate(-6px, -4px);
 }
 
-.buttonM.lud:hover + .glow, .lud.new:hover + .glow, .lud.copy:hover + .glow, .lud.copyA:hover + .glow, .lud.copyB:hover + .glow, .lud.copyC:hover + .glow, .lud.art:hover + .glow, .lud:hover + .glow, .lud.nft:hover + .glow, .buttonM.lud:hover + .glowA, .lud:hover + .glowA, .buttonM.lud:hover + .glowB, .lud:hover + .glowB, .buttonM.lud:hover + .glowC, .lud:hover + .glowC {
-  -webkit-filter: drop-shadow(-3px -3px 2px var(--colorArticlesD));
-          filter: drop-shadow(-3px -3px 2px var(--colorArticlesD));
+.buttonM.lud:hover + .glow, .lud:hover + .glow, .lud:hover + .glowA, .lud:hover + .glowB, .lud:hover + .glowC {
+  filter: drop-shadow(-3px -3px 2px var(--colorArticlesD));
 }
 
 .nft {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   right: 15px;
   bottom: 7px;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 25%, 40% 0);
@@ -665,12 +579,9 @@
 }
 
 .buttonM.nft:hover, .nft:hover {
-  -webkit-transform: translate(6px, -4px);
-          transform: translate(6px, -4px);
+  transform: translate(6px, -4px);
 }
 
-.buttonM.nft:hover + .glow, .nft.new:hover + .glow, .nft.copy:hover + .glow, .nft.copyA:hover + .glow, .nft.copyB:hover + .glow, .nft.copyC:hover + .glow, .nft.art:hover + .glow, .nft.lud:hover + .glow, .nft:hover + .glow, .buttonM.nft:hover + .glowA, .nft:hover + .glowA, .buttonM.nft:hover + .glowB, .nft:hover + .glowB, .buttonM.nft:hover + .glowC, .nft:hover + .glowC {
-  -webkit-filter: drop-shadow(3px -3px 2px var(--colorArticlesD));
-          filter: drop-shadow(3px -3px 2px var(--colorArticlesD));
-}
-/*# sourceMappingURL=ButtonM.module.css.map */
+.buttonM.nft:hover + .glow, .nft:hover + .glow, .nft:hover + .glowA, .nft:hover + .glowB, .nft:hover + .glowC {
+  filter: drop-shadow(3px -3px 2px var(--colorArticlesD));
+}/*# sourceMappingURL=ButtonM.module.css.map */

@@ -3,8 +3,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-47%, -53%);
-          transform: translate(-47%, -53%);
+  transform: translate(-47%, -53%);
 }
 
 .ulist {
@@ -22,38 +21,30 @@
 .borderMenuWrapper {
   position: relative;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
   left: 10px;
   width: 250px;
   height: 280px;
 }
-
 @media (max-width: 1600px) {
   .borderMenuWrapper {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    transform: scale(0.9);
     top: calc(50% - 140px);
     left: 5px;
   }
 }
-
 @media (max-width: 1366px) {
   .borderMenuWrapper {
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
+    transform: scale(0.85);
     left: -5px;
   }
 }
-
 @media (max-width: 1024px) {
   .borderMenuWrapper {
-    -webkit-transform: scale(0.73);
-            transform: scale(0.73);
+    transform: scale(0.73);
     left: -24px;
   }
 }
-
 @media (max-width: 480px) {
   .borderMenuWrapper {
     display: none;
@@ -67,7 +58,6 @@
   left: 0;
   border-top: 1px solid var(--colorArticlesF);
 }
-
 @media (max-width: 480px) {
   .topLine {
     display: none;
@@ -80,10 +70,8 @@
   top: -13px;
   left: 89.3%;
   border-top: 1px solid var(--colorArticlesF);
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
-
 @media (max-width: 480px) {
   .topLineCorner {
     display: none;
@@ -96,10 +84,8 @@
   height: 13px;
   right: -13px;
   border-right: 1px solid var(--colorArticlesF);
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 @media (max-width: 480px) {
   .rightLineCornerA {
     display: none;
@@ -111,11 +97,9 @@
   height: 13px;
   right: -13px;
   border-right: 1px solid var(--colorArticlesF);
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   top: 94.3%;
 }
-
 @media (max-width: 480px) {
   .rightLineCornerB {
     display: none;
@@ -129,7 +113,6 @@
   right: -8px;
   border-right: 1px solid var(--colorArticlesF);
 }
-
 @media (max-width: 480px) {
   .rightLine {
     display: none;
@@ -143,7 +126,6 @@
   right: 20px;
   border-bottom: 1px solid var(--colorArticlesF);
 }
-
 @media (max-width: 480px) {
   .underLine {
     display: none;
@@ -156,10 +138,8 @@
   bottom: -13px;
   right: 10px;
   border-bottom: 1px solid var(--colorArticlesF);
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 @media (max-width: 480px) {
   .underLineCornerB {
     display: none;
@@ -172,10 +152,8 @@
   bottom: -13px;
   right: calc(18px + 45%);
   border-bottom: 1px solid var(--colorArticlesF);
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
-
 @media (max-width: 480px) {
   .underLineCornerA {
     display: none;
@@ -186,15 +164,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 250px;
   height: 280px;
   -webkit-clip-path: polygon(0% 0%, 92% 0, 100% 5%, 100% 95%, 92% 100%, 48% 100%, 40% 95%, 8% 95%, 0 90%);
           clip-path: polygon(0% 0%, 92% 0, 100% 5%, 100% 95%, 92% 100%, 48% 100%, 40% 95%, 8% 95%, 0 90%);
   overflow: hidden;
 }
-
 @media (max-width: 480px) {
   .backgroundMenu {
     display: none;
@@ -202,21 +178,19 @@
 }
 
 .backgroundMenu::before {
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(24, 0, 0, 0)), color-stop(50%, var(--colorArticlesB)));
   background: linear-gradient(to bottom, rgba(24, 0, 0, 0) 50%, var(--colorArticlesB) 50%);
   background-size: 100% 4px;
   z-index: 2;
   pointer-events: none;
   opacity: 0.4;
 }
-
 @media (max-width: 480px) {
   .backgroundMenu::before {
     display: none;
@@ -226,18 +200,15 @@
 .scanline {
   width: 100%;
   height: 25%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(10%, var(--colorArticlesA)), to(rgba(49, 0, 0, 0.1)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, var(--colorArticlesA) 10%, rgba(49, 0, 0, 0.1) 100%);
   opacity: 0.55;
   position: absolute;
   bottom: 100%;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   will-change: transform;
   -webkit-animation: scanline 8s linear infinite;
           animation: scanline 8s linear infinite;
 }
-
 @media (max-width: 480px) {
   .scanline {
     display: none;
@@ -250,12 +221,9 @@
   right: -2px;
   width: 21px;
   outline: 1px solid var(--colorArticles);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
+  transform-origin: top left;
+  transform: rotate(35deg);
 }
-
 @media (max-width: 480px) {
   .cornerTopRight {
     display: none;
@@ -268,12 +236,9 @@
   right: -2px;
   width: 21px;
   outline: 1px solid var(--colorArticles);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
+  transform-origin: top left;
+  transform: rotate(-35deg);
 }
-
 @media (max-width: 480px) {
   .cornerBottomRight {
     display: none;
@@ -286,12 +251,9 @@
   right: 44.6%;
   width: 21px;
   outline: 1px solid var(--colorArticles);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transform: rotate(215deg);
-          transform: rotate(215deg);
+  transform-origin: bottom left;
+  transform: rotate(215deg);
 }
-
 @media (max-width: 480px) {
   .cornerMiddle {
     display: none;
@@ -304,12 +266,9 @@
   left: 1px;
   width: 21px;
   outline: 1px solid var(--colorArticles);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
+  transform-origin: bottom left;
+  transform: rotate(35deg);
 }
-
 @media (max-width: 480px) {
   .cornerBottomLeft {
     display: none;
@@ -323,7 +282,6 @@
   left: 20px;
   outline: 1px solid var(--colorArticles);
 }
-
 @media (max-width: 480px) {
   .bottomLine {
     display: none;
@@ -334,8 +292,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 250px;
   height: 280px;
   border: 2px solid var(--colorArticles);
@@ -354,10 +311,8 @@
   font-family: var(--font-pixel);
   color: var(--colorArticlesC);
 }
-
 @media (max-width: 480px) {
   .titleMenu {
     display: none;
   }
-}
-/*# sourceMappingURL=Menu.module.css.map */
+}/*# sourceMappingURL=Menu.module.css.map */

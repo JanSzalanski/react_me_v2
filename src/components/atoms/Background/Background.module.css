@@ -2,19 +2,16 @@
   position: relative;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 90%;
   height: 70%;
 }
-
 @media (max-width: 1366px) {
   .bgWrapper {
     left: 51%;
     width: 89%;
   }
 }
-
 @media (max-width: 480px) {
   .bgWrapper {
     height: 85%;
@@ -34,7 +31,6 @@
   background-position: 40px 31px;
   background-color: rgba(255, 255, 255, 0.35);
 }
-
 @media (max-width: 480px) {
   .grid {
     background-size: 15%;
@@ -55,7 +51,6 @@
   border: 1px solid var(--colorArticles);
   border-radius: 7px;
 }
-
 @media (max-width: 480px) {
   .border {
     left: 12px;
@@ -74,7 +69,6 @@
   background-image: url(../../../assets/miarkaWhite.webp);
   background-position: 0px 30px;
 }
-
 @media (max-width: 480px) {
   .miarkaL {
     background-position: 0px 12px;
@@ -91,7 +85,6 @@
   background-image: url(../../../assets/miarkaWhite.webp);
   background-position: -10px 30px;
 }
-
 @media (max-width: 480px) {
   .miarkaR {
     right: -5px;
@@ -105,12 +98,10 @@
   position: absolute;
   left: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   height: 50%;
   border-left: 2px solid var(--black);
 }
-
 @media (max-width: 480px) {
   .lineL {
     height: calc(50% + 30px);
@@ -122,14 +113,11 @@
   position: absolute;
   left: 20px;
   top: calc(25% - 20px);
-  -webkit-transform: skew(45deg);
-          transform: skew(45deg);
+  transform: skew(45deg);
   height: 20px;
   border-left: 2px solid var(--black);
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
+  transform-origin: bottom center;
 }
-
 @media (max-width: 480px) {
   .line1 {
     left: 5px;
@@ -143,8 +131,7 @@
   top: 0;
   height: calc(25% - 19px);
   border-left: 2px solid var(--black);
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
+  transform-origin: bottom center;
 }
 
 .line3 {
@@ -153,8 +140,7 @@
   top: 0;
   width: calc(10% + 24px);
   border-top: 2px solid var(--black);
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
 
 .line4 {
@@ -162,13 +148,10 @@
   left: calc(10% + 24px);
   top: 0;
   width: 20px;
-  -webkit-transform: skewY(45deg);
-          transform: skewY(45deg);
+  transform: skewY(45deg);
   border-top: 2px solid var(--black);
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
-
 @media (max-width: 480px) {
   .line4 {
     width: 5px;
@@ -181,10 +164,8 @@
   top: 19px;
   width: 31%;
   border-top: 2px solid var(--black);
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
-
 @media (max-width: 480px) {
   .line5 {
     top: 5px;
@@ -199,12 +180,9 @@
   top: 20px;
   width: 20px;
   border-top: 2px solid var(--black);
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
-  -webkit-transform: skewY(-45deg);
-          transform: skewY(-45deg);
+  transform-origin: center left;
+  transform: skewY(-45deg);
 }
-
 @media (max-width: 480px) {
   .line6 {
     top: 5px;
@@ -219,10 +197,8 @@
   top: 0px;
   width: calc(59% - 83px);
   border-top: 2px solid var(--black);
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
-
 @media (max-width: 480px) {
   .line7 {
     left: calc(100% - (10% + 29px));
@@ -235,13 +211,10 @@
   right: 1px;
   top: 0px;
   width: 20px;
-  -webkit-transform: skewY(45deg);
-          transform: skewY(45deg);
+  transform: skewY(45deg);
   border-top: 2px solid var(--black);
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
-
 @media (max-width: 480px) {
   .line8 {
     top: 0px;
@@ -257,10 +230,8 @@
   width: 0px;
   height: calc(25% - 39px);
   border-right: 2px solid var(--black);
-  -webkit-transform-origin: center right;
-          transform-origin: center right;
+  transform-origin: center right;
 }
-
 @media (max-width: 480px) {
   .line9 {
     top: 5px;
@@ -273,14 +244,11 @@
   position: absolute;
   right: 0;
   top: calc(25% - 20px);
-  -webkit-transform: skew(135deg);
-          transform: skew(135deg);
+  transform: skew(135deg);
   height: 20px;
   border-left: 2px solid var(--black);
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
+  transform-origin: top right;
 }
-
 @media (max-width: 480px) {
   .line10 {
     top: calc(25% - 5px);
@@ -293,12 +261,10 @@
   position: absolute;
   right: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   height: 50%;
   border-left: 2px solid var(--black);
 }
-
 @media (max-width: 480px) {
   .lineR {
     top: calc(50% + 7px);
@@ -312,13 +278,10 @@
   right: 20px;
   bottom: calc(25% - 19px);
   height: 20px;
-  -webkit-transform: skew(45deg);
-          transform: skew(45deg);
+  transform: skew(45deg);
   border-right: 2px solid var(--black);
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
+  transform-origin: top right;
 }
-
 @media (max-width: 480px) {
   .line11 {
     right: 5px;
@@ -332,8 +295,7 @@
   bottom: 0;
   height: calc(25% - 19px);
   border-right: 2px solid var(--black);
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
+  transform-origin: bottom center;
 }
 
 .line13 {
@@ -349,13 +311,10 @@
   bottom: 0;
   right: calc(10% + 24px);
   width: 20px;
-  -webkit-transform: skewY(45deg);
-          transform: skewY(45deg);
+  transform: skewY(45deg);
   border-bottom: 2px solid var(--black);
-  -webkit-transform-origin: center right;
-          transform-origin: center right;
+  transform-origin: center right;
 }
-
 @media (max-width: 480px) {
   .line14 {
     width: 5px;
@@ -368,10 +327,8 @@
   bottom: 20px;
   width: 31%;
   border-bottom: 2px solid var(--black);
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
-
 @media (max-width: 480px) {
   .line15 {
     width: calc(100% - (20% + 63px));
@@ -385,13 +342,10 @@
   right: calc(41% + 43px);
   bottom: 20px;
   width: 20px;
-  -webkit-transform: skewY(135deg);
-          transform: skewY(135deg);
+  transform: skewY(135deg);
   border-bottom: 2px solid var(--black);
-  -webkit-transform-origin: center right;
-          transform-origin: center right;
+  transform-origin: center right;
 }
-
 @media (max-width: 480px) {
   .line16 {
     right: calc(100% - (10% + 34px));
@@ -406,10 +360,8 @@
   bottom: 0;
   width: calc(59% - 83px);
   border-bottom: 2px solid var(--black);
-  -webkit-transform-origin: center right;
-          transform-origin: center right;
+  transform-origin: center right;
 }
-
 @media (max-width: 480px) {
   .line17 {
     right: calc(100% - (10% + 29px));
@@ -422,13 +374,10 @@
   left: 1px;
   bottom: 20px;
   width: 20px;
-  -webkit-transform: skewY(45deg);
-          transform: skewY(45deg);
+  transform: skewY(45deg);
   border-bottom: 2px solid var(--black);
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
-
 @media (max-width: 480px) {
   .line18 {
     bottom: 5px;
@@ -442,10 +391,8 @@
   bottom: 20px;
   height: calc(25% - 39px);
   border-left: 2px solid var(--black);
-  -webkit-transform-origin: center bottom;
-          transform-origin: center bottom;
+  transform-origin: center bottom;
 }
-
 @media (max-width: 480px) {
   .line19 {
     height: calc(25% - 25px);
@@ -458,16 +405,12 @@
   left: 0;
   bottom: calc(25% - 19px);
   height: 20px;
-  -webkit-transform: skew(-45deg);
-          transform: skew(-45deg);
+  transform: skew(-45deg);
   border-left: 2px solid var(--black);
-  -webkit-transform-origin: center bottom;
-          transform-origin: center bottom;
+  transform-origin: center bottom;
 }
-
 @media (max-width: 480px) {
   .line20 {
     height: 5px;
   }
-}
-/*# sourceMappingURL=Background.module.css.map */
+}/*# sourceMappingURL=Background.module.css.map */
