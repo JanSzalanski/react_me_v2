@@ -3,6 +3,8 @@ body {
   font-family: $font-main;
   font-size: 1.6rem;
   overflow: hidden;
+  scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
+  scrollbar-width: thin;
 
   // position: absolute;
   // z-index: -1;

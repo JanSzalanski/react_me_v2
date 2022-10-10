@@ -118,6 +118,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   overflow: hidden;
+  scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
+  scrollbar-width: thin;
   width: 100%;
   background-color: black;
 }
