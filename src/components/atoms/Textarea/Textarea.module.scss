@@ -2,6 +2,8 @@
   position: relative;
   height: calc(var(--inputHeight) * 5.5);
   width: calc(var(--inputWidth) + 64px);
+  // scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
+  // scrollbar-width: thin;
 
   // border: 1px solid whitesmoke;
 }
@@ -26,6 +28,8 @@
 }
 
 .textarea {
+  scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
+  scrollbar-width: thin;
   resize: none;
   position: absolute;
   left: 50%;
@@ -54,6 +58,18 @@
   &:focus {
     background-color: var(--colorGrey100);
   }
+}
+
+.textarea::-webkit-scrollbar {
+  width: 0.5em;
+}
+.textarea::-webkit-scrollbar-track {
+  border: 1px solid var(--colorArticlesF);
+  background-color: var(--colorArticlesA);
+}
+.textarea::-webkit-scrollbar-thumb {
+  border: 1px solid var(--colorArticlesA);
+  background-color: var(--colorArticlesF);
 }
 
 .comment {

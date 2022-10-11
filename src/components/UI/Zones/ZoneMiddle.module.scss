@@ -18,6 +18,9 @@
   flex-grow: 2;
   overflow-y: auto;
 
+  scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
+  // scrollbar-width: thin;
+
   font-weight: 500;
   backdrop-filter: blur(8px);
 
@@ -35,4 +38,16 @@
   @media (max-width: 1024px) {
     font-size: var(--fontSizeXS);
   }
+}
+
+.zoneMiddle::-webkit-scrollbar {
+  width: 1em;
+}
+.zoneMiddle::-webkit-scrollbar-track {
+  border: 1px solid var(--colorArticlesF);
+  background-color: var(--colorArticlesA);
+}
+.zoneMiddle::-webkit-scrollbar-thumb {
+  border: 1px solid var(--colorArticlesA);
+  background-color: var(--colorArticlesF);
 }

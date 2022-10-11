@@ -24,6 +24,8 @@
 }
 
 .textarea, .comment {
+  scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
+  scrollbar-width: thin;
   resize: none;
   position: absolute;
   left: 50%;
@@ -69,6 +71,20 @@
 }
 .textarea:focus, .comment:focus {
   background-color: var(--colorGrey100);
+}
+
+.textarea::-webkit-scrollbar, .comment::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.textarea::-webkit-scrollbar-track, .comment::-webkit-scrollbar-track {
+  border: 1px solid var(--colorArticlesF);
+  background-color: var(--colorArticlesA);
+}
+
+.textarea::-webkit-scrollbar-thumb, .comment::-webkit-scrollbar-thumb {
+  border: 1px solid var(--colorArticlesA);
+  background-color: var(--colorArticlesF);
 }
 
 .comment {

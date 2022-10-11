@@ -16,6 +16,7 @@
   border: 1px solid var(--colorArticles);
   flex-grow: 2;
   overflow-y: auto;
+  scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
   font-weight: 500;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
@@ -31,4 +32,18 @@
   .zoneMiddle {
     font-size: var(--fontSizeXS);
   }
+}
+
+.zoneMiddle::-webkit-scrollbar {
+  width: 1em;
+}
+
+.zoneMiddle::-webkit-scrollbar-track {
+  border: 1px solid var(--colorArticlesF);
+  background-color: var(--colorArticlesA);
+}
+
+.zoneMiddle::-webkit-scrollbar-thumb {
+  border: 1px solid var(--colorArticlesA);
+  background-color: var(--colorArticlesF);
 }/*# sourceMappingURL=ZoneMiddle.module.css.map */
