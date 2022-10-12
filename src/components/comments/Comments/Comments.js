@@ -68,7 +68,7 @@ const Comments = () => {
         dispach({ type: 'ADD', comment: { id: responseData.name, ...comment } });
       })
       .catch((error) => {
-        dispachHttp({ type: 'ERROR', errorMessage: 'Błąd połaczenia z bazą' });
+        dispachHttp({ type: 'ERROR', errorMessage: 'Błąd połączenia z bazą' });
       });
   };
 
