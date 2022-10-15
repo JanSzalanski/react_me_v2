@@ -64,6 +64,11 @@
     font-size: 1.4rem;
   }
 }
+@media (max-width: 1280px) {
+  .title {
+    letter-spacing: 1px;
+  }
+}
 @media (max-width: 1152px) {
   .title {
     font-size: 1.2rem;
