@@ -1,33 +1,26 @@
 .zoneMiddle {
-  text-align: left;
-  line-height: 2.1rem;
-  color: var(--white);
+  // text-align: left;
+  // line-height: 2.1rem;
+  // color: var(--white);
+  // font-size: 1.8rem;
   display: block;
+
   width: calc(100% - 40px);
   height: calc(100% - (var(--inputHeight) + 62px + 10vh + 62px));
-  // padding: 20px;
+
   padding-left: 20px;
   padding-right: 20px;
+
   position: absolute;
-  font-size: 1.8rem;
   top: calc(var(--inputHeight) + 62px);
   left: 50%;
   transform: translate(-50%, 0);
   background-color: var(--colorArticlesE);
-  border: 1px solid var(--colorArticles);
-  flex-grow: 2;
+  // border: 1px solid red;
   overflow-y: auto;
-
   scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
-  // scrollbar-width: thin;
-
   font-weight: 500;
   backdrop-filter: blur(8px);
-
-  @media (max-width: 1600px) {
-    // padding-top: 10px;
-    // padding-bottom: 10px;
-  }
 
   @media (max-width: 1366px) {
     top: calc(var(--inputHeight) + 52px);
@@ -36,7 +29,7 @@
   }
 
   @media (max-width: 1024px) {
-    font-size: var(--fontSizeXS);
+    // font-size: var(--fontSizeXS);
   }
 }
 

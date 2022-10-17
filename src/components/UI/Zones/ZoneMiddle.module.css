@@ -1,20 +1,14 @@
 .zoneMiddle {
-  text-align: left;
-  line-height: 2.1rem;
-  color: var(--white);
   display: block;
   width: calc(100% - 40px);
   height: calc(100% - (var(--inputHeight) + 62px + 10vh + 62px));
   padding-left: 20px;
   padding-right: 20px;
   position: absolute;
-  font-size: 1.8rem;
   top: calc(var(--inputHeight) + 62px);
   left: 50%;
   transform: translate(-50%, 0);
   background-color: var(--colorArticlesE);
-  border: 1px solid var(--colorArticles);
-  flex-grow: 2;
   overflow-y: auto;
   scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
   font-weight: 500;
@@ -28,12 +22,6 @@
     font-size: var(--fontSizeS);
   }
 }
-@media (max-width: 1024px) {
-  .zoneMiddle {
-    font-size: var(--fontSizeXS);
-  }
-}
-
 .zoneMiddle::-webkit-scrollbar {
   width: 1em;
 }
