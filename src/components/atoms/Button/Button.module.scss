@@ -52,6 +52,26 @@ $btnHeight: 40px;
   filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
 }
 
+.login {
+  @extend .button;
+  width: var(--btnloginWidth);
+  border-left: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  border-top: 2px solid var(--white);
+  background-color: rgba(255, 255, 255, 0.4);
+  justify-content: center;
+  padding-right: 0;
+  text-shadow: -3px 4px 3px var(--black);
+
+  &:hover {
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-name: btnBlinkL;
+    transform: translate(-3px, 4px);
+  }
+}
+
 .buttonFlex {
   @extend .button;
   font-size: 1.2rem;
@@ -204,6 +224,13 @@ $btnHeight: 40px;
   //   height: $btnHeight;
   //   // z-index: 2;
   // }
+}
+
+.buttonLWrapper {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  transform: translate(100%, 0);
 }
 
 .buttonSWrapper {

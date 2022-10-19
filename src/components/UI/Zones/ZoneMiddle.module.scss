@@ -16,7 +16,7 @@
   left: 50%;
   transform: translate(-50%, 0);
   background-color: var(--colorArticlesE);
-  // border: 1px solid red;
+  border: 1px solid var(--colorArticles);
   overflow-y: auto;
   scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
   font-weight: 500;

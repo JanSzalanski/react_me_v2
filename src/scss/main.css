@@ -24,6 +24,7 @@ textarea:focus {
 :root {
   --cardWidth: 440px;
   --cardHeight: 360px;
+  --btnloginWidth: 150px;
   --buttonWidth: 210px;
   --buttonWidthSec: 120px;
   --buttonHeight: 40px;

@@ -122,6 +122,130 @@
     color: var(--colorArticles);
   }
 }
+@-webkit-keyframes btnBlinkL {
+  0% {
+    color: var(--colorNews);
+    border-right: 2px solid var(--colorNews);
+  }
+  5% {
+    border-right: 2px solid var(--black);
+  }
+  15% {
+    color: var(--black);
+  }
+  25% {
+    border-right: 2px solid var(--black);
+    color: var(--black);
+  }
+  30% {
+    border-right: 2px solid var(--colorNews);
+  }
+  35% {
+    color: var(--colorNews);
+    border-bottom: 2px solid var(--colorNews);
+  }
+  40% {
+    border-bottom: 2px solid var(--black);
+  }
+  45% {
+    color: var(--colorNews);
+  }
+  55% {
+    color: var(--white);
+  }
+  60% {
+    border-bottom: 2px solid var(--colorNews);
+  }
+  65% {
+    border-left: 2px solid var(--colorNews);
+    color: var(--black);
+  }
+  70% {
+    border-left: 2px solid var(--black);
+  }
+  75% {
+    color: black;
+  }
+  80% {
+    border-top: 1px solid var(--colorNews);
+  }
+  85% {
+    border-top: 1px solid var(--black);
+    border-left: 2px solid var(--black);
+  }
+  90% {
+    border-top: 1px solid var(--black);
+    border-left: 2px solid var(--colorNews);
+  }
+  99% {
+    border-top: 1px solid var(--colorNews);
+  }
+  100% {
+    color: var(--colorNews);
+  }
+}
+@keyframes btnBlinkL {
+  0% {
+    color: var(--colorNews);
+    border-right: 2px solid var(--colorNews);
+  }
+  5% {
+    border-right: 2px solid var(--black);
+  }
+  15% {
+    color: var(--black);
+  }
+  25% {
+    border-right: 2px solid var(--black);
+    color: var(--black);
+  }
+  30% {
+    border-right: 2px solid var(--colorNews);
+  }
+  35% {
+    color: var(--colorNews);
+    border-bottom: 2px solid var(--colorNews);
+  }
+  40% {
+    border-bottom: 2px solid var(--black);
+  }
+  45% {
+    color: var(--colorNews);
+  }
+  55% {
+    color: var(--white);
+  }
+  60% {
+    border-bottom: 2px solid var(--colorNews);
+  }
+  65% {
+    border-left: 2px solid var(--colorNews);
+    color: var(--black);
+  }
+  70% {
+    border-left: 2px solid var(--black);
+  }
+  75% {
+    color: black;
+  }
+  80% {
+    border-top: 1px solid var(--colorNews);
+  }
+  85% {
+    border-top: 1px solid var(--black);
+    border-left: 2px solid var(--black);
+  }
+  90% {
+    border-top: 1px solid var(--black);
+    border-left: 2px solid var(--colorNews);
+  }
+  99% {
+    border-top: 1px solid var(--colorNews);
+  }
+  100% {
+    color: var(--colorNews);
+  }
+}
 @-webkit-keyframes btnBlinkB {
   0% {
     color: var(--colorArticles);
@@ -416,7 +540,7 @@
     transform: rotate(360deg);
   }
 }
-.button, .menu, .comment, .buttonDetails, .kontakt, .kontaktM, .secondary, .buttonFlex {
+.button, .menu, .comment, .buttonDetails, .kontakt, .kontaktM, .secondary, .buttonFlex, .login {
   margin: 10px;
   padding-right: 10px;
   display: flex;
@@ -444,7 +568,7 @@
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
 }
-.button:hover, .menu:hover, .comment:hover, .buttonDetails:hover, .kontakt:hover, .kontaktM:hover, .secondary:hover, .buttonFlex:hover {
+.button:hover, .menu:hover, .comment:hover, .buttonDetails:hover, .kontakt:hover, .kontaktM:hover, .secondary:hover, .buttonFlex:hover, .login:hover {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-duration: 0.5s;
@@ -454,11 +578,11 @@
   transform: translate(-3px, 4px);
 }
 
-.button:hover + .glow, .menu:hover + .glow, .button:hover + .glowMe, .menu:hover + .glowMe, .button:hover + .glowS, .menu:hover + .glowS, .comment:hover + .glow, .comment:hover + .glowMe, .comment:hover + .glowS, .buttonDetails:hover + .glow, .buttonDetails:hover + .glowMe, .buttonDetails:hover + .glowS, .kontakt:hover + .glow, .kontakt:hover + .glowMe, .kontakt:hover + .glowS, .kontaktM:hover + .glow, .kontaktM:hover + .glowMe, .kontaktM:hover + .glowS, .secondary:hover + .glow, .secondary:hover + .glowMe, .secondary:hover + .glowS, .buttonFlex:hover + .glow, .buttonFlex:hover + .glowMe, .buttonFlex:hover + .glowS {
+.button:hover + .glow, .menu:hover + .glow, .button:hover + .glowMe, .menu:hover + .glowMe, .button:hover + .glowS, .menu:hover + .glowS, .comment:hover + .glow, .comment:hover + .glowMe, .comment:hover + .glowS, .buttonDetails:hover + .glow, .buttonDetails:hover + .glowMe, .buttonDetails:hover + .glowS, .kontakt:hover + .glow, .kontakt:hover + .glowMe, .kontakt:hover + .glowS, .kontaktM:hover + .glow, .kontaktM:hover + .glowMe, .kontaktM:hover + .glowS, .secondary:hover + .glow, .secondary:hover + .glowMe, .secondary:hover + .glowS, .buttonFlex:hover + .glow, .buttonFlex:hover + .glowMe, .buttonFlex:hover + .glowS, .login:hover + .glow, .login:hover + .glowMe, .login:hover + .glowS {
   filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
 
-.button:hover + .glowComm, .menu:hover + .glowComm, .comment:hover + .glowComm, .buttonDetails:hover + .glowComm, .kontakt:hover + .glowComm, .kontaktM:hover + .glowComm, .secondary:hover + .glowComm, .buttonFlex:hover + .glowComm {
+.button:hover + .glowComm, .menu:hover + .glowComm, .comment:hover + .glowComm, .buttonDetails:hover + .glowComm, .kontakt:hover + .glowComm, .kontaktM:hover + .glowComm, .secondary:hover + .glowComm, .buttonFlex:hover + .glowComm, .login:hover + .glowComm {
   filter: drop-shadow(-3px 3px 2px var(--colorArticlesD));
 }
 
@@ -468,6 +592,27 @@
 
 .kontaktM:hover + .glowKontM {
   filter: drop-shadow(3px 3px 2px var(--colorArticlesD));
+}
+
+.login {
+  width: var(--btnloginWidth);
+  border-left: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  border-top: 2px solid var(--white);
+  background-color: rgba(255, 255, 255, 0.4);
+  justify-content: center;
+  padding-right: 0;
+  text-shadow: -3px 4px 3px var(--black);
+}
+.login:hover {
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: btnBlinkL;
+          animation-name: btnBlinkL;
+  transform: translate(-3px, 4px);
 }
 
 .buttonFlex {
@@ -585,6 +730,13 @@
 
 .buttonWrapper {
   position: relative;
+}
+
+.buttonLWrapper {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  transform: translate(100%, 0);
 }
 
 .buttonSWrapper, .buttonDWrapper {

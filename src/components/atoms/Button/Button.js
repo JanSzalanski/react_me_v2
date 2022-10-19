@@ -4,6 +4,23 @@ import classes from './Button.module.css';
 const Button = (props) => {
   let cssClasses = [classes[props.type] || classes.button];
 
+  if (props.type === 'login') {
+    return (
+      <div className={classes.buttonLWrapper} tabIndex={props.tabindex}>
+        <button
+          className={cssClasses.join(' ')}
+          type={props.type || 'button'}
+          onClick={props.onClick}
+        >
+          <p>{props.children}</p>
+        </button>
+        <div className={classes.glowL}>
+          <div className={classes.copyL}></div>
+        </div>
+      </div>
+    );
+  }
+
   if (props.type === 'secondary') {
     return (
       <div className={classes.buttonSWrapper} tabIndex={props.tabindex}>

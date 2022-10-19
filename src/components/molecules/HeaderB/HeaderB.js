@@ -3,6 +3,9 @@ import classes from './HeaderB.module.css';
 import Heading from '../../atoms/Heading/Heading';
 import DecorOne from '../../atoms/Decors/DecorOne/DecorOne';
 import DecorTwo from '../../atoms/Decors/DecorTwo/DecorTwo';
+import Button from '../../atoms/Button/Button';
+import { loginWithGoogle } from '../../../Firebase';
+import Profile from '../Profile/Profile';
 
 const HeaderB = (props) => {
   return (
@@ -46,6 +49,10 @@ const HeaderB = (props) => {
         <div className={classes.line10}></div>
         <div className={classes.line10A}></div>
         <Heading className="position">{props.children}</Heading>
+        <Button onClick={loginWithGoogle} type="login">
+          Zaloguj
+        </Button>
+        <Profile></Profile>
       </div>
     </header>
   );

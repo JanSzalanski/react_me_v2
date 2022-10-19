@@ -68,6 +68,76 @@
   }
 }
 
+@keyframes btnBlinkL {
+  0% {
+    color: var(--colorNews);
+    border-right: 2px solid var(--colorNews);
+  }
+  5% {
+    border-right: 2px solid var(--black);
+  }
+  15% {
+    color: var(--black);
+  }
+
+  25% {
+    border-right: 2px solid var(--black);
+    color: var(--black);
+  }
+  30% {
+    border-right: 2px solid var(--colorNews);
+  }
+
+  35% {
+    color: var(--colorNews);
+    border-bottom: 2px solid var(--colorNews);
+  }
+  40% {
+    border-bottom: 2px solid var(--black);
+  }
+
+  45% {
+    color: var(--colorNews);
+  }
+
+  55% {
+    color: var(--white);
+  }
+  60% {
+    border-bottom: 2px solid var(--colorNews);
+  }
+
+  65% {
+    border-left: 2px solid var(--colorNews);
+    color: var(--black);
+  }
+  70% {
+    border-left: 2px solid var(--black);
+  }
+
+  75% {
+    color: black;
+  }
+  80% {
+    border-top: 1px solid var(--colorNews);
+  }
+  85% {
+    border-top: 1px solid var(--black);
+    border-left: 2px solid var(--black);
+  }
+  90% {
+    border-top: 1px solid var(--black);
+    border-left: 2px solid var(--colorNews);
+  }
+  99% {
+    border-top: 1px solid var(--colorNews);
+  }
+
+  100% {
+    color: var(--colorNews);
+  }
+}
+
 @keyframes btnBlinkB {
   0% {
     color: var(--colorArticles);
