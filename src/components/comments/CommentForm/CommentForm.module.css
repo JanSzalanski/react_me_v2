@@ -3,6 +3,19 @@
   height: 100%;
 }
 
+.disabledForm {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 50, 50, 0.8);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-backdrop-filter: sepia(80%);
+          backdrop-filter: sepia(80%);
+}
+
 .form {
   height: 100%;
   height: 100%;
@@ -27,4 +40,70 @@
   width: 75%;
   height: 10vh;
   border-left: 1px solid var(--colorArticles);
+}
+
+.titleWrap {
+  height: 4rem;
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  letter-spacing: 2px;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  text-align: center;
+}
+@media (max-width: 1600px) {
+  .titleWrap {
+    height: 3.2rem;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: var(--bold);
+  color: var(--white);
+  font-family: var(--font-headers);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.title b {
+  opacity: 0.7;
+  letter-spacing: -2px;
+}
+@media (max-width: 1366px) {
+  .title b {
+    letter-spacing: -1px;
+  }
+}
+@media (max-width: 1600px) {
+  .title {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
+@media (max-width: 1366px) {
+  .title {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1152px) {
+  .title {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=CommentForm.module.css.map */

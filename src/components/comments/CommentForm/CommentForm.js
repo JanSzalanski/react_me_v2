@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useState } from 'react';
 // import Card from '../../molecules/Card/Card';
 import classes from './CommentForm.module.css';
@@ -7,10 +8,12 @@ import Textarea from '../../atoms/Textarea/Textarea';
 import ZoneBottom from '../../UI/Zones/ZoneBottom';
 
 const CommentForm = React.memo((props) => {
+  const [disabledInput, setDisabledInput] = useState(true);
   const [enteredName, setEnteredName] = useState('');
   const [enteredContents, setEnteredContents] = useState('');
 
   const submitHandler = (event) => {
+    setDisabledInput(false);
     event.preventDefault();
     if (enteredName.trim() === '') {
       props.onAddComment({ name: 'anonim', contents: enteredContents });
@@ -29,7 +32,7 @@ const CommentForm = React.memo((props) => {
         <form onSubmit={submitHandler} className={classes.form}>
           <div className={classes.leftWrap}>
             <Input
-              type="text"
+              disabled={disabledInput}
               name="imie"
               maxlength="30"
               tabindex="7"
@@ -48,6 +51,7 @@ const CommentForm = React.memo((props) => {
           </div>
           <div className={classes.rightWrap}>
             <Textarea
+              disabled={disabledInput}
               type="textarea"
               name="message"
               minlength="5"
@@ -68,6 +72,15 @@ const CommentForm = React.memo((props) => {
           </div>
         </form>
       </section>
+      {disabledInput && (
+        <div className={classes.disabledForm}>
+          <div className={classes.titleWrap}>
+            <h3 className={classes.title}>
+              <b> ///// </b>Aby dodawać i edytować komentarze zaloguj się<b> ///// </b>
+            </h3>
+          </div>
+        </div>
+      )}
     </ZoneBottom>
   );
 });

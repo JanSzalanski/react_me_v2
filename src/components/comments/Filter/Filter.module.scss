@@ -43,6 +43,7 @@
   // margin-bottom: 5px;
   font-family: var(--font-headers);
   text-transform: uppercase;
+  user-select: none;
 
   & b {
     opacity: 0.7;

@@ -43,6 +43,10 @@
   color: var(--white);
   font-family: var(--font-headers);
   text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .title b {
   opacity: 0.7;

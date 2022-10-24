@@ -9,6 +9,7 @@ const Input = forwardRef((props, ref) => {
         <div className={classes[props.bgk] || classes.background}></div>
       </div>
       <input
+        disabled={props.disabled}
         name={props.name}
         maxLength={props.maxlength}
         autoComplete={props.autocomplete}

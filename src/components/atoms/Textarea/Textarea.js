@@ -8,6 +8,7 @@ const Textarea = (props) => {
         <div className={classes[props.bgk] || classes.background}></div>
       </div>
       <textarea
+        disabled={props.disabled}
         className={classes[props.className] || classes.textarea}
         name={props.name}
         type={props.type}
