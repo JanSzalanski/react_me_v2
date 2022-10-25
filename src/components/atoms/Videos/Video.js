@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Video.module.css';
-import video from '../../../assets/earth.mp4';
+import video from '../../../assets/videos/earth.mp4';
 
 const Video = (props) => {
   return (

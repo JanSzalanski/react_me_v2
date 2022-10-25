@@ -4,10 +4,21 @@ import Heading from '../../atoms/Heading/Heading';
 import DecorOne from '../../atoms/Decors/DecorOne/DecorOne';
 import DecorTwo from '../../atoms/Decors/DecorTwo/DecorTwo';
 import Button from '../../atoms/Button/Button';
-import { loginWithGoogle } from '../../../Firebase';
+// import { UserAuth } from '../../../context/AuthContext';
+
 import Profile from '../Profile/Profile';
 
 const HeaderB = (props) => {
+  // const { googleSignIn } = UserAuth();
+
+  // const handleGoogleSignIn = async () => {
+  //   try {
+  //     await googleSignIn();
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
   return (
     <header className={classes[props.className] || classes.wrapperHeader}>
       <DecorTwo></DecorTwo>
@@ -49,9 +60,7 @@ const HeaderB = (props) => {
         <div className={classes.line10}></div>
         <div className={classes.line10A}></div>
         <Heading className="position">{props.children}</Heading>
-        <Button onClick={loginWithGoogle} type="login">
-          Zaloguj
-        </Button>
+        <Button type="login">Zaloguj</Button>
         <Profile></Profile>
       </div>
     </header>

@@ -9,6 +9,7 @@ import SideBar from './components/organisms/SideBar/SideBar';
 import Video from './components/atoms/Videos/Video';
 import ContactBar from './components/molecules/ContactBar/ContactBar';
 import Backdrop from './components/atoms/Backdrop/Backdrop';
+// import { AuthContextProvider } from './context/AuthContext';
 
 const DetailsPage = React.lazy(() => import('./pages/DetailsPage/DetailsPage'));
 const NotFound = React.lazy(() => import('./pages/404/NotFound'));
@@ -78,6 +79,7 @@ const DUMMY_NEWS = [
 
 function App() {
   return (
+    // <AuthContextProvider>
     <Suspense fallback={<p>Wczytywanie...</p>}>
       <Switch>
         <Route exact path="/">
@@ -139,6 +141,7 @@ function App() {
         </Route>
       </Switch>
     </Suspense>
+    // </AuthContextProvider>
   );
 }
 
