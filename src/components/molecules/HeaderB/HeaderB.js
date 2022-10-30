@@ -22,7 +22,7 @@ const HeaderB = (props) => {
   return (
     <header className={classes[props.className] || classes.wrapperHeader}>
       <DecorTwo></DecorTwo>
-      <DecorTwo className="decortwo2"></DecorTwo>
+      {/* <DecorTwo className="decortwo2"></DecorTwo> */}
 
       <div className={classes.innerWrapper}>
         <DecorOne className="decorHeader"></DecorOne>
