@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React, { useReducer, useEffect, useCallback } from 'react';
+import React, { useReducer, useEffect, useCallback, useState } from 'react';
 import classes from '../Comments/Comments.module.css';
 import CommentList from '../CommentList/CommentList';
 import Filter from '../Filter/Filter';
@@ -43,12 +43,13 @@ const Comments = () => {
   const [commentArr, dispach] = useReducer(commentReducer, []);
   const [httpState, dispachHttp] = useReducer(httpReducer, { loading: false, error: null });
   // const [commentArr, setCommentArr] = useState([]);
-  // const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState();
   //połaczenie z firebase tylko raz zaraz po wyrenderowaniu komponentu i to dzieki useEffect z pusta tablicą jako drugi argument - jeszcze bez catch & err
-
+  // setIsLoading(true);
   useEffect(() => {
     console.log('RENDERING COMMENTS');
+    setIsLoading(true);
   });
 
   const filteredCommentsHandler = useCallback((filteredComments) => {
@@ -112,19 +113,23 @@ const Comments = () => {
             {httpState.loading && <LoadingSpiner />}
           </CommentList>
         </ZoneMiddle>
-        <Route path="/people/comments">
-          <CommentForm onAddComment={addCommentHandler} />
-        </Route>
-        <ZoneBottom>
-          <DummyForm />
-          <div className={classes.disabledForm}>
-            <div className={classes.titleWrap}>
-              <h3 className={classes.title}>
-                <b> ///// </b>Aby dodawać i edytować komentarze zaloguj się<b> ///// </b>
-              </h3>
+        {isLoading && (
+          <Route path="/people/comments">
+            <CommentForm onAddComment={addCommentHandler} />
+          </Route>
+        )}
+        {!!isLoading && (
+          <ZoneBottom>
+            <DummyForm />
+            <div className={classes.disabledForm}>
+              <div className={classes.titleWrap}>
+                <h3 className={classes.title}>
+                  <b> ///// </b>Aby dodawać i edytować komentarze zaloguj się<b> ///// </b>
+                </h3>
+              </div>
             </div>
-          </div>
-        </ZoneBottom>
+          </ZoneBottom>
+        )}
       </div>
     </>
   );

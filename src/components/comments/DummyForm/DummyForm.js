@@ -39,7 +39,7 @@ const DummyForm = React.memo((props) => {
               bgk="commentBgk"
               wrap="commentWrap"
               className="comment"
-              placeholder="Treść komentarza*"
+              placeholder="Treść komentarza dummy*"
             />
           </div>
         </form>
