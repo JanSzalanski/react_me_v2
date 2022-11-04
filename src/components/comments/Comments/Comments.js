@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useReducer, useEffect, useCallback } from 'react';
 import classes from '../Comments/Comments.module.css';
 import CommentList from '../CommentList/CommentList';
@@ -6,6 +7,9 @@ import CommentForm from '../CommentForm/CommentForm';
 import ZoneMiddle from '../../UI/Zones/ZoneMiddle';
 import LoadingSpiner from '../../UI/LoadingSpiner/LoadingSpiner';
 import ErrorModal from '../../UI/ErrorModal/ErrorModal';
+import ZoneBottom from '../../UI/Zones/ZoneBottom';
+import DummyForm from '../DummyForm/DummyForm';
+import { Route } from 'react-router-dom';
 
 const commentReducer = (currentComment, action) => {
   switch (action.type) {
@@ -108,7 +112,19 @@ const Comments = () => {
             {httpState.loading && <LoadingSpiner />}
           </CommentList>
         </ZoneMiddle>
-        <CommentForm onAddComment={addCommentHandler} />
+        <Route path="/people/comments">
+          <CommentForm onAddComment={addCommentHandler} />
+        </Route>
+        <ZoneBottom>
+          <DummyForm />
+          <div className={classes.disabledForm}>
+            <div className={classes.titleWrap}>
+              <h3 className={classes.title}>
+                <b> ///// </b>Aby dodawać i edytować komentarze zaloguj się<b> ///// </b>
+              </h3>
+            </div>
+          </div>
+        </ZoneBottom>
       </div>
     </>
   );

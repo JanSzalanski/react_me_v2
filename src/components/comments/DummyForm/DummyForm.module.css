@@ -1,9 +1,6 @@
-.comments {
+.wrapper {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .disabledForm {
@@ -17,6 +14,32 @@
   border-bottom-right-radius: 5px;
   -webkit-backdrop-filter: sepia(80%);
           backdrop-filter: sepia(80%);
+}
+
+.form {
+  height: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 25%;
+  height: 10vh;
+  padding: 10px;
+}
+
+.rightWrap {
+  padding: 10px;
+  width: 75%;
+  height: 10vh;
+  border-left: 1px solid var(--colorArticles);
 }
 
 .titleWrap {
@@ -83,4 +106,4 @@
   .title {
     font-size: 1.5rem;
   }
-}/*# sourceMappingURL=Comments.module.css.map */
+}/*# sourceMappingURL=DummyForm.module.css.map */

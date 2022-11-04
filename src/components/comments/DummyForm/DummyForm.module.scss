@@ -1,11 +1,8 @@
-.comments {
+.wrapper {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  // border: 1px solid green;
 }
-//////////////////////// disable form
 
 .disabledForm {
   position: absolute;
@@ -17,6 +14,33 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   backdrop-filter: sepia(80%);
+}
+.form {
+  height: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  // border: 1px solid red;
+  width: 25%;
+  height: 10vh;
+  padding: 10px;
+}
+
+.rightWrap {
+  // border: 1px solid red;
+  padding: 10px;
+  width: 75%;
+  height: 10vh;
+  border-left: 1px solid var(--colorArticles);
 }
 
 .titleWrap {
