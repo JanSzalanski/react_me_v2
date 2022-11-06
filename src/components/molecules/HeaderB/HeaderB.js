@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import classes from './HeaderB.module.css';
 import Heading from '../../atoms/Heading/Heading';
 import DecorOne from '../../atoms/Decors/DecorOne/DecorOne';
 import DecorTwo from '../../atoms/Decors/DecorTwo/DecorTwo';
 import Button from '../../atoms/Button/Button';
-// import { UserAuth } from '../../../context/AuthContext';
+import AuthContext from '../../../context/AuthContext';
 
 import Profile from '../Profile/Profile';
 
 const HeaderB = (props) => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const ctx = useContext(AuthContext);
+
+  const loginHandler = () => {
+    if (!isLoggedIn) {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+
+      return;
+    }
+  };
+
+  ctx.isLoggedIn = isLoggedIn;
   // const { googleSignIn } = UserAuth();
 
   // const handleGoogleSignIn = async () => {
@@ -60,8 +74,10 @@ const HeaderB = (props) => {
         <div className={classes.line10}></div>
         <div className={classes.line10A}></div>
         <Heading className="position">{props.children}</Heading>
-        <Button type="login">Zaloguj</Button>
-        <Profile></Profile>
+        <Button onClick={loginHandler} type="login">
+          Zaloguj
+        </Button>
+        {ctx.isLoggedIn && <Profile></Profile>}
       </div>
     </header>
   );
