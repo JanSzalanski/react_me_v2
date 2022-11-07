@@ -1,4 +1,4 @@
-import React, { Suspense, useContext } from 'react';
+import React, { Suspense } from 'react';
 import './scss/main.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import NewsPage from './pages/NewsPage/NewsPage';
@@ -9,7 +9,7 @@ import SideBar from './components/organisms/SideBar/SideBar';
 import Video from './components/atoms/Videos/Video';
 import ContactBar from './components/molecules/ContactBar/ContactBar';
 import Backdrop from './components/atoms/Backdrop/Backdrop';
-import AuthContext from './context/AuthContext';
+// import AuthContext from './context/AuthContext';
 
 const DetailsPage = React.lazy(() => import('./pages/DetailsPage/DetailsPage'));
 const NotFound = React.lazy(() => import('./pages/404/NotFound'));
@@ -78,73 +78,70 @@ const DUMMY_NEWS = [
 ];
 
 function App() {
-  const ctx = useContext(AuthContext);
   // const [isLoading, setIsLoading] = useState(false);
   return (
     <>
-      <AuthContext.Provider value={{ isLoggedIn: ctx.isLoggedIn }}>
-        <Suspense fallback={<p>Wczytywanie...</p>}>
-          <Switch>
-            <Route exact path="/">
-              <Redirect to="/news"></Redirect>
-            </Route>
-            <Route path="/news/:newsId">
-              <div className="backgroundBack"></div>
-              <Backdrop />
-              <DetailsPage data={DUMMY_NEWS} />
-              <SideBar />
-              <div className="wrapCont">
-                <ContactBar />
-              </div>
-            </Route>
-            <Route path="/news">
-              <div className="backgroundBody"></div>
-              <Video></Video>
-              <NewsPage data={DUMMY_NEWS} />
-              <SideBar />
-              <div className="wrapCont">
-                <ContactBar />
-              </div>
-            </Route>
-            <Route path="/articles">
-              <div className="backgroundBody"></div>
-              <Video></Video>
-              <ArticlePage />
-              <SideBar />
-              <div className="wrapCont">
-                <ContactBar />
-              </div>
-            </Route>
-            <Route path="/people">
-              <div className="backgroundBody"></div>
-              <Video></Video>
-              <PeoplePage />
-              <SideBar />
-              <div className="wrapCont">
-                <ContactBar />
-              </div>
-            </Route>
-            <Route path="/nft">
-              <div className="backgroundBody"></div>
-              <Video></Video>
-              <NftPage />
-              <SideBar />
-              <div className="wrapCont">
-                <ContactBar />
-              </div>
-            </Route>
-            <Route path="*">
-              <div className="backgroundBody"></div>
-              <Video></Video>
-              <NotFound />
-              <SideBar />
-              <div className="wrapCont">
-                <ContactBar />
-              </div>
-            </Route>
-          </Switch>
-        </Suspense>
-      </AuthContext.Provider>
+      <Suspense fallback={<p>Wczytywanie...</p>}>
+        <Switch>
+          <Route exact path="/">
+            <Redirect to="/news"></Redirect>
+          </Route>
+          <Route path="/news/:newsId">
+            <div className="backgroundBack"></div>
+            <Backdrop />
+            <DetailsPage data={DUMMY_NEWS} />
+            <SideBar />
+            <div className="wrapCont">
+              <ContactBar />
+            </div>
+          </Route>
+          <Route path="/news">
+            <div className="backgroundBody"></div>
+            <Video></Video>
+            <NewsPage data={DUMMY_NEWS} />
+            <SideBar />
+            <div className="wrapCont">
+              <ContactBar />
+            </div>
+          </Route>
+          <Route path="/articles">
+            <div className="backgroundBody"></div>
+            <Video></Video>
+            <ArticlePage />
+            <SideBar />
+            <div className="wrapCont">
+              <ContactBar />
+            </div>
+          </Route>
+          <Route path="/people">
+            <div className="backgroundBody"></div>
+            <Video></Video>
+            <PeoplePage />
+            <SideBar />
+            <div className="wrapCont">
+              <ContactBar />
+            </div>
+          </Route>
+          <Route path="/nft">
+            <div className="backgroundBody"></div>
+            <Video></Video>
+            <NftPage />
+            <SideBar />
+            <div className="wrapCont">
+              <ContactBar />
+            </div>
+          </Route>
+          <Route path="*">
+            <div className="backgroundBody"></div>
+            <Video></Video>
+            <NotFound />
+            <SideBar />
+            <div className="wrapCont">
+              <ContactBar />
+            </div>
+          </Route>
+        </Switch>
+      </Suspense>
     </>
   );
 }

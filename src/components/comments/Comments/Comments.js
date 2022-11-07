@@ -114,7 +114,7 @@ const Comments = () => {
             {httpState.loading && <LoadingSpiner />}
           </CommentList>
         </ZoneMiddle>
-        {ctx.isLoggedIn && (
+        {ctx.isLogged && (
           <>
             <Route exact path="/people">
               <Redirect to="/people/comments"></Redirect>
@@ -125,7 +125,7 @@ const Comments = () => {
             </Route>
           </>
         )}
-        {!ctx.isLoggedIn && (
+        {!ctx.isLogged && (
           <>
             <Route exact path="/people/comments">
               <Redirect to="/people"></Redirect>
