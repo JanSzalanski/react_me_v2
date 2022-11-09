@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useContext } from 'react';
 import './scss/main.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import NewsPage from './pages/NewsPage/NewsPage';
@@ -9,6 +9,7 @@ import SideBar from './components/organisms/SideBar/SideBar';
 import Video from './components/atoms/Videos/Video';
 import ContactBar from './components/molecules/ContactBar/ContactBar';
 import Backdrop from './components/atoms/Backdrop/Backdrop';
+import AuthContext from './context/AuthContext';
 // import AuthContext from './context/AuthContext';
 
 const DetailsPage = React.lazy(() => import('./pages/DetailsPage/DetailsPage'));
@@ -79,6 +80,7 @@ const DUMMY_NEWS = [
 
 function App() {
   // const [isLoading, setIsLoading] = useState(false);
+  const ctx = useContext(AuthContext);
   return (
     <>
       <Suspense fallback={<p>Wczytywanie...</p>}>
@@ -140,6 +142,13 @@ function App() {
               <ContactBar />
             </div>
           </Route>
+          {ctx.isLogged && (
+            <Route path="/people">
+              <Redirect>
+                <Redirect to="/people/comments"></Redirect>
+              </Redirect>
+            </Route>
+          )}
         </Switch>
       </Suspense>
     </>
