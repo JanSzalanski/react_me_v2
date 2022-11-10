@@ -114,9 +114,13 @@
   top: 50%;
   transform: translate(-50%, -50%);
   height: var(--inputHeight);
+  font-family: var(--font-headers);
   width: calc(var(--inputWidth) + 20px);
   padding: 15px 30px;
-  font-size: var(--fontSizeM);
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: var(--bold);
+  text-transform: uppercase;
   -webkit-clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
           clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0 100%);
   border: none;
@@ -128,28 +132,31 @@
   letter-spacing: 1px;
 }
 .input::-moz-placeholder, .comment::-moz-placeholder, .contact::-moz-placeholder, .search::-moz-placeholder {
+  font-family: var(--font-headers);
   font-weight: var(--bold);
-  font-size: var(--fontSizeXS);
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--colorGrey100);
-  line-height: var(--inputHeight);
+  line-height: 1.2rem;
 }
 .input:-ms-input-placeholder, .comment:-ms-input-placeholder, .contact:-ms-input-placeholder, .search:-ms-input-placeholder {
+  font-family: var(--font-headers);
   font-weight: var(--bold);
-  font-size: var(--fontSizeXS);
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--colorGrey100);
-  line-height: var(--inputHeight);
+  line-height: 1.2rem;
 }
 .input::placeholder, .comment::placeholder, .contact::placeholder, .search::placeholder {
+  font-family: var(--font-headers);
   font-weight: var(--bold);
-  font-size: var(--fontSizeXS);
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--colorGrey100);
-  line-height: var(--inputHeight);
+  line-height: 1.2rem;
 }
 @media (max-width: 1600px) {
   .input::-moz-placeholder, .comment::-moz-placeholder, .contact::-moz-placeholder, .search::-moz-placeholder {

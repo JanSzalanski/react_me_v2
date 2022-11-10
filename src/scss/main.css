@@ -68,8 +68,8 @@ textarea:focus {
   --fontSizeXL: 4rem;
   --light: 300;
   --bold: 600;
+  --font-main: "Montserrat", sans-serif;
   --font-headers: "Audiowide", cursive;
-  --font-code: "Libre Barcode 39", cursive;
   --font-pixel: "Press Start 2P", cursive;
 }
 @media (max-width: 1600px) {
@@ -116,7 +116,7 @@ html {
 
 body {
   padding-left: 176px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-main);
   font-size: 1.6rem;
   overflow: hidden;
   width: 100%;

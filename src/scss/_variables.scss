@@ -50,8 +50,9 @@
   --light: 300;
   --bold: 600;
 
+  --font-main: 'Montserrat', sans-serif;
   --font-headers: 'Audiowide', cursive;
-  --font-code: 'Libre Barcode 39', cursive;
+  // --font-code: 'Libre Barcode 39', cursive;
   --font-pixel: 'Press Start 2P', cursive;
 
   @media (max-width: 1600px) {
@@ -91,4 +92,3 @@
 html {
   font-size: 62.5%; // tzw. Happy Remki ale 10 px ustawione tutaj robi z Remkami dokładnie to samo ??? :0
 }
-$font-main: 'Montserrat', sans-serif;

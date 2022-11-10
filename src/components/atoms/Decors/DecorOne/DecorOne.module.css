@@ -3,7 +3,6 @@
   position: relative;
   width: 400px;
   height: 70px;
-  border: 1px solid red;
 }
 
 .rectangle {
@@ -28,7 +27,6 @@
           clip-path: polygon(0 0, 98.2% 0, 100% 20%, 100% 80%, 98.5% 100%, 0 100%);
   border-left: 5px solid var(--colorArticles);
   border-top: 1px solid var(--colorArticles);
-  border: 1px solid green;
 }
 .decorHeader .rectangle {
   transform: skew(-45deg) translateX(0px);

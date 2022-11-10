@@ -28,6 +28,11 @@
 }
 
 .textarea {
+  font-family: var(--font-headers);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: var(--bold);
+  text-transform: uppercase;
   scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
   scrollbar-width: thin;
   resize: none;
@@ -38,7 +43,6 @@
   width: 100%;
   transform: translate(-50%, -50%);
   padding: 15px 30px;
-  font-size: var(--fontSizeM);
   clip-path: polygon(0% 10%, 9% 0%, 100% 0%, 100% 90%, 91% 100%, 0 100%);
   border: none;
   appearance: none;
@@ -47,12 +51,13 @@
   letter-spacing: 1px;
 
   &::placeholder {
+    text-transform: uppercase;
     font-weight: var(--bold);
-    font-size: var(--fontSizeXS);
+    font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--colorGrey100);
-    line-height: var(--inputHeight);
+    line-height: 1.2rem;
   }
 
   &:focus {
