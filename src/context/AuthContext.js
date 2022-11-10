@@ -1,12 +1,13 @@
-// import { useContext, createContext } from 'react';
+import { useContext } from 'react';
 import React, { useState } from 'react';
-// import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'; //signOut, onAuthStateChanged
-// import { auth } from '../Firebase';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'; //signOut, onAuthStateChanged
+import { auth } from '../Firebase';
 
 const AuthContext = React.createContext({
   isLogged: false,
   onLogin: () => {},
   onLogout: () => {},
+  googleLogged: () => {},
 });
 
 export const AuthContextProvider = (props) => {
@@ -20,13 +21,27 @@ export const AuthContextProvider = (props) => {
     setIsLoggedIn(false);
   };
 
+  const googleSingIn = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider);
+  };
+
   return (
     <AuthContext.Provider
-      value={{ isLogged: isLoggedIn, onLogin: loginHandler, onLogout: logoutHandler }}
+      value={{
+        isLogged: isLoggedIn,
+        onLogin: loginHandler,
+        onLogout: logoutHandler,
+        googleLogged: googleSingIn,
+      }}
     >
       {props.children}
     </AuthContext.Provider>
   );
 };
 
-export default AuthContext;
+export const UserAuth = () => {
+  return useContext(AuthContext);
+};
+
+// export default AuthContext;

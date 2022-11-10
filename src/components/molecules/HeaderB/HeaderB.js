@@ -1,15 +1,15 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import classes from './HeaderB.module.css';
 import Heading from '../../atoms/Heading/Heading';
 import DecorOne from '../../atoms/Decors/DecorOne/DecorOne';
 import DecorTwo from '../../atoms/Decors/DecorTwo/DecorTwo';
 import Button from '../../atoms/Button/Button';
-import AuthContext from '../../../context/AuthContext';
+import { UserAuth } from '../../../context/AuthContext';
 
 import Profile from '../Profile/Profile';
 
 const HeaderB = (props) => {
-  const ctx = useContext(AuthContext);
+  const { isLogged, onLogin, onLogout } = UserAuth();
 
   // const { googleSignIn } = UserAuth();
 
@@ -62,17 +62,17 @@ const HeaderB = (props) => {
         <div className={classes.line10}></div>
         <div className={classes.line10A}></div>
         <Heading className="position">{props.children}</Heading>
-        {ctx.isLogged && (
-          <Button onClick={ctx.onLogout} type="login">
+        {isLogged && (
+          <Button onClick={onLogout} type="login">
             Wyloguj
           </Button>
         )}
-        {!ctx.isLogged && (
-          <Button onClick={ctx.onLogin} type="login">
+        {!isLogged && (
+          <Button onClick={onLogin} type="login">
             Zaloguj
           </Button>
         )}
-        {ctx.isLogged && <Profile></Profile>}
+        {isLogged && <Profile></Profile>}
       </div>
     </header>
   );

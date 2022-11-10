@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React, { useReducer, useEffect, useCallback, useContext } from 'react';
+import React, { useReducer, useEffect, useCallback } from 'react';
 import classes from '../Comments/Comments.module.css';
 import CommentList from '../CommentList/CommentList';
 import Filter from '../Filter/Filter';
@@ -9,7 +9,8 @@ import LoadingSpiner from '../../UI/LoadingSpiner/LoadingSpiner';
 import ErrorModal from '../../UI/ErrorModal/ErrorModal';
 import ZoneBottom from '../../UI/Zones/ZoneBottom';
 import DummyForm from '../DummyForm/DummyForm';
-import AuthContext from '../../../context/AuthContext';
+// import AuthContext from '../../../context/AuthContext';
+import { UserAuth } from '../../../context/AuthContext';
 import { Route, Redirect } from 'react-router-dom';
 
 const commentReducer = (currentComment, action) => {
@@ -41,7 +42,9 @@ const httpReducer = (currentHttpState, action) => {
 };
 
 const Comments = () => {
-  const ctx = useContext(AuthContext);
+  const { isLogged } = UserAuth();
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   const [commentArr, dispach] = useReducer(commentReducer, []);
   const [httpState, dispachHttp] = useReducer(httpReducer, { loading: false, error: null });
   // const [commentArr, setCommentArr] = useState([]);
@@ -114,7 +117,7 @@ const Comments = () => {
             {httpState.loading && <LoadingSpiner />}
           </CommentList>
         </ZoneMiddle>
-        {ctx.isLogged && (
+        {isLogged && (
           <>
             <Route exact path="/people">
               <Redirect to="/people/comments"></Redirect>
@@ -125,7 +128,7 @@ const Comments = () => {
             </Route>
           </>
         )}
-        {!ctx.isLogged && (
+        {!isLogged && (
           <>
             <Route exact path="/people/comments">
               <Redirect to="/people"></Redirect>
@@ -143,9 +146,6 @@ const Comments = () => {
             </ZoneBottom>
           </>
         )}
-        <Route path="*">
-          <Redirect to="/people"></Redirect>
-        </Route>
       </div>
     </>
   );
