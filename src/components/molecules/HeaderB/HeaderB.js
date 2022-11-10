@@ -9,7 +9,7 @@ import { UserAuth } from '../../../context/AuthContext';
 import Profile from '../Profile/Profile';
 
 const HeaderB = (props) => {
-  const { isLogged, onLogin, onLogout } = UserAuth();
+  const { googleLogged, googleLogout, user } = UserAuth();
 
   // const { googleSignIn } = UserAuth();
 
@@ -62,17 +62,17 @@ const HeaderB = (props) => {
         <div className={classes.line10}></div>
         <div className={classes.line10A}></div>
         <Heading className="position">{props.children}</Heading>
-        {isLogged && (
-          <Button onClick={onLogout} type="login">
+        {user && (
+          <Button onClick={googleLogout} type="login">
             Wyloguj
           </Button>
         )}
-        {!isLogged && (
-          <Button onClick={onLogin} type="login">
+        {!user && (
+          <Button onClick={googleLogged} type="login">
             Zaloguj
           </Button>
         )}
-        {isLogged && <Profile></Profile>}
+        {user && <Profile></Profile>}
       </div>
     </header>
   );

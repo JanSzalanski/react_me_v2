@@ -6,9 +6,11 @@ import Button from '../../atoms/Button/Button';
 import Input from '../../atoms/Input/Input';
 import Textarea from '../../atoms/Textarea/Textarea';
 import ZoneBottom from '../../UI/Zones/ZoneBottom';
+import { UserAuth } from '../../../context/AuthContext';
 
 const CommentForm = React.memo((props) => {
-  const [enteredName, setEnteredName] = useState('');
+  const { user } = UserAuth();
+  const [enteredName, setEnteredName] = useState(user ? user.displayName : '');
   const [enteredContents, setEnteredContents] = useState('');
 
   const submitHandler = (event) => {

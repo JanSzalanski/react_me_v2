@@ -42,19 +42,14 @@ const httpReducer = (currentHttpState, action) => {
 };
 
 const Comments = () => {
-  const { isLogged } = UserAuth();
-  // const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { user } = UserAuth();
 
   const [commentArr, dispach] = useReducer(commentReducer, []);
   const [httpState, dispachHttp] = useReducer(httpReducer, { loading: false, error: null });
-  // const [commentArr, setCommentArr] = useState([]);
 
-  // const [error, setError] = useState();
-  //połaczenie z firebase tylko raz zaraz po wyrenderowaniu komponentu i to dzieki useEffect z pusta tablicą jako drugi argument - jeszcze bez catch & err
-  // setIsLoading(true);
   useEffect(() => {
     console.log('RENDERING COMMENTS');
-  });
+  }, []);
 
   const filteredCommentsHandler = useCallback((filteredComments) => {
     dispach({ type: 'SET', comments: filteredComments });
@@ -117,7 +112,7 @@ const Comments = () => {
             {httpState.loading && <LoadingSpiner />}
           </CommentList>
         </ZoneMiddle>
-        {isLogged && (
+        {user && (
           <>
             <Route exact path="/people">
               <Redirect to="/people/comments"></Redirect>
@@ -128,7 +123,7 @@ const Comments = () => {
             </Route>
           </>
         )}
-        {!isLogged && (
+        {!user && (
           <>
             <Route exact path="/people/comments">
               <Redirect to="/people"></Redirect>
