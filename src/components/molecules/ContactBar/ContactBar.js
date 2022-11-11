@@ -1,12 +1,14 @@
 // i co dodanie nazwy klasy podobnej do contactWrapper tutaj i w input troszke sam siebie zmylilem... a to wygenerowalo nie oczekiwany blad!!! kuźwa jakie to potrafi byc przewrotne.
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import classes from './ContactBar.module.css';
 import Button from '../../atoms/Button/Button';
 import Input from '../../atoms/Input/Input';
 import Textarea from '../../atoms/Textarea/Textarea';
+import { UserAuth } from '../../../context/AuthContext';
 
 const ContactBar = (props) => {
+  const { user } = UserAuth();
   const [enteredName, setEnteredName] = useState('');
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredTitle, setEnteredTitle] = useState('');
@@ -15,6 +17,13 @@ const ContactBar = (props) => {
   // const [flagMessage, setFlagMessage] = useState('');
   const [animeKont, setAnimeKont] = useState(null);
   const [kolorKont, setKolorKont] = useState(null);
+
+  useEffect(() => {
+    if (user) {
+      setEnteredName(user.displayName);
+      setEnteredEmail(user.email);
+    }
+  }, [user]);
 
   let warrning = (
     <h1 className={classes.warning}>
