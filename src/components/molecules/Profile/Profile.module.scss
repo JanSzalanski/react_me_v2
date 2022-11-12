@@ -1,27 +1,40 @@
 .wrapper {
   height: 85px;
   width: 150px;
-  // border: 1px solid var(--white);
+  border: 1px solid var(--white);
   display: flex;
   align-items: center;
+  // justify-content: space-between;
 
   position: absolute;
   top: 7px;
   width: 30%;
   height: 55px;
   left: calc(66px + 31% * 1.25);
+
   @media (max-width: 1280px) {
-    width: 50%;
+    row-gap: 50px;
+    align-items: flex-start;
+    width: 40%;
   }
 }
 
 .name {
+  display: block;
   color: var(--white);
   margin: 5px;
   font-size: 1.8rem;
+  border: 1px solid red;
+  height: 100%;
+  width: 100px;
+  @media (max-width: 1280px) {
+    width: 1.4rem;
+  }
 }
 
 .email {
+  display: block;
+  border: 1px solid yellow;
   color: var(--white);
   margin: 5px;
   font-size: 1.2rem;
