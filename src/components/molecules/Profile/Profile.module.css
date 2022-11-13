@@ -1,12 +1,12 @@
 .wrapper {
   height: 85px;
   width: 150px;
-  border: 1px solid var(--white);
   display: flex;
   align-items: center;
+  justify-content: start;
   position: absolute;
   top: 7px;
-  width: 30%;
+  width: 40%;
   height: 55px;
   left: calc(66px + 38.75%);
 }
@@ -14,7 +14,6 @@
   .wrapper {
     row-gap: 50px;
     align-items: flex-start;
-    width: 40%;
   }
 }
 
@@ -23,9 +22,6 @@
   color: var(--white);
   margin: 5px;
   font-size: 1.8rem;
-  border: 1px solid red;
-  height: 100%;
-  width: 100px;
 }
 @media (max-width: 1280px) {
   .name {
@@ -35,17 +31,15 @@
 
 .email {
   display: block;
-  border: 1px solid yellow;
   color: var(--white);
   margin: 5px;
   font-size: 1.2rem;
 }
 
 .picWrapper {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   margin: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .picWrapper img {
   width: 100%;
