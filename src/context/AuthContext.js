@@ -5,10 +5,12 @@ import { auth } from '../Firebase';
 const AuthContext = React.createContext({
   googleLogged: () => {},
   googleLogout: () => {},
+  loged: false,
   user: {},
 });
 
 export const AuthContextProvider = (props) => {
+  const [isloged, setIsLogged] = useState(false);
   const [user, setUser] = useState({});
 
   const logoutHandler = () => {
@@ -16,6 +18,7 @@ export const AuthContextProvider = (props) => {
     localStorage.removeItem('name');
     localStorage.removeItem('eamil');
     localStorage.removeItem('profilePic');
+    setIsLogged(false);
     setUser({});
     console.log('User logout', user);
   };
@@ -38,6 +41,8 @@ export const AuthContextProvider = (props) => {
         localStorage.setItem('name', name);
         localStorage.setItem('email', email);
         localStorage.setItem('profilePic', profilePic);
+        setUser(result.user);
+        setIsLogged(true);
       })
       .catch((error) => {
         // setErrorGoogle(true);
@@ -51,6 +56,9 @@ export const AuthContextProvider = (props) => {
       console.log('User', currentUser);
     });
     return () => {
+      console.log('unsuscribe logout?');
+      setUser({});
+      setIsLogged(false);
       unsubscribe();
     };
   }, []);
@@ -60,6 +68,7 @@ export const AuthContextProvider = (props) => {
       value={{
         googleLogged: handleGoogleSignIn,
         googleLogout: logoutHandler,
+        loged: isloged,
         user: user,
       }}
     >

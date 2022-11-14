@@ -8,7 +8,7 @@ import Textarea from '../../atoms/Textarea/Textarea';
 import { UserAuth } from '../../../context/AuthContext';
 
 const ContactBar = (props) => {
-  const { user } = UserAuth();
+  const { user, loged } = UserAuth();
   const [enteredName, setEnteredName] = useState('');
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredTitle, setEnteredTitle] = useState('');
@@ -19,11 +19,15 @@ const ContactBar = (props) => {
   const [kolorKont, setKolorKont] = useState(null);
 
   useEffect(() => {
-    if (user) {
+    if (loged) {
+      console.log('wchodzi w ifa...');
       setEnteredName(user.displayName);
       setEnteredEmail(user.email);
+    } else {
+      setEnteredName('');
+      setEnteredEmail('');
     }
-  }, [user]);
+  }, [loged, user, flag]);
 
   let warrning = (
     <h1 className={classes.warning}>
