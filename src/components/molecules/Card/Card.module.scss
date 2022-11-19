@@ -117,7 +117,7 @@ $colorMainA: rgba(yellow, 0.15);
 
 .paragraphWrapper {
   position: relative;
-  background-color: var(--colorBgkD);
+  background-color: var(--colorArticlesDarkB);
   border-top: 3px double var(--colorArticles);
   border-bottom: 3px double var(--colorArticles);
   box-shadow: -4px 4px 8px 0px rgba(73, 152, 255, 0.65);
@@ -166,7 +166,7 @@ $colorMainA: rgba(yellow, 0.15);
 .decorA {
   width: 200px;
   height: 20px;
-  background-color: var(--colorBgkD);
+  background-color: var(--colorArticlesDarkB);
   position: absolute;
   bottom: -19px;
   right: 0;
@@ -184,7 +184,7 @@ $colorMainA: rgba(yellow, 0.15);
 .decorB {
   width: 20px;
   height: 20px;
-  background-color: var(--colorBgkD);
+  background-color: var(--colorArticlesDarkB);
   position: absolute;
   bottom: -17px;
   right: 0;
@@ -204,12 +204,12 @@ $colorMainA: rgba(yellow, 0.15);
   position: absolute;
   bottom: -17px;
   right: 0px;
-  border-top: 20px solid var(--colorBgkD);
+  border-top: 20px solid var(--colorArticlesDarkB);
   border-right: 21px solid transparent;
 
   @media (max-width: 480px) {
     bottom: -7px;
-    border-top: 10px solid var(--colorBgkD);
+    border-top: 10px solid var(--colorArticlesDarkB);
     border-right: 11px solid transparent;
   }
 }

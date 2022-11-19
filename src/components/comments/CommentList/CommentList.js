@@ -17,8 +17,9 @@ const CommentList = (props) => {
               <h2 className={classes.name}>{comment.name} :</h2>
             </div>
             <div className={classes.contentWrap}>
-              <div className={classes.contentBgk} />
-              <p className={classes.content}>{comment.contents}</p>
+              <div className={classes.contentBgk}>
+                <p className={classes.content}>{comment.contents}</p>
+              </div>
             </div>
             <div className={classes.btnWrap}>
               <Button type="buttonFlex" onClick={props.onRemoveItem.bind(this, comment.id)}>
