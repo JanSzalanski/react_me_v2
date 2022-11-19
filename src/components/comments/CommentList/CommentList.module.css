@@ -72,6 +72,12 @@
   }
 }
 
+.contentBgk {
+  background-color: var(--colorMainGrey);
+  width: 100%;
+  height: 100%;
+}
+
 .content {
   display: block;
   text-align: left;
