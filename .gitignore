@@ -4,7 +4,7 @@
 /node_modules
 /edycja
 /src/firebase.js
-
+/.gitignore
 /.pnp
 .pnp.js
 
