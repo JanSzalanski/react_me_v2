@@ -17,69 +17,6 @@ import { db } from './Firebase';
 const DetailsPage = React.lazy(() => import('./pages/DetailsPage/DetailsPage'));
 const NotFound = React.lazy(() => import('./pages/404/NotFound'));
 
-const DUMMY_NEWS = [
-  {
-    path: 'a1',
-    date: new Date(2022, 7, 27),
-    title: 'Pierwszy news',
-    short:
-      'Witaj na metawersowym wariancie mojej strony domowej! Witryna ta będzie rozwijana przeze mnie do pełnoprawnego projektu Web. 3.0!',
-    content:
-      'Stało się... Jesteś na metawersowym wariancie mojej strony domowej. Witrynę postaram się rozwinąć do pełnoprawnego projektu Web. 3.0. Będzie ona agregować technologie klasyczne, jak i te ze świata blockchain. Jeśli umiejętności mi na to pozwolą, dodam także obsługę gogli VR. Jeszcze zanim uda mi się to wszystko wdrożyć, tak strona już teraz korzysta z tej samej technologii co pewnie dobrze Ci znany Netflix! ',
-  },
-  {
-    path: 'a2',
-    date: new Date(2022, 7, 27),
-    title: 'Wersja beta - smutna żaba :(',
-    short:
-      'PS pozostałe "newsy" to na razie tzw. "dummy data" czyli takie tymczasowe dane do operowania treścią — strona ta to jeszcze tak naprawdę wersja beta.',
-    content: '',
-  },
-  {
-    path: 'a3',
-    date: new Date(2022, 7, 27),
-    title: 'To wymaga czasu...',
-    short:
-      'Różne rzeczy będą się pojawiać i zmieniać na bieżącą, o czym dowiecie się właśnie z kolejnych rekordów.',
-    content: '',
-  },
-  {
-    path: 'a4',
-    date: new Date(2022, 8, 6),
-    title: 'NFT nie zapomniałem o nim',
-    short: 'Dodałem główną grafikę do działu NFT. Oczywiście wszystko moja produkcja.',
-    content:
-      'Dodałem główną grafikę do działu NFT. Taki efekt "chodził" za mną już od dawna - myślałem to będzie pasować do koncepcji blockchain, a zarazem nie wstawię oklepanego efektu pikseli. Minimalistyczny styl grafik w pikselach jest fajny, ale dla mnie zbyt powszechny wśród stron tego typu, a ja nie przepadam za nazbyt popularnymi rozwiązaniami. Dlatego odkopałem spośród sprzętu dawno nieużywanego mój tablecik - dobrze, że działał. Uruchomiłem Photoshop i do dzieła. Tak więc grafika hand made, a nie tam jakieś generowane przez algorytm piksele. Choć to stwierdzenie może zaskakiwać — bo czy cała ta koncepcja NFT to nie tylko skok na kasę po linii najmniejszego oporu?',
-  },
-  {
-    path: 'a5',
-    date: new Date(2022, 8, 25),
-    title: 'Piąty news',
-    short:
-      'Na podstronie "Ludzie" dodałem uproszczoną funkcjonalność dodawania komentarzy. Podstrona #NFT zmienia się na #BLOCKCHAIN \\ AI',
-    content:
-      'Na podstronie "Ludzie" dodałem uproszczoną funkcjonalność dodawania komentarzy. Podstrona #NFT zmienia się na #BLOCKCHAIN  AI. Komentarze zapisuj się do bazy danych, tak więc mamy tutaj do czynienia z pewnym rozwiązaniem backend. Nowa nazwa podstrony z kolei to naturalna konsekwencja tego, że ta strona ma być przedstawicielką Web 3.0 ?- a to jest coś więcej niż samo NFT. Mało tego moje zainteresowania wykraczają także poza blockcahin dla tego też i sztuczna inteligencja. ',
-  },
-  {
-    path: 'a6',
-    date: new Date(2022, 0, 1),
-    title: 'Szósty news',
-    short:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste!',
-    content:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit. Deserunt tempore neque recusandae omnis at perspiciatis odit possimus quod asperiores id nesciunt quae, consequatur ipsa veniam esse eveniet iusto corrupti et?',
-  },
-  {
-    path: 'a7',
-    date: new Date(2022, 0, 1),
-    title: 'Siódmy news',
-    short:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste!',
-    content:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis molestias earum accusamus iste! Corrupti ut ea sint modi magnam atque, dolorum reprehenderit. Deserunt tempore neque recusandae omnis at perspiciatis odit possimus quod asperiores id nesciunt quae, consequatur ipsa veniam esse eveniet iusto corrupti et?',
-  },
-];
-
 function App() {
   // const [isLoading, setIsLoading] = useState(false);
   const [news, setNews] = useState([]);
@@ -87,15 +24,19 @@ function App() {
   //Read news from firebase...
 
   useEffect(() => {
-    const q = query(collection(db, 'news'));
-    const unsub = onSnapshot(q, (querySnapshot) => {
-      let newsArr = [];
-      querySnapshot.forEach((doc) => {
-        newsArr.push({ ...doc.data(), id: doc.id });
+    try {
+      const q = query(collection(db, 'news'));
+      const unsub = onSnapshot(q, (querySnapshot) => {
+        let newsArr = [];
+        querySnapshot.forEach((doc) => {
+          newsArr.push({ ...doc.data(), id: doc.id });
+        });
+        setNews(newsArr);
       });
-      setNews(newsArr);
-    });
-    return () => unsub();
+      return () => unsub();
+    } catch (error) {
+      throw new Error('Nie pobrano niusów z bazy');
+    }
   }, []);
 
   let zmienna = news;

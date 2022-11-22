@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React, { useReducer, useEffect, useCallback } from 'react';
+import React, { useReducer, useEffect, useCallback, useState } from 'react';
 import classes from '../Comments/Comments.module.css';
 import CommentList from '../CommentList/CommentList';
 import Filter from '../Filter/Filter';
@@ -12,6 +12,8 @@ import DummyForm from '../DummyForm/DummyForm';
 // import AuthContext from '../../../context/AuthContext';
 import { UserAuth } from '../../../context/AuthContext';
 import { Route, Redirect } from 'react-router-dom';
+import { query, collection, onSnapshot } from 'firebase/firestore';
+import { db } from '../../../Firebase';
 
 const commentReducer = (currentComment, action) => {
   switch (action.type) {
@@ -46,6 +48,27 @@ const Comments = () => {
 
   const [commentArr, dispach] = useReducer(commentReducer, []);
   const [httpState, dispachHttp] = useReducer(httpReducer, { loading: false, error: null });
+
+  const [comments, setComments] = useState([]);
+
+  //Read news from firebase...
+  console.log(commentArr);
+
+  useEffect(() => {
+    try {
+      const q = query(collection(db, 'comments'));
+      const unsub = onSnapshot(q, (querySnapshot) => {
+        let newsArr = [];
+        querySnapshot.forEach((doc) => {
+          newsArr.push({ ...doc.data(), id: doc.id });
+        });
+        setComments(newsArr);
+      });
+      return () => unsub();
+    } catch (error) {
+      throw new Error('Nie pobrano niusów z bazy');
+    }
+  }, []);
 
   useEffect(() => {
     console.log('RENDERING COMMENTS');
@@ -106,7 +129,7 @@ const Comments = () => {
         <ZoneMiddle>
           <CommentList
             loading={httpState.loading}
-            comments={commentArr}
+            comments={comments}
             onRemoveItem={removeCommentHandler}
           >
             {httpState.loading && <LoadingSpiner />}

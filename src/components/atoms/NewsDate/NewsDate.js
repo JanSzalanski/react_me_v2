@@ -2,9 +2,10 @@ import React from 'react';
 import classes from './NewsDate.module.css';
 
 const NewsDate = (props) => {
-  const year = props.date.getFullYear();
-  const month = props.date.toLocaleString('pl-PL', { month: 'short' });
-  const day = props.date.toLocaleString('pl-PL', { day: '2-digit' });
+  const calendarDate = new Date([props.date]);
+  const year = calendarDate.getFullYear();
+  const month = calendarDate.toLocaleString('pl-PL', { month: 'short' });
+  const day = calendarDate.toLocaleString('pl-PL', { day: '2-digit' });
 
   return (
     <div className={classes[props.className] || classes.date}>

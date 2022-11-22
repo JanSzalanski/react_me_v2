@@ -9,16 +9,18 @@ const CommentList = (props) => {
         {props.comments.map((comment) => (
           <li className={classes.comment} key={comment.id}>
             <div className={classes.nameWrap}>
-              <img
+              {/* <img
                 className={classes.pic}
                 src={localStorage.getItem('profilePic')}
                 alt="profile pic"
-              />
+              /> */}
               <h2 className={classes.name}>{comment.name} :</h2>
             </div>
             <div className={classes.contentWrap}>
-              <div className={classes.contentBgk}>
-                <p className={classes.content}>{comment.contents}</p>
+              <div className={classes.contentBgkBorder}>
+                <div className={classes.contentBgk}>
+                  <p className={classes.content}>{comment.content}</p>
+                </div>
               </div>
             </div>
             <div className={classes.btnWrap}>

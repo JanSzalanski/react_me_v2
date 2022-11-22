@@ -84,21 +84,33 @@
 }
 
 .contentBgk {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--colorArticlesDarkB);
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  clip-path: polygon(0 25%, 2% 0, 100% 0, 100% 75%, 98% 100%, 0 100%);
+}
+.contentBgkBorder {
+  position: relative;
+  background-color: var(--colorArticles);
   width: 100%;
   height: 100%;
-  clip-path: polygon(0 15%, 2% 0, 100% 0, 100% 85%, 98% 100%, 0 100%);
+  clip-path: polygon(0 25%, 2% 0, 100% 0, 100% 75%, 98% 100%, 0 100%);
 }
 
 .content {
   display: block;
   padding: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: left;
   line-height: 2rem;
   color: var(--white);
   font-family: var(--font-headers);
+  text-indent: 20px;
   text-shadow: -3px 3px 3px rgba(31, 31, 31, 0.733);
   font-size: 1.6rem;
   font-weight: 500;

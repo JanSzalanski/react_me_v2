@@ -12,7 +12,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(50, 50, 50, 0.8);
+  background-color: var(--colorArticlesDarkBA);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   -webkit-backdrop-filter: sepia(80%);
