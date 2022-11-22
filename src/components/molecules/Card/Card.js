@@ -5,7 +5,7 @@ import Heading from '../../atoms/Heading/Heading';
 import Paragraph from '../../atoms/Paragraph/Paragraph';
 import Button from '../../atoms/Button/Button';
 import { NavLink } from 'react-router-dom';
-import NewsDate from '../../atoms/NewsDate/NewsDate';
+// import NewsDate from '../../atoms/NewsDate/NewsDate';
 
 const Card = ({ className, cardType, date, title, short, content, path }) => {
   const withFlex = classes.wrapper + ' flex';
@@ -40,7 +40,7 @@ const Card = ({ className, cardType, date, title, short, content, path }) => {
             </NavLink>
           </div>
         )}
-        {cardType === 'news' && <NewsDate date={date}></NewsDate>}
+        {cardType === 'news' && <h2>{date}</h2>}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import './scss/main.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import NewsPage from './pages/NewsPage/NewsPage';
@@ -9,6 +9,9 @@ import SideBar from './components/organisms/SideBar/SideBar';
 import Video from './components/atoms/Videos/Video';
 import ContactBar from './components/molecules/ContactBar/ContactBar';
 import Backdrop from './components/atoms/Backdrop/Backdrop';
+import { query, collection, onSnapshot } from 'firebase/firestore';
+import { db } from './Firebase';
+
 // import AuthContext from './context/AuthContext';
 
 const DetailsPage = React.lazy(() => import('./pages/DetailsPage/DetailsPage'));
@@ -79,6 +82,24 @@ const DUMMY_NEWS = [
 
 function App() {
   // const [isLoading, setIsLoading] = useState(false);
+  const [news, setNews] = useState([]);
+
+  //Read news from firebase...
+
+  useEffect(() => {
+    const q = query(collection(db, 'news'));
+    const unsub = onSnapshot(q, (querySnapshot) => {
+      let newsArr = [];
+      querySnapshot.forEach((doc) => {
+        newsArr.push({ ...doc.data(), id: doc.id });
+      });
+      setNews(newsArr);
+    });
+    return () => unsub();
+  }, []);
+
+  let zmienna = news;
+  console.log(zmienna);
 
   return (
     <>
@@ -90,7 +111,7 @@ function App() {
           <Route path="/news/:newsId">
             <div className="backgroundBack"></div>
             <Backdrop />
-            <DetailsPage data={DUMMY_NEWS} />
+            <DetailsPage data={news} />
             <SideBar />
             <div className="wrapCont">
               <ContactBar />
@@ -99,7 +120,7 @@ function App() {
           <Route path="/news">
             <div className="backgroundBody"></div>
             <Video></Video>
-            <NewsPage data={DUMMY_NEWS} />
+            <NewsPage data={news} />
             <SideBar />
             <div className="wrapCont">
               <ContactBar />
