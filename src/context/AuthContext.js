@@ -20,7 +20,7 @@ export const AuthContextProvider = (props) => {
     localStorage.removeItem('profilePic');
     setIsLogged(false);
     setUser({});
-    console.log('User logout', user);
+    // console.log('User logout', user);
   };
 
   // const handleGoogleSignIn = async () => {
@@ -53,7 +53,7 @@ export const AuthContextProvider = (props) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
-      console.log('User', currentUser);
+      // console.log('User', currentUser);
     });
     return () => {
       console.log('unsuscribe logout?');

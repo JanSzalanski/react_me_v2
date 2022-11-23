@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React, { useReducer, useEffect, useCallback, useState } from 'react';
+import React, { useReducer, useEffect, useState } from 'react';
 import classes from '../Comments/Comments.module.css';
 import CommentList from '../CommentList/CommentList';
 import Filter from '../Filter/Filter';
@@ -14,19 +14,6 @@ import { UserAuth } from '../../../context/AuthContext';
 import { Route, Redirect } from 'react-router-dom';
 import { query, collection, onSnapshot } from 'firebase/firestore';
 import { db } from '../../../Firebase';
-
-const commentReducer = (currentComment, action) => {
-  switch (action.type) {
-    case 'SET':
-      return action.comments;
-    case 'ADD':
-      return [...currentComment, action.comment];
-    case 'DELETE':
-      return currentComment.filter((com) => com.id !== action.id);
-    default:
-      throw new Error('Ten blad nie powinnen sie zdarzyc: red def in comment');
-  }
-};
 
 const httpReducer = (currentHttpState, action) => {
   switch (action.type) {
@@ -43,16 +30,14 @@ const httpReducer = (currentHttpState, action) => {
   }
 };
 
-const Comments = () => {
+const Comments = (props) => {
   const { user } = UserAuth();
-
-  const [commentArr, dispach] = useReducer(commentReducer, []);
   const [httpState, dispachHttp] = useReducer(httpReducer, { loading: false, error: null });
-
   const [comments, setComments] = useState([]);
 
   //Read news from firebase...
-  console.log(commentArr);
+  // console.log(commentArr);
+  // READ nowa wersja odczytu komentarzy
 
   useEffect(() => {
     try {
@@ -66,56 +51,37 @@ const Comments = () => {
       });
       return () => unsub();
     } catch (error) {
-      throw new Error('Nie pobrano niusów z bazy');
+      new Error('Nie pobrano komentarzy z bazy');
+      console.log('catch komentarz read' + error);
     }
   }, []);
+
+  // Create dodawanie komentarza do bazy danycy
 
   useEffect(() => {
     console.log('RENDERING COMMENTS');
   }, []);
 
-  const filteredCommentsHandler = useCallback((filteredComments) => {
-    dispach({ type: 'SET', comments: filteredComments });
-  }, []);
-
   //połaczenie z firebase ustawienie metody przesyłu POST i przesłanie dodawanego komentarza jeszcze bez catch & err
-  const addCommentHandler = (comment) => {
-    dispachHttp({ type: 'SEND' });
-    fetch('https://react-dummy-base-default-rtdb.europe-west1.firebasedatabase.app/comments.json', {
-      method: 'POST',
-      body: JSON.stringify(comment),
-      headers: { 'Content-Type': 'application/json' },
-    })
-      .then((response) => {
-        dispachHttp({ type: 'RESPONSE' });
-        return response.json();
-      })
-      .then((responseData) => {
-        // setCommentArr((prevComments) => [...prevComments, { id: responseData.name, ...comment }]);
-        dispach({ type: 'ADD', comment: { id: responseData.name, ...comment } });
-      })
-      .catch((error) => {
-        dispachHttp({ type: 'ERROR', errorMessage: 'Błąd połączenia z bazą' });
-      });
-  };
-
-  const removeCommentHandler = (commentId) => {
-    dispachHttp({ type: 'SEND' });
-    fetch(
-      `https://react-dummy-base-default-rtdb.europe-west1.firebasedatabase.app/comments/${commentId}.json`,
-      {
-        method: 'DELETE',
-      },
-    )
-      .then((response) => {
-        dispachHttp({ type: 'RESPONSE' });
-        // setCommentArr((prevComments) => prevComments.filter((comment) => comment.id !== commentId));
-        dispach({ type: 'DELETE', id: commentId });
-      })
-      .catch((error) => {
-        dispachHttp({ type: 'ERROR', errorMessage: 'Błąd połaczenia z bazą' });
-      });
-  };
+  // const addCommentHandler = (comment) => {
+  //   dispachHttp({ type: 'SEND' });
+  //   fetch('https://react-dummy-base-default-rtdb.europe-west1.firebasedatabase.app/comments.json', {
+  //     method: 'POST',
+  //     body: JSON.stringify(comment),
+  //     headers: { 'Content-Type': 'application/json' },
+  //   })
+  //     .then((response) => {
+  //       dispachHttp({ type: 'RESPONSE' });
+  //       return response.json();
+  //     })
+  //     .then((responseData) => {
+  //       // setCommentArr((prevComments) => [...prevComments, { id: responseData.name, ...comment }]);
+  //       dispach({ type: 'ADD', comment: { id: responseData.name, ...comment } });
+  //     })
+  //     .catch((error) => {
+  //       dispachHttp({ type: 'ERROR', errorMessage: 'Błąd połączenia z bazą' });
+  //     });
+  // };
 
   const clearError = () => {
     dispachHttp({ type: 'CLEAR' });
@@ -125,13 +91,9 @@ const Comments = () => {
     <>
       {httpState.error && <ErrorModal onClose={clearError}>{httpState.error}</ErrorModal>}
       <div className={classes.comments}>
-        <Filter onLoadComments={filteredCommentsHandler} />
+        <Filter />
         <ZoneMiddle>
-          <CommentList
-            loading={httpState.loading}
-            comments={comments}
-            onRemoveItem={removeCommentHandler}
-          >
+          <CommentList loading={httpState.loading} comments={comments} onRemoveItem={() => {}}>
             {httpState.loading && <LoadingSpiner />}
           </CommentList>
         </ZoneMiddle>
@@ -142,7 +104,7 @@ const Comments = () => {
             </Route>
 
             <Route path="/people/comments">
-              <CommentForm onAddComment={addCommentHandler} />
+              <CommentForm />
             </Route>
           </>
         )}

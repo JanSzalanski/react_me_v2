@@ -39,9 +39,6 @@ function App() {
     }
   }, []);
 
-  let zmienna = news;
-  console.log(zmienna);
-
   return (
     <>
       <Suspense fallback={<p>Wczytywanie...</p>}>

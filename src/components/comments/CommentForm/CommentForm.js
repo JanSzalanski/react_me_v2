@@ -7,6 +7,8 @@ import Input from '../../atoms/Input/Input';
 import Textarea from '../../atoms/Textarea/Textarea';
 import ZoneBottom from '../../UI/Zones/ZoneBottom';
 import { UserAuth } from '../../../context/AuthContext';
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '../../../Firebase';
 
 const CommentForm = React.memo((props) => {
   const { user } = UserAuth();
@@ -16,14 +18,27 @@ const CommentForm = React.memo((props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     if (enteredName.trim() === '') {
-      props.onAddComment({ name: 'anonim', contents: enteredContents });
-      setEnteredName('');
-      setEnteredContents('');
+      setEnteredName('anonim');
       return;
     }
-    props.onAddComment({ name: enteredName, contents: enteredContents });
+
+    setEnteredName(enteredName);
+    createComment(event);
     setEnteredName('');
     setEnteredContents('');
+  };
+
+  const createComment = async (event) => {
+    event.preventDefault(event);
+    try {
+      await addDoc(collection(db, 'comments'), {
+        name: enteredName,
+        content: enteredContents,
+      });
+    } catch (error) {
+      new Error('Nie dodano komntarza do bazy');
+      console.log('catch komentarz add' + error);
+    }
   };
 
   return (
