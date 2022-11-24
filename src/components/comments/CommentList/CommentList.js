@@ -1,8 +1,12 @@
 import React from 'react';
 import classes from './CommentList.module.css';
 import Button from '../../atoms/Button/Button';
+import { UserAuth } from '../../../context/AuthContext';
 
 const CommentList = (props) => {
+  const { user } = UserAuth();
+  const userID = user.uid;
+
   return (
     <>
       <ul className={classes.ul}>
@@ -24,9 +28,11 @@ const CommentList = (props) => {
               </div>
             </div>
             <div className={classes.btnWrap}>
-              <Button type="buttonFlex" onClick={props.onRemoveItem.bind(this, comment.id)}>
-                Usuń
-              </Button>
+              {comment.userID === userID && (
+                <Button type="buttonFlex" onClick={props.onRemoveItem.bind(this, comment.id)}>
+                  Usuń
+                </Button>
+              )}
             </div>
           </li>
         ))}

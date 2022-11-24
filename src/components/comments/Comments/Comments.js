@@ -12,7 +12,7 @@ import DummyForm from '../DummyForm/DummyForm';
 // import AuthContext from '../../../context/AuthContext';
 import { UserAuth } from '../../../context/AuthContext';
 import { Route, Redirect } from 'react-router-dom';
-import { query, collection, onSnapshot } from 'firebase/firestore';
+import { query, collection, onSnapshot, deleteDoc, doc } from 'firebase/firestore';
 import { db } from '../../../Firebase';
 
 const httpReducer = (currentHttpState, action) => {
@@ -57,7 +57,11 @@ const Comments = (props) => {
     }
   }, []);
 
-  // Create dodawanie komentarza do bazy danycy
+  // Deleted dodawanie komentarza do bazy danycy
+
+  const deleteComment = async (id) => {
+    await deleteDoc(doc(db, 'comments', id));
+  };
 
   useEffect(() => {
     console.log('RENDERING COMMENTS');
@@ -94,7 +98,7 @@ const Comments = (props) => {
       <div className={classes.comments}>
         <Filter />
         <ZoneMiddle>
-          <CommentList loading={httpState.loading} comments={comments} onRemoveItem={() => {}}>
+          <CommentList loading={httpState.loading} comments={comments} onRemoveItem={deleteComment}>
             {httpState.loading && <LoadingSpiner />}
           </CommentList>
         </ZoneMiddle>
