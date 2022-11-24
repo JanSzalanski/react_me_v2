@@ -13,16 +13,6 @@ export const AuthContextProvider = (props) => {
   const [isloged, setIsLogged] = useState(false);
   const [user, setUser] = useState({});
 
-  const logoutHandler = () => {
-    signOut(auth);
-    localStorage.removeItem('name');
-    localStorage.removeItem('eamil');
-    localStorage.removeItem('profilePic');
-    setIsLogged(false);
-    setUser({});
-    // console.log('User logout', user);
-  };
-
   // const handleGoogleSignIn = async () => {
   //   try {
   //     googleSingIn();
@@ -62,6 +52,16 @@ export const AuthContextProvider = (props) => {
       unsubscribe();
     };
   }, []);
+
+  const logoutHandler = () => {
+    signOut(auth);
+    localStorage.removeItem('name');
+    localStorage.removeItem('eamil');
+    localStorage.removeItem('profilePic');
+    setIsLogged(false);
+    setUser({});
+    // console.log('User logout', user);
+  };
 
   return (
     <AuthContext.Provider

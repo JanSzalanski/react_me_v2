@@ -11,9 +11,18 @@ import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../../Firebase';
 
 const CommentForm = React.memo((props) => {
-  const { user } = UserAuth();
+  const { user, loged } = UserAuth();
   const [enteredName, setEnteredName] = useState(user ? user.displayName : '');
   const [enteredContents, setEnteredContents] = useState('');
+
+  const userID = user.uid;
+  const userMail = user.email;
+  const profilePic = user.photoURL;
+
+  const Today = new Date();
+  const year = Today.getFullYear();
+  const month = Today.toLocaleString('pl-PL', { month: 'short' });
+  const day = Today.toLocaleString('pl-PL', { day: '2-digit' });
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -21,7 +30,6 @@ const CommentForm = React.memo((props) => {
       setEnteredName('anonim');
       return;
     }
-
     setEnteredName(enteredName);
     createComment(event);
     setEnteredName('');
@@ -30,16 +38,26 @@ const CommentForm = React.memo((props) => {
 
   const createComment = async (event) => {
     event.preventDefault(event);
-    try {
-      await addDoc(collection(db, 'comments'), {
-        name: enteredName,
-        content: enteredContents,
-      });
-    } catch (error) {
-      new Error('Nie dodano komntarza do bazy');
-      console.log('catch komentarz add' + error);
+    if (loged) {
+      try {
+        await addDoc(collection(db, 'comments'), {
+          userID: userID,
+          name: enteredName,
+          mail: userMail,
+          content: enteredContents,
+          picture: profilePic,
+          date: `${day} ${month} ${year}`,
+        });
+      } catch (error) {
+        new Error('Nie dodano komntarza do bazy');
+        console.log('catch komentarz add' + error);
+      }
+    } else {
+      alert('Trzeba być zalogowanym do wykonania tej akcji');
     }
   };
+
+  console.log('User ' + user);
 
   return (
     <ZoneBottom>

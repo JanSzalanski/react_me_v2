@@ -37,6 +37,7 @@ const Comments = (props) => {
 
   //Read news from firebase...
   // console.log(commentArr);
+
   // READ nowa wersja odczytu komentarzy
 
   useEffect(() => {
