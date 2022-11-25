@@ -5,7 +5,8 @@ import { UserAuth } from '../../../context/AuthContext';
 
 const CommentList = (props) => {
   const { user } = UserAuth();
-  const userID = user.uid;
+
+  const userID = user ? user.uid : null;
 
   return (
     <>
@@ -13,11 +14,7 @@ const CommentList = (props) => {
         {props.comments.map((comment) => (
           <li className={classes.comment} key={comment.id}>
             <div className={classes.nameWrap}>
-              {/* <img
-                className={classes.pic}
-                src={localStorage.getItem('profilePic')}
-                alt="profile pic"
-              /> */}
+              <img className={classes.pic} src={comment.picture} alt="profile pic" />
               <h2 className={classes.name}>{comment.name} :</h2>
             </div>
             <div className={classes.contentWrap}>
@@ -28,11 +25,11 @@ const CommentList = (props) => {
               </div>
             </div>
             <div className={classes.btnWrap}>
-              {comment.userID === userID && (
+              {comment.userID === userID ? (
                 <Button type="buttonFlex" onClick={props.onRemoveItem.bind(this, comment.id)}>
                   Usuń
                 </Button>
-              )}
+              ) : null}
             </div>
           </li>
         ))}
