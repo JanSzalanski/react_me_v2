@@ -216,6 +216,7 @@ $btnHeight: 40px;
 
 .buttonWrapper {
   position: relative;
+
   // border: 1px solid yellowgreen;
   // // @media (max-width: 480px) {
   //   position: unset;
@@ -259,8 +260,9 @@ $btnHeight: 40px;
 
 .buttonFlexWrapper {
   position: relative;
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
+  // align-self: center;
   // flex-grow: 2;
   // border: 1px solid greenyellow;
 }
@@ -271,6 +273,16 @@ $btnHeight: 40px;
   clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0 0);
   background-color: var(--colorArticlesE);
   transition: all 0.2s ease-out;
+}
+
+.copyL {
+  @extend .copy;
+  width: var(--btnloginWidth);
+  position: absolute;
+  left: -2px;
+  top: 11px;
+
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .copyS {
@@ -350,6 +362,12 @@ $btnHeight: 40px;
     width: calc(var(--buttonWidth) / 1.8);
     height: calc(var(--buttonHeight) - 6px);
   }
+}
+
+.glowL {
+  @extend .glow;
+  width: var(--btnloginWidth);
+  filter: drop-shadow(-6px 6px 2px rgba(255, 255, 255, 0.4));
 }
 
 .glowKont {
