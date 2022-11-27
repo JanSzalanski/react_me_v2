@@ -229,7 +229,7 @@ $btnHeight: 40px;
 
 .buttonLWrapper {
   position: absolute;
-  top: 5px;
+  top: 2px;
   right: 0;
   transform: translate(100%, 0);
 }
@@ -260,8 +260,8 @@ $btnHeight: 40px;
 
 .buttonFlexWrapper {
   position: relative;
-  // width: 100%;
-  // height: 100%;
+  width: 100%;
+  height: 100%;
   // align-self: center;
   // flex-grow: 2;
   // border: 1px solid greenyellow;

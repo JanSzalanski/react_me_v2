@@ -63,6 +63,8 @@ const Comments = (props) => {
     await deleteDoc(doc(db, 'comments', id));
   };
 
+  const editComment = () => {};
+
   useEffect(() => {
     console.log('RENDERING COMMENTS');
   }, []);
@@ -98,7 +100,12 @@ const Comments = (props) => {
       <div className={classes.comments}>
         <Filter />
         <ZoneMiddle>
-          <CommentList loading={httpState.loading} comments={comments} onRemoveItem={deleteComment}>
+          <CommentList
+            loading={httpState.loading}
+            comments={comments}
+            onRemoveItem={deleteComment}
+            onEditItem={editComment}
+          >
             {httpState.loading && <LoadingSpiner />}
           </CommentList>
         </ZoneMiddle>

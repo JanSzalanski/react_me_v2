@@ -8,13 +8,11 @@
   top: calc(var(--inputHeight) + 62px);
   left: 50%;
   transform: translate(-50%, 0);
-  background-color: var(--colorArticlesE);
+  background-color: var(--colorArticlesEB);
   border: 1px solid var(--colorArticles);
   overflow-y: auto;
   scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
   font-weight: 500;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
 }
 @media (max-width: 1366px) {
   .zoneMiddle {

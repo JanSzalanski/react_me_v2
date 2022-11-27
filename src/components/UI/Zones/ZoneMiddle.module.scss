@@ -4,23 +4,20 @@
   // color: var(--white);
   // font-size: 1.8rem;
   display: block;
-
   width: calc(100% - 40px);
   height: calc(100% - (var(--inputHeight) + 62px + 10vh + 62px));
-
   padding-left: 20px;
   padding-right: 20px;
-
   position: absolute;
   top: calc(var(--inputHeight) + 62px);
   left: 50%;
   transform: translate(-50%, 0);
-  background-color: var(--colorArticlesE);
+  background-color: var(--colorArticlesEB);
   border: 1px solid var(--colorArticles);
   overflow-y: auto;
   scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
   font-weight: 500;
-  backdrop-filter: blur(8px);
+  // backdrop-filter: blur(4px);
 
   @media (max-width: 1366px) {
     top: calc(var(--inputHeight) + 52px);

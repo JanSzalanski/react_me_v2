@@ -27,6 +27,11 @@ const CommentList = (props) => {
             <div className={classes.btnWrap}>
               <h2 className={classes.date}>{comment.date}</h2>
               {comment.userID === userID ? (
+                <Button type="buttonFlex" onClick={props.onEditItem.bind(this, comment.id)}>
+                  Edytuj
+                </Button>
+              ) : null}
+              {comment.userID === userID ? (
                 <Button type="buttonFlex" onClick={props.onRemoveItem.bind(this, comment.id)}>
                   Usuń
                 </Button>
