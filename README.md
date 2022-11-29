@@ -1,3 +1,3 @@
 This project was bootstrapped with Create React App.
 
-Czemu temat css w react jest tak pomijany w materialach traktujacych o react ? Bo to nie wygodny teamt ...
+29-11-2022
