@@ -10,7 +10,7 @@ import { UserAuth } from '../../../context/AuthContext';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../../Firebase';
 
-const CommentForm = React.memo((props) => {
+const CommentForm = React.memo(({ editData, edit }) => {
   const { user, loged } = UserAuth();
   const [enteredName, setEnteredName] = useState(user ? user.displayName : '');
   const [enteredContents, setEnteredContents] = useState('');
@@ -30,6 +30,11 @@ const CommentForm = React.memo((props) => {
       setEnteredName('anonim');
       return;
     }
+    if (edit) {
+      /// hmmy?
+      setEnteredName(editData.name);
+      edit = false;
+    }
     setEnteredName(enteredName);
     createComment(event);
     setEnteredName('');
@@ -39,6 +44,9 @@ const CommentForm = React.memo((props) => {
   const createComment = async (event) => {
     event.preventDefault(event);
     if (loged) {
+      if (edit) {
+        setEnteredContents(editData.content);
+      }
       try {
         await addDoc(collection(db, 'comments'), {
           userID: userID,
@@ -73,12 +81,12 @@ const CommentForm = React.memo((props) => {
               class="commentWrap"
               className="comment"
               placeholder="Podaj Imię"
-              value={enteredName}
+              value={edit ? editData.name : enteredName}
               onChange={(event) => setEnteredName(event.target.value)}
             />
 
             <Button type="buttonFlex" tabindex="9" className="comment">
-              Dodaj komentarz
+              {edit ? 'Zapisz zamiany' : 'Dodaj komentarz'}
             </Button>
           </div>
           <div className={classes.rightWrap}>
@@ -93,7 +101,7 @@ const CommentForm = React.memo((props) => {
               wrap="commentWrap"
               className="comment"
               placeholder="Treść komentarza*"
-              value={enteredContents}
+              value={edit ? editData.content : enteredContents}
               onChange={(event) => {
                 setEnteredContents(event.target.value);
               }}

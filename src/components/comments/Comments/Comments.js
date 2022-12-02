@@ -34,6 +34,8 @@ const Comments = (props) => {
   const { user } = UserAuth();
   const [httpState, dispachHttp] = useReducer(httpReducer, { loading: false, error: null });
   const [comments, setComments] = useState([]);
+  const [editableComment, setEditableComment] = useState([]);
+  const [isEdit, setIsEdit] = useState(false);
 
   //Read news from firebase...
   // console.log(commentArr);
@@ -63,7 +65,17 @@ const Comments = (props) => {
     await deleteDoc(doc(db, 'comments', id));
   };
 
-  const editComment = () => {};
+  const editComment = (id) => {
+    if (!isEdit) {
+      const unsub = onSnapshot(doc(db, 'comments', id), (doc) => {
+        setIsEdit(true);
+        setEditableComment(doc.data());
+      });
+      return () => unsub();
+    } else {
+      alert('Już edytujesz komentarz');
+    }
+  };
 
   useEffect(() => {
     console.log('RENDERING COMMENTS');
@@ -116,7 +128,7 @@ const Comments = (props) => {
             </Route>
 
             <Route path="/people/comments">
-              <CommentForm />
+              <CommentForm editData={editableComment} edit={isEdit} />
             </Route>
           </>
         )}
