@@ -43,10 +43,10 @@ const CommentForm = React.memo(({ editData, edit }) => {
 
   const createComment = async (event) => {
     event.preventDefault(event);
+    if (edit) {
+      setEnteredContents(editData.content);
+    }
     if (loged) {
-      if (edit) {
-        setEnteredContents(editData.content);
-      }
       try {
         await addDoc(collection(db, 'comments'), {
           userID: userID,

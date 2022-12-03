@@ -10,7 +10,7 @@ const AuthContext = React.createContext({
 });
 
 export const AuthContextProvider = (props) => {
-  const [isloged, setIsLogged] = useState(false);
+  const [isloged, setIsLogged] = useState(localStorage.getItem('loged') ? true : false);
   const [user, setUser] = useState({});
 
   // const handleGoogleSignIn = async () => {
@@ -31,6 +31,7 @@ export const AuthContextProvider = (props) => {
         localStorage.setItem('name', name);
         localStorage.setItem('email', email);
         localStorage.setItem('profilePic', profilePic);
+        localStorage.setItem('loged', true);
         setUser(result.user);
         setIsLogged(true);
       })
@@ -49,6 +50,7 @@ export const AuthContextProvider = (props) => {
       console.log('unsuscribe logout?');
       setUser({});
       setIsLogged(false);
+      console.log('loged false in unsubscribe function');
       unsubscribe();
     };
   }, []);
@@ -58,6 +60,8 @@ export const AuthContextProvider = (props) => {
     localStorage.removeItem('name');
     localStorage.removeItem('eamil');
     localStorage.removeItem('profilePic');
+    localStorage.removeItem('loged');
+    console.log('loged false in logout function');
     setIsLogged(false);
     setUser({});
     // console.log('User logout', user);
