@@ -31,7 +31,7 @@ const httpReducer = (currentHttpState, action) => {
 };
 
 const Comments = (props) => {
-  const { user } = UserAuth();
+  const { user, loged } = UserAuth();
   const [httpState, dispachHttp] = useReducer(httpReducer, { loading: false, error: null });
   const [comments, setComments] = useState([]);
   const [editableComment, setEditableComment] = useState([]);
@@ -76,6 +76,19 @@ const Comments = (props) => {
       alert('Już edytujesz komentarz');
     }
   };
+
+  const endEdit = (id) => {
+    deleteComment(id);
+    setIsEdit(false);
+    setEditableComment(null);
+  };
+
+  useEffect(() => {
+    if (!loged) {
+      setIsEdit(false);
+      setEditableComment(null);
+    }
+  }, [loged]);
 
   useEffect(() => {
     console.log('RENDERING COMMENTS');
@@ -128,7 +141,7 @@ const Comments = (props) => {
             </Route>
 
             <Route path="/people/comments">
-              <CommentForm editData={editableComment} edit={isEdit} />
+              <CommentForm editData={editableComment} edit={isEdit} end={endEdit} />
             </Route>
           </>
         )}
