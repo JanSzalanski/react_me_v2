@@ -35,6 +35,7 @@ const Comments = (props) => {
   const [httpState, dispachHttp] = useReducer(httpReducer, { loading: false, error: null });
   const [comments, setComments] = useState([]);
   const [editableComment, setEditableComment] = useState([]);
+  const [editableCommentID, setEditableCommentID] = useState('');
   const [isEdit, setIsEdit] = useState(false);
 
   //Read news from firebase...
@@ -63,6 +64,7 @@ const Comments = (props) => {
 
   const deleteComment = async (id) => {
     await deleteDoc(doc(db, 'comments', id));
+    console.log('skasowano komentarz o ID ' + id);
   };
 
   const editComment = (id) => {
@@ -70,6 +72,7 @@ const Comments = (props) => {
       const unsub = onSnapshot(doc(db, 'comments', id), (doc) => {
         setIsEdit(true);
         setEditableComment(doc.data());
+        setEditableCommentID(doc.id);
       });
       return () => unsub();
     } else {
@@ -77,16 +80,20 @@ const Comments = (props) => {
     }
   };
 
-  const endEdit = (id) => {
-    deleteComment(id);
+  const endEditing = () => {
+    deleteComment(editableCommentID);
+    console.log('end editing  ' + editableCommentID);
     setIsEdit(false);
     setEditableComment(null);
+    setEditableCommentID('');
   };
 
   useEffect(() => {
     if (!loged) {
       setIsEdit(false);
       setEditableComment(null);
+      setEditableCommentID('');
+      console.log('zerowanie eedycji po wylogowaniu');
     }
   }, [loged]);
 
@@ -141,7 +148,7 @@ const Comments = (props) => {
             </Route>
 
             <Route path="/people/comments">
-              <CommentForm editData={editableComment} edit={isEdit} end={endEdit} />
+              <CommentForm editData={editableComment} edit={isEdit} end={endEditing} />
             </Route>
           </>
         )}

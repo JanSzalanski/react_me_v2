@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // import Card from '../../molecules/Card/Card';
 import classes from './CommentForm.module.css';
 import Button from '../../atoms/Button/Button';
@@ -10,7 +10,7 @@ import { UserAuth } from '../../../context/AuthContext';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../../Firebase';
 
-const CommentForm = React.memo(({ editData, edit, end }) => {
+const CommentForm = ({ editData, edit, end }) => {
   const { user, loged } = UserAuth();
   const [enteredName, setEnteredName] = useState(user ? user.displayName : '');
   const [enteredContents, setEnteredContents] = useState('');
@@ -24,16 +24,17 @@ const CommentForm = React.memo(({ editData, edit, end }) => {
   const month = Today.toLocaleString('pl-PL', { month: 'short' });
   const day = Today.toLocaleString('pl-PL', { day: '2-digit' });
 
-  const endEdit = (id) => {
-    return (end = id);
-  };
+  useEffect(() => {
+    if (edit && editData) {
+      setEnteredName(editData.name);
+      setEnteredContents(editData.content);
+      // console.log(editData);
+    }
+  }, [edit, editData]);
 
   const submitHandler = (event) => {
     event.preventDefault();
-    if (edit) {
-      setEnteredName(editData.name);
-      endEdit(editData.id);
-    }
+
     if (enteredName.trim() === '') {
       setEnteredName('anonim');
       return;
@@ -47,9 +48,6 @@ const CommentForm = React.memo(({ editData, edit, end }) => {
 
   const createComment = async (event) => {
     event.preventDefault(event);
-    if (edit) {
-      setEnteredContents(editData.content);
-    }
     if (loged) {
       try {
         await addDoc(collection(db, 'comments'), {
@@ -87,7 +85,12 @@ const CommentForm = React.memo(({ editData, edit, end }) => {
               onChange={(event) => setEnteredName(event.target.value)}
             />
 
-            <Button type="buttonFlex" tabindex="9" className="comment">
+            <Button
+              type="buttonFlex"
+              tabindex="9"
+              className="comment"
+              onClick={edit && editData ? () => end(editData.useID) : () => {}}
+            >
               {edit ? 'Zapisz zamiany' : 'Dodaj komentarz'}
             </Button>
           </div>
@@ -115,6 +118,6 @@ const CommentForm = React.memo(({ editData, edit, end }) => {
       </section>
     </ZoneBottom>
   );
-});
+};
 
 export default CommentForm;

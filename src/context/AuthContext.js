@@ -50,7 +50,6 @@ export const AuthContextProvider = (props) => {
       console.log('unsuscribe logout?');
       setUser({});
       setIsLogged(false);
-      console.log('loged false in unsubscribe function');
       unsubscribe();
     };
   }, []);
