@@ -10,7 +10,7 @@ import { UserAuth } from '../../../context/AuthContext';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../../Firebase';
 
-const CommentForm = ({ editData, edit, end }) => {
+const CommentForm = (props) => {
   const { user, loged } = UserAuth();
   const [enteredName, setEnteredName] = useState(user ? user.displayName : '');
   const [enteredContents, setEnteredContents] = useState('');
@@ -25,12 +25,12 @@ const CommentForm = ({ editData, edit, end }) => {
   const day = Today.toLocaleString('pl-PL', { day: '2-digit' });
 
   useEffect(() => {
-    if (edit && editData) {
-      setEnteredName(editData.name);
-      setEnteredContents(editData.content);
+    if (props.edit && props.editData) {
+      setEnteredName(props.editData.name);
+      setEnteredContents(props.editData.content);
       // console.log(editData);
     }
-  }, [edit, editData]);
+  }, [props.edit, props.editData]);
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -60,7 +60,7 @@ const CommentForm = ({ editData, edit, end }) => {
         });
       } catch (error) {
         new Error('Nie dodano komntarza do bazy');
-        console.log('catch komentarz add' + error);
+        // console.log('catch komentarz add' + error);
       }
     } else {
       alert('Trzeba być zalogowanym do wykonania tej akcji');
@@ -89,9 +89,11 @@ const CommentForm = ({ editData, edit, end }) => {
               type="buttonFlex"
               tabindex="9"
               className="comment"
-              onClick={edit && editData ? () => end(editData.useID) : () => {}}
+              onClick={
+                props.edit && props.editData ? () => props.end(props.editData.useID) : () => {}
+              }
             >
-              {edit ? 'Zapisz zamiany' : 'Dodaj komentarz'}
+              {props.edit ? 'Zapisz zamiany' : 'Dodaj komentarz'}
             </Button>
           </div>
           <div className={classes.rightWrap}>

@@ -29,10 +29,10 @@
 
 .textarea {
   font-family: var(--font-headers);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   font-weight: var(--bold);
-  text-transform: uppercase;
+  // text-transform: uppercase;
   scrollbar-color: var(--colorArticlesF) var(--colorArticlesA);
   scrollbar-width: thin;
   resize: none;
@@ -51,7 +51,6 @@
   letter-spacing: 1px;
 
   &::placeholder {
-    text-transform: uppercase;
     font-weight: var(--bold);
     font-size: 1.2rem;
     text-transform: uppercase;

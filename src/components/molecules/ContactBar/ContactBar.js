@@ -20,7 +20,7 @@ const ContactBar = (props) => {
 
   useEffect(() => {
     if (loged) {
-      console.log('wchodzi w ifa...');
+      // console.log('wchodzi w ifa...');
       setEnteredName(user.displayName);
       setEnteredEmail(user.email);
     } else {

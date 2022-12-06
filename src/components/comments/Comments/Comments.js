@@ -56,7 +56,7 @@ const Comments = (props) => {
       return () => unsub();
     } catch (error) {
       new Error('Nie pobrano komentarzy z bazy');
-      console.log('catch komentarz read' + error);
+      // console.log('catch komentarz read' + error);
     }
   }, []);
 
@@ -64,16 +64,16 @@ const Comments = (props) => {
 
   const deleteComment = async (id) => {
     await deleteDoc(doc(db, 'comments', id));
-    console.log('skasowano komentarz o ID ' + id);
+    // console.log('skasowano komentarz o ID ' + id);
   };
 
   const editComment = (id) => {
     if (!isEdit) {
       const unsub = onSnapshot(doc(db, 'comments', id), (doc) => {
-        setIsEdit(true);
         setEditableComment(doc.data());
         setEditableCommentID(doc.id);
       });
+      setIsEdit(true);
       return () => unsub();
     } else {
       alert('Już edytujesz komentarz');
@@ -82,7 +82,7 @@ const Comments = (props) => {
 
   const endEditing = () => {
     deleteComment(editableCommentID);
-    console.log('end editing  ' + editableCommentID);
+    // console.log('end editing  ' + editableCommentID);
     setIsEdit(false);
     setEditableComment(null);
     setEditableCommentID('');
@@ -93,13 +93,9 @@ const Comments = (props) => {
       setIsEdit(false);
       setEditableComment(null);
       setEditableCommentID('');
-      console.log('zerowanie eedycji po wylogowaniu');
+      // console.log('zerowanie eedycji po wylogowaniu');
     }
   }, [loged]);
-
-  useEffect(() => {
-    console.log('RENDERING COMMENTS');
-  }, []);
 
   //połaczenie z firebase ustawienie metody przesyłu POST i przesłanie dodawanego komentarza jeszcze bez catch & err
   // const addCommentHandler = (comment) => {

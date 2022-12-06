@@ -47,7 +47,7 @@ export const AuthContextProvider = (props) => {
       // console.log('User', currentUser);
     });
     return () => {
-      console.log('unsuscribe logout?');
+      // console.log('unsuscribe logout?');
       setUser({});
       setIsLogged(false);
       unsubscribe();
@@ -60,7 +60,7 @@ export const AuthContextProvider = (props) => {
     localStorage.removeItem('eamil');
     localStorage.removeItem('profilePic');
     localStorage.removeItem('loged');
-    console.log('loged false in logout function');
+    // console.log('loged false in logout function');
     setIsLogged(false);
     setUser({});
     // console.log('User logout', user);

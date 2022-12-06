@@ -36,6 +36,7 @@ const Filter = React.memo((props) => {
           </h2>
         </div>
       </section>
+      {props.children}
     </ZoneTop>
   );
 });
