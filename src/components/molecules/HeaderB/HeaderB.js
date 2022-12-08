@@ -8,6 +8,8 @@ import { UserAuth } from '../../../context/AuthContext';
 
 import Profile from '../Profile/Profile';
 
+const expirationTime = 12000;
+
 const HeaderB = (props) => {
   const { googleLogged, googleLogout, user } = UserAuth();
 
@@ -68,7 +70,12 @@ const HeaderB = (props) => {
           </Button>
         )}
         {!user && (
-          <Button onClick={googleLogged} type="login">
+          <Button
+            onClick={() => {
+              googleLogged(expirationTime);
+            }}
+            type="login"
+          >
             Zaloguj
           </Button>
         )}

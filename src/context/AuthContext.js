@@ -9,6 +9,15 @@ const AuthContext = React.createContext({
   user: {},
 });
 
+const calcRemainingTime = (expirationTime) => {
+  const currentTime = new Date().getTime();
+  console.log('currentTime ' + currentTime);
+  const adjExpirationTime = new Date(expirationTime).getTime();
+  console.log('adjExpirationTime ' + adjExpirationTime);
+  const remainingTime = adjExpirationTime - currentTime;
+  return remainingTime;
+};
+
 export const AuthContextProvider = (props) => {
   const [isloged, setIsLogged] = useState(localStorage.getItem('loged') ? true : false);
   const [user, setUser] = useState({});
@@ -20,26 +29,6 @@ export const AuthContextProvider = (props) => {
   //     console.log(error);
   //   }
   // };
-
-  const handleGoogleSignIn = () => {
-    const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        const name = result.user.displayName;
-        const email = result.user.email;
-        const profilePic = result.user.photoURL;
-        localStorage.setItem('name', name);
-        localStorage.setItem('email', email);
-        localStorage.setItem('profilePic', profilePic);
-        localStorage.setItem('loged', true);
-        setUser(result.user);
-        setIsLogged(true);
-      })
-      .catch((error) => {
-        // setErrorGoogle(true);
-        throw new Error('Błąd autoryzacji za pomocą konta google');
-      });
-  };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -63,7 +52,32 @@ export const AuthContextProvider = (props) => {
     // console.log('loged false in logout function');
     setIsLogged(false);
     setUser({});
-    // console.log('User logout', user);
+    // console.log('User logout', user);expirationTime
+  };
+
+  const handleGoogleSignIn = (expirationTime) => {
+    const provider = new GoogleAuthProvider();
+    console.log('expirationTim ' + expirationTime);
+    const remainingTime = calcRemainingTime(expirationTime);
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const name = result.user.displayName;
+        const email = result.user.email;
+        const profilePic = result.user.photoURL;
+
+        localStorage.setItem('name', name);
+        localStorage.setItem('email', email);
+        localStorage.setItem('profilePic', profilePic);
+        localStorage.setItem('loged', true);
+        setUser(result.user);
+        setIsLogged(true);
+      })
+      .catch((error) => {
+        // setErrorGoogle(true);
+        throw new Error('Błąd autoryzacji za pomocą konta google');
+      });
+    console.log('remainingTime ' + remainingTime);
+    setTimeout(logoutHandler, remainingTime);
   };
 
   return (
