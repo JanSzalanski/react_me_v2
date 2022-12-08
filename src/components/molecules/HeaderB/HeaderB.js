@@ -8,7 +8,7 @@ import { UserAuth } from '../../../context/AuthContext';
 
 import Profile from '../Profile/Profile';
 
-const expirationTime = 12000;
+const expirationTime = new Date(new Date().getTime() + 25000);
 
 const HeaderB = (props) => {
   const { googleLogged, googleLogout, user } = UserAuth();

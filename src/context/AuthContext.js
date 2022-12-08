@@ -57,7 +57,7 @@ export const AuthContextProvider = (props) => {
 
   const handleGoogleSignIn = (expirationTime) => {
     const provider = new GoogleAuthProvider();
-    console.log('expirationTim ' + expirationTime);
+    console.log('expirationTime ' + expirationTime);
     const remainingTime = calcRemainingTime(expirationTime);
     signInWithPopup(auth, provider)
       .then((result) => {
