@@ -2,8 +2,6 @@ import React, { useState, useContext, useEffect } from 'react';
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth'; //signOut, onAuthStateChanged
 import { auth } from '../Firebase';
 
-let calcRemainingTime = () => {};
-
 const AuthContext = React.createContext({
   googleLogged: () => {},
   googleLogout: () => {},
@@ -14,17 +12,6 @@ const AuthContext = React.createContext({
 export const AuthContextProvider = (props) => {
   const [isloged, setIsLogged] = useState(localStorage.getItem('loged') ? true : false);
   const [user, setUser] = useState({});
-
-  useEffect(() => {
-    calcRemainingTime = (expirationTime) => {
-      const currentTime = new Date().getTime();
-      console.log('currentTime ' + currentTime);
-      const adjExpirationTime = new Date(expirationTime).getTime();
-      console.log('adjExpirationTime ' + adjExpirationTime);
-      const remainingTime = adjExpirationTime - currentTime;
-      return remainingTime;
-    };
-  }, [isloged]);
 
   // const handleGoogleSignIn = async () => {
   //   try {
@@ -59,10 +46,9 @@ export const AuthContextProvider = (props) => {
     // console.log('User logout', user);expirationTime
   };
 
-  const handleGoogleSignIn = (expirationTime) => {
+  const handleGoogleSignIn = () => {
     const provider = new GoogleAuthProvider();
-    console.log('expirationTime ' + expirationTime);
-    const remainingTime = calcRemainingTime(expirationTime);
+
     signInWithPopup(auth, provider)
       .then((result) => {
         const name = result.user.displayName;
@@ -80,8 +66,6 @@ export const AuthContextProvider = (props) => {
         // setErrorGoogle(true);
         throw new Error('Błąd autoryzacji za pomocą konta google');
       });
-    console.log('remainingTime ' + remainingTime);
-    setTimeout(logoutHandler, remainingTime);
   };
 
   return (
