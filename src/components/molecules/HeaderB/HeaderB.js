@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classes from './HeaderB.module.css';
 import Heading from '../../atoms/Heading/Heading';
 import DecorOne from '../../atoms/Decors/DecorOne/DecorOne';
 import DecorTwo from '../../atoms/Decors/DecorTwo/DecorTwo';
 import Button from '../../atoms/Button/Button';
 import { UserAuth } from '../../../context/AuthContext';
-
 import Profile from '../Profile/Profile';
-
-const expirationTime = new Date(new Date().getTime() + 25000);
+let expirationTime;
 
 const HeaderB = (props) => {
-  const { googleLogged, googleLogout, user } = UserAuth();
+  const { googleLogged, googleLogout, loged, user } = UserAuth();
+
+  useEffect(() => {
+    if (loged) {
+      expirationTime = new Date(new Date().getTime() + 60000);
+    } else {
+      expirationTime = 0;
+      console.log('expirationTime set to 0');
+    }
+  }, [loged]);
 
   // const { googleSignIn } = UserAuth();
 
