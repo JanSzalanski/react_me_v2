@@ -8,7 +8,8 @@ import { UserAuth } from '../../../context/AuthContext';
 import Profile from '../Profile/Profile';
 
 const HeaderB = (props) => {
-  const { googleLogged, googleLogout, user } = UserAuth();
+  const { googleLogged, googleLogout, user, loged } = UserAuth();
+  const expirationTime = new Date(new Date().getTime() + 25000);
 
   return (
     <header className={classes[props.className] || classes.wrapperHeader}>
@@ -51,17 +52,24 @@ const HeaderB = (props) => {
         <div className={classes.line10}></div>
         <div className={classes.line10A}></div>
         <Heading className="position">{props.children}</Heading>
-        {user && (
+        {user && loged && (
           <Button onClick={googleLogout} type="login">
             Wyloguj
           </Button>
         )}
-        {!user && (
-          <Button onClick={googleLogged} type="login">
+        {!user && !loged && (
+          <Button
+            onClick={() => {
+              googleLogged(expirationTime.toISOString());
+            }}
+            type="login"
+          >
             Zaloguj
           </Button>
         )}
         {user && <Profile></Profile>}
+        {user && <h2 className={classes.stat}>User jest true</h2>}
+        {loged && <h2 className={classes.stat}>loged jest true</h2>}
       </div>
     </header>
   );

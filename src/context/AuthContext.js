@@ -2,12 +2,24 @@ import React, { useState, useContext, useEffect } from 'react';
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth'; //signOut, onAuthStateChanged
 import { auth } from '../Firebase';
 
+let logoutTimer;
+
 const AuthContext = React.createContext({
   googleLogged: () => {},
   googleLogout: () => {},
   loged: false,
   user: {},
 });
+
+const calcRemainingTime = (expirationTime) => {
+  const currentTime = new Date().getTime();
+  console.log('currentTime ' + currentTime);
+  const adjExpirationTime = new Date(expirationTime).getTime();
+  console.log('adjExpirationTime ' + adjExpirationTime);
+  const remainingDuration = adjExpirationTime - currentTime;
+  console.log('remainingDuration ' + remainingDuration);
+  return remainingDuration;
+};
 
 export const AuthContextProvider = (props) => {
   const [isloged, setIsLogged] = useState(localStorage.getItem('loged') ? true : false);
@@ -28,39 +40,47 @@ export const AuthContextProvider = (props) => {
     });
     return () => {
       // console.log('unsuscribe logout?');
-      setUser({});
+      setUser(null);
       setIsLogged(false);
-      unsubscribe();
+      console.log('Unsubscribe metod a user to ' + user);
+      unsubscribe(); // to jest z video od pakero na YT ale przecież to dość dziwny manewr...
     };
   }, []);
 
   const logoutHandler = () => {
     signOut(auth);
     localStorage.removeItem('name');
-    localStorage.removeItem('eamil');
+    localStorage.removeItem('email');
     localStorage.removeItem('profilePic');
     localStorage.removeItem('loged');
+    localStorage.removeItem('expirationTime');
     // console.log('loged false in logout function');
     setIsLogged(false);
-    setUser({});
-    // console.log('User logout', user);expirationTime
+    setUser(null);
+    if (logoutTimer) {
+      clearTimeout(logoutTimer);
+    }
+    console.log('User po logout ' + user);
   };
 
-  const handleGoogleSignIn = () => {
+  const handleGoogleSignIn = (expirationTime) => {
     const provider = new GoogleAuthProvider();
-
+    console.log('expirationTime ' + expirationTime);
+    const remainingTime = calcRemainingTime(expirationTime);
+    localStorage.setItem('expirationTime', expirationTime);
     signInWithPopup(auth, provider)
       .then((result) => {
         const name = result.user.displayName;
         const email = result.user.email;
         const profilePic = result.user.photoURL;
-
         localStorage.setItem('name', name);
         localStorage.setItem('email', email);
         localStorage.setItem('profilePic', profilePic);
         localStorage.setItem('loged', true);
         setUser(result.user);
         setIsLogged(true);
+        logoutTimer = setTimeout(logoutHandler, remainingTime);
+        console.log('Zalogowano się w Google');
       })
       .catch((error) => {
         // setErrorGoogle(true);

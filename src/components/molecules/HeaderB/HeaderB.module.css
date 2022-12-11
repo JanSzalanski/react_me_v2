@@ -1015,6 +1015,10 @@
   }
 }
 
+.stat {
+  color: white;
+}
+
 .bgkWrap {
   position: absolute;
   width: calc(38.75% + 14px);
