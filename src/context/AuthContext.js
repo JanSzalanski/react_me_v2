@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext, useEffect, useCallback } from 'react';
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth'; //signOut, onAuthStateChanged
 import { auth } from '../Firebase';
 
@@ -21,7 +21,18 @@ const calcRemainingTime = (expirationTime) => {
   return remainingDuration;
 };
 
+const helper = () => {
+  const storedExpirationTime = localStorage.getItem('expirationTime');
+  const remainingTime = calcRemainingTime(storedExpirationTime);
+  if (remainingTime <= 60000) {
+    localStorage.removeItem('expirationTime');
+    return null;
+  }
+  return { duration: remainingTime };
+};
+
 export const AuthContextProvider = (props) => {
+  const timeData = helper();
   const [isloged, setIsLogged] = useState(localStorage.getItem('loged') ? true : false);
   const [user, setUser] = useState({});
 
@@ -42,12 +53,12 @@ export const AuthContextProvider = (props) => {
       // console.log('unsuscribe logout?');
       setUser(null);
       setIsLogged(false);
-      console.log('Unsubscribe metod a user to ' + user);
+      // console.log('Unsubscribe metod a user to ' + user);
       unsubscribe(); // to jest z video od pakero na YT ale przecież to dość dziwny manewr...
     };
   }, []);
 
-  const logoutHandler = () => {
+  const logoutHandler = useCallback(() => {
     signOut(auth);
     localStorage.removeItem('name');
     localStorage.removeItem('email');
@@ -60,8 +71,7 @@ export const AuthContextProvider = (props) => {
     if (logoutTimer) {
       clearTimeout(logoutTimer);
     }
-    console.log('User po logout ' + user);
-  };
+  }, []);
 
   const handleGoogleSignIn = (expirationTime) => {
     const provider = new GoogleAuthProvider();
@@ -87,6 +97,13 @@ export const AuthContextProvider = (props) => {
         throw new Error('Błąd autoryzacji za pomocą konta google');
       });
   };
+
+  useEffect(() => {
+    if (timeData) {
+      console.log(timeData.duration);
+      logoutTimer = setTimeout(logoutHandler, timeData.duration);
+    }
+  }, [timeData, logoutHandler]);
 
   return (
     <AuthContext.Provider

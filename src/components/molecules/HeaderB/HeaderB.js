@@ -9,7 +9,7 @@ import Profile from '../Profile/Profile';
 
 const HeaderB = (props) => {
   const { googleLogged, googleLogout, user, loged } = UserAuth();
-  const expirationTime = new Date(new Date().getTime() + 25000);
+  const expirationTime = new Date(new Date().getTime() + 120000);
 
   return (
     <header className={classes[props.className] || classes.wrapperHeader}>
