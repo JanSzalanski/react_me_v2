@@ -12,7 +12,7 @@ import DummyForm from '../DummyForm/DummyForm';
 // import AuthContext from '../../../context/AuthContext';
 import { UserAuth } from '../../../context/AuthContext';
 import { Route, Redirect } from 'react-router-dom';
-import { query, collection, onSnapshot, deleteDoc, doc } from 'firebase/firestore';
+import { query, collection, onSnapshot, deleteDoc, doc, where, orderBy } from 'firebase/firestore';
 import { db } from '../../../Firebase';
 
 const httpReducer = (currentHttpState, action) => {
@@ -43,9 +43,13 @@ const Comments = (props) => {
 
   // READ nowa wersja odczytu komentarzy
 
+  const filteredName = (data) => {
+    console.log(data);
+  };
+
   useEffect(() => {
     try {
-      const q = query(collection(db, 'comments'));
+      const q = query(collection(db, 'comments'), where('name', '==', 'jmsyou1'));
       const unsub = onSnapshot(q, (querySnapshot) => {
         let newsArr = [];
         querySnapshot.forEach((doc) => {
@@ -126,7 +130,7 @@ const Comments = (props) => {
     <>
       {httpState.error && <ErrorModal onClose={clearError}>{httpState.error}</ErrorModal>}
       <div className={classes.comments}>
-        <Filter />
+        <Filter filter={filteredName} />
         <ZoneMiddle>
           <CommentList
             loading={httpState.loading}

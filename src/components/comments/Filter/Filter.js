@@ -7,9 +7,12 @@ import Input from '../../atoms/Input/Input';
 // import Button from '../../atoms/Button/Button';
 
 const Filter = React.memo((props) => {
-  // const { onLoadComments } = props;
   const [enteredFilter, setEnteredFilter] = useState('');
   const inputRef = useRef();
+
+  // const filteredData = () => {
+  //   return enteredFilter;
+  // }
 
   return (
     <ZoneTop>
@@ -27,7 +30,10 @@ const Filter = React.memo((props) => {
             className="comment"
             value={enteredFilter}
             ref={inputRef}
-            onChange={(event) => setEnteredFilter(event.target.value)}
+            onChange={(event) => {
+              setEnteredFilter(event.target.value);
+              props.filter(enteredFilter);
+            }}
           />
         </div>
         <div className={classes.titleWrap}>
