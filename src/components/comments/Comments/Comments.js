@@ -12,7 +12,7 @@ import DummyForm from '../DummyForm/DummyForm';
 // import AuthContext from '../../../context/AuthContext';
 import { UserAuth } from '../../../context/AuthContext';
 import { Route, Redirect } from 'react-router-dom';
-import { query, collection, onSnapshot, deleteDoc, doc, where, orderBy } from 'firebase/firestore';
+import { query, collection, onSnapshot, deleteDoc, doc, where } from 'firebase/firestore';
 import { db } from '../../../Firebase';
 
 const httpReducer = (currentHttpState, action) => {

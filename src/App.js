@@ -9,7 +9,7 @@ import SideBar from './components/organisms/SideBar/SideBar';
 import Video from './components/atoms/Videos/Video';
 import ContactBar from './components/molecules/ContactBar/ContactBar';
 import Backdrop from './components/atoms/Backdrop/Backdrop';
-import { query, collection, onSnapshot } from 'firebase/firestore';
+import { query, collection, onSnapshot, orderBy } from 'firebase/firestore';
 import { db } from './Firebase';
 
 // import AuthContext from './context/AuthContext';
@@ -25,7 +25,7 @@ function App() {
 
   useEffect(() => {
     try {
-      const q = query(collection(db, 'news'));
+      const q = query(collection(db, 'news'), orderBy('path'));
       const unsub = onSnapshot(q, (querySnapshot) => {
         let newsArr = [];
         querySnapshot.forEach((doc) => {
