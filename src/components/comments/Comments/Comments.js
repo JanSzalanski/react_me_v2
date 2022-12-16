@@ -40,8 +40,11 @@ const Comments = (props) => {
 
   //Read news from firebase...
   // console.log(commentArr);
-
   // READ nowa wersja odczytu komentarzy
+
+  const userName = user ? user.displayName : '';
+
+  console.log('user' + user);
 
   const filteredName = (data) => {
     console.log(data);
@@ -49,7 +52,8 @@ const Comments = (props) => {
 
   useEffect(() => {
     try {
-      const q = query(collection(db, 'comments'), where('name', '==', 'jmsyou1'));
+      const q = query(collection(db, 'comments'), where('name', '==', `${userName}`));
+      console.log('userName ' + userName);
       const unsub = onSnapshot(q, (querySnapshot) => {
         let newsArr = [];
         querySnapshot.forEach((doc) => {
@@ -62,7 +66,7 @@ const Comments = (props) => {
       new Error('Nie pobrano komentarzy z bazy');
       // console.log('catch komentarz read' + error);
     }
-  }, []);
+  }, [userName]);
 
   // Deleted dodawanie komentarza do bazy danycy
 
