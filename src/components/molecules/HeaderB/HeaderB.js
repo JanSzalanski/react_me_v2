@@ -68,8 +68,8 @@ const HeaderB = (props) => {
           </Button>
         )}
         {user && <Profile></Profile>}
-        {user && <h2 className={classes.stat}>User jest true</h2>}
-        {loged && <h2 className={classes.stat}>loged jest true</h2>}
+        {/* {user && <h2 className={classes.stat}>User jest true</h2>}
+        {loged && <h2 className={classes.stat}>loged jest true</h2>} */}
       </div>
     </header>
   );
