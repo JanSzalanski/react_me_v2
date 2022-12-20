@@ -52,7 +52,7 @@ const Comments = (props) => {
 
   useEffect(() => {
     try {
-      const q = query(collection(db, 'comments'), where('name', '==', `${userName}`));
+      const q = query(collection(db, 'comments')); // where('name', '==', `${userName}`)
       console.log('userName ' + userName);
       const unsub = onSnapshot(q, (querySnapshot) => {
         let newsArr = [];
