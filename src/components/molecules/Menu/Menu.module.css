@@ -206,8 +206,7 @@
   bottom: 100%;
   transform: translateY(0);
   will-change: transform;
-  -webkit-animation: scanline 8s linear infinite;
-          animation: scanline 8s linear infinite;
+  animation: scanline 8s linear infinite;
 }
 @media (max-width: 480px) {
   .scanline {

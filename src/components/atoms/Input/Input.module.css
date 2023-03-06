@@ -140,15 +140,6 @@
   color: var(--colorGrey100);
   line-height: 1.2rem;
 }
-.input:-ms-input-placeholder, .comment:-ms-input-placeholder, .contact:-ms-input-placeholder, .search:-ms-input-placeholder {
-  font-family: var(--font-headers);
-  font-weight: var(--bold);
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--colorGrey100);
-  line-height: 1.2rem;
-}
 .input::placeholder, .comment::placeholder, .contact::placeholder, .search::placeholder {
   font-family: var(--font-headers);
   font-weight: var(--bold);
@@ -160,9 +151,6 @@
 }
 @media (max-width: 1600px) {
   .input::-moz-placeholder, .comment::-moz-placeholder, .contact::-moz-placeholder, .search::-moz-placeholder {
-    font-size: 1.1rem;
-  }
-  .input:-ms-input-placeholder, .comment:-ms-input-placeholder, .contact:-ms-input-placeholder, .search:-ms-input-placeholder {
     font-size: 1.1rem;
   }
   .input::placeholder, .comment::placeholder, .contact::placeholder, .search::placeholder {

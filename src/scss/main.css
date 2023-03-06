@@ -282,51 +282,34 @@ h2 {
 }
 
 .contactSlide {
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-name: slideKont;
-          animation-name: slideKont;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-duration: 0.6s;
+  animation-name: slideKont;
+  animation-fill-mode: both;
   animation-iteration-count: 1;
 }
 
 .colorIn {
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-name: KolorIn;
-          animation-name: KolorIn;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-name: KolorIn;
+  animation-fill-mode: both;
   animation-iteration-count: 1;
 }
 
 .contactHide {
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-name: hideKont;
-          animation-name: hideKont;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-duration: 0.6s;
+  animation-name: hideKont;
+  animation-fill-mode: both;
 }
 
 .colorOut {
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-name: KolorOut;
-          animation-name: KolorOut;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-duration: 0.6s;
+  animation-name: KolorOut;
+  animation-fill-mode: both;
 }
 
 input[type=radio] {
@@ -364,12 +347,12 @@ input[type=radio]:checked {
 }
 @media (max-width: 480px) {
   #s1:checked ~ #slide1,
-#s2:checked ~ #slide2,
-#s3:checked ~ #slide3,
-#s4:checked ~ #slide4,
-#s5:checked ~ #slide5,
-#s6:checked ~ #slide6,
-#s7:checked ~ #slide7 {
+  #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3,
+  #s4:checked ~ #slide4,
+  #s5:checked ~ #slide5,
+  #s6:checked ~ #slide6,
+  #s7:checked ~ #slide7 {
     transform: translate3d(0, 0%, 0px);
   }
 }
@@ -387,12 +370,12 @@ input[type=radio]:checked {
 }
 @media (max-width: 480px) {
   #s1:checked ~ #slide2,
-#s2:checked ~ #slide3,
-#s3:checked ~ #slide4,
-#s4:checked ~ #slide5,
-#s5:checked ~ #slide6,
-#s6:checked ~ #slide7,
-#s7:checked ~ #slide1 {
+  #s2:checked ~ #slide3,
+  #s3:checked ~ #slide4,
+  #s4:checked ~ #slide5,
+  #s5:checked ~ #slide6,
+  #s6:checked ~ #slide7,
+  #s7:checked ~ #slide1 {
     transform: translate3d(0, 30%, -200px);
   }
 }
@@ -410,12 +393,12 @@ input[type=radio]:checked {
 }
 @media (max-width: 480px) {
   #s1:checked ~ #slide3,
-#s2:checked ~ #slide4,
-#s3:checked ~ #slide5,
-#s4:checked ~ #slide6,
-#s5:checked ~ #slide7,
-#s6:checked ~ #slide1,
-#s7:checked ~ #slide2 {
+  #s2:checked ~ #slide4,
+  #s3:checked ~ #slide5,
+  #s4:checked ~ #slide6,
+  #s5:checked ~ #slide7,
+  #s6:checked ~ #slide1,
+  #s7:checked ~ #slide2 {
     transform: translate3d(0, 60%, -600px);
   }
 }
@@ -433,12 +416,12 @@ input[type=radio]:checked {
 }
 @media (max-width: 480px) {
   #s1:checked ~ #slide4,
-#s2:checked ~ #slide5,
-#s3:checked ~ #slide6,
-#s4:checked ~ #slide7,
-#s5:checked ~ #slide1,
-#s6:checked ~ #slide2,
-#s7:checked ~ #slide3 {
+  #s2:checked ~ #slide5,
+  #s3:checked ~ #slide6,
+  #s4:checked ~ #slide7,
+  #s5:checked ~ #slide1,
+  #s6:checked ~ #slide2,
+  #s7:checked ~ #slide3 {
     transform: translate3d(0, 100%, -1200px);
   }
 }
@@ -456,12 +439,12 @@ input[type=radio]:checked {
 }
 @media (max-width: 480px) {
   #s1:checked ~ #slide5,
-#s2:checked ~ #slide6,
-#s3:checked ~ #slide7,
-#s4:checked ~ #slide1,
-#s5:checked ~ #slide2,
-#s6:checked ~ #slide3,
-#s7:checked ~ #slide4 {
+  #s2:checked ~ #slide6,
+  #s3:checked ~ #slide7,
+  #s4:checked ~ #slide1,
+  #s5:checked ~ #slide2,
+  #s6:checked ~ #slide3,
+  #s7:checked ~ #slide4 {
     transform: translate3d(0, -100%, -1200px);
   }
 }
@@ -479,12 +462,12 @@ input[type=radio]:checked {
 }
 @media (max-width: 480px) {
   #s1:checked ~ #slide6,
-#s2:checked ~ #slide7,
-#s3:checked ~ #slide1,
-#s4:checked ~ #slide2,
-#s5:checked ~ #slide3,
-#s6:checked ~ #slide4,
-#s7:checked ~ #slide5 {
+  #s2:checked ~ #slide7,
+  #s3:checked ~ #slide1,
+  #s4:checked ~ #slide2,
+  #s5:checked ~ #slide3,
+  #s6:checked ~ #slide4,
+  #s7:checked ~ #slide5 {
     transform: translate3d(0, -60%, -600px);
   }
 }
@@ -502,12 +485,12 @@ input[type=radio]:checked {
 }
 @media (max-width: 480px) {
   #s1:checked ~ #slide7,
-#s2:checked ~ #slide1,
-#s3:checked ~ #slide2,
-#s4:checked ~ #slide3,
-#s5:checked ~ #slide4,
-#s6:checked ~ #slide5,
-#s7:checked ~ #slide6 {
+  #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2,
+  #s4:checked ~ #slide3,
+  #s5:checked ~ #slide4,
+  #s6:checked ~ #slide5,
+  #s7:checked ~ #slide6 {
     transform: translate3d(0, -30%, -200px);
   }
 }

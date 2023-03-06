@@ -56,14 +56,6 @@
   color: var(--colorGrey100);
   line-height: 1.2rem;
 }
-.textarea:-ms-input-placeholder, .comment:-ms-input-placeholder {
-  font-weight: var(--bold);
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--colorGrey100);
-  line-height: 1.2rem;
-}
 .textarea::placeholder, .comment::placeholder {
   font-weight: var(--bold);
   font-size: 1.2rem;
