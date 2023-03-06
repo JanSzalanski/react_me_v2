@@ -59,7 +59,7 @@ const FooterB = (props) => {
         <div className={classes.lineF}></div>
         <div className={classes.lineG}></div>
         <h2 className={classes.footerTitle}>{props.children}</h2>
-        <h2 className={classes.footerTitleM}>© 2022 Jan Szałański Polityka prywatności</h2>
+        <h2 className={classes.footerTitleM}>© 2023 Jan Szałański Polityka prywatności</h2>
 
         <div className={classes.line1}></div>
         <div className={classes.line2}></div>

@@ -12,7 +12,7 @@ const NotFound = () => {
       <FooterB>
         Jan Szałański <br />
         Polityka prywatności
-        <br /> © 2022 Wszystkie prawa zastrzeżone
+        <br /> © 2023 Wszystkie prawa zastrzeżone
       </FooterB>
     </div>
   );
