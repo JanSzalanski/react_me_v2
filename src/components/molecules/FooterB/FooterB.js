@@ -22,11 +22,7 @@ const FooterB = (props) => {
           <h3 className={classes.tittle1}>
             moje <b /> socjale
           </h3>
-          <a
-            href="https://twitter.com/_Jan_Ko_?ref_src=twsrc%5Etfw"
-            className="twitter-follow-button"
-            data-show-count="false"
-          >
+          <a href="https://twitter.com" className="twitter-follow-button" data-show-count="false">
             <ButtonIcon className="twit" classBgk="twitter">
               {/* <div className="wrapperTwit"></div> */}
               <h3 className="headingTwit">Follow</h3>
