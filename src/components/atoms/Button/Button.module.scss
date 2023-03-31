@@ -232,6 +232,10 @@ $btnHeight: 40px;
   top: 2px;
   right: 0;
   transform: translate(100%, 0);
+  @media (max-width: 480px) {
+    right: 50%;
+    transform: translate(0, 50%);
+  }
 }
 
 .buttonSWrapper {
