@@ -4,7 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import NewsPage from './pages/NewsPage/NewsPage';
 import ArticlePage from './pages/ArticlePage/ArticlePage';
 import PeoplePage from './pages/PeoplePage/PeoplePage';
-import NftPage from './pages/Blockchain/Blockchain';
+import Prywatnie from './pages/Prywatnie/Prywatnie';
 import SideBar from './components/organisms/SideBar/SideBar';
 import Video from './components/atoms/Videos/Video';
 import ContactBar from './components/molecules/ContactBar/ContactBar';
@@ -82,10 +82,10 @@ function App() {
               <ContactBar />
             </div>
           </Route>
-          <Route path="/nft">
+          <Route path="/prywatnie">
             <div className="backgroundBody"></div>
             <Video></Video>
-            <NftPage />
+            <Prywatnie />
             <SideBar />
             <div className="wrapCont">
               <ContactBar />

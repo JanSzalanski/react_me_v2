@@ -458,6 +458,12 @@
   right: 0;
   transform: translate(100%, 0);
 }
+@media (max-width: 480px) {
+  .buttonLWrapper {
+    right: 50%;
+    transform: translate(0, 50%);
+  }
+}
 
 .buttonSWrapper, .buttonDWrapper {
   width: calc(var(--buttonWidth) / 1.5 + 10px);

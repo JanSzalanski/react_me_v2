@@ -53,9 +53,9 @@ const Menu = (props) => {
                 </NavLink>
               </li>
               <li className={classes.li}>
-                <NavLink activeClassName={classes.active} className="routeLink" to="/nft">
+                <NavLink activeClassName={classes.active} className="routeLink" to="/prywatnie">
                   <Button type="menu" tabindex="13" onClick={props.nftPointer}>
-                    #BLOCKCHAIN \ AI
+                    o mnie
                   </Button>
                 </NavLink>
               </li>
