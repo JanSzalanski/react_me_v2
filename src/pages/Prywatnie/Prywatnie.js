@@ -11,7 +11,7 @@ const Prywatnie = (props) => {
     <div className={classes[props.type] || 'page'}>
       <div className="overlay"></div>
       <HeaderB>Prywatnie</HeaderB>
-      <Input className="search" placeholder="szukaj" bgk="bgkS"></Input>
+      <Input className="search" placeholder="Szukaj" bgk="bgkS"></Input>
       <Background />
 
       <div className={classes.wrapperGraphic}>
