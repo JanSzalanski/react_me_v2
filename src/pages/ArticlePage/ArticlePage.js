@@ -29,7 +29,7 @@ const ArticlePage = (props) => {
       <FooterB>
         Jan Szałański <br />
         Polityka prywatności
-        <br /> © 2023 Wszystkie prawa zastrzeżone
+        <br /> © 2024 Wszystkie prawa zastrzeżone
       </FooterB>
     </div>
   );
