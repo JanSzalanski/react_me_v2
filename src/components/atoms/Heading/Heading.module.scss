@@ -1,6 +1,7 @@
 .heading {
   // display: block;
   text-align: left;
+  overflow-wrap: break-word;
   padding: 15px;
   padding-left: 50px;
   padding-right: 50px;
@@ -68,6 +69,7 @@
 
 .position {
   @extend .heading;
+  width: 60%;
   letter-spacing: 1px;
   color: var(--colorArticles);
   text-shadow: -4px 4px 2px rgb(0, 0, 0);
@@ -78,7 +80,7 @@
     display: block;
     margin: 0;
     padding: 0;
-    width: 60%;
+    width: 65%;
     text-shadow: -4px 4px 2px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 50%;

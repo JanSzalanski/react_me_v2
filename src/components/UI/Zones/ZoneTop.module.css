@@ -33,6 +33,11 @@
 .zoneTop p, .zoneTopRelative p {
   display: block;
 }
+.zoneTop a, .zoneTopRelative a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
 
 .zoneTopRelative {
   height: auto;

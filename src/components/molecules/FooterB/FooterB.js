@@ -30,7 +30,7 @@ const FooterB = (props) => {
           </a>
           <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 
-          <a href="https://www.linkedin.com/in/jan-szalanski/">
+          <a href="https://www.linkedin.com/">
             <ButtonIcon className="link" classBgk="linkedin"></ButtonIcon>
           </a>
 
@@ -38,11 +38,11 @@ const FooterB = (props) => {
             <ButtonIcon className="git" classBgk="github"></ButtonIcon>
           </a>
 
-          <a href="https://vimeo.com/szalanski">
+          <a href="https://vimeo.com/">
             <ButtonIcon className="vim" classBgk="vimeo"></ButtonIcon>
           </a>
 
-          <a href="https://www.youtube.com/channel/UCY59lj5rPEpNdXwBlK7uMnQ">
+          <a href="https://www.youtube.com/">
             <ButtonIcon className="you" classBgk="youtube"></ButtonIcon>
           </a>
         </div>
@@ -55,9 +55,9 @@ const FooterB = (props) => {
         <div className={classes.lineF}></div>
         <div className={classes.lineG}></div>
         <h2 className={classes.footerTitle}>
-          Jan Szałański <br /> Polityka prywatności <br /> © 2024 Wszystkie prawa zastrzeżone
+          Jan Szałański <br /> Polityka prywatności <br /> © 2025 Wszystkie prawa zastrzeżone
         </h2>
-        <h2 className={classes.footerTitleM}>© 2024 Jan Szałański Polityka prywatności</h2>
+        <h2 className={classes.footerTitleM}>© 2025 Jan Szałański Polityka prywatności</h2>
 
         <div className={classes.line1}></div>
         <div className={classes.line2}></div>

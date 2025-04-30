@@ -24,31 +24,6 @@
   }
 }
 
-.omnieGraphic {
-  position: absolute;
-  background-image: url(../../assets/images/JaNft1080.webp);
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: 60% 80%;
-  background-color: #0c1216;
-  opacity: 0.8;
-  left: 40px;
-  right: 40px;
-  top: 40px;
-  bottom: 40px;
-  border-radius: 7px;
-}
-@media (max-width: 480px) {
-  .omnieGraphic {
-    background-position: 50% 100%;
-    background-size: 175% 75%;
-    left: 12px;
-    right: 12px;
-    top: 12px;
-    bottom: 12px;
-  }
-}
-
 .title {
   position: absolute;
   left: 60px;

@@ -15,7 +15,7 @@ const PeoplePage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
       <div className="overlay"></div>
-      <HeaderB>Strona o ludziach</HeaderB>
+      <HeaderB>Podziel się spostrzeżeniami</HeaderB>
       <Input className="search" placeholder="szukaj" bgk="bgkS" tabindex="14"></Input>
       <Background />
       <div className="overflowWrapper">
@@ -25,7 +25,7 @@ const PeoplePage = (props) => {
       <FooterB>
         Jan Szałański <br />
         Polityka prywatności
-        <br /> © 2024 Wszystkie prawa zastrzeżone
+        <br /> © 2025 Wszystkie prawa zastrzeżone
       </FooterB>
     </div>
   );

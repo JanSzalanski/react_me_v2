@@ -24,6 +24,7 @@ const HeaderB = (props) => {
           <div className={classes.lines}></div>
           <div className={classes.scanline}></div>
         </div>
+
         <div className={classes.lineA}></div>
         <div className={classes.lineC}></div>
         <div className={classes.lineB}></div>

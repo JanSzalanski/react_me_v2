@@ -12,16 +12,17 @@ const ArticlePage = (props) => {
   return (
     <div className={classes[props.type] || 'page'}>
       <div className="overlay"></div>
-      <HeaderB>Tablica z artykułami</HeaderB>
+      <HeaderB>Ciekawe artykuły</HeaderB>
       <Input className="search" placeholder="szukaj" bgk="bgkS"></Input>
       <Background />
       <div className="overflowWrapper">
         <ZoneTop className="zoneTopRelative">
           <p>
-            W tej części "portalu" będę zamieszczał moje artykuły, ale i być może podcasty wideo?
-            Będą to takie moje przemyślenia na temat różnych zagadnień. Pod pojęciem artykuły mam na
-            myśli felietony, recenzje, testy, opinie, analizy słowem wszelkiego rodzaju rozkminy z
-            różnych dziedzin, o których mam jakieś pojęcie lub którymi się interesuje.
+            Interesujący artykuł na temat pewnego zjawiska tyczącego się sztucznej inteligencji i
+            procesu jej uczenia.
+            <a href="https://hackernoon.com/stuck-in-time-why-ai-cant-stop-drawing-watches-at-1010">
+              <br /> ARTYKUŁ
+            </a>
           </p>
         </ZoneTop>
       </div>
@@ -29,7 +30,7 @@ const ArticlePage = (props) => {
       <FooterB>
         Jan Szałański <br />
         Polityka prywatności
-        <br /> © 2024 Wszystkie prawa zastrzeżone
+        <br /> © 2025 Wszystkie prawa zastrzeżone
       </FooterB>
     </div>
   );

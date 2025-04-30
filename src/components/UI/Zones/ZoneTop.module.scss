@@ -31,10 +31,17 @@
     display: block;
   }
 
+  & a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+  }
+
   // text-transform: uppercase;
 }
 
 .zoneTopRelative {
   @extend .zoneTop;
+  // position: relative;
   height: auto;
 }
